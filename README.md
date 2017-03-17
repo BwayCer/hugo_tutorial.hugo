@@ -1,4 +1,4 @@
-輯倉儲中心頁面
+雨果中文教程
 =======
 
 
@@ -11,5 +11,9 @@
 ## 簡介
 
 
-關於本書描述。
+將翻譯
+[雨果官網文件](https://gohugo.io/overview/introduction/)
+，其來源由
+[https://github.com/spf13/hugo](https://github.com/spf13/hugo)
+底下的 `docs/` 資料夾取得，版本 `v0.19`。
 
