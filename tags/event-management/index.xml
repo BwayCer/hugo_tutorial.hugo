@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Event Management on Hugo: A Fast and Flexible Website Generator</title>
+    <link>http://gohugo.io/tags/event-management/index.xml</link>
+    <description>Recent content in Event Management on Hugo: A Fast and Flexible Website Generator</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <atom:link href="http://gohugo.io/tags/event-management/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Promotive</title>
+      <link>http://gohugo.io/showcase/promotive/</link>
+      <pubDate>Tue, 21 Feb 2017 12:26:26 +0100</pubDate>
+      
+      <guid>http://gohugo.io/showcase/promotive/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

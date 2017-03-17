@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Showcase on Hugo: A Fast and Flexible Website Generator</title>
+    <link>http://gohugo.io/showcase/index.xml</link>
+    <description>Recent content in Showcase on Hugo: A Fast and Flexible Website Generator</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 21 Feb 2017 12:26:26 +0100</lastBuildDate>
+    <atom:link href="http://gohugo.io/showcase/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Promotive</title>
+      <link>http://gohugo.io/showcase/promotive/</link>
+      <pubDate>Tue, 21 Feb 2017 12:26:26 +0100</pubDate>
+      
+      <guid>http://gohugo.io/showcase/promotive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GOLDREPORT — Gold, Silver &amp; Numismatics News</title>
+      <link>http://gohugo.io/showcase/bullion-investor/</link>
+      <pubDate>Sat, 11 Feb 2017 10:30:00 +0200</pubDate>
+      
+      <guid>http://gohugo.io/showcase/bullion-investor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>InVision Engineering Blog</title>
+      <link>http://gohugo.io/showcase/invision/</link>
+      <pubDate>Sat, 28 Jan 2017 12:04:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/invision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>picturingjordan.com</title>
+      <link>http://gohugo.io/showcase/picturingjordan/</link>
+      <pubDate>Sun, 22 Jan 2017 17:32:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/picturingjordan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Petani Kode</title>
+      <link>http://gohugo.io/showcase/petanikode/</link>
+      <pubDate>Tue, 10 Jan 2017 07:32:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/petanikode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dbzman-Online</title>
+      <link>http://gohugo.io/showcase/dbzman-online/</link>
+      <pubDate>Mon, 02 Jan 2017 07:32:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/dbzman-online/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Niederjosbacher Heimat- und Geschichtsverein 2007 e.V.</title>
+      <link>http://gohugo.io/showcase/heimatverein-niederjosbach/</link>
+      <pubDate>Mon, 02 Jan 2017 07:32:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/heimatverein-niederjosbach/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>neavey.net</title>
+      <link>http://gohugo.io/showcase/neavey.net/</link>
+      <pubDate>Wed, 21 Dec 2016 21:19:46 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/neavey.net/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>christianmendoza.me</title>
+      <link>http://gohugo.io/showcase/christianmendoza/</link>
+      <pubDate>Tue, 20 Dec 2016 17:21:00 -0500</pubDate>
+      
+      <guid>http://gohugo.io/showcase/christianmendoza/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dr. Bala Ramadurai | Professor &amp; Consultant in Innovation, Design Thinking and Tech Forecasting</title>
+      <link>http://gohugo.io/showcase/balaramadurai.net/</link>
+      <pubDate>Thu, 17 Nov 2016 12:27:18 +0530</pubDate>
+      
+      <guid>http://gohugo.io/showcase/balaramadurai.net/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clearhaus</title>
+      <link>http://gohugo.io/showcase/clearhaus/</link>
+      <pubDate>Fri, 21 Oct 2016 12:37:00 +0200</pubDate>
+      
+      <guid>http://gohugo.io/showcase/clearhaus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dmitriid.com</title>
+      <link>http://gohugo.io/showcase/dmitriid.com/</link>
+      <pubDate>Wed, 19 Oct 2016 16:52:28 +0200</pubDate>
+      
+      <guid>http://gohugo.io/showcase/dmitriid.com/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Atom</title>
+      <link>http://gohugo.io/showcase/fixatom/</link>
+      <pubDate>Mon, 17 Oct 2016 16:19:24 +0800</pubDate>
+      
+      <guid>http://gohugo.io/showcase/fixatom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>eurie Desk docs</title>
+      <link>http://gohugo.io/showcase/eurie/</link>
+      <pubDate>Sat, 15 Oct 2016 23:30:59 +0900</pubDate>
+      
+      <guid>http://gohugo.io/showcase/eurie/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shapeshed.com</title>
+      <link>http://gohugo.io/showcase/shapeshed/</link>
+      <pubDate>Mon, 10 Oct 2016 07:32:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/shapeshed/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

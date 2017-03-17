@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deutschland on Hugo: A Fast and Flexible Website Generator</title>
+    <link>http://gohugo.io/tags/deutschland/index.xml</link>
+    <description>Recent content in Deutschland on Hugo: A Fast and Flexible Website Generator</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <atom:link href="http://gohugo.io/tags/deutschland/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>GOLDREPORT — Gold, Silver &amp; Numismatics News</title>
+      <link>http://gohugo.io/showcase/bullion-investor/</link>
+      <pubDate>Sat, 11 Feb 2017 10:30:00 +0200</pubDate>
+      
+      <guid>http://gohugo.io/showcase/bullion-investor/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Hugo: A Fast and Flexible Website Generator</title>
+    <link>http://gohugo.io/tags/blog/index.xml</link>
+    <description>Recent content in Blog on Hugo: A Fast and Flexible Website Generator</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <atom:link href="http://gohugo.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>GOLDREPORT — Gold, Silver &amp; Numismatics News</title>
+      <link>http://gohugo.io/showcase/bullion-investor/</link>
+      <pubDate>Sat, 11 Feb 2017 10:30:00 +0200</pubDate>
+      
+      <guid>http://gohugo.io/showcase/bullion-investor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>InVision Engineering Blog</title>
+      <link>http://gohugo.io/showcase/invision/</link>
+      <pubDate>Sat, 28 Jan 2017 12:04:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/invision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>picturingjordan.com</title>
+      <link>http://gohugo.io/showcase/picturingjordan/</link>
+      <pubDate>Sun, 22 Jan 2017 17:32:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/picturingjordan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Petani Kode</title>
+      <link>http://gohugo.io/showcase/petanikode/</link>
+      <pubDate>Tue, 10 Jan 2017 07:32:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/petanikode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dbzman-Online</title>
+      <link>http://gohugo.io/showcase/dbzman-online/</link>
+      <pubDate>Mon, 02 Jan 2017 07:32:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/dbzman-online/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>neavey.net</title>
+      <link>http://gohugo.io/showcase/neavey.net/</link>
+      <pubDate>Wed, 21 Dec 2016 21:19:46 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/neavey.net/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dr. Bala Ramadurai | Professor &amp; Consultant in Innovation, Design Thinking and Tech Forecasting</title>
+      <link>http://gohugo.io/showcase/balaramadurai.net/</link>
+      <pubDate>Thu, 17 Nov 2016 12:27:18 +0530</pubDate>
+      
+      <guid>http://gohugo.io/showcase/balaramadurai.net/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dmitriid.com</title>
+      <link>http://gohugo.io/showcase/dmitriid.com/</link>
+      <pubDate>Wed, 19 Oct 2016 16:52:28 +0200</pubDate>
+      
+      <guid>http://gohugo.io/showcase/dmitriid.com/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Atom</title>
+      <link>http://gohugo.io/showcase/fixatom/</link>
+      <pubDate>Mon, 17 Oct 2016 16:19:24 +0800</pubDate>
+      
+      <guid>http://gohugo.io/showcase/fixatom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shapeshed.com</title>
+      <link>http://gohugo.io/showcase/shapeshed/</link>
+      <pubDate>Mon, 10 Oct 2016 07:32:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/shapeshed/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>thecodeking</title>
+      <link>http://gohugo.io/showcase/thecodeking/</link>
+      <pubDate>Sun, 09 Oct 2016 23:06:16 +0100</pubDate>
+      
+      <guid>http://gohugo.io/showcase/thecodeking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>My Take on Cloud</title>
+      <link>http://gohugo.io/showcase/rahulrai/</link>
+      <pubDate>Tue, 04 Oct 2016 21:01:18 +0100</pubDate>
+      
+      <guid>http://gohugo.io/showcase/rahulrai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>David Yates</title>
+      <link>http://gohugo.io/showcase/davidyates/</link>
+      <pubDate>Sat, 10 Sep 2016 07:07:39 +0200</pubDate>
+      
+      <guid>http://gohugo.io/showcase/davidyates/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Randall Degges</title>
+      <link>http://gohugo.io/showcase/rdegges/</link>
+      <pubDate>Fri, 05 Aug 2016 15:33:56 -0700</pubDate>
+      
+      <guid>http://gohugo.io/showcase/rdegges/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Roman Silin</title>
+      <link>http://gohugo.io/showcase/astrochili/</link>
+      <pubDate>Sun, 31 Jul 2016 11:22:32 +0300</pubDate>
+      
+      <guid>http://gohugo.io/showcase/astrochili/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

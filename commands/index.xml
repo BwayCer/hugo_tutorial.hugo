@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Commands on Hugo: A Fast and Flexible Website Generator</title>
+    <link>http://gohugo.io/commands/index.xml</link>
+    <description>Recent content in Commands on Hugo: A Fast and Flexible Website Generator</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 25 Feb 2017 10:01:37 +0100</lastBuildDate>
+    <atom:link href="http://gohugo.io/commands/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>hugo</title>
+      <link>http://gohugo.io/commands/hugo/</link>
+      <pubDate>Sat, 25 Feb 2017 10:01:37 +0100</pubDate>
+      
+      <guid>http://gohugo.io/commands/hugo/</guid>
+      <description>
+
+&lt;h2 id=&#34;hugo&#34;&gt;hugo&lt;/h2&gt;
+
+&lt;p&gt;hugo builds your site&lt;/p&gt;
+
+&lt;h3 id=&#34;synopsis&#34;&gt;Synopsis&lt;/h3&gt;
+
+&lt;p&gt;hugo is the main command, used to build your Hugo site.&lt;/p&gt;
+
+&lt;p&gt;Hugo is a Fast and Flexible Static Site Generator
+built with love by spf13 and friends in Go.&lt;/p&gt;
+
+&lt;p&gt;Complete documentation is available at &lt;a href=&#34;http://gohugo.io/&#34;&gt;http://gohugo.io/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;options&#34;&gt;Options&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;  -b, --baseURL string             hostname (and path) to the root, e.g. http://spf13.com/
+  -D, --buildDrafts                include content marked as draft
+  -E, --buildExpired               include expired content
+  -F, --buildFuture                include content with publishdate in the future
+      --cacheDir string            filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/
+      --canonifyURLs               if true, all relative URLs will be canonicalized using baseURL
+      --cleanDestinationDir        Remove files from destination not found in static directories
+      --config string              config file (default is path/config.yaml|json|toml)
+  -c, --contentDir string          filesystem path to content directory
+  -d, --destination string         filesystem path to write files to
+      --disable404                 Do not render 404 page
+      --disableKinds stringSlice   Disable different kind of pages (home, RSS etc.)
+      --disableRSS                 Do not build RSS files
+      --disableSitemap             Do not build Sitemap file
+      --enableGitInfo              Add Git revision, date and author info to the pages
+      --forceSyncStatic            Copy all files when static is changed.
+      --i18n-warnings              Print missing translations
+      --ignoreCache                Ignores the cache directory
+  -l, --layoutDir string           filesystem path to layout directory
+      --log                        Enable Logging
+      --logFile string             Log File path (if set, logging enabled automatically)
+      --noChmod                    Don&#39;t sync permission mode of files
+      --noTimes                    Don&#39;t sync modification time of files
+      --pluralizeListTitles        Pluralize titles in lists using inflect (default true)
+      --preserveTaxonomyNames      Preserve taxonomy names as written (&amp;quot;Gérard Depardieu&amp;quot; vs &amp;quot;gerard-depardieu&amp;quot;)
+      --quiet                      build in quiet mode
+      --renderToMemory             render to memory (only useful for benchmark testing)
+  -s, --source string              filesystem path to read files relative from
+      --stepAnalysis               display memory and timing of different steps of the program
+  -t, --theme string               theme to use (located in /themes/THEMENAME/)
+      --themesDir string           filesystem path to themes directory
+      --uglyURLs                   if true, use /filename.html instead of /filename/
+  -v, --verbose                    verbose output
+      --verboseLog                 verbose logging
+  -w, --watch                      watch filesystem for changes and recreate as needed
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;see-also&#34;&gt;SEE ALSO&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_benchmark/&#34;&gt;hugo benchmark&lt;/a&gt;    - Benchmark Hugo by building a site a number of times.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_check/&#34;&gt;hugo check&lt;/a&gt;    - Contains some verification checks&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_config/&#34;&gt;hugo config&lt;/a&gt;  - Print the site configuration&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_convert/&#34;&gt;hugo convert&lt;/a&gt;    - Convert your content to different formats&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_env/&#34;&gt;hugo env&lt;/a&gt;    - Print Hugo version and environment info&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_gen/&#34;&gt;hugo gen&lt;/a&gt;    - A collection of several useful generators.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_import/&#34;&gt;hugo import&lt;/a&gt;  - Import your site from others.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_list/&#34;&gt;hugo list&lt;/a&gt;  - Listing out various types of content&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_new/&#34;&gt;hugo new&lt;/a&gt;    - Create new content for your site&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_server/&#34;&gt;hugo server&lt;/a&gt;  - A high performance webserver&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_undraft/&#34;&gt;hugo undraft&lt;/a&gt;    - Undraft changes the content&amp;rsquo;s draft status from &amp;lsquo;True&amp;rsquo; to &amp;lsquo;False&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_version/&#34;&gt;hugo version&lt;/a&gt;    - Print the version number of Hugo&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&#34;auto-generated-by-spf13-cobra-on-25-feb-2017&#34;&gt;Auto generated by spf13/cobra on 25-Feb-2017&lt;/h6&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>hugo benchmark</title>
+      <link>http://gohugo.io/commands/hugo_benchmark/</link>
+      <pubDate>Sat, 25 Feb 2017 10:01:37 +0100</pubDate>
+      
+      <guid>http://gohugo.io/commands/hugo_benchmark/</guid>
+      <description>
+
+&lt;h2 id=&#34;hugo-benchmark&#34;&gt;hugo benchmark&lt;/h2&gt;
+
+&lt;p&gt;Benchmark Hugo by building a site a number of times.&lt;/p&gt;
+
+&lt;h3 id=&#34;synopsis&#34;&gt;Synopsis&lt;/h3&gt;
+
+&lt;p&gt;Hugo can build a site many times over and analyze the running process
+creating a benchmark.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo benchmark
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;options&#34;&gt;Options&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;  -b, --baseURL string             hostname (and path) to the root, e.g. http://spf13.com/
+  -D, --buildDrafts                include content marked as draft
+  -E, --buildExpired               include expired content
+  -F, --buildFuture                include content with publishdate in the future
+      --cacheDir string            filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/
+      --canonifyURLs               if true, all relative URLs will be canonicalized using baseURL
+      --cleanDestinationDir        Remove files from destination not found in static directories
+  -c, --contentDir string          filesystem path to content directory
+  -n, --count int                  number of times to build the site (default 13)
+      --cpuprofile string          path/filename for the CPU profile file
+  -d, --destination string         filesystem path to write files to
+      --disable404                 Do not render 404 page
+      --disableKinds stringSlice   Disable different kind of pages (home, RSS etc.)
+      --disableRSS                 Do not build RSS files
+      --disableSitemap             Do not build Sitemap file
+      --enableGitInfo              Add Git revision, date and author info to the pages
+      --forceSyncStatic            Copy all files when static is changed.
+      --i18n-warnings              Print missing translations
+      --ignoreCache                Ignores the cache directory
+  -l, --layoutDir string           filesystem path to layout directory
+      --memprofile string          path/filename for the memory profile file
+      --noChmod                    Don&#39;t sync permission mode of files
+      --noTimes                    Don&#39;t sync modification time of files
+      --pluralizeListTitles        Pluralize titles in lists using inflect (default true)
+      --preserveTaxonomyNames      Preserve taxonomy names as written (&amp;quot;Gérard Depardieu&amp;quot; vs &amp;quot;gerard-depardieu&amp;quot;)
+      --renderToMemory             render to memory (only useful for benchmark testing)
+  -s, --source string              filesystem path to read files relative from
+      --stepAnalysis               display memory and timing of different steps of the program
+  -t, --theme string               theme to use (located in /themes/THEMENAME/)
+      --themesDir string           filesystem path to themes directory
+      --uglyURLs                   if true, use /filename.html instead of /filename/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;options-inherited-from-parent-commands&#34;&gt;Options inherited from parent commands&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;      --config string    config file (default is path/config.yaml|json|toml)
+      --log              Enable Logging
+      --logFile string   Log File path (if set, logging enabled automatically)
+      --quiet            build in quiet mode
+  -v, --verbose          verbose output
+      --verboseLog       verbose logging
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;see-also&#34;&gt;SEE ALSO&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo/&#34;&gt;hugo&lt;/a&gt;    - hugo builds your site&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&#34;auto-generated-by-spf13-cobra-on-25-feb-2017&#34;&gt;Auto generated by spf13/cobra on 25-Feb-2017&lt;/h6&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>hugo check</title>
+      <link>http://gohugo.io/commands/hugo_check/</link>
+      <pubDate>Sat, 25 Feb 2017 10:01:37 +0100</pubDate>
+      
+      <guid>http://gohugo.io/commands/hugo_check/</guid>
+      <description>
+
+&lt;h2 id=&#34;hugo-check&#34;&gt;hugo check&lt;/h2&gt;
+
+&lt;p&gt;Contains some verification checks&lt;/p&gt;
+
+&lt;h3 id=&#34;synopsis&#34;&gt;Synopsis&lt;/h3&gt;
+
+&lt;p&gt;Contains some verification checks&lt;/p&gt;
+
+&lt;h3 id=&#34;options-inherited-from-parent-commands&#34;&gt;Options inherited from parent commands&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;      --config string    config file (default is path/config.yaml|json|toml)
+      --log              Enable Logging
+      --logFile string   Log File path (if set, logging enabled automatically)
+      --quiet            build in quiet mode
+  -v, --verbose          verbose output
+      --verboseLog       verbose logging
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;see-also&#34;&gt;SEE ALSO&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo/&#34;&gt;hugo&lt;/a&gt;    - hugo builds your site&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_check_ulimit/&#34;&gt;hugo check ulimit&lt;/a&gt;  - Check system ulimit settings&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&#34;auto-generated-by-spf13-cobra-on-25-feb-2017&#34;&gt;Auto generated by spf13/cobra on 25-Feb-2017&lt;/h6&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>hugo check ulimit</title>
+      <link>http://gohugo.io/commands/hugo_check_ulimit/</link>
+      <pubDate>Sat, 25 Feb 2017 10:01:37 +0100</pubDate>
+      
+      <guid>http://gohugo.io/commands/hugo_check_ulimit/</guid>
+      <description>
+
+&lt;h2 id=&#34;hugo-check-ulimit&#34;&gt;hugo check ulimit&lt;/h2&gt;
+
+&lt;p&gt;Check system ulimit settings&lt;/p&gt;
+
+&lt;h3 id=&#34;synopsis&#34;&gt;Synopsis&lt;/h3&gt;
+
+&lt;p&gt;Hugo will inspect the current ulimit settings on the system.
+This is primarily to ensure that Hugo can watch enough files on some OSs&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo check ulimit
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;options-inherited-from-parent-commands&#34;&gt;Options inherited from parent commands&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;      --config string    config file (default is path/config.yaml|json|toml)
+      --log              Enable Logging
+      --logFile string   Log File path (if set, logging enabled automatically)
+      --quiet            build in quiet mode
+  -v, --verbose          verbose output
+      --verboseLog       verbose logging
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;see-also&#34;&gt;SEE ALSO&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_check/&#34;&gt;hugo check&lt;/a&gt;    - Contains some verification checks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&#34;auto-generated-by-spf13-cobra-on-25-feb-2017&#34;&gt;Auto generated by spf13/cobra on 25-Feb-2017&lt;/h6&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>hugo config</title>
+      <link>http://gohugo.io/commands/hugo_config/</link>
+      <pubDate>Sat, 25 Feb 2017 10:01:37 +0100</pubDate>
+      
+      <guid>http://gohugo.io/commands/hugo_config/</guid>
+      <description>
+
+&lt;h2 id=&#34;hugo-config&#34;&gt;hugo config&lt;/h2&gt;
+
+&lt;p&gt;Print the site configuration&lt;/p&gt;
+
+&lt;h3 id=&#34;synopsis&#34;&gt;Synopsis&lt;/h3&gt;
+
+&lt;p&gt;Print the site configuration, both default and custom settings.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo config
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;options-inherited-from-parent-commands&#34;&gt;Options inherited from parent commands&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;      --config string    config file (default is path/config.yaml|json|toml)
+      --log              Enable Logging
+      --logFile string   Log File path (if set, logging enabled automatically)
+      --quiet            build in quiet mode
+  -v, --verbose          verbose output
+      --verboseLog       verbose logging
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;see-also&#34;&gt;SEE ALSO&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo/&#34;&gt;hugo&lt;/a&gt;    - hugo builds your site&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&#34;auto-generated-by-spf13-cobra-on-25-feb-2017&#34;&gt;Auto generated by spf13/cobra on 25-Feb-2017&lt;/h6&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>hugo convert</title>
+      <link>http://gohugo.io/commands/hugo_convert/</link>
+      <pubDate>Sat, 25 Feb 2017 10:01:37 +0100</pubDate>
+      
+      <guid>http://gohugo.io/commands/hugo_convert/</guid>
+      <description>
+
+&lt;h2 id=&#34;hugo-convert&#34;&gt;hugo convert&lt;/h2&gt;
+
+&lt;p&gt;Convert your content to different formats&lt;/p&gt;
+
+&lt;h3 id=&#34;synopsis&#34;&gt;Synopsis&lt;/h3&gt;
+
+&lt;p&gt;Convert your content (e.g. front matter) to different formats.&lt;/p&gt;
+
+&lt;p&gt;See convert&amp;rsquo;s subcommands toJSON, toTOML and toYAML for more information.&lt;/p&gt;
+
+&lt;h3 id=&#34;options&#34;&gt;Options&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;  -o, --output string   filesystem path to write files to
+  -s, --source string   filesystem path to read files relative from
+      --unsafe          enable less safe operations, please backup first
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;options-inherited-from-parent-commands&#34;&gt;Options inherited from parent commands&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;      --config string    config file (default is path/config.yaml|json|toml)
+      --log              Enable Logging
+      --logFile string   Log File path (if set, logging enabled automatically)
+      --quiet            build in quiet mode
+  -v, --verbose          verbose output
+      --verboseLog       verbose logging
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;see-also&#34;&gt;SEE ALSO&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo/&#34;&gt;hugo&lt;/a&gt;    - hugo builds your site&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_convert_tojson/&#34;&gt;hugo convert toJSON&lt;/a&gt;  - Convert front matter to JSON&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_convert_totoml/&#34;&gt;hugo convert toTOML&lt;/a&gt;  - Convert front matter to TOML&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_convert_toyaml/&#34;&gt;hugo convert toYAML&lt;/a&gt;  - Convert front matter to YAML&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&#34;auto-generated-by-spf13-cobra-on-25-feb-2017&#34;&gt;Auto generated by spf13/cobra on 25-Feb-2017&lt;/h6&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>hugo convert toJSON</title>
+      <link>http://gohugo.io/commands/hugo_convert_tojson/</link>
+      <pubDate>Sat, 25 Feb 2017 10:01:37 +0100</pubDate>
+      
+      <guid>http://gohugo.io/commands/hugo_convert_tojson/</guid>
+      <description>
+
+&lt;h2 id=&#34;hugo-convert-tojson&#34;&gt;hugo convert toJSON&lt;/h2&gt;
+
+&lt;p&gt;Convert front matter to JSON&lt;/p&gt;
+
+&lt;h3 id=&#34;synopsis&#34;&gt;Synopsis&lt;/h3&gt;
+
+&lt;p&gt;toJSON converts all front matter in the content directory
+to use JSON for the front matter.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo convert toJSON
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;options-inherited-from-parent-commands&#34;&gt;Options inherited from parent commands&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;      --config string    config file (default is path/config.yaml|json|toml)
+      --log              Enable Logging
+      --logFile string   Log File path (if set, logging enabled automatically)
+  -o, --output string    filesystem path to write files to
+      --quiet            build in quiet mode
+  -s, --source string    filesystem path to read files relative from
+      --unsafe           enable less safe operations, please backup first
+  -v, --verbose          verbose output
+      --verboseLog       verbose logging
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;see-also&#34;&gt;SEE ALSO&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_convert/&#34;&gt;hugo convert&lt;/a&gt;    - Convert your content to different formats&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&#34;auto-generated-by-spf13-cobra-on-25-feb-2017&#34;&gt;Auto generated by spf13/cobra on 25-Feb-2017&lt;/h6&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>hugo convert toTOML</title>
+      <link>http://gohugo.io/commands/hugo_convert_totoml/</link>
+      <pubDate>Sat, 25 Feb 2017 10:01:37 +0100</pubDate>
+      
+      <guid>http://gohugo.io/commands/hugo_convert_totoml/</guid>
+      <description>
+
+&lt;h2 id=&#34;hugo-convert-totoml&#34;&gt;hugo convert toTOML&lt;/h2&gt;
+
+&lt;p&gt;Convert front matter to TOML&lt;/p&gt;
+
+&lt;h3 id=&#34;synopsis&#34;&gt;Synopsis&lt;/h3&gt;
+
+&lt;p&gt;toTOML converts all front matter in the content directory
+to use TOML for the front matter.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo convert toTOML
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;options-inherited-from-parent-commands&#34;&gt;Options inherited from parent commands&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;      --config string    config file (default is path/config.yaml|json|toml)
+      --log              Enable Logging
+      --logFile string   Log File path (if set, logging enabled automatically)
+  -o, --output string    filesystem path to write files to
+      --quiet            build in quiet mode
+  -s, --source string    filesystem path to read files relative from
+      --unsafe           enable less safe operations, please backup first
+  -v, --verbose          verbose output
+      --verboseLog       verbose logging
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;see-also&#34;&gt;SEE ALSO&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_convert/&#34;&gt;hugo convert&lt;/a&gt;    - Convert your content to different formats&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&#34;auto-generated-by-spf13-cobra-on-25-feb-2017&#34;&gt;Auto generated by spf13/cobra on 25-Feb-2017&lt;/h6&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>hugo convert toYAML</title>
+      <link>http://gohugo.io/commands/hugo_convert_toyaml/</link>
+      <pubDate>Sat, 25 Feb 2017 10:01:37 +0100</pubDate>
+      
+      <guid>http://gohugo.io/commands/hugo_convert_toyaml/</guid>
+      <description>
+
+&lt;h2 id=&#34;hugo-convert-toyaml&#34;&gt;hugo convert toYAML&lt;/h2&gt;
+
+&lt;p&gt;Convert front matter to YAML&lt;/p&gt;
+
+&lt;h3 id=&#34;synopsis&#34;&gt;Synopsis&lt;/h3&gt;
+
+&lt;p&gt;toYAML converts all front matter in the content directory
+to use YAML for the front matter.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo convert toYAML
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;options-inherited-from-parent-commands&#34;&gt;Options inherited from parent commands&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;      --config string    config file (default is path/config.yaml|json|toml)
+      --log              Enable Logging
+      --logFile string   Log File path (if set, logging enabled automatically)
+  -o, --output string    filesystem path to write files to
+      --quiet            build in quiet mode
+  -s, --source string    filesystem path to read files relative from
+      --unsafe           enable less safe operations, please backup first
+  -v, --verbose          verbose output
+      --verboseLog       verbose logging
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;see-also&#34;&gt;SEE ALSO&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_convert/&#34;&gt;hugo convert&lt;/a&gt;    - Convert your content to different formats&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&#34;auto-generated-by-spf13-cobra-on-25-feb-2017&#34;&gt;Auto generated by spf13/cobra on 25-Feb-2017&lt;/h6&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>hugo env</title>
+      <link>http://gohugo.io/commands/hugo_env/</link>
+      <pubDate>Sat, 25 Feb 2017 10:01:37 +0100</pubDate>
+      
+      <guid>http://gohugo.io/commands/hugo_env/</guid>
+      <description>
+
+&lt;h2 id=&#34;hugo-env&#34;&gt;hugo env&lt;/h2&gt;
+
+&lt;p&gt;Print Hugo version and environment info&lt;/p&gt;
+
+&lt;h3 id=&#34;synopsis&#34;&gt;Synopsis&lt;/h3&gt;
+
+&lt;p&gt;Print Hugo version and environment info. This is useful in Hugo bug reports.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo env
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;options-inherited-from-parent-commands&#34;&gt;Options inherited from parent commands&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;      --config string    config file (default is path/config.yaml|json|toml)
+      --log              Enable Logging
+      --logFile string   Log File path (if set, logging enabled automatically)
+      --quiet            build in quiet mode
+  -v, --verbose          verbose output
+      --verboseLog       verbose logging
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;see-also&#34;&gt;SEE ALSO&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo/&#34;&gt;hugo&lt;/a&gt;    - hugo builds your site&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&#34;auto-generated-by-spf13-cobra-on-25-feb-2017&#34;&gt;Auto generated by spf13/cobra on 25-Feb-2017&lt;/h6&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>hugo gen</title>
+      <link>http://gohugo.io/commands/hugo_gen/</link>
+      <pubDate>Sat, 25 Feb 2017 10:01:37 +0100</pubDate>
+      
+      <guid>http://gohugo.io/commands/hugo_gen/</guid>
+      <description>
+
+&lt;h2 id=&#34;hugo-gen&#34;&gt;hugo gen&lt;/h2&gt;
+
+&lt;p&gt;A collection of several useful generators.&lt;/p&gt;
+
+&lt;h3 id=&#34;synopsis&#34;&gt;Synopsis&lt;/h3&gt;
+
+&lt;p&gt;A collection of several useful generators.&lt;/p&gt;
+
+&lt;h3 id=&#34;options-inherited-from-parent-commands&#34;&gt;Options inherited from parent commands&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;      --config string    config file (default is path/config.yaml|json|toml)
+      --log              Enable Logging
+      --logFile string   Log File path (if set, logging enabled automatically)
+      --quiet            build in quiet mode
+  -v, --verbose          verbose output
+      --verboseLog       verbose logging
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;see-also&#34;&gt;SEE ALSO&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo/&#34;&gt;hugo&lt;/a&gt;    - hugo builds your site&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_gen_autocomplete/&#34;&gt;hugo gen autocomplete&lt;/a&gt;  - Generate shell autocompletion script for Hugo&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_gen_doc/&#34;&gt;hugo gen doc&lt;/a&gt;    - Generate Markdown documentation for the Hugo CLI.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_gen_man/&#34;&gt;hugo gen man&lt;/a&gt;    - Generate man pages for the Hugo CLI&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&#34;auto-generated-by-spf13-cobra-on-25-feb-2017&#34;&gt;Auto generated by spf13/cobra on 25-Feb-2017&lt;/h6&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>hugo gen autocomplete</title>
+      <link>http://gohugo.io/commands/hugo_gen_autocomplete/</link>
+      <pubDate>Sat, 25 Feb 2017 10:01:37 +0100</pubDate>
+      
+      <guid>http://gohugo.io/commands/hugo_gen_autocomplete/</guid>
+      <description>
+
+&lt;h2 id=&#34;hugo-gen-autocomplete&#34;&gt;hugo gen autocomplete&lt;/h2&gt;
+
+&lt;p&gt;Generate shell autocompletion script for Hugo&lt;/p&gt;
+
+&lt;h3 id=&#34;synopsis&#34;&gt;Synopsis&lt;/h3&gt;
+
+&lt;p&gt;Generates a shell autocompletion script for Hugo.&lt;/p&gt;
+
+&lt;p&gt;NOTE: The current version supports Bash only.
+      This should work for *nix systems with Bash installed.&lt;/p&gt;
+
+&lt;p&gt;By default, the file is written directly to /etc/bash_completion.d
+for convenience, and the command may need superuser rights, e.g.:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo hugo gen autocomplete
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Add &lt;code&gt;--completionfile=/path/to/file&lt;/code&gt; flag to set alternative
+file-path and name.&lt;/p&gt;
+
+&lt;p&gt;Logout and in again to reload the completion scripts,
+or just source them in directly:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ . /etc/bash_completion
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo gen autocomplete
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;options&#34;&gt;Options&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;      --completionfile string   Autocompletion file (default &amp;quot;/etc/bash_completion.d/hugo.sh&amp;quot;)
+      --type string             Autocompletion type (currently only bash supported) (default &amp;quot;bash&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;options-inherited-from-parent-commands&#34;&gt;Options inherited from parent commands&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;      --config string    config file (default is path/config.yaml|json|toml)
+      --log              Enable Logging
+      --logFile string   Log File path (if set, logging enabled automatically)
+      --quiet            build in quiet mode
+  -v, --verbose          verbose output
+      --verboseLog       verbose logging
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;see-also&#34;&gt;SEE ALSO&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_gen/&#34;&gt;hugo gen&lt;/a&gt;    - A collection of several useful generators.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&#34;auto-generated-by-spf13-cobra-on-25-feb-2017&#34;&gt;Auto generated by spf13/cobra on 25-Feb-2017&lt;/h6&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>hugo gen doc</title>
+      <link>http://gohugo.io/commands/hugo_gen_doc/</link>
+      <pubDate>Sat, 25 Feb 2017 10:01:37 +0100</pubDate>
+      
+      <guid>http://gohugo.io/commands/hugo_gen_doc/</guid>
+      <description>
+
+&lt;h2 id=&#34;hugo-gen-doc&#34;&gt;hugo gen doc&lt;/h2&gt;
+
+&lt;p&gt;Generate Markdown documentation for the Hugo CLI.&lt;/p&gt;
+
+&lt;h3 id=&#34;synopsis&#34;&gt;Synopsis&lt;/h3&gt;
+
+&lt;p&gt;Generate Markdown documentation for the Hugo CLI.&lt;/p&gt;
+
+&lt;p&gt;This command is, mostly, used to create up-to-date documentation
+of Hugo&amp;rsquo;s command-line interface for &lt;a href=&#34;http://gohugo.io/&#34;&gt;http://gohugo.io/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It creates one Markdown file per command with front matter suitable
+for rendering in Hugo.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo gen doc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;options&#34;&gt;Options&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;      --dir string   the directory to write the doc. (default &amp;quot;/tmp/hugodoc/&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;options-inherited-from-parent-commands&#34;&gt;Options inherited from parent commands&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;      --config string    config file (default is path/config.yaml|json|toml)
+      --log              Enable Logging
+      --logFile string   Log File path (if set, logging enabled automatically)
+      --quiet            build in quiet mode
+  -v, --verbose          verbose output
+      --verboseLog       verbose logging
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;see-also&#34;&gt;SEE ALSO&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_gen/&#34;&gt;hugo gen&lt;/a&gt;    - A collection of several useful generators.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&#34;auto-generated-by-spf13-cobra-on-25-feb-2017&#34;&gt;Auto generated by spf13/cobra on 25-Feb-2017&lt;/h6&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>hugo gen man</title>
+      <link>http://gohugo.io/commands/hugo_gen_man/</link>
+      <pubDate>Sat, 25 Feb 2017 10:01:37 +0100</pubDate>
+      
+      <guid>http://gohugo.io/commands/hugo_gen_man/</guid>
+      <description>
+
+&lt;h2 id=&#34;hugo-gen-man&#34;&gt;hugo gen man&lt;/h2&gt;
+
+&lt;p&gt;Generate man pages for the Hugo CLI&lt;/p&gt;
+
+&lt;h3 id=&#34;synopsis&#34;&gt;Synopsis&lt;/h3&gt;
+
+&lt;p&gt;This command automatically generates up-to-date man pages of Hugo&amp;rsquo;s
+command-line interface.  By default, it creates the man page files
+in the &amp;ldquo;man&amp;rdquo; directory under the current directory.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo gen man
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;options&#34;&gt;Options&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;      --dir string   the directory to write the man pages. (default &amp;quot;man/&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;options-inherited-from-parent-commands&#34;&gt;Options inherited from parent commands&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;      --config string    config file (default is path/config.yaml|json|toml)
+      --log              Enable Logging
+      --logFile string   Log File path (if set, logging enabled automatically)
+      --quiet            build in quiet mode
+  -v, --verbose          verbose output
+      --verboseLog       verbose logging
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;see-also&#34;&gt;SEE ALSO&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_gen/&#34;&gt;hugo gen&lt;/a&gt;    - A collection of several useful generators.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&#34;auto-generated-by-spf13-cobra-on-25-feb-2017&#34;&gt;Auto generated by spf13/cobra on 25-Feb-2017&lt;/h6&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>hugo import</title>
+      <link>http://gohugo.io/commands/hugo_import/</link>
+      <pubDate>Sat, 25 Feb 2017 10:01:37 +0100</pubDate>
+      
+      <guid>http://gohugo.io/commands/hugo_import/</guid>
+      <description>
+
+&lt;h2 id=&#34;hugo-import&#34;&gt;hugo import&lt;/h2&gt;
+
+&lt;p&gt;Import your site from others.&lt;/p&gt;
+
+&lt;h3 id=&#34;synopsis&#34;&gt;Synopsis&lt;/h3&gt;
+
+&lt;p&gt;Import your site from other web site generators like Jekyll.&lt;/p&gt;
+
+&lt;p&gt;Import requires a subcommand, e.g. &lt;code&gt;hugo import jekyll jekyll_root_path target_path&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;options-inherited-from-parent-commands&#34;&gt;Options inherited from parent commands&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;      --config string    config file (default is path/config.yaml|json|toml)
+      --log              Enable Logging
+      --logFile string   Log File path (if set, logging enabled automatically)
+      --quiet            build in quiet mode
+  -v, --verbose          verbose output
+      --verboseLog       verbose logging
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;see-also&#34;&gt;SEE ALSO&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo/&#34;&gt;hugo&lt;/a&gt;    - hugo builds your site&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/commands/hugo_import_jekyll/&#34;&gt;hugo import jekyll&lt;/a&gt;    - hugo import from Jekyll&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&#34;auto-generated-by-spf13-cobra-on-25-feb-2017&#34;&gt;Auto generated by spf13/cobra on 25-Feb-2017&lt;/h6&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,2376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documentation of Hugo, a fast and flexible static site generator built with love by spf13, bep and friends in Go">
+    <meta name="author" content="Steve Francia (spf13) and friends">
+    <meta name="generator" content="Hugo 0.19" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <title>Hugo - Creating a New Theme</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-stripped-gohugo.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-changes-gohugo.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-additions-gohugo.css">
+
+    <link rel="stylesheet" type="text/css" href="/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" />
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/content-style.css" />
+    <link href="/css/style-responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/vendor/highlightjs/css/monokai-sublime.css">
+
+  </head>
+
+  <body>
+  
+  <section id="container" class="">
+
+      
+      <header class="header black-bg">
+            <div class="toggle-nav">
+                <i class="fa fa-bars"></i>
+                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"></div>
+            </div>
+
+            
+            <a href="/" class="logo"><img src="/img/hugo-logo.png" style="height: 40px; vertical-align: bottom;"> <span style="font-size: small; text-transform: none;">v0.19</span></a>
+            
+            <div class="top-nav notification-row">
+                
+                <div class="hidden-xs nav-github pull-right">
+                    <span rel="show-github" data-user="spf13" data-repo="hugo" data-type="follow"></span>
+                    <span rel="show-github" data-user="spf13" data-repo="hugo"></span>
+                    <span rel="show-github" data-user="spf13" data-repo="hugo" data-type="fork"></span>
+                </div>
+            </div>
+
+            <div class="nav title-row" id="top_menu">
+                <h1 class="nav top-menu">Creating a New Theme</h1>
+            </div>
+      </header>
+      
+
+
+<aside>
+    <div id="sidebar" class="nav-collapse">
+        
+        <ul class="sidebar-menu">
+          
+          
+              
+                <li>
+                <a class="" href="https://github.com/spf13/hugo/releases">
+                    <i class='fa fa-download'></i>
+                    
+                    <span>下載雨果</span>
+                </a>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="/showcase/">
+                    <i class='fa fa-cubes'></i>
+                    
+                    <span>網站展示</span>
+                </a>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="/community/press/">
+                    <i class='fa fa-bullhorn'></i>
+                    
+                    <span>新聞及文章</span>
+                </a>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="http://discuss.gohugo.io/">
+                    <i class='fa fa-comments'></i>
+                    
+                    <span>討論雨果</span>
+                </a>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-heart'></i>
+                
+                <span>關於雨果</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="/meta/release-notes/">Release Notes</a> </li>
+                    
+                    <li><a href="/meta/roadmap/">Hugo Roadmap</a> </li>
+                    
+                    <li><a href="/meta/license/">License</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-road'></i>
+                
+                <span>入門</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="/overview/introduction/">Introduction</a> </li>
+                    
+                    <li><a href="/overview/quickstart/">Quickstart</a> </li>
+                    
+                    <li><a href="/overview/installing/">Installing Hugo</a> </li>
+                    
+                    <li><a href="/overview/usage/">Using Hugo</a> </li>
+                    
+                    <li><a href="/overview/configuration/">Configuration</a> </li>
+                    
+                    <li><a href="/overview/source-directory/">Source Organization</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-file-text'></i>
+                
+                <span>內容</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="/content/organization/">Organization</a> </li>
+                    
+                    <li><a href="/content/supported-formats/">Supported Formats</a> </li>
+                    
+                    <li><a href="/content/front-matter/">Front Matter</a> </li>
+                    
+                    <li><a href="/content/sections/">Sections</a> </li>
+                    
+                    <li><a href="/content/types/">Types</a> </li>
+                    
+                    <li><a href="/content/archetypes/">Archetypes</a> </li>
+                    
+                    <li><a href="/content/ordering/">Ordering</a> </li>
+                    
+                    <li><a href="/content/summaries/">Summaries</a> </li>
+                    
+                    <li><a href="/content/markdown-extras/">Markdown Extras</a> </li>
+                    
+                    <li><a href="/content/multilingual/">Multilingual Mode</a> </li>
+                    
+                    <li><a href="/content/example/">Example</a> </li>
+                    
+                    <li><a href="/content/using-index-md/">Using _index.md</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-desktop'></i>
+                
+                <span>主題</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="http://themes.gohugo.io">Theme Showcase</a> </li>
+                    
+                    <li><a href="/themes/overview/">Themes Overview</a> </li>
+                    
+                    <li><a href="/themes/installing/">Installing Themes</a> </li>
+                    
+                    <li><a href="/themes/usage/">Using a Theme</a> </li>
+                    
+                    <li><a href="/themes/customizing/">Customizing a Theme</a> </li>
+                    
+                    <li><a href="/themes/creation/">Creating a Theme</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-columns'></i>
+                
+                <span>模板</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="/templates/overview/">Overview</a> </li>
+                    
+                    <li><a href="/templates/go-templates/">Go Template Primer</a> </li>
+                    
+                    <li><a href="/templates/ace/">Ace templates</a> </li>
+                    
+                    <li><a href="/templates/amber/">Amber templates</a> </li>
+                    
+                    <li><a href="/templates/functions/">Functions</a> </li>
+                    
+                    <li><a href="/templates/variables/">Variables</a> </li>
+                    
+                    <li><a href="/templates/content/">Single Content</a> </li>
+                    
+                    <li><a href="/templates/list/">List of Content</a> </li>
+                    
+                    <li><a href="/templates/homepage/">Homepage</a> </li>
+                    
+                    <li><a href="/templates/terms/">Taxonomy Terms</a> </li>
+                    
+                    <li><a href="/templates/views/">Content Views</a> </li>
+                    
+                    <li><a href="/templates/blocks/">Block Templates</a> </li>
+                    
+                    <li><a href="/templates/partials/">Partial Templates</a> </li>
+                    
+                    <li><a href="/templates/rss/">RSS</a> </li>
+                    
+                    <li><a href="/templates/sitemap/">Sitemap</a> </li>
+                    
+                    <li><a href="/templates/404/">Custom 404 page</a> </li>
+                    
+                    <li><a href="/templates/debugging/">Debugging</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-tags'></i>
+                
+                <span>分類</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="/taxonomies/overview/">Overview</a> </li>
+                    
+                    <li><a href="/taxonomies/usage/">Usage</a> </li>
+                    
+                    <li><a href="/taxonomies/displaying/">Displaying</a> </li>
+                    
+                    <li><a href="/taxonomies/templates/">Templates</a> </li>
+                    
+                    <li><a href="/taxonomies/ordering/">Ordering</a> </li>
+                    
+                    <li><a href="/taxonomies/methods/">Structure &amp; Methods</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-gift'></i>
+                
+                <span>額外</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="/extras/aliases/">Aliases</a> </li>
+                    
+                    <li><a href="/extras/analytics/">Analytics</a> </li>
+                    
+                    <li><a href="/extras/builders/">Builders</a> </li>
+                    
+                    <li><a href="/extras/comments/">Comments</a> </li>
+                    
+                    <li><a href="/extras/crossreferences/">Cross-References</a> </li>
+                    
+                    <li><a href="/extras/robots-txt/">Custom robots.txt</a> </li>
+                    
+                    <li><a href="/extras/datafiles/">Data Files</a> </li>
+                    
+                    <li><a href="/extras/datadrivencontent/">Data-driven Content</a> </li>
+                    
+                    <li><a href="/extras/gitinfo/">GitInfo</a> </li>
+                    
+                    <li><a href="/extras/livereload/">LiveReload</a> </li>
+                    
+                    <li><a href="/extras/menus/">Menus</a> </li>
+                    
+                    <li><a href="/extras/pagination/">Pagination</a> </li>
+                    
+                    <li><a href="/extras/permalinks/">Permalinks</a> </li>
+                    
+                    <li><a href="/extras/scratch/">Scratch</a> </li>
+                    
+                    <li><a href="/extras/shortcodes/">Shortcodes</a> </li>
+                    
+                    <li><a href="/extras/highlighting/">Syntax Highlighting</a> </li>
+                    
+                    <li><a href="/extras/toc/">Table of Contents</a> </li>
+                    
+                    <li><a href="/extras/localfiles/">Traversing Local Files</a> </li>
+                    
+                    <li><a href="/extras/urls/">URLs</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-group'></i>
+                
+                <span>社區</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="/community/mailing-list/">Mailing List</a> </li>
+                    
+                    <li><a href="/community/contributing/">Contributing to Hugo</a> </li>
+                    
+                    <li><a href="http://discuss.gohugo.io">Discussion Forum</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu active">
+            <a href="javascript:;" class="">
+                <i class='fa fa-book'></i>
+                
+                <span>教程</span>
+                <span class="menu-arrow fa fa-angle-down"></span>
+            </a>
+                <ul class="sub open">
+                    
+                    <li><a href="/tutorials/automated-deployments/">Automated deployments</a> </li>
+                    
+                    <li class="active"><a href="/tutorials/creating-a-new-theme/">Creating a New Theme</a> </li>
+                    
+                    <li><a href="/tutorials/hosting-on-bitbucket/">Hosting on Bitbucket</a> </li>
+                    
+                    <li><a href="/tutorials/github-pages-blog/">Hosting on GitHub</a> </li>
+                    
+                    <li><a href="/tutorials/hosting-on-gitlab/">Hosting on GitLab</a> </li>
+                    
+                    <li><a href="/tutorials/how-to-contribute-to-hugo/">How to contribute</a> </li>
+                    
+                    <li><a href="/tutorials/installing-on-mac/">Installing on Mac</a> </li>
+                    
+                    <li><a href="/tutorials/installing-on-windows/">Installing on Windows</a> </li>
+                    
+                    <li><a href="/tutorials/mathjax/">MathJax Support</a> </li>
+                    
+                    <li><a href="/tutorials/migrate-from-jekyll/">Migrating from Jekyll</a> </li>
+                    
+                    <li><a href="/tutorials/create-a-multilingual-site/">Multilingual Site</a> </li>
+                    
+                    <li><a href="/tutorials/deployment-with-rsync/">Deployment with rsync</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-wrench'></i>
+                
+                <span>故障排除</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="/troubleshooting/strange-eof-error/">Strange EOF error</a> </li>
+                    
+                    <li><a href="/troubleshooting/categories-with-accented-characters/">Accented Categories</a> </li>
+                    
+                    <li><a href="/troubleshooting/overview/">Troubleshooting Overview</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="/tools/">
+                    <i class='fa fa-cogs'></i>
+                    
+                    <span>工具</span>
+                </a>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="/commands/">
+                    <i class='fa fa-space-shuttle'></i>
+                    
+                    <span>雨果命令參考</span>
+                </a>
+              
+              </li>
+          
+            <li> <a href="https://github.com/spf13/hugo/issues" target="blank"><i class='fa fa-life-ring'></i> <span>Issues & Help</span></a> </li>
+            
+              <li><a href="https://github.com/spf13/hugo/edit/master/docs/content/tutorials/creating-a-new-theme.md" target="blank"><i class='fa fa-edit'></i> Refine this Page</a> </li>
+            
+        </ul>
+        
+    </div>
+</aside>
+
+
+
+      
+      <section id="main-content">
+          <section class="wrapper">
+
+              
+                  
+                      
+                      
+                          
+                          
+                          
+                      
+                      
+                  
+              
+
+              <div class="row">
+                  <div class="col-md-1">
+                      
+                      
+                      <a class="navigation prev" href="/tutorials/automated-deployments">
+                      <i class="fa fa-angle-left"></i>
+                      </a>
+                      
+                      
+                  </div>
+                <div class="col-md-10">
+                    <section class="panel">
+                          
+                              
+                          
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2 cse">
+                                <input type="search" id="search-input" placeholder="Search...">
+                            </div>
+                        </div>
+
+
+
+
+<h2 id="introduction">Introduction</h2>
+
+<p>This tutorial will show you how to create a simple theme in Hugo.</p>
+
+<p>I&rsquo;ll introduce Hugo&rsquo;s use of templates,
+and explain how to organize them into a theme.
+The theme will grow, minimizing effort while meeting evolving needs.
+To promote this focus, and to keep everything simple, I&rsquo;ll omit CSS styling.</p>
+
+<p>We&rsquo;ll start by creating a tiny, blog-like web site.
+We&rsquo;ll implement this blog with just one &mdash; quite basic &mdash; template.
+Then we&rsquo;ll add an About page, and a few articles.
+Overall, this web site (along with what you learn here)
+will provide a good basis for you to continue working with Hugo in the future.
+By making small variations,
+you&rsquo;ll be able to create many different kinds of web sites.</p>
+
+<p>I will assume you&rsquo;re comfortable with HTML, Markdown formatting,
+and the Bash command line (possibly using <a href="https://git-for-windows.github.io/">Git for
+Windows</a>).</p>
+
+<p>A few symbols might call for explanation: in this tutorial,
+the commands you&rsquo;ll enter will be preceded by a <code>$</code> prompt &mdash;
+and their output will follow.
+<code>vi</code> means to open your editor; then <code>:wq</code> means to save the file.
+Sometimes I&rsquo;ll add comments to explain a point &mdash; these start with <code>#</code>.
+So, for example:</p>
+
+<pre><code class="language-bash"># this is a comment
+$ echo this is a command
+this is a command
+
+# edit the file
+$ vi foo.md
++++
+date = &quot;2040-01-18&quot;
+title = &quot;creating a new theme&quot;
+
++++
+Bah! Humbug!
+:wq
+
+# show it
+$ cat foo.md
++++
+date = &quot;2040-01-18&quot;
+title = &quot;creating a new theme&quot;
+
++++
+Bah! Humbug!
+</code></pre>
+
+<h2 id="definitions">Definitions</h2>
+
+<p>Three concepts:</p>
+
+<ol>
+<li><em>Non-content</em> files;</li>
+<li><em>Templates</em> (as Hugo defines them); and</li>
+<li><em>Front-matter</em></li>
+</ol>
+
+<p>are essential for creating your first Hugo theme,
+as well as your first Hugo website.</p>
+
+<h3 id="non-content">Non-Content</h3>
+
+<p>The source files of a web site (destined to be rendered by Hugo)
+are divided into two kinds:</p>
+
+<ol>
+<li>The files containing its textual content (and nothing else &mdash;
+except Hugo front-matter: see below, and Markdown styling); and</li>
+<li>All other files. (These contain <strong><em>no</em></strong> textual content &mdash; ideally.)</li>
+</ol>
+
+<p>Temporarily, let&rsquo;s affix the adjective <em>non-content</em>
+to the latter kind of source files.</p>
+
+<p>Non-content files are responsible for your web site&rsquo;s look and feel.
+(Follow these article links from <a href="https://www.bopdesign.com/bop-blog/2013/11/what-is-the-look-and-feel-of-a-website-and-why-its-important/">Bop
+Design</a>
+and
+<a href="https://en.wikipedia.org/w/index.php?title=Look_and_feel&amp;oldid=731052704">Wikipedia</a>
+if you wish for more information.)
+They comprise its images, its CSS (for the sizes, colors and fonts),
+its JavaScript (for the actions and reactions), and its Hugo templates
+(which contain the rules Hugo uses to transform your content into HTML).</p>
+
+<p>Given these files, Hugo will render a static web site &mdash;
+informed by your content &mdash;
+which contains the above images, HTML, CSS and JavaScript,
+ready to be served to visitors.</p>
+
+<p>Actually, a few of your invariant textual snippets
+could reside in non-content files as well.
+However, because someone might reuse your theme (eventually),
+preferably you should keep those textual snippets in their own content files.</p>
+
+<h4 id="where">Where</h4>
+
+<p>Regarding where to create your non-content files, you have two options.
+The simplest is the <code>./layouts/</code> and <code>./static/</code> filesystem trees.
+If you choose this way,
+then you needn&rsquo;t worry about configuring Hugo to find them.
+Invariably, these are the first two places Hugo seeks for templates
+(as well as images, CSS and JavaScript);
+so in that case, it&rsquo;s guaranteed to find all your non-content files.</p>
+
+<p>The second option is to create them in a filesystem tree
+located somewhere under the <code>./themes/</code> directory.
+If you choose that way,
+then you must always tell Hugo where to search for them &mdash;
+that&rsquo;s extra work, though. So, why bother?</p>
+
+<h4 id="theme">Theme</h4>
+
+<p>Well &mdash; the difference between creating your non-content files under
+<code>./layouts/</code> and <code>./static/</code> and creating them under <code>./themes/</code>
+is admittedly very subtle.
+Non-content files created under <code>./layouts/</code> and <code>./static/</code>
+cannot be customized without editing them directly.
+On the other hand, non-content files created under <code>./themes/</code>
+can be customized, in another way. That way is both conventional
+(for Hugo web sites) and non-destructive. Therefore,
+creating your non-content files under <code>./themes/</code>
+makes it easier for other people to use them.</p>
+
+<p>The rest of this tutorial will call a set of non-content files a <strong><em>theme</em></strong>
+if they comprise a filesystem tree rooted anywhere under the
+<code>./themes/</code> directory.</p>
+
+<p>Note that you can use this tutorial to create your set of non-content files
+under <code>./layouts/</code> and <code>./static/</code> if you wish. The only difference is that
+you wouldn&rsquo;t need to edit your web site&rsquo;s configuration file
+in order to select a theme.</p>
+
+<h3 id="home">Home</h3>
+
+<p>The home page, or landing page,
+is the first page that many visitors to a web site will see.
+Often this is <code>/index.html</code>, located at the root URL of the web site.
+Since Hugo writes files into the <code>./public/</code> tree,
+your home page will reside in file <code>./public/index.html</code>.</p>
+
+<h3 id="configure">Configure</h3>
+
+<p>When Hugo runs, it first looks for an overall configuration file,
+in order to read its settings, and applies them to the entire web site.
+These settings override Hugo&rsquo;s default values.</p>
+
+<p>The file can be in TOML, YAML, or JSON format.
+I prefer TOML for my configuration files.
+If you prefer JSON or YAML, you&rsquo;ll need to translate my examples.
+You&rsquo;ll also need to change the basename, since Hugo uses its extension
+to determine how to process it.</p>
+
+<p>Hugo translates Markdown files into HTML.
+By default, Hugo searches for Markdown files in the <code>./content/</code> tree
+and template files under the <code>./themes/</code> directory.
+It will render HTML files to the <code>./public/</code> tree.
+You can override any of these defaults by specifying alternative locations
+in the configuration file.</p>
+
+<h3 id="template">Template</h3>
+
+<p><em>Templates</em> direct Hugo in rendering content into HTML;
+they bridge content and presentation.</p>
+
+<p>Rules in template files determine which content is published and where,
+and precisely how it will be rendered into HTML files.
+Templates also guide your web site&rsquo;s presentation
+by specifying the CSS styling to use.</p>
+
+<p>Hugo uses its knowledge of each piece of content
+to seek a template file to use in rendering it.
+If it can&rsquo;t find a template that matches the content, it will zoom out,
+one conceptual level; it will then resume the search from there.
+It will continue to do so, till it finds a matching template,
+or runs out of templates to try.
+Its last resort is your web site&rsquo;s default template,
+which could conceivably be missing. If it finds no suitable template,
+it simply forgoes rendering that piece of content.</p>
+
+<p>It&rsquo;s important to note that <em>front-matter</em> (see next)
+can influence Hugo&rsquo;s template file selection process.</p>
+
+<h3 id="content">Content</h3>
+
+<p>Content is stored in text files which contain two sections.
+The first is called <em>front-matter</em>: this is information about the content.
+The second contains Markdown-formatted text,
+destined for conversion to HTML format.</p>
+
+<h4 id="front-matter">Front-Matter</h4>
+
+<p>The <em>front-matter</em> is meta-information describing the content.
+Like the web site&rsquo;s configuration file, it can be written in the
+TOML, YAML, or JSON formats.
+Unlike the configuration file, Hugo doesn&rsquo;t use the file&rsquo;s extension
+to determine the format.
+Instead, it looks for markers in the file which signal this.
+TOML is surrounded by &ldquo;<code>+++</code>&rdquo; and YAML by &ldquo;<code>---</code>&rdquo;, but
+JSON is enclosed in curly braces. I prefer to use TOML.
+You&rsquo;ll need to translate my examples if you prefer YAML or JSON.</p>
+
+<p>Hugo informs its chosen template files with the front-matter information
+before rendering the content in HTML.</p>
+
+<h4 id="markdown">Markdown</h4>
+
+<p>Content is written in Markdown format, which makes it easy to create.
+Hugo runs the content through a Markdown engine to transform it into HTML,
+which it then renders to the output file.</p>
+
+<h3 id="template-kinds">Template Kinds</h3>
+
+<p>Here I&rsquo;ll discuss three kinds of Hugo templates:
+<em>Single</em>, <em>List</em>, and <em>Partial</em>.
+All these kinds take one or more pieces of content as input,
+and transform the pieces, based on commands in the template.</p>
+
+<h4 id="single">Single</h4>
+
+<p>A <em>Single</em> template is used to render one piece of content.
+For example, an article or a post is a single piece of content;
+thus, it uses a Single template.</p>
+
+<h4 id="list">List</h4>
+
+<p>A <em>List</em> template renders a group of related content items.
+This could be a summary of recent postings,
+or all of the articles in a category.
+List templates can contain multiple groups (or categories).</p>
+
+<p>The home page template is a special kind of List template.
+This is because Hugo assumes that your home page will act as a portal
+to all of the remaining content on your web site.</p>
+
+<h4 id="partial">Partial</h4>
+
+<p>A <em>Partial</em> template is a template that&rsquo;s incapable of producing a web page,
+by itself. To include a Partial template in your web site,
+another template must call it, using the <code>partial</code> command.</p>
+
+<p>Partial templates are very handy for rolling up common behavior.
+For example, you might want the same banner to appear on all
+of your web site&rsquo;s pages &mdash; so, rather than copy your banner&rsquo;s text
+into multiple content files,
+as well as the other information relevant to your banner
+into multiple template files (both Single and List),
+you can instead create just one content file and one Partial template.
+That way, whenever you decide to change the banner, you can do so
+by editing one file only (or maybe two).</p>
+
+<h2 id="site">Site</h2>
+
+<p>Let&rsquo;s let Hugo help you create your new web site.
+The <code>hugo new site</code> command will generate a skeleton &mdash;
+it will give you a basic directory structure, along with
+a usable configuration file:</p>
+
+<pre><code class="language-bash">$ cd /tmp/
+
+$ hugo new site mySite
+
+$ cd mySite/
+
+$ ls -l
+total 8
+drwxr-xr-x  2 {user} {group}   68 {date} archetypes
+-rw-r--r--  1 {user} {group}  107 {date} config.toml
+drwxr-xr-x  2 {user} {group}   68 {date} content
+drwxr-xr-x  2 {user} {group}   68 {date} data
+drwxr-xr-x  2 {user} {group}   68 {date} layouts
+drwxr-xr-x  2 {user} {group}   68 {date} static
+drwxr-xr-x  2 {user} {group}   68 {date} themes
+</code></pre>
+
+<p>Take a look in the <code>./content/</code> and <code>./themes/</code> directories to confirm
+they are empty.</p>
+
+<p>The other directories
+(<code>./archetypes/</code>, <code>./data/</code>, <code>./layouts/</code> and <code>./static/</code>)
+are used for customizing a named theme.
+That&rsquo;s a topic for a different tutorial, so please ignore them for now.</p>
+
+<h3 id="render">Render</h3>
+
+<p>Running the <code>hugo</code> command with no options will read
+all of the available content and render the HTML files. Also, it will copy
+all the static files (that&rsquo;s everything besides content).
+Since we have an empty web site, Hugo won&rsquo;t be doing much.
+However, generally speaking, Hugo does this very quickly:</p>
+
+<pre><code class="language-bash">$ hugo --verbose
+INFO: {date} {source} Using config file: /tmp/mySite/config.toml
+WARN: {date} {source} No theme set
+INFO: {date} {source} /tmp/mySite/static/ is the only static directory available to sync from
+INFO: {date} {source} syncing static files to /tmp/mySite/public/
+Started building site
+WARN: {date} {source} Unable to locate layout for homepage: [index.html _default/list.html]
+WARN: {date} {source} &quot;/&quot; is rendered empty
+=============================================================
+Your rendered home page is blank: /index.html is zero-length
+ * Did you specify a theme on the command-line or in your
+   &quot;config.toml&quot; file?  (Current theme: &quot;&quot;)
+=============================================================
+WARN: {date} {source} Unable to locate layout for 404 page: [404.html]
+WARN: {date} {source} &quot;404.html&quot; is rendered empty
+0 draft content
+0 future content
+0 expired content
+0 pages created
+0 non-page files copied
+0 paginator pages created
+0 tags created
+0 categories created
+in 4 ms
+</code></pre>
+
+<p>The &ldquo;<code>--verbose</code>&rdquo; flag gives extra information that will be helpful
+whenever we are developing a template.
+Every line of the output starting with &ldquo;INFO:&rdquo; or &ldquo;WARN:&rdquo; is present
+because we used that flag. The lines that start with &ldquo;WARN:&rdquo;
+are warning messages. We&rsquo;ll go over them later.</p>
+
+<p>We can verify that the command worked by looking at the directory again:</p>
+
+<pre><code class="language-bash">$ ls -l
+total 8
+drwxr-xr-x  2 {user} {group}   68 {date} archetypes
+-rw-r--r--  1 {user} {group}  107 {date} config.toml
+drwxr-xr-x  2 {user} {group}   68 {date} content
+drwxr-xr-x  2 {user} {group}   68 {date} data
+drwxr-xr-x  2 {user} {group}   68 {date} layouts
+drwxr-xr-x  6 {user} {group}  204 {date} public
+drwxr-xr-x  2 {user} {group}   68 {date} static
+drwxr-xr-x  2 {user} {group}   68 {date} themes
+</code></pre>
+
+<p>See that new <code>./public/</code> directory?
+Hugo placed all its rendered content there.
+When you&rsquo;re ready to publish your web site, that&rsquo;s the place to start.
+For now, though, let&rsquo;s just confirm we have the files we expect
+for a web site with no content:</p>
+
+<pre><code class="language-bash">$ ls -l public/
+total 16
+-rw-r--r--  1 {user} {group}    0 {date} 404.html
+-rw-r--r--  1 {user} {group}    0 {date} index.html
+-rw-r--r--  1 {user} {group}  511 {date} index.xml
+-rw-r--r--  1 {user} {group}  210 {date} sitemap.xml
+</code></pre>
+
+<p>Hugo rendered two XML files and some empty HTML files.
+The XML files are used for RSS feeds. Hugo has an opinion about what
+those feeds should contain, so it populated those files.
+Hugo has no opinion on the look or content of your web site,
+so it left those files empty.</p>
+
+<p>If you look back at the output from the <code>hugo server</code> command,
+you&rsquo;ll notice that Hugo said:</p>
+
+<pre><code class="language-bash">0 pages created
+</code></pre>
+
+<p>That&rsquo;s because Hugo doesn&rsquo;t count the home page, the 404 error page,
+or the RSS feed files as pages.</p>
+
+<h3 id="serve">Serve</h3>
+
+<p>Let&rsquo;s verify you can run the built-in web server &mdash;
+that&rsquo;ll shorten your development cycle, dramatically.
+Start it, by running the <code>hugo server</code> command.
+If successful, you&rsquo;ll see output similar to the following:</p>
+
+<pre><code class="language-bash">$ hugo server --verbose
+INFO: {date} {source} Using config file: /tmp/mySite/config.toml
+WARN: {date} {source} No theme set
+INFO: {date} {source} /tmp/mySite/static/ is the only static directory available to sync from
+INFO: {date} {source} syncing static files to /
+WARN: {date} {source} Unable to locate layout for homepage: [index.html _default/list.html]
+WARN: {date} {source} &quot;/&quot; is rendered empty
+=============================================================
+Your rendered home page is blank: /index.html is zero-length
+ * Did you specify a theme on the command-line or in your
+   &quot;config.toml&quot; file?  (Current theme: &quot;&quot;)
+=============================================================
+WARN: {date} {source} Unable to locate layout for 404 page: [404.html]
+WARN: {date} {source} &quot;404.html&quot; is rendered empty
+0 draft content
+0 future content
+0 expired content
+0 pages created
+0 non-page files copied
+0 paginator pages created
+0 tags created
+0 categories created
+in 3 ms
+Watching for changes in /tmp/mySite/{data,content,layouts,static}
+Serving pages from memory
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+</code></pre>
+
+<p>Connect to the listed URL (it&rsquo;s on the line that begins with
+<code>Web Server is available</code>). If everything&rsquo;s working correctly,
+you should get a page that shows nothing.</p>
+
+<h3 id="warnings">Warnings</h3>
+
+<p>Let&rsquo;s go back and look at some of those warnings again:</p>
+
+<pre><code class="language-bash">WARN: {date} {source} Unable to locate layout for 404 page: [404.html]
+WARN: {date} {source} Unable to locate layout for homepage: [index.html _default/list.html]
+</code></pre>
+
+<p>The 404 warning is easy to explain &mdash; it&rsquo;s because we haven&rsquo;t created
+the template file <code>layouts/404.html</code>. Hugo uses this to render an HTML file
+which serves &ldquo;page not found&rdquo; errors. However,
+the 404 page is a topic for a separate tutorial.</p>
+
+<p>Regarding the home page warning: the first layout Hugo looked for was
+<code>layouts/index.html</code>. Note that Hugo uses this file for the home page only.</p>
+
+<p>It&rsquo;s good that Hugo lists the files it seeks, when
+we give it the verbose flag. For the home page, these files are
+<code>layouts/index.html</code> and <code>layouts/_default/list.html</code>.
+Later, we&rsquo;ll cover some rules which explain these paths
+(including their basenames). For now, just remember that
+Hugo couldn&rsquo;t find a template to use for the home page, and it said so.</p>
+
+<p>All right! So, now &mdash; after these few steps &mdash; you have a working
+installation, and a web site foundation you can build upon.
+All that&rsquo;s left is to add some content, as well as a theme to display it.</p>
+
+<h2 id="theme-1">Theme</h2>
+
+<p>Hugo doesn&rsquo;t ship with a default theme. However, a large number of themes
+are easily available: for example, at
+<a href="https://github.com/spf13/hugoThemes">hugoThemes</a>.
+Also, Hugo comes with a command to generate them.</p>
+
+<p>We&rsquo;re going to generate a new theme called Zafta.
+The goal of this tutorial is simply to show you how to create
+(in a theme) the minimal files Hugo needs in order to display your content.
+Therefore, the theme will exclude CSS &mdash;
+it&rsquo;ll be functional, not beautiful.</p>
+
+<p>Every theme has its own opinions on content and layout. For example, this
+Zafta theme prefers the Type &ldquo;article&rdquo; over the Types &ldquo;blog&rdquo; or &ldquo;post.&rdquo;
+Strong opinions make for simpler templates, but unconventional opinions
+make themes tougher for other users. So when you develop a theme, you should
+consider the value of adopting the terms used by themes similar to yours.</p>
+
+<h3 id="skeleton">Skeleton</h3>
+
+<p>Let&rsquo;s press Ctrl+C and use the <code>hugo new theme</code> command
+to generate the skeleton of a theme. The result is a directory structure
+containing empty files for you to fill out:</p>
+
+<pre><code class="language-bash">$ hugo new theme zafta
+
+$ find themes -type f | xargs ls -l
+-rw-r--r--  1 {user} {group}     8 {date} themes/zafta/archetypes/default.md
+-rw-r--r--  1 {user} {group}     0 {date} themes/zafta/layouts/404.html
+-rw-r--r--  1 {user} {group}     0 {date} themes/zafta/layouts/_default/list.html
+-rw-r--r--  1 {user} {group}     0 {date} themes/zafta/layouts/_default/single.html
+-rw-r--r--  1 {user} {group}     0 {date} themes/zafta/layouts/index.html
+-rw-r--r--  1 {user} {group}     0 {date} themes/zafta/layouts/partials/footer.html
+-rw-r--r--  1 {user} {group}     0 {date} themes/zafta/layouts/partials/header.html
+-rw-r--r--  1 {user} {group}  1081 {date} themes/zafta/LICENSE.md
+-rw-r--r--  1 {user} {group}   450 {date} themes/zafta/theme.toml
+</code></pre>
+
+<p>The skeleton includes templates (files ending in <code>.html</code>), a license file,
+a description of your theme (<code>theme.toml</code>), and a default archetype file.</p>
+
+<p>When you&rsquo;re developing a real theme, please remember to fill out files
+<code>theme.toml</code> and <code>LICENSE.md</code>. They&rsquo;re optional, but if you&rsquo;re going to
+distribute your theme, it tells the world who to praise (or blame).
+It&rsquo;s also important to declare your choice of license, so people will know
+whether (or where) they can use your theme.</p>
+
+<p>Note that the skeleton theme&rsquo;s template files are empty. Don&rsquo;t worry;
+we&rsquo;ll change that shortly:</p>
+
+<pre><code class="language-bash">$ find themes/zafta -name '*.html' | xargs ls -l
+-rw-r--r--  1 {user} {group}  0 {date} themes/zafta/layouts/404.html
+-rw-r--r--  1 {user} {group}  0 {date} themes/zafta/layouts/_default/list.html
+-rw-r--r--  1 {user} {group}  0 {date} themes/zafta/layouts/_default/single.html
+-rw-r--r--  1 {user} {group}  0 {date} themes/zafta/layouts/index.html
+-rw-r--r--  1 {user} {group}  0 {date} themes/zafta/layouts/partials/footer.html
+-rw-r--r--  1 {user} {group}  0 {date} themes/zafta/layouts/partials/header.html
+</code></pre>
+
+<h3 id="select">Select</h3>
+
+<p>Now that we&rsquo;ve created a theme we can work with, it&rsquo;s a good idea
+to add its name to the configuration file. This is optional, because
+it&rsquo;s possible to add &ldquo;-t zafta&rdquo; to all your commands.
+I like to put it in the configuration file because I like
+shorter command lines. If you don&rsquo;t put it in the configuration file,
+or specify it on the command line, sometimes you won&rsquo;t get the template
+you&rsquo;re expecting.</p>
+
+<p>So, let&rsquo;s edit your configuration file to add the theme name:</p>
+
+<pre><code class="language-toml">$ vi config.toml
+theme = &quot;zafta&quot;
+baseURL = &quot;http://example.org/&quot;
+title = &quot;My New Hugo Site&quot;
+languageCode = &quot;en-us&quot;
+:wq
+</code></pre>
+
+<h3 id="themed-render">Themed Render</h3>
+
+<p>Now that we have a theme (albeit empty), let&rsquo;s render the web site again:</p>
+
+<pre><code class="language-bash">$ hugo --verbose
+INFO: {date} {source} Using config file: /tmp/mySite/config.toml
+INFO: {date} {source} using a UnionFS for static directory comprised of:
+INFO: {date} {source} Base: /tmp/mySite/themes/zafta/static
+INFO: {date} {source} Overlay: /tmp/mySite/static/
+INFO: {date} {source} syncing static files to /tmp/mySite/public/
+Started building site
+WARN: {date} {source} &quot;/&quot; is rendered empty
+=============================================================
+Your rendered home page is blank: /index.html is zero-length
+ * Did you specify a theme on the command-line or in your
+   &quot;config.toml&quot; file?  (Current theme: &quot;zafta&quot;)
+=============================================================
+WARN: {date} {source} &quot;404.html&quot; is rendered empty
+0 draft content
+0 future content
+0 expired content
+0 pages created
+0 non-page files copied
+0 paginator pages created
+0 tags created
+0 categories created
+in 4 ms
+</code></pre>
+
+<p>Did you notice the output is different?
+Two previous warning messages have disappeared, which contained the words
+&ldquo;Unable to locate layout&rdquo; for your home page and the 404 page.
+And, a new informational message tells us Hugo is accessing your theme&rsquo;s tree
+(<code>./themes/zafta/</code>).</p>
+
+<p>Let&rsquo;s check the <code>./public/</code> directory to see what Hugo rendered:</p>
+
+<pre><code class="language-bash">$ ls -l public/
+total 16
+-rw-r--r--  1 {user} {group}    0 {date} 404.html
+drwxr-xr-x  2 {user} {group}   68 {date} css
+-rw-r--r--  1 {user} {group}    0 {date} index.html
+-rw-r--r--  1 {user} {group}  511 {date} index.xml
+drwxr-xr-x  2 {user} {group}   68 {date} js
+-rw-r--r--  1 {user} {group}  210 {date} sitemap.xml
+</code></pre>
+
+<p>It&rsquo;s similar to what we had before, without a theme.
+We&rsquo;d expect so, since all your theme&rsquo;s templates are empty. But notice:
+in <code>./public/</code>, Hugo created the <code>css/</code> and <code>js/</code> directories.
+That&rsquo;s because Hugo found them in your theme&rsquo;s <code>static/</code> directory:</p>
+
+<pre><code class="language-bash">$ ls -l themes/zafta/static/
+total 0
+drwxr-xr-x  2 {user} {group}  68 {date} css
+drwxr-xr-x  2 {user} {group}  68 {date} js
+</code></pre>
+
+<h4 id="home-1">Home</h4>
+
+<p>In a Hugo web site, each kind of page is informed (primarily) by just one
+of the many different kinds of templates available;
+yet the home page is special, because it gets its own kind of template,
+and its own template file.</p>
+
+<p>Hugo uses template file <code>layouts/index.html</code> to render the home page&rsquo;s HTML.
+Although Hugo&rsquo;s documentation may state that this file is the home page&rsquo;s
+only required template, Hugo&rsquo;s earlier warning message showed it actually
+looks for two different templates:</p>
+
+<pre><code class="language-bash">WARN: {date} {source} Unable to locate layout for homepage: [index.html _default/list.html]
+</code></pre>
+
+<h4 id="empty">Empty</h4>
+
+<p>When Hugo generated your theme, it included an empty home page template.
+Whenever Hugo renders your web site, it seeks that same template and uses it
+to render the HTML for the home page. Currently, the template file is empty,
+so the output HTML file is empty, too. Whenever we add rules to that template,
+Hugo will use them in rendering the home page:</p>
+
+<pre><code class="language-bash">$ find * -name index.html | xargs ls -l
+-rw-r--r--  1 {user} {group}  0 {date} public/index.html
+-rw-r--r--  1 {user} {group}  0 {date} themes/zafta/layouts/index.html
+</code></pre>
+
+<p>As we&rsquo;ll see later, Hugo follows this same pattern for all its templates.</p>
+
+<h2 id="static-files">Static Files</h2>
+
+<p>Hugo does two things when it renders your web site.
+Besides using templates to transform your content into HTML,
+it also incorporates your static files. Hugo&rsquo;s rule is simple:
+unlike with templates and content, static files aren&rsquo;t transformed.
+Hugo copies them over, exactly as they are.</p>
+
+<p>Hugo assumes that your web site will use both CSS and JavaScript,
+so it generates some directories in your theme to hold them.
+Remember opinions? Well, Hugo&rsquo;s opinion is that you&rsquo;ll store your CSS
+in directory <code>static/css/</code>, and your JavaScript in directory <code>static/js/</code>.
+If you don&rsquo;t like that, you can relocate these directories
+or change their names (as long as they remain in your theme&rsquo;s <code>static/</code> tree),
+or delete them completely.
+Hugo is nice enough to offer its opinion; yet it still behaves nicely,
+if you disagree:</p>
+
+<pre><code class="language-bash">$ find themes/zafta/* -type d | xargs ls -dl
+drwxr-xr-x  3 {user} {group}  102 {date} themes/zafta/archetypes
+drwxr-xr-x  6 {user} {group}  204 {date} themes/zafta/layouts
+drwxr-xr-x  4 {user} {group}  136 {date} themes/zafta/layouts/_default
+drwxr-xr-x  4 {user} {group}  136 {date} themes/zafta/layouts/partials
+drwxr-xr-x  4 {user} {group}  136 {date} themes/zafta/static
+drwxr-xr-x  2 {user} {group}   68 {date} themes/zafta/static/css
+drwxr-xr-x  2 {user} {group}   68 {date} themes/zafta/static/js
+</code></pre>
+
+<h2 id="theme-development">Theme Development</h2>
+
+<p>Generally (using any kind of software), working on a theme means
+changing your files, serving your web site again, and then verifying
+the resulting improvements in your browser.
+With Hugo, this way of working is quite easy:</p>
+
+<ul>
+<li>First purge the <code>./public/</code> tree. (This is optional but useful,
+if you want to start with a clean slate.)</li>
+<li>Run the built-in Hugo web server.</li>
+<li>Open your web site in a browser &mdash; and then:</li>
+</ul>
+
+<ol>
+<li>Edit your theme;</li>
+<li>Glance at your browser window to see your changes; and</li>
+<li>Repeat.</li>
+</ol>
+
+<p>I&rsquo;ll throw in one more opinion: <strong><em>never</em></strong> directly edit a theme on a live
+web site. Instead, always develop <strong><em>using a copy</em></strong>. First, make some changes
+to your theme and test them. Afterwards, <strong>when you&rsquo;ve got them working,</strong>
+copy them to your web site. For added safety, use a tool like Git to keep
+some revision history of your content, and of your theme. Believe me:
+it&rsquo;s too easy to lose your changes, and your mind!</p>
+
+<p>Check out the main Hugo web site for information about using Git with Hugo.</p>
+
+<h3 id="purge">Purge</h3>
+
+<p>When rendering your web site, Hugo will create new files in the <code>./public/</code>
+tree and update existing ones. But it won&rsquo;t delete files that are
+no longer used. For example, files previously rendered with
+(what is now) the wrong basename, or in the wrong directory, will remain.
+Later, if you leave them, they&rsquo;ll likely confuse you.
+Cleaning out your <code>./public/</code> files prior to rendering can help.</p>
+
+<p>When Hugo is running in web server mode (as of version 0.15),
+it doesn&rsquo;t actually write the files. Instead,
+it keeps all the rendered files in memory. So, you can &ldquo;clean&rdquo; up
+your files simply by stopping and restarting the web server.</p>
+
+<h3 id="serve-1">Serve</h3>
+
+<h4 id="watch">Watch</h4>
+
+<p>Hugo&rsquo;s watch functionality monitors the relevant content, theme and
+(overriding) site trees for filesystem changes,
+and renders your web site again automatically, when changes are detected.</p>
+
+<p>By default, watch is
+enabled when in web server mode (<code>hugo server</code>),
+but disabled for the web site renderer (<code>hugo</code>).</p>
+
+<p>In some use cases,
+Hugo&rsquo;s web site renderer should continue running and watch &mdash; simply
+type <code>hugo --watch</code> on the command line.</p>
+
+<p>Sometimes with Docker containers (and Heroku slugs),
+the site sources may live on a read-only filesystem.
+In that scenario, it makes no sense
+for Hugo&rsquo;s web server to watch for file changes &mdash; so
+use <code>hugo server --watch=false</code>.</p>
+
+<h4 id="reload">Reload</h4>
+
+<p>Hugo&rsquo;s built in web server includes
+<a href="/extras/livereload/">LiveReload</a> functionality. When any page is updated
+in the filesystem, the web browser is told to refresh its currently-open tabs
+from your web site. Usually, this happens faster than you can say,
+&ldquo;Wow, that&rsquo;s totally amazing!&rdquo;</p>
+
+<h3 id="workflow">Workflow</h3>
+
+<p>Again,
+I recommend you use the following commands as the basis for your workflow:</p>
+
+<pre><code class="language-bash"># purge old files. Hugo will recreate the public directory
+$ rm -rf public/
+
+# run Hugo in watch mode with LiveReload;
+# when you're done, stop the web server
+$ hugo server --verbose
+Press Ctrl+C to stop
+</code></pre>
+
+<p>Below is some sample output showing Hugo detecting a change in the home page
+template. (Actually, the change is the edit we&rsquo;re about to do.) Once it&rsquo;s
+rendered again, the web browser automatically reloads the page.</p>
+
+<p>(As I said above &mdash; it&rsquo;s amazing:)</p>
+
+<pre><code class="language-bash">$ rm -rf public/
+
+$ hugo server --verbose
+INFO: {date} {source} Using config file: /tmp/mySite/config.toml
+INFO: {date} {source} using a UnionFS for static directory comprised of:
+INFO: {date} {source} Base: /tmp/mySite/themes/zafta/static
+INFO: {date} {source} Overlay: /tmp/mySite/static/
+INFO: {date} {source} syncing static files to /
+Started building site
+WARN: {date} {source} &quot;/&quot; is rendered empty
+=============================================================
+Your rendered home page is blank: /index.html is zero-length
+ * Did you specify a theme on the command-line or in your
+   &quot;config.toml&quot; file?  (Current theme: &quot;&quot;)
+=============================================================
+WARN: {date} {source} &quot;404.html&quot; is rendered empty
+0 draft content
+0 future content
+0 expired content
+0 pages created
+0 non-page files copied
+0 paginator pages created
+0 tags created
+0 categories created
+in 4 ms
+Watching for changes in /tmp/mySite/{data,content,layouts,static,themes}
+Serving pages from memory
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+INFO: {date} {source} Received System Events: [&quot;/tmp/mySite/themes/zafta/layouts/index.html&quot;: WRITE]
+
+Change detected, rebuilding site
+{date}
+Template changed /tmp/mySite/themes/zafta/layouts/index.html
+WARN: {date} {source} &quot;404.html&quot; is rendered empty
+0 draft content
+0 future content
+0 expired content
+0 pages created
+0 non-page files copied
+0 paginator pages created
+0 tags created
+0 categories created
+in 3 ms
+</code></pre>
+
+<h2 id="home-template">Home Template</h2>
+
+<p>The home page is one of the few special pages Hugo renders automatically.
+As mentioned earlier, it looks in your theme&rsquo;s <code>layouts/</code> tree for one
+of two files:</p>
+
+<ol>
+<li><code>index.html</code></li>
+<li><code>_default/list.html</code></li>
+</ol>
+
+<p>We could edit the default template, but a good design principle is to edit
+the most specific template available. That&rsquo;s not a hard-and-fast rule
+(in fact, in this tutorial, we&rsquo;ll break it a few times),
+but it&rsquo;s a good generalization.</p>
+
+<h3 id="static">Static</h3>
+
+<p>Right now, your home page is empty because you&rsquo;ve added no content,
+and because its template includes no logic. Let&rsquo;s change that by adding
+some text to your home page template (<code>layouts/index.html</code>):</p>
+
+<pre><code class="language-html">$ vi themes/zafta/layouts/index.html
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+  &lt;p&gt;Hugo says hello!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+:wq
+</code></pre>
+
+<p>Let&rsquo;s press Ctrl+C and render the web site, and then verify the results:</p>
+
+<pre><code class="language-html">$ rm -rf public/
+
+$ hugo --verbose
+INFO: {date} {source} Using config file: /tmp/mySite/config.toml
+INFO: {date} {source} using a UnionFS for static directory comprised of:
+INFO: {date} {source} Base: /tmp/mySite/themes/zafta/static
+INFO: {date} {source} Overlay: /tmp/mySite/static/
+INFO: {date} {source} syncing static files to /tmp/mySite/public/
+Started building site
+WARN: {date} {source} &quot;404.html&quot; is rendered empty
+0 draft content
+0 future content
+0 expired content
+0 pages created
+0 non-page files copied
+0 paginator pages created
+0 tags created
+0 categories created
+in 4 ms
+
+$ ls -l public/index.html
+-rw-r--r--  1 {user} {group}  72 {date} public/index.html
+
+$ cat public/index.html
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+  &lt;p&gt;Hugo says hello!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3 id="dynamic">Dynamic</h3>
+
+<p>A <strong><em>dynamic</em></strong> home page? Because Hugo is a <em>static web site</em> generator,
+the word <em>dynamic</em> seems odd, doesn&rsquo;t it? But this means arranging for your
+home page to reflect the content in your web site automatically,
+each time Hugo renders it.</p>
+
+<p>To accomplish that, later we&rsquo;ll add an iterator to your home page template.</p>
+
+<h2 id="article">Article</h2>
+
+<p>Now that Hugo is successfully rendering your home page with static content,
+let&rsquo;s add more pages to your web site. We&rsquo;ll display some new articles
+as a list on your home page; and we&rsquo;ll display each article
+on its own page, too.</p>
+
+<p>Hugo has a command to generate an entry skeleton for new content,
+just as it does for web sites and themes:</p>
+
+<pre><code class="language-bash">$ hugo --verbose new article/First.md
+INFO: {date} {source} Using config file: /tmp/mySite/config.toml
+INFO: {date} {source} attempting to create  article/First.md of article
+INFO: {date} {source} curpath: /tmp/mySite/themes/zafta/archetypes/default.md
+INFO: {date} {source} creating /tmp/mySite/content/article/First.md
+/tmp/mySite/content/article/First.md created
+
+$ ls -l content/article/
+total 8
+-rw-r--r--  1 {user} {group}  61 {date} First.md
+</code></pre>
+
+<p>Let&rsquo;s generate a second article, while we&rsquo;re here:</p>
+
+<pre><code class="language-bash">$ hugo --verbose new article/Second.md
+INFO: {date} {source} Using config file: /tmp/mySite/config.toml
+INFO: {date} {source} attempting to create  article/Second.md of article
+INFO: {date} {source} curpath: /tmp/mySite/themes/zafta/archetypes/default.md
+INFO: {date} {source} creating /tmp/mySite/content/article/Second.md
+/tmp/mySite/content/article/Second.md created
+
+$ ls -l content/article/
+total 16
+-rw-r--r--  1 {user} {group}  61 {date} First.md
+-rw-r--r--  1 {user} {group}  62 {date} Second.md
+</code></pre>
+
+<p>Let&rsquo;s edit both those articles. Be careful to preserve their front-matter,
+but append some text to their bodies, as follows:</p>
+
+<pre><code class="language-bash">$ vi content/article/First.md
+In vel ligula tortor. Aliquam erat volutpat.
+Pellentesque at felis eu quam tincidunt dignissim.
+Nulla facilisi.
+
+Pellentesque tempus nisi et interdum convallis.
+In quam ante, vulputate at massa et, rutrum
+gravida dui. Phasellus tristique libero at ex.
+:wq
+
+$ vi content/article/Second.md
+Fusce lacus magna, maximus nec sapien eu,
+porta efficitur neque. Aliquam erat volutpat.
+Vestibulum enim nibh, posuere eu diam nec,
+varius sagittis turpis.
+
+Praesent quis sapien egestas mauris accumsan
+pulvinar. Ut mattis gravida venenatis. Vivamus
+lobortis risus id nisi rutrum, at iaculis.
+:wq
+</code></pre>
+
+<p>So, for example, <code>./content/article/Second.md</code> becomes:</p>
+
+<pre><code class="language-toml">$ cat content/article/Second.md
++++
+date = &quot;2040-01-18T21:08:08-06:00&quot;
+title = &quot;Second&quot;
+
++++
+Fusce lacus magna, maximus nec sapien eu,
+porta efficitur neque. Aliquam erat volutpat.
+Vestibulum enim nibh, posuere eu diam nec,
+varius sagittis turpis.
+
+Praesent quis sapien egestas mauris accumsan
+pulvinar. Ut mattis gravida venenatis. Vivamus
+lobortis risus id nisi rutrum, at iaculis.
+</code></pre>
+
+<p>Let&rsquo;s render the web site, and then verify the results:</p>
+
+<pre><code class="language-bash">$ rm -rf public/
+
+$ hugo --verbose
+INFO: {date} {source} Using config file: /tmp/mySite/config.toml
+INFO: {date} {source} using a UnionFS for static directory comprised of:
+INFO: {date} {source} Base: /tmp/mySite/themes/zafta/static
+INFO: {date} {source} Overlay: /tmp/mySite/static/
+INFO: {date} {source} syncing static files to /tmp/mySite/public/
+Started building site
+INFO: {date} {source} found taxonomies: map[string]string{&quot;tag&quot;:&quot;tags&quot;, &quot;category&quot;:&quot;categories&quot;}
+WARN: {date} {source} &quot;article&quot; is rendered empty
+WARN: {date} {source} &quot;article/Second.html&quot; is rendered empty
+WARN: {date} {source} &quot;article/First.html&quot; is rendered empty
+WARN: {date} {source} &quot;404.html&quot; is rendered empty
+0 draft content
+0 future content
+0 expired content
+2 pages created
+0 non-page files copied
+0 paginator pages created
+0 tags created
+0 categories created
+in 7 ms
+</code></pre>
+
+<p>The output says Hugo rendered (&ldquo;created&rdquo;) two pages.
+Those pages are your new articles:</p>
+
+<pre><code class="language-bash">$ find public -type f -name '*.html' | xargs ls -l
+-rw-r--r--  1 {user} {group}   0 {date} public/404.html
+-rw-r--r--  1 {user} {group}   0 {date} public/article/First/index.html
+-rw-r--r--  1 {user} {group}   0 {date} public/article/index.html
+-rw-r--r--  1 {user} {group}   0 {date} public/article/Second/index.html
+-rw-r--r--  1 {user} {group}  72 {date} public/index.html
+</code></pre>
+
+<p>The new pages are empty, because Hugo rendered their HTML from empty
+template files. The home page doesn&rsquo;t show us the new content, either:</p>
+
+<pre><code class="language-html">$ cat public/index.html
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+  &lt;p&gt;Hugo says hello!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>So, we have to edit the templates, in order to pick up the articles.</p>
+
+<h3 id="single-list">Single &amp; List</h3>
+
+<p>Here again I&rsquo;ll discuss three kinds of Hugo templates. One kind is
+the home page template we edited previously; it&rsquo;s applicable only to
+the home page. Another kind is Single templates, which render output for
+just one content file. The third kind are List templates, which group
+multiple pieces of content before rendering output.</p>
+
+<p>It&rsquo;s important to note that, generally, List templates
+(except the home page template) are named <code>list.html</code>;
+and Single templates are named <code>single.html</code>.</p>
+
+<p>Hugo also has three other kinds of templates:
+Partials, <em>Content Views</em>, and <em>Terms</em>.
+We&rsquo;ll give examples of some Partial templates; but otherwise,
+we won&rsquo;t go into much detail about these.</p>
+
+<h3 id="home-2">Home</h3>
+
+<p>You&rsquo;ll want your home page to list the articles you just created.
+So, let&rsquo;s alter its template file (<code>layouts/index.html</code>) to show them.
+Hugo runs each template&rsquo;s logic whenever it renders that template&rsquo;s web page
+(of course):</p>
+
+<pre><code class="language-html">$ vi themes/zafta/layouts/index.html
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+  {{- range first 10 .Data.Pages }}
+    &lt;h4&gt;&lt;a href=&quot;{{ .Permalink }}&quot;&gt;{{ .Title }}&lt;/a&gt;&lt;/h4&gt;
+  {{- end }}
+&lt;/body&gt;
+&lt;/html&gt;
+:wq
+</code></pre>
+
+<h4 id="engine">Engine</h4>
+
+<p>Hugo uses the <a href="https://gohugo.io/templates/go-templates/">Go language&rsquo;s template
+engine</a>.
+That engine scans your template files for commands enclosed between
+&ldquo;{{&rdquo; and &ldquo;}}&rdquo; (these are doubled, curly braces &mdash; affectionately
+known as &ldquo;mustaches&rdquo;).</p>
+
+<p>BTW, a hyphen, if placed immediately after an opening mustache, or
+immediately before a closing one, will prevent extraneous newlines.
+(This can make Hugo&rsquo;s output look better, when viewed as text.)</p>
+
+<p>So, the mustache commands in your newly-altered template are:</p>
+
+<ol>
+<li>&nbsp;<code>range ...</code></li>
+<li>&nbsp;<code>.Permalink</code></li>
+<li>&nbsp;<code>.Title</code></li>
+<li>&nbsp;<code>end</code></li>
+</ol>
+
+<p>The <code>range</code> command is an iterator. We&rsquo;re using it to go through the latest
+ten pages. (Hugo characterizes some of its HTML output files as &ldquo;pages,&rdquo;
+but not all &mdash; see above.)</p>
+
+<p>Looping through the list of data pages will consider each such HTML file
+that Hugo renders (or rather &mdash; to speak more precisely &mdash; each
+such HTML file that Hugo currently calculates it <em>will</em> render).</p>
+
+<p>It&rsquo;s helpful to remember that Hugo sets some variables, such as <code>.Data</code>, quite
+early in its overall processing. Hugo loads information from every content
+file into that variable, and gives all the templates a chance to process that
+variable&rsquo;s contents, before actually rendering any HTML output files.</p>
+
+<p><code>.Permalink</code> supplies the URL which links to that article&rsquo;s page, and
+<code>.Title</code> supplies the value of its &ldquo;title&rdquo; variable. Hugo obtains this
+from the front-matter in the article&rsquo;s Markdown file.</p>
+
+<p>Automatically, the pages are considered in descending order of the generation
+times of their Markdown files (actually, based on the value of the &ldquo;date&rdquo;
+variable in their front-matter) so that the latest is first (naturally).</p>
+
+<p>The <code>end</code> command signals the end of the range iterator. The engine
+loops back to the top of the iterator, whenever it finds <code>end.</code>
+Everything between <code>range</code> and <code>end</code> is reevaluated,
+each time the engine goes through the iterator.</p>
+
+<p>For the present template, this means that the titles of your latest
+ten pages (or however many exist, if that&rsquo;s less) become the
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent">textContent</a>
+of an equivalent number of copies Hugo makes, of your level-four
+subheading tags (and anchor tags). <code>.Permalink</code> enables these to link
+to the actual articles.</p>
+
+<p>Let&rsquo;s render your web site, and then verify the results:</p>
+
+<pre><code class="language-html">$ rm -rf public/
+
+$ hugo --verbose
+INFO: {date} {source} Using config file: /tmp/mySite/config.toml
+INFO: {date} {source} using a UnionFS for static directory comprised of:
+INFO: {date} {source} Base: /tmp/mySite/themes/zafta/static
+INFO: {date} {source} Overlay: /tmp/mySite/static/
+INFO: {date} {source} syncing static files to /tmp/mySite/public/
+Started building site
+INFO: {date} {source} found taxonomies: map[string]string{&quot;tag&quot;:&quot;tags&quot;, &quot;category&quot;:&quot;categories&quot;}
+WARN: {date} {source} &quot;article&quot; is rendered empty
+WARN: {date} {source} &quot;article/Second.html&quot; is rendered empty
+WARN: {date} {source} &quot;article/First.html&quot; is rendered empty
+WARN: {date} {source} &quot;404.html&quot; is rendered empty
+0 draft content
+0 future content
+0 expired content
+2 pages created
+0 non-page files copied
+0 paginator pages created
+0 tags created
+0 categories created
+in 7 ms
+
+$ find public -type f -name '*.html' | xargs ls -l
+-rw-r--r--  1 {user} {group}   0 {date} public/404.html
+-rw-r--r--  1 {user} {group}   0 {date} public/article/First/index.html
+-rw-r--r--  1 {user} {group}   0 {date} public/article/index.html
+-rw-r--r--  1 {user} {group}   0 {date} public/article/Second/index.html
+-rw-r--r--  1 {user} {group} 232 {date} public/index.html
+
+$ cat public/index.html
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+    &lt;h4&gt;&lt;a href=&quot;http://example.org/article/Second/&quot;&gt;Second&lt;/a&gt;&lt;/h4&gt;
+    &lt;h4&gt;&lt;a href=&quot;http://example.org/article/First/&quot;&gt;First&lt;/a&gt;&lt;/h4&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3 id="all-done">All Done</h3>
+
+<p>Congratulations! Your home page shows the titles of your two articles, along
+with the links to them. The articles themselves are still empty. But,
+let&rsquo;s take a moment to appreciate what we&rsquo;ve done, so far!</p>
+
+<p>Your home page template (<code>layouts/index.html</code>) now renders output dynamically.
+Believe it or not, by inserting the range command inside those doubled
+curly braces, you&rsquo;ve learned everything you need to know &mdash;
+essentially &mdash; about developing a theme.</p>
+
+<p>All that&rsquo;s left is understanding which of your templates renders each content
+file, and becoming more familiar with the commands for the template engine.</p>
+
+<h2 id="more">More</h2>
+
+<p>Well &mdash; if things were so simple, this tutorial would be much shorter!</p>
+
+<p>Some things are still useful to learn, because they&rsquo;ll make creating new
+templates <em>much</em> easier &mdash; so, I&rsquo;ll cover them, now.</p>
+
+<h3 id="base-url">Base URL</h3>
+
+<p>While developing and testing your theme, did you notice that the links in the
+rendered <code>./public/index.html</code> file use the full &ldquo;baseURL&rdquo; from your
+<code>./config.toml</code> file? That&rsquo;s because those files are intended to be deployed
+to your web server.</p>
+
+<p>Whenever you test your theme, you start Hugo in web server mode
+(with <code>hugo server</code>) and connect to it with your web browser.
+That command is smart enough to replace the &ldquo;baseURL&rdquo; with
+<code>http://localhost:1313</code> on the fly, so that the links automatically
+work for you.</p>
+
+<p>That&rsquo;s another reason why we recommend testing with the built-in web server.</p>
+
+<h3 id="content-1">Content</h3>
+
+<p>The articles you&rsquo;ve been working with are in your <code>./content/article/</code>
+directory. That means their <em>Section</em> (as far as templates are concerned)
+is &ldquo;article&rdquo;. Unless we do something unusual in their front-matter, their
+<em>Type</em> is also &ldquo;article&rdquo;.</p>
+
+<h4 id="search">Search</h4>
+
+<p>Hugo uses the Section and Type to find a template file for every piece of
+content it renders. Hugo first will seek a template file in subdirectories of
+<code>layouts/</code> that match its Section or Type name (i.e., in <code>layouts/SECTION/</code>
+or <code>layouts/TYPE/</code>). If it can&rsquo;t find a file there, then it will look in the
+<code>layouts/_default/</code> directory. Other documentation covers some twists about
+categories and tags, but we won&rsquo;t use those in this tutorial. Therefore,
+we can assume that Hugo will try first <code>layouts/article/single.html</code>, then
+<code>layouts/_default/single.html</code>.</p>
+
+<p>Now that we know the search rule, let&rsquo;s see what&rsquo;s available:</p>
+
+<pre><code class="language-bash">$ find themes/zafta -name single.html | xargs ls -l
+-rw-r--r--  1 {user} {group}  0 {date} themes/zafta/layouts/_default/single.html
+</code></pre>
+
+<p>If you look back at the articles Hugo has rendered, you can see that
+they were empty. Now we can see that this is because Hugo sought
+<code>layouts/article/single.html</code> but couldn&rsquo;t find it, and template
+<code>layouts/_default/single.html</code> was empty. Therefore, the rendered article
+file was empty, too.</p>
+
+<p>So, we could either create a new template, <code>layouts/article/single.html</code>,
+or edit the default one.</p>
+
+<h4 id="default-single">Default Single</h4>
+
+<p>Since we know of no other content Types, let&rsquo;s start by editing the default
+template file, <code>layouts/_default/single.html</code>.</p>
+
+<p>As we mentioned earlier, you always should edit (or create) the most
+specific template first, in order to avoid accidentally changing how other
+content is displayed. However, we&rsquo;re breaking that rule intentionally,
+just so we can explore how the default is used.</p>
+
+<p>Remember, any content &mdash; for which we don&rsquo;t create a specific template
+&mdash; will end up using this default template. That can be good or bad.
+Bad, because I know we&rsquo;ll be adding different Types of content, and we&rsquo;ll
+eventually undo some of the changes we&rsquo;ve made. Good, because then we&rsquo;ll be
+able to see some results immediately. It&rsquo;s also good to create the default
+template first, because with it, we can start to develop the basic layout
+for the web site.</p>
+
+<p>As we add more content Types, we&rsquo;ll refactor this file and move its logic
+around. Hugo makes this fairly painless, so we&rsquo;ll accept the cost and proceed.</p>
+
+<p>Please see Hugo&rsquo;s documentation on template rendering, for all the details on
+determining which template to use. And, as the documentation mentions, if
+your web site is a single-page application (SPA), you can delete all the
+other templates and work with just the default Single one. By itself,
+that fact provides a refreshing amount of joy.</p>
+
+<p>Let&rsquo;s edit the default template file (<code>layouts/_default/single.html</code>):</p>
+
+<pre><code class="language-html">$ vi themes/zafta/layouts/_default/single.html
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;{{ .Title }}&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;{{ .Title }}&lt;/h1&gt;
+  &lt;h6&gt;{{ .Date.Format &quot;Mon, Jan 2, 2006&quot; }}&lt;/h6&gt;
+  {{ .Content }}
+  &lt;h4&gt;&lt;a href=&quot;{{ .Site.BaseURL }}&quot;&gt;Home&lt;/a&gt;&lt;/h4&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+:wq
+</code></pre>
+
+<h4 id="verify">Verify</h4>
+
+<p>Let&rsquo;s render the web site, and verify the results:</p>
+
+<pre><code class="language-bash">$ rm -rf public/
+
+$ hugo --verbose
+INFO: {date} {source} Using config file: /tmp/mySite/config.toml
+INFO: {date} {source} using a UnionFS for static directory comprised of:
+INFO: {date} {source} Base: /tmp/mySite/themes/zafta/static
+INFO: {date} {source} Overlay: /tmp/mySite/static/
+INFO: {date} {source} syncing static files to /tmp/mySite/public/
+Started building site
+INFO: {date} {source} found taxonomies: map[string]string{&quot;tag&quot;:&quot;tags&quot;, &quot;category&quot;:&quot;categories&quot;}
+WARN: {date} {source} &quot;article&quot; is rendered empty
+WARN: {date} {source} &quot;404.html&quot; is rendered empty
+0 draft content
+0 future content
+0 expired content
+2 pages created
+0 non-page files copied
+0 paginator pages created
+0 tags created
+0 categories created
+in 7 ms
+
+$ find public -type f -name '*.html' | xargs ls -l
+-rw-r--r--  1 {user} {group}    0 {date} public/404.html
+-rw-r--r--  1 {user} {group}  473 {date} public/article/First/index.html
+-rw-r--r--  1 {user} {group}    0 {date} public/article/index.html
+-rw-r--r--  1 {user} {group}  514 {date} public/article/Second/index.html
+-rw-r--r--  1 {user} {group}  232 {date} public/index.html
+</code></pre>
+
+<p>Note that although Hugo rendered a file, to list your articles:
+<code>./public/article/index.html</code>, the file is empty, because we don&rsquo;t have
+a template for it. (However: see next.) The other HTML files contain your
+content, as we can see below:</p>
+
+<pre><code class="language-html">$ cat public/article/First/index.html
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;First&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;First&lt;/h1&gt;
+  &lt;h6&gt;Wed, Jan 18, 2040&lt;/h6&gt;
+  &lt;p&gt;In vel ligula tortor. Aliquam erat volutpat.
+Pellentesque at felis eu quam tincidunt dignissim.
+Nulla facilisi.&lt;/p&gt;
+
+&lt;p&gt;Pellentesque tempus nisi et interdum convallis.
+In quam ante, vulputate at massa et, rutrum
+gravida dui. Phasellus tristique libero at ex.&lt;/p&gt;
+
+  &lt;h4&gt;&lt;a href=&quot;http://example.org/&quot;&gt;Home&lt;/a&gt;&lt;/h4&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+$ cat public/article/Second/index.html
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Second&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Second&lt;/h1&gt;
+  &lt;h6&gt;Wed, Jan 18, 2040&lt;/h6&gt;
+  &lt;p&gt;Fusce lacus magna, maximus nec sapien eu,
+porta efficitur neque. Aliquam erat volutpat.
+Vestibulum enim nibh, posuere eu diam nec,
+varius sagittis turpis.&lt;/p&gt;
+
+&lt;p&gt;Praesent quis sapien egestas mauris accumsan
+pulvinar. Ut mattis gravida venenatis. Vivamus
+lobortis risus id nisi rutrum, at iaculis.&lt;/p&gt;
+
+  &lt;h4&gt;&lt;a href=&quot;http://example.org/&quot;&gt;Home&lt;/a&gt;&lt;/h4&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>Again, notice that your rendered article files have content.
+You can run <code>hugo server</code> and use your browser to confirm this.
+You should see your home page, and it should contain the titles of both
+articles. Each title should be a link to its respective article.</p>
+
+<p>Each article should be displayed fully on its own page. And at the bottom of
+each article, you should see a link which takes you back to your home page.</p>
+
+<h3 id="article-list">Article List</h3>
+
+<p>Your home page still lists your most recent articles. However &mdash;
+remember, from above, that I mentioned an empty file,
+<code>./public/article/index.html</code>?
+Let&rsquo;s make that show a list of <strong><em>all</em></strong> of your articles
+(not just the latest ten).</p>
+
+<p>We need to decide which template to edit. Key to this, is that
+individual pages always come from Single templates. On the other hand,
+only List templates are capable of rendering pages which display collections
+(or lists) of other pages.</p>
+
+<p>Because the new page will show a listing, we should select a List template.
+Let&rsquo;s take a quick look to see which List templates are available already:</p>
+
+<pre><code class="language-bash">$ find themes/zafta -name list.html | xargs ls -l
+-rw-r--r--  1 {user} {group}  0 {date} themes/zafta/layouts/_default/list.html
+</code></pre>
+
+<p>So, just as before with the single articles, so again now with the list of
+articles, we must decide: whether to edit <code>layouts/_default/list.html</code>,
+or to create <code>layouts/article/list.html</code>.</p>
+
+<h4 id="default-list">Default List</h4>
+
+<p>We still don&rsquo;t have multiple content Types &mdash; so, remaining consistent,
+let&rsquo;s edit the default List template:</p>
+
+<pre><code class="language-html">$ vi themes/zafta/layouts/_default/list.html
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+  &lt;h1&gt;Articles&lt;/h1&gt;
+  {{- range first 10 .Data.Pages }}
+    &lt;h4&gt;&lt;a href=&quot;{{ .Permalink }}&quot;&gt;{{ .Title }}&lt;/a&gt;&lt;/h4&gt;
+  {{- end }}
+  &lt;h4&gt;&lt;a href=&quot;{{ .Site.BaseURL }}&quot;&gt;Home&lt;/a&gt;&lt;/h4&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+:wq
+</code></pre>
+
+<p>Let&rsquo;s render everything again:</p>
+
+<pre><code class="language-bash">$ rm -rf public/
+
+$ hugo --verbose
+INFO: {date} {source} Using config file: /tmp/mySite/config.toml
+INFO: {date} {source} using a UnionFS for static directory comprised of:
+INFO: {date} {source} Base: /tmp/mySite/themes/zafta/static
+INFO: {date} {source} Overlay: /tmp/mySite/static/
+INFO: {date} {source} syncing static files to /tmp/mySite/public/
+Started building site
+INFO: {date} {source} found taxonomies: map[string]string{&quot;tag&quot;:&quot;tags&quot;, &quot;category&quot;:&quot;categories&quot;}
+WARN: {date} {source} &quot;404.html&quot; is rendered empty
+0 draft content
+0 future content
+0 expired content
+2 pages created
+0 non-page files copied
+0 paginator pages created
+0 categories created
+0 tags created
+in 7 ms
+
+$ find public -type f -name '*.html' | xargs ls -l
+-rw-r--r--  1 {user} {group}    0 {date} public/404.html
+-rw-r--r--  1 {user} {group}  473 {date} public/article/First/index.html
+-rw-r--r--  1 {user} {group}  327 {date} public/article/index.html
+-rw-r--r--  1 {user} {group}  514 {date} public/article/Second/index.html
+-rw-r--r--  1 {user} {group}  232 {date} public/index.html
+</code></pre>
+
+<p>Now (as you can see), we have a list of articles. To confirm it,
+type <code>hugo server</code>; then, in your browser, navigate to <code>/article/</code>.
+(Later, we&rsquo;ll link to it.)</p>
+
+<h2 id="about">About</h2>
+
+<p>Let&rsquo;s add an About page, and try to display it at the top level
+(as opposed to the next level down, where we placed your articles).</p>
+
+<h3 id="guide">Guide</h3>
+
+<p>Hugo&rsquo;s default goal is to let the directory structure of the <code>./content/</code>
+tree guide the location of the HTML it renders to the <code>./public/</code> tree.
+Let&rsquo;s check this, by generating an About page at the content&rsquo;s top level:</p>
+
+<pre><code class="language-toml">$ hugo new About.md
+/tmp/mySite/content/About.md created
+
+$ ls -l content/
+total 8
+-rw-r--r--   1 {user} {group}   61 {date} About.md
+drwxr-xr-x   4 {user} {group}  136 {date} article
+
+$ vi content/About.md
++++
+date = &quot;2040-01-18T22:01:00-06:00&quot;
+title = &quot;About&quot;
+
++++
+Neque porro quisquam est qui dolorem
+ipsum quia dolor sit amet consectetur
+adipisci velit.
+:wq
+</code></pre>
+
+<h3 id="check">Check</h3>
+
+<p>Let&rsquo;s render your web site, and check the results:</p>
+
+<pre><code class="language-html">$ rm -rf public/
+
+$ hugo --verbose
+INFO: {date} {source} Using config file: /tmp/mySite/config.toml
+INFO: {date} {source} using a UnionFS for static directory comprised of:
+INFO: {date} {source} Base: /tmp/mySite/themes/zafta/static
+INFO: {date} {source} Overlay: /tmp/mySite/static/
+INFO: {date} {source} syncing static files to /tmp/mySite/public/
+Started building site
+INFO: {date} {source} found taxonomies: map[string]string{&quot;tag&quot;:&quot;tags&quot;, &quot;category&quot;:&quot;categories&quot;}
+WARN: {date} {source} &quot;404.html&quot; is rendered empty
+0 draft content
+0 future content
+0 expired content
+3 pages created
+0 non-page files copied
+0 paginator pages created
+0 tags created
+0 categories created
+in 9 ms
+
+$ ls -l public/
+total 24
+-rw-r--r--  1 {user} {group}     0 {date} 404.html
+drwxr-xr-x  3 {user} {group}   102 {date} About
+drwxr-xr-x  6 {user} {group}   204 {date} article
+drwxr-xr-x  2 {user} {group}    68 {date} css
+-rw-r--r--  1 {user} {group}   316 {date} index.html
+-rw-r--r--  1 {user} {group}  2221 {date} index.xml
+drwxr-xr-x  2 {user} {group}    68 {date} js
+-rw-r--r--  1 {user} {group}   681 {date} sitemap.xml
+
+$ ls -l public/About/
+total 8
+-rw-r--r--  1 {user} {group}  305 {date} index.html
+
+$ cat public/About/index.html
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;About&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;About&lt;/h1&gt;
+  &lt;h6&gt;Wed, Jan 18, 2040&lt;/h6&gt;
+  &lt;p&gt;Neque porro quisquam est qui dolorem
+ipsum quia dolor sit amet consectetur
+adipisci velit.&lt;/p&gt;
+
+  &lt;h4&gt;&lt;a href=&quot;http://example.org/&quot;&gt;Home&lt;/a&gt;&lt;/h4&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>Oh, well. &mdash; Did you notice that your page wasn&rsquo;t rendered at the
+top level? It was rendered to a subdirectory named <code>./public/About/</code>.
+That name came from the basename of your Markdown file <code>./content/About.md</code>.
+Interesting &mdash; but, we&rsquo;ll let that go, for now.</p>
+
+<h3 id="home-3">Home</h3>
+
+<p>One other thing &mdash; let&rsquo;s take a look at your home page:</p>
+
+<pre><code class="language-html">$ cat public/index.html
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+    &lt;h4&gt;&lt;a href=&quot;http://example.org/About/&quot;&gt;About&lt;/a&gt;&lt;/h4&gt;
+    &lt;h4&gt;&lt;a href=&quot;http://example.org/article/Second/&quot;&gt;Second&lt;/a&gt;&lt;/h4&gt;
+    &lt;h4&gt;&lt;a href=&quot;http://example.org/article/First/&quot;&gt;First&lt;/a&gt;&lt;/h4&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>Did you notice that the About link is listed with your articles?
+That&rsquo;s not exactly where we want it; so, let&rsquo;s edit your home page template
+(<code>layouts/index.html</code>):</p>
+
+<pre><code class="language-html">$ vi themes/zafta/layouts/index.html
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+  &lt;h2&gt;Articles&lt;/h2&gt;
+  {{- range first 10 .Data.Pages -}}
+    {{- if eq .Type &quot;article&quot;}}
+      &lt;h4&gt;&lt;a href=&quot;{{ .Permalink }}&quot;&gt;{{ .Title }}&lt;/a&gt;&lt;/h4&gt;
+    {{- end -}}
+  {{- end }}
+  &lt;h2&gt;Pages&lt;/h2&gt;
+  {{- range first 10 .Data.Pages -}}
+    {{- if eq .Type &quot;page&quot; }}
+      &lt;h4&gt;&lt;a href=&quot;{{ .Permalink }}&quot;&gt;{{ .Title }}&lt;/a&gt;&lt;/h4&gt;
+    {{- end -}}
+  {{- end }}
+&lt;/body&gt;
+&lt;/html&gt;
+:wq
+</code></pre>
+
+<p>Let&rsquo;s render your web site, and verify the results:</p>
+
+<pre><code class="language-html">$ rm -rf public/
+
+$ hugo --verbose
+INFO: {date} {source} Using config file: /tmp/mySite/config.toml
+INFO: {date} {source} using a UnionFS for static directory comprised of:
+INFO: {date} {source} Base: /tmp/mySite/themes/zafta/static
+INFO: {date} {source} Overlay: /tmp/mySite/static/
+INFO: {date} {source} syncing static files to /tmp/mySite/public/
+Started building site
+INFO: {date} {source} found taxonomies: map[string]string{&quot;tag&quot;:&quot;tags&quot;, &quot;category&quot;:&quot;categories&quot;}
+WARN: {date} {source} &quot;404.html&quot; is rendered empty
+0 draft content
+0 future content
+0 expired content
+3 pages created
+0 non-page files copied
+0 paginator pages created
+0 tags created
+0 categories created
+in 9 ms
+
+$ cat public/index.html
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+  &lt;h2&gt;Articles&lt;/h2&gt;
+      &lt;h4&gt;&lt;a href=&quot;http://example.org/article/Second/&quot;&gt;Second&lt;/a&gt;&lt;/h4&gt;
+      &lt;h4&gt;&lt;a href=&quot;http://example.org/article/First/&quot;&gt;First&lt;/a&gt;&lt;/h4&gt;
+  &lt;h2&gt;Pages&lt;/h2&gt;
+      &lt;h4&gt;&lt;a href=&quot;http://example.org/About/&quot;&gt;About&lt;/a&gt;&lt;/h4&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>Good! This time, your home page has two Sections: &ldquo;article&rdquo; and &ldquo;page&rdquo;, and
+each Section contains the correct set of headings and links.</p>
+
+<h2 id="template-sharing">Template Sharing</h2>
+
+<p>If you&rsquo;ve been following along on your computer, you might&rsquo;ve noticed that
+your home page doesn&rsquo;t show its title in your browser, although both of your
+article pages do. That&rsquo;s because we didn&rsquo;t add your home page&rsquo;s title to its
+template (<code>layouts/index.html</code>). That would be easy to do &mdash; but instead,
+let&rsquo;s look at a better option.</p>
+
+<p>We can put the common information into a shared template.
+These reside in the <code>layouts/partials/</code> directory.</p>
+
+<h3 id="header-footer">Header &amp; Footer</h3>
+
+<p>In Hugo (as elsewhere), a Partial is a template that&rsquo;s intended to be used
+within other templates. We&rsquo;re going to create a Partial template that will
+contain a header, for all of your page templates to use. That Partial will
+enable us to maintain the header information in a single place, thus easing
+our maintenance. Let&rsquo;s create both the header (<code>layouts/partials/header.html</code>)
+and the footer (<code>layouts/partials/footer.html</code>):</p>
+
+<pre><code class="language-html">$ vi themes/zafta/layouts/partials/header.html
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;{{ .Title }}&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+:wq
+
+$ vi themes/zafta/layouts/partials/footer.html
+  &lt;h4&gt;&lt;a href=&quot;{{ .Site.BaseURL }}&quot;&gt;Home&lt;/a&gt;&lt;/h4&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+:wq
+</code></pre>
+
+<h3 id="calling">Calling</h3>
+
+<p>Any <code>partial</code> is called relative to its conventional location
+<code>layouts/partials/</code>. So, you pass just the basename, followed by the context
+(the period before the closing mustache). For example:</p>
+
+<pre><code class="language-bash">{{ partial &quot;header.html&quot; . }}
+</code></pre>
+
+<h4 id="from-home">From Home</h4>
+
+<p>Let&rsquo;s change your home page template (<code>layouts/index.html</code>)
+in order to use the new header Partial we just created:</p>
+
+<pre><code class="language-html">$ vi themes/zafta/layouts/index.html
+{{ partial &quot;header.html&quot; . }}
+  &lt;h2&gt;Articles&lt;/h2&gt;
+  {{- range first 10 .Data.Pages -}}
+    {{- if eq .Type &quot;article&quot;}}
+      &lt;h4&gt;&lt;a href=&quot;{{ .Permalink }}&quot;&gt;{{ .Title }}&lt;/a&gt;&lt;/h4&gt;
+    {{- end -}}
+  {{- end }}
+  &lt;h2&gt;Pages&lt;/h2&gt;
+  {{- range first 10 .Data.Pages -}}
+    {{- if eq .Type &quot;page&quot; }}
+      &lt;h4&gt;&lt;a href=&quot;{{ .Permalink }}&quot;&gt;{{ .Title }}&lt;/a&gt;&lt;/h4&gt;
+    {{- end -}}
+  {{- end }}
+&lt;/body&gt;
+&lt;/html&gt;
+:wq
+</code></pre>
+
+<p>Render your web site and verify the results. Now, the title on your home page
+should be &ldquo;My New Hugo Site&rdquo;. This comes from the &ldquo;title&rdquo; variable
+in the <code>./config.toml</code> file.</p>
+
+<h4 id="from-default">From Default</h4>
+
+<p>Let&rsquo;s also edit the default templates (<code>layouts/_default/single.html</code> and
+<code>layouts/_default/list.html</code>) to use your new Partials:</p>
+
+<pre><code class="language-html">$ vi themes/zafta/layouts/_default/single.html
+{{ partial &quot;header.html&quot; . }}
+  &lt;h1&gt;{{ .Title }}&lt;/h1&gt;
+  &lt;h6&gt;{{ .Date.Format &quot;Mon, Jan 2, 2006&quot; }}&lt;/h6&gt;
+  {{ .Content }}
+{{ partial &quot;footer.html&quot; . -}}
+:wq
+
+$ vi themes/zafta/layouts/_default/list.html
+{{ partial &quot;header.html&quot; . -}}
+  &lt;h1&gt;Articles&lt;/h1&gt;
+  {{- range first 10 .Data.Pages }}
+    &lt;h4&gt;&lt;a href=&quot;{{ .Permalink }}&quot;&gt;{{ .Title }}&lt;/a&gt;&lt;/h4&gt;
+  {{- end }}
+{{ partial &quot;footer.html&quot; . -}}
+:wq
+</code></pre>
+
+<p>Render your web site and verify the results.
+Now, the title of your About page should reflect the value of the &ldquo;title&rdquo;
+variable in its corresponding Markdown file (<code>./content/About.md</code>).
+The same should be true for each of your article pages as well (i.e.,
+<code>./content/article/First.md</code> and <code>./content/article/Second.md</code>).</p>
+
+<h3 id="dry">DRY</h3>
+
+<p>Don&rsquo;t Repeat Yourself (also known as DRY) is a desirable goal,
+in any kind of source code development &mdash;
+and Hugo&rsquo;s partials do a fine job to help with that.</p>
+
+<p>Part of the art of good templates is knowing when to add new ones, and when
+to edit existing ones. While you&rsquo;re still figuring out the art of templates,
+you should accept that you&rsquo;ll do some refactoring &mdash; Hugo makes this
+easy and fast. And it&rsquo;s okay to delay splitting your templates into Partials.</p>
+
+<h2 id="section">Section</h2>
+
+<h3 id="date">Date</h3>
+
+<p>Articles commonly display the date they were published
+(or finalized) &mdash; so, here, let&rsquo;s do the same.</p>
+
+<p>The front-matter of your articles contains a &ldquo;date&rdquo; variable
+(as discussed above). Hugo sets this, when it creates each content file.
+Now, sometimes an article requires many days to prepare, so its actual
+publishing date might be later than the front-matter&rsquo;s &ldquo;date&rdquo;. However, for
+simplicity&rsquo;s sake, let&rsquo;s pretend this is the date we want to display, each time.</p>
+
+<p>In Hugo, in order to format a variable date (or time),
+we must do it by formatting the Go language <a href="https://golang.org/pkg/time/">reference
+time</a>; for example:</p>
+
+<pre><code class="language-bash">{{ .Date.Format &quot;Mon, Jan 2, 2006&quot; }}
+</code></pre>
+
+<p>Now, your articles use the <code>layouts/_default/single.html</code> template (see above).
+Because that template includes a date-formatting snippet, they show a
+nice looking date. However, your About page uses the same default template.
+Unfortunately, now it too shows its creation date (which makes no sense)!</p>
+
+<p>There are a couple of ways to make the date display only for articles.
+We could use an &ldquo;if&rdquo; statement, to display the date only when the Type equals
+&ldquo;article.&rdquo; That is workable, and acceptable for web sites with only a couple
+of content Types. It aligns with the principle of &ldquo;code for today,&rdquo; too.</p>
+
+<h3 id="template-1">Template</h3>
+
+<p>Let&rsquo;s assume, though (for didactic purposes), that you&rsquo;ve made your web site so
+complex that you feel you must create a new template Type. In Hugo-speak, this
+will be a new Section. It will contain your new, &ldquo;article&rdquo; Single template.</p>
+
+<p>Let&rsquo;s restore your default Single template (<code>layouts/_default/single.html</code>)
+to its earlier state (before we forget):</p>
+
+<pre><code class="language-html">$ vi themes/zafta/layouts/_default/single.html
+{{ partial &quot;header.html&quot; . }}
+  &lt;h1&gt;{{ .Title }}&lt;/h1&gt;
+  {{ .Content }}
+{{ partial &quot;footer.html&quot; . -}}
+:wq
+</code></pre>
+
+<p>Now, let&rsquo;s create your new template. If you remember Hugo&rsquo;s rules,
+the template engine will prefer this version over the default. The first step
+is to create (within your theme) its Section&rsquo;s directory: <code>layouts/article/</code>.
+Then, create a Single template (<code>layouts/article/single.html</code>) within it:</p>
+
+<pre><code class="language-html">$ mkdir themes/zafta/layouts/article
+
+$ vi themes/zafta/layouts/article/single.html
+{{ partial &quot;header.html&quot; . }}
+  &lt;h1&gt;{{ .Title }}&lt;/h1&gt;
+  &lt;h6&gt;{{ .Date.Format &quot;Mon, Jan 2, 2006&quot; }}&lt;/h6&gt;
+  {{ .Content }}
+{{ partial &quot;footer.html&quot; . -}}
+:wq
+</code></pre>
+
+<p>Basically, we moved the date logic &mdash; from the default template, to the
+new &ldquo;article&rdquo; Section, Single template: <code>layouts/article/single.html</code>.</p>
+
+<p>Let&rsquo;s render your web site and verify the results:</p>
+
+<pre><code class="language-html">$ rm -rf public/
+
+$ hugo --verbose
+INFO: {date} {source} Using config file: /tmp/mySite/config.toml
+INFO: {date} {source} using a UnionFS for static directory comprised of:
+INFO: {date} {source} Base: /tmp/mySite/themes/zafta/static
+INFO: {date} {source} Overlay: /tmp/mySite/static/
+INFO: {date} {source} syncing static files to /tmp/mySite/public/
+Started building site
+INFO: {date} {source} found taxonomies: map[string]string{&quot;tag&quot;:&quot;tags&quot;, &quot;category&quot;:&quot;categories&quot;}
+WARN: {date} {source} &quot;404.html&quot; is rendered empty
+0 draft content
+0 future content
+0 expired content
+3 pages created
+0 non-page files copied
+0 paginator pages created
+0 tags created
+0 categories created
+in 10 ms
+
+$ cat public/article/First/index.html
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;First&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;h1&gt;First&lt;/h1&gt;
+  &lt;h6&gt;Wed, Jan 18, 2040&lt;/h6&gt;
+  &lt;p&gt;In vel ligula tortor. Aliquam erat volutpat.
+Pellentesque at felis eu quam tincidunt dignissim.
+Nulla facilisi.&lt;/p&gt;
+
+&lt;p&gt;Pellentesque tempus nisi et interdum convallis.
+In quam ante, vulputate at massa et, rutrum
+gravida dui. Phasellus tristique libero at ex.&lt;/p&gt;
+
+  &lt;h4&gt;&lt;a href=&quot;http://example.org/&quot;&gt;Home&lt;/a&gt;&lt;/h4&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+$ cat public/About/index.html
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;About&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;h1&gt;About&lt;/h1&gt;
+  &lt;p&gt;Neque porro quisquam est qui dolorem
+ipsum quia dolor sit amet consectetur
+adipisci velit.&lt;/p&gt;
+
+  &lt;h4&gt;&lt;a href=&quot;http://example.org/&quot;&gt;Home&lt;/a&gt;&lt;/h4&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>Now, as you can see, your articles show their dates,
+and your About page (sensibly) doesn&rsquo;t.</p>
+
+
+                    <div class="row">
+                        <div class="footer-panel">
+			  <p>Last revision: March 17, 2017 | <a href="https://github.com/spf13/hugo/commit/c5e0881f435e0250a486287dee6e953636936ca3">排版 引入雨果官方教程內容 (c5e0881)</a>
+                          <span style="float: right;">Hugo v0.19 documentation</span>
+                        </p>
+                        </div>
+                    </div>
+
+                    </div>
+                    </section>
+
+                    </div>
+
+                <div class="col-md-1">
+                    
+                    
+                    <a class="navigation next" href="/tutorials/github-pages-blog">
+                        <i class="fa fa-angle-right"> </i>
+                    </a>
+                    
+                    
+                </div>
+              </div>
+              
+          </section>
+      </section>
+     
+  </section>
+  
+
+    
+    <script type="text/javascript" src="/vendor/jquery/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="/vendor/flesler/js/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="/vendor/twitter/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="/vendor/highlightjs/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/scripts.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script> 
+    <script type="text/javascript"> 
+    docsearch({
+      apiKey: '167e7998590aebda7f9fedcf86bc4a55',
+      indexName: 'hugodocs',
+      inputSelector: '#search-input',
+      algoliaOptions: {
+        hitsPerPage: 5
+      }
+    }); 
+    </script>
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-7131036-4', 'spf13.com');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>
+

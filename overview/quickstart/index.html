@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documentation of Hugo, a fast and flexible static site generator built with love by spf13, bep and friends in Go">
+    <meta name="author" content="Steve Francia (spf13) and friends">
+    <meta name="generator" content="Hugo 0.19" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <title>Hugo - Hugo Quickstart Guide</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-stripped-gohugo.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-changes-gohugo.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-additions-gohugo.css">
+
+    <link rel="stylesheet" type="text/css" href="/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" />
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/content-style.css" />
+    <link href="/css/style-responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/vendor/highlightjs/css/monokai-sublime.css">
+
+  </head>
+
+  <body>
+  
+  <section id="container" class="">
+
+      
+      <header class="header black-bg">
+            <div class="toggle-nav">
+                <i class="fa fa-bars"></i>
+                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"></div>
+            </div>
+
+            
+            <a href="/" class="logo"><img src="/img/hugo-logo.png" style="height: 40px; vertical-align: bottom;"> <span style="font-size: small; text-transform: none;">v0.19</span></a>
+            
+            <div class="top-nav notification-row">
+                
+                <div class="hidden-xs nav-github pull-right">
+                    <span rel="show-github" data-user="spf13" data-repo="hugo" data-type="follow"></span>
+                    <span rel="show-github" data-user="spf13" data-repo="hugo"></span>
+                    <span rel="show-github" data-user="spf13" data-repo="hugo" data-type="fork"></span>
+                </div>
+            </div>
+
+            <div class="nav title-row" id="top_menu">
+                <h1 class="nav top-menu">Hugo Quickstart Guide</h1>
+            </div>
+      </header>
+      
+
+
+<aside>
+    <div id="sidebar" class="nav-collapse">
+        
+        <ul class="sidebar-menu">
+          
+          
+              
+                <li>
+                <a class="" href="https://github.com/spf13/hugo/releases">
+                    <i class='fa fa-download'></i>
+                    
+                    <span>下載雨果</span>
+                </a>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="/showcase/">
+                    <i class='fa fa-cubes'></i>
+                    
+                    <span>網站展示</span>
+                </a>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="/community/press/">
+                    <i class='fa fa-bullhorn'></i>
+                    
+                    <span>新聞及文章</span>
+                </a>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="http://discuss.gohugo.io/">
+                    <i class='fa fa-comments'></i>
+                    
+                    <span>討論雨果</span>
+                </a>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-heart'></i>
+                
+                <span>關於雨果</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="/meta/release-notes/">Release Notes</a> </li>
+                    
+                    <li><a href="/meta/roadmap/">Hugo Roadmap</a> </li>
+                    
+                    <li><a href="/meta/license/">License</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu active">
+            <a href="javascript:;" class="">
+                <i class='fa fa-road'></i>
+                
+                <span>入門</span>
+                <span class="menu-arrow fa fa-angle-down"></span>
+            </a>
+                <ul class="sub open">
+                    
+                    <li><a href="/overview/introduction/">Introduction</a> </li>
+                    
+                    <li class="active"><a href="/overview/quickstart/">Quickstart</a> </li>
+                    
+                    <li><a href="/overview/installing/">Installing Hugo</a> </li>
+                    
+                    <li><a href="/overview/usage/">Using Hugo</a> </li>
+                    
+                    <li><a href="/overview/configuration/">Configuration</a> </li>
+                    
+                    <li><a href="/overview/source-directory/">Source Organization</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-file-text'></i>
+                
+                <span>內容</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="/content/organization/">Organization</a> </li>
+                    
+                    <li><a href="/content/supported-formats/">Supported Formats</a> </li>
+                    
+                    <li><a href="/content/front-matter/">Front Matter</a> </li>
+                    
+                    <li><a href="/content/sections/">Sections</a> </li>
+                    
+                    <li><a href="/content/types/">Types</a> </li>
+                    
+                    <li><a href="/content/archetypes/">Archetypes</a> </li>
+                    
+                    <li><a href="/content/ordering/">Ordering</a> </li>
+                    
+                    <li><a href="/content/summaries/">Summaries</a> </li>
+                    
+                    <li><a href="/content/markdown-extras/">Markdown Extras</a> </li>
+                    
+                    <li><a href="/content/multilingual/">Multilingual Mode</a> </li>
+                    
+                    <li><a href="/content/example/">Example</a> </li>
+                    
+                    <li><a href="/content/using-index-md/">Using _index.md</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-desktop'></i>
+                
+                <span>主題</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="http://themes.gohugo.io">Theme Showcase</a> </li>
+                    
+                    <li><a href="/themes/overview/">Themes Overview</a> </li>
+                    
+                    <li><a href="/themes/installing/">Installing Themes</a> </li>
+                    
+                    <li><a href="/themes/usage/">Using a Theme</a> </li>
+                    
+                    <li><a href="/themes/customizing/">Customizing a Theme</a> </li>
+                    
+                    <li><a href="/themes/creation/">Creating a Theme</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-columns'></i>
+                
+                <span>模板</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="/templates/overview/">Overview</a> </li>
+                    
+                    <li><a href="/templates/go-templates/">Go Template Primer</a> </li>
+                    
+                    <li><a href="/templates/ace/">Ace templates</a> </li>
+                    
+                    <li><a href="/templates/amber/">Amber templates</a> </li>
+                    
+                    <li><a href="/templates/functions/">Functions</a> </li>
+                    
+                    <li><a href="/templates/variables/">Variables</a> </li>
+                    
+                    <li><a href="/templates/content/">Single Content</a> </li>
+                    
+                    <li><a href="/templates/list/">List of Content</a> </li>
+                    
+                    <li><a href="/templates/homepage/">Homepage</a> </li>
+                    
+                    <li><a href="/templates/terms/">Taxonomy Terms</a> </li>
+                    
+                    <li><a href="/templates/views/">Content Views</a> </li>
+                    
+                    <li><a href="/templates/blocks/">Block Templates</a> </li>
+                    
+                    <li><a href="/templates/partials/">Partial Templates</a> </li>
+                    
+                    <li><a href="/templates/rss/">RSS</a> </li>
+                    
+                    <li><a href="/templates/sitemap/">Sitemap</a> </li>
+                    
+                    <li><a href="/templates/404/">Custom 404 page</a> </li>
+                    
+                    <li><a href="/templates/debugging/">Debugging</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-tags'></i>
+                
+                <span>分類</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="/taxonomies/overview/">Overview</a> </li>
+                    
+                    <li><a href="/taxonomies/usage/">Usage</a> </li>
+                    
+                    <li><a href="/taxonomies/displaying/">Displaying</a> </li>
+                    
+                    <li><a href="/taxonomies/templates/">Templates</a> </li>
+                    
+                    <li><a href="/taxonomies/ordering/">Ordering</a> </li>
+                    
+                    <li><a href="/taxonomies/methods/">Structure &amp; Methods</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-gift'></i>
+                
+                <span>額外</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="/extras/aliases/">Aliases</a> </li>
+                    
+                    <li><a href="/extras/analytics/">Analytics</a> </li>
+                    
+                    <li><a href="/extras/builders/">Builders</a> </li>
+                    
+                    <li><a href="/extras/comments/">Comments</a> </li>
+                    
+                    <li><a href="/extras/crossreferences/">Cross-References</a> </li>
+                    
+                    <li><a href="/extras/robots-txt/">Custom robots.txt</a> </li>
+                    
+                    <li><a href="/extras/datafiles/">Data Files</a> </li>
+                    
+                    <li><a href="/extras/datadrivencontent/">Data-driven Content</a> </li>
+                    
+                    <li><a href="/extras/gitinfo/">GitInfo</a> </li>
+                    
+                    <li><a href="/extras/livereload/">LiveReload</a> </li>
+                    
+                    <li><a href="/extras/menus/">Menus</a> </li>
+                    
+                    <li><a href="/extras/pagination/">Pagination</a> </li>
+                    
+                    <li><a href="/extras/permalinks/">Permalinks</a> </li>
+                    
+                    <li><a href="/extras/scratch/">Scratch</a> </li>
+                    
+                    <li><a href="/extras/shortcodes/">Shortcodes</a> </li>
+                    
+                    <li><a href="/extras/highlighting/">Syntax Highlighting</a> </li>
+                    
+                    <li><a href="/extras/toc/">Table of Contents</a> </li>
+                    
+                    <li><a href="/extras/localfiles/">Traversing Local Files</a> </li>
+                    
+                    <li><a href="/extras/urls/">URLs</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-group'></i>
+                
+                <span>社區</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="/community/mailing-list/">Mailing List</a> </li>
+                    
+                    <li><a href="/community/contributing/">Contributing to Hugo</a> </li>
+                    
+                    <li><a href="http://discuss.gohugo.io">Discussion Forum</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-book'></i>
+                
+                <span>教程</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="/tutorials/automated-deployments/">Automated deployments</a> </li>
+                    
+                    <li><a href="/tutorials/creating-a-new-theme/">Creating a New Theme</a> </li>
+                    
+                    <li><a href="/tutorials/hosting-on-bitbucket/">Hosting on Bitbucket</a> </li>
+                    
+                    <li><a href="/tutorials/github-pages-blog/">Hosting on GitHub</a> </li>
+                    
+                    <li><a href="/tutorials/hosting-on-gitlab/">Hosting on GitLab</a> </li>
+                    
+                    <li><a href="/tutorials/how-to-contribute-to-hugo/">How to contribute</a> </li>
+                    
+                    <li><a href="/tutorials/installing-on-mac/">Installing on Mac</a> </li>
+                    
+                    <li><a href="/tutorials/installing-on-windows/">Installing on Windows</a> </li>
+                    
+                    <li><a href="/tutorials/mathjax/">MathJax Support</a> </li>
+                    
+                    <li><a href="/tutorials/migrate-from-jekyll/">Migrating from Jekyll</a> </li>
+                    
+                    <li><a href="/tutorials/create-a-multilingual-site/">Multilingual Site</a> </li>
+                    
+                    <li><a href="/tutorials/deployment-with-rsync/">Deployment with rsync</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-wrench'></i>
+                
+                <span>故障排除</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="/troubleshooting/strange-eof-error/">Strange EOF error</a> </li>
+                    
+                    <li><a href="/troubleshooting/categories-with-accented-characters/">Accented Categories</a> </li>
+                    
+                    <li><a href="/troubleshooting/overview/">Troubleshooting Overview</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="/tools/">
+                    <i class='fa fa-cogs'></i>
+                    
+                    <span>工具</span>
+                </a>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="/commands/">
+                    <i class='fa fa-space-shuttle'></i>
+                    
+                    <span>雨果命令參考</span>
+                </a>
+              
+              </li>
+          
+            <li> <a href="https://github.com/spf13/hugo/issues" target="blank"><i class='fa fa-life-ring'></i> <span>Issues & Help</span></a> </li>
+            
+              <li><a href="https://github.com/spf13/hugo/edit/master/docs/content/overview/quickstart.md" target="blank"><i class='fa fa-edit'></i> Refine this Page</a> </li>
+            
+        </ul>
+        
+    </div>
+</aside>
+
+
+
+      
+      <section id="main-content">
+          <section class="wrapper">
+
+              
+                  
+                      
+                      
+                          
+                          
+                          
+                      
+                      
+                  
+              
+
+              <div class="row">
+                  <div class="col-md-1">
+                      
+                      
+                      <a class="navigation prev" href="/overview/introduction">
+                      <i class="fa fa-angle-left"></i>
+                      </a>
+                      
+                      
+                  </div>
+                <div class="col-md-10">
+                    <section class="panel">
+                          
+                              
+                          
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2 cse">
+                                <input type="search" id="search-input" placeholder="Search...">
+                            </div>
+                        </div>
+
+
+
+
+<h2 id="building-a-bookshelf">Building a bookshelf</h2>
+
+<p>In this quickstart, we will build an online bookshelf that will list books and their reviews.</p>
+
+<blockquote>
+<p><em>Note: This quickstart depends on features introduced in Hugo v0.15.  If you have an earlier version of Hugo, you will need to <a href="/overview/installing/">upgrade</a> before proceeding.</em></p>
+</blockquote>
+
+<div class="video-container">
+<iframe class="youtube-player" type="text/html" width="100%" height="auto" src="https://www.youtube.com/embed/w7Ft2ymGmfc" allowfullscreen frameborder="0">
+</iframe>
+</div>
+
+
+<h2 id="step-1-install-hugo">Step 1. Install Hugo</h2>
+
+<p>Go to <a href="https://github.com/spf13/hugo/releases">Hugo Releases</a> and download the
+appropriate version for your OS and architecture.</p>
+
+<p>Save the main executable as <code>hugo</code> (or <code>hugo.exe</code> on Windows) somewhere in your <code>PATH</code> as we will be using it in the next step.</p>
+
+<p>More complete instructions are available
+at <a href="/overview/installing/">Installing Hugo</a>.</p>
+
+<p>If you&rsquo;re on Windows, this quickstart will assume
+you&rsquo;re using <a href="https://git-for-windows.github.io/">Git Bash</a>
+(also known as Git for Windows).
+Thus all commands will begin with the Bash prompt character (which is <code>$</code>).</p>
+
+<p>Once <code>hugo</code> is installed, make sure to run the <code>help</code> command to verify <code>hugo</code> installation. Below you can see part of the <code>help</code> command output for brevity.</p>
+
+<pre><code class="language-bash">$ hugo help
+</code></pre>
+
+<pre><code>hugo is the main command, used to build your Hugo site.
+
+Hugo is a Fast and Flexible Static Site Generator
+built with love by spf13 and friends in Go.
+
+Complete documentation is available at http://gohugo.io/.
+</code></pre>
+
+<p>You can check <code>hugo</code> version using the command shown below.</p>
+
+<pre><code class="language-bash">$ hugo version
+</code></pre>
+
+<pre><code>Hugo Static Site Generator v0.15 BuildDate: 2015-11-26T11:59:00+05:30
+</code></pre>
+
+<h2 id="step-2-scaffold-bookshelf-hugo-site">Step 2. Scaffold bookshelf hugo site</h2>
+
+<p>Hugo has commands that allows us to quickly scaffold a Hugo managed website. Navigate to a convenient location on your filesystem and create a new Hugo site <code>bookshelf</code> by executing the following command.</p>
+
+<pre><code class="language-bash">$ hugo new site bookshelf
+</code></pre>
+
+<p>Change directory to <code>bookshelf</code> and you will see the following directory layout.</p>
+
+<pre><code class="language-bash">$ tree -a
+</code></pre>
+
+<pre><code>.
+|-- archetypes
+|-- config.toml
+|-- content
+|-- data
+|-- layouts
+`-- static
+
+5 directories, 1 file
+</code></pre>
+
+<p>As mentioned in the command output, <code>bookshelf</code> directory has 5 sub-directories and 1 file. Let&rsquo;s look at each of them one by one.</p>
+
+<ul>
+<li><p><strong>archetypes</strong>: You can create new content files in Hugo using the <code>hugo new</code> command. When you run that command, it adds few configuration properties to the post like date and title. <a href="/content/archetypes/">Archetype</a> allows you to define your own configuration properties that will be added to the post front matter whenever <code>hugo new</code> command is used.</p></li>
+
+<li><p><strong>config.toml</strong>: Every website should have a configuration file at the root. By default, the configuration file uses <code>TOML</code> format but you can also use <code>YAML</code> or <code>JSON</code> formats as well. <a href="https://github.com/toml-lang/toml">TOML</a> is minimal configuration file format that&rsquo;s easy to read due to obvious semantics. The configuration settings mentioned in the <code>config.toml</code> are applied to the full site. These configuration settings include <code>baseURL</code> and <code>title</code> of the website.</p></li>
+
+<li><p><strong>content</strong>: This is where you will store content of the website. Inside content, you will create sub-directories for different sections. Let&rsquo;s suppose your website has three sections &ndash; <code>blog</code>, <code>article</code>, and <code>tutorial</code> then you will have three different directories for each of them inside the <code>content</code> directory. The name of the section i.e. <code>blog</code>, <code>article</code>, or <code>tutorial</code> will be used by Hugo to apply a specific layout applicable to that section.</p></li>
+
+<li><p><strong>data</strong>: This directory is used to store configuration files that can be
+used by Hugo when generating your website.
+You can write these files in YAML, JSON, or TOML format.</p></li>
+
+<li><p><strong>layouts</strong>: The content inside this directory is used to specify how your content will be converted into the static website.</p></li>
+
+<li><p><strong>static</strong>: This directory is used to store all the static content that your website will need like images, CSS, JavaScript or other static content.</p></li>
+</ul>
+
+<h2 id="step-3-add-content">Step 3. Add content</h2>
+
+<p>Let&rsquo;s now add a post to our <code>bookshelf</code>. We will use the <code>hugo new</code> command to add a post. In January, I read <a href="http://www.amazon.com/Good-Great-Some-Companies-Others/dp/0066620996/">Good To Great</a> book so we will start with creating a post for it. <strong>Make sure you are inside the <code>bookshelf</code> directory.</strong></p>
+
+<pre><code class="language-bash">$ hugo new post/good-to-great.md
+</code></pre>
+
+<pre><code>/Users/shekhargulati/bookshelf/content/post/good-to-great.md created
+</code></pre>
+
+<p>The above command will create a new directory <code>post</code>
+inside the <code>bookshelf/content</code> directory
+and create <code>good-to-great.md</code> file inside it.</p>
+
+<pre><code class="language-bash">$ tree -a content
+</code></pre>
+
+<pre><code>content
+`-- post
+    `-- good-to-great.md
+
+1 directory, 1 file
+</code></pre>
+
+<p>The content inside the <code>good-to-great.md</code> file looks as shown below.</p>
+
+<pre><code>+++
+date = &quot;2016-02-14T16:11:58+05:30&quot;
+draft = true
+title = &quot;good to great&quot;
+
++++
+</code></pre>
+
+<p>The content inside <code>+++</code> is the TOML configuration for the post.
+This configuration is called <strong>front matter</strong>.
+It enables you to define post configuration along with its content.
+By default, each post will have the three configuration properties shown above.</p>
+
+<ul>
+<li><strong>date</strong> specifies the date and time at which post was created.</li>
+<li><strong>draft</strong> specifies that post is not ready for publication yet so it will not be in the generated site.</li>
+<li><strong>title</strong> specifies title for the post.</li>
+</ul>
+
+<p>Let&rsquo;s add a small review for <strong>Good to Great</strong> book.</p>
+
+<pre><code>+++
+date = &quot;2016-02-14T16:11:58+05:30&quot;
+draft = true
+title = &quot;Good to Great Book Review&quot;
+
++++
+
+I read **Good to Great in January 2016**. An awesome read sharing detailed analysis on how good companies became great.
+</code></pre>
+
+<h2 id="step-4-serve-content">Step 4. Serve content</h2>
+
+<p>Hugo has an inbuilt server that can serve your website content so that you can preview it. You can also use the inbuilt Hugo server in production. To serve content, execute the following command inside the <code>bookshelf</code> directory.</p>
+
+<pre><code class="language-bash">$ hugo server
+</code></pre>
+
+<pre><code>0 of 1 draft rendered
+0 future content
+0 pages created
+0 paginator pages created
+0 tags created
+0 categories created
+in 9 ms
+Watching for changes in /Users/shekhargulati/bookshelf/{data,content,layouts,static}
+Serving pages from memory
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+</code></pre>
+
+<p>This will start the server on port <code>1313</code>.
+You can view your blog at <a href="http://localhost:1313/">http://localhost:1313/</a>.
+When you go to the link, you will see nothing.
+There are couple of reasons for that:</p>
+
+<ol>
+<li>As you can see in the <code>hugo server</code> command output, Hugo didn&rsquo;t render the draft. Hugo will only render drafts if you pass the <code>buildDrafts</code> flag to the <code>hugo server</code> command.</li>
+<li>We have not specified how Markdown content should be rendered. We have to specify a theme that Hugo can use. We will do that in the next step.</li>
+</ol>
+
+<p>To render drafts, re-run the server with command shown below.</p>
+
+<pre><code class="language-bash">$ hugo server --buildDrafts
+</code></pre>
+
+<pre><code>1 of 1 draft rendered
+0 future content
+1 pages created
+0 paginator pages created
+0 tags created
+0 categories created
+in 6 ms
+Watching for changes in /Users/shekhargulati/bookshelf/{data,content,layouts,static}
+Serving pages from memory
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+</code></pre>
+
+<p>If you go to <a href="http://localhost:1313/">http://localhost:1313/</a>,
+you still will not see anything as we have not specified a theme that Hugo should use.</p>
+
+<h2 id="step-5-add-theme">Step 5. Add theme</h2>
+
+<p>Themes provide the layout and templates that will be used by Hugo to render your website. There are a lot of Open-source themes available at <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a> that you can use.</p>
+
+<blockquote>
+<p><strong>Hugo currently doesn’t ship with a <code>default</code> theme, allowing the user to pick whichever theme best suits their project.</strong></p>
+</blockquote>
+
+<p>Themes should be added in the <code>themes</code> directory inside the repository root.</p>
+
+<pre><code class="language-bash">$ cd themes
+</code></pre>
+
+<p>Now, you can clone one or more themes inside the <code>themes</code> directory.
+We will use the <code>robust</code> theme,
+but at a commit (in its history) that works with this quickstart.</p>
+
+<pre><code class="language-bash">$ git clone https://github.com/dim0627/hugo_theme_robust.git
+$ (cd hugo_theme_robust; git checkout b8ce466)
+</code></pre>
+
+<p>Leave the themes folder.</p>
+
+<pre><code class="language-bash">$ cd ..
+</code></pre>
+
+<p>Start the server again.</p>
+
+<pre><code class="language-bash">$ hugo server --theme=hugo_theme_robust --buildDrafts
+</code></pre>
+
+<pre><code>1 of 1 draft rendered
+0 future content
+1 pages created
+2 paginator pages created
+0 tags created
+0 categories created
+in 10 ms
+Watching for changes in /Users/shekhargulati/bookshelf/{data,content,layouts,static,themes}
+Serving pages from memory
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+</code></pre>
+
+<blockquote>
+<p><em>Note: If Hugo doesn&rsquo;t find the specified theme in the <code>themes</code> directory,
+it will throw an exception as shown below.</em></p>
+
+<pre><code>FATAL: 2016/02/14 Unable to find theme Directory: /Users/shekhargulati/bookshelf/themes/robust
+</code></pre>
+</blockquote>
+
+<p>To view your website, you can go to <a href="http://localhost:1313/">http://localhost:1313/</a>. You will see as shown below.</p>
+
+<p><img src="/img/quickstart/bookshelf-robust-theme.png" alt="" /></p>
+
+<p>Let&rsquo;s understand the layout of the theme. A theme consists of the following:</p>
+
+<ul>
+<li><p><strong>theme.toml</strong> is the theme configuration file that gives information
+about the theme like name and description of theme,
+author details, and theme license.</p></li>
+
+<li><p><strong>images</strong> directory contains two images &ndash; <code>screenshot.png</code> and <code>tn.png</code>. <code>screenshot.png</code> is the image of the list view and <code>tn.png</code> is the single post view.</p></li>
+
+<li><p><strong>layouts</strong> directory contains different views for different content types.
+Every content type should have two files <code>single.html</code> and <code>list.html</code>.
+<code>single.html</code> is used for rendering a single piece of content.
+<code>list.html</code> is used to view a list of content items.
+For example, you will use <code>list.html</code> to view all the posts
+that have the <code>programming</code> tag.</p></li>
+
+<li><p><strong>static</strong> directory stores all the static assets used by the template.
+Static assets could be JavaScript libraries like jQuery or CSS styles or images,
+or any other static content.
+This directory will be copied into the final site when rendered.</p></li>
+</ul>
+
+<h2 id="step-6-use-multiple-themes">Step 6. Use multiple themes</h2>
+
+<p>You can very easily test different layouts by switching between different themes.
+Let&rsquo;s suppose we want to try out the <code>bleak</code> theme.
+We clone the <code>bleak</code> theme inside the <code>bookshelf/themes</code> directory.</p>
+
+<pre><code class="language-bash">$ git clone https://github.com/Zenithar/hugo-theme-bleak.git
+</code></pre>
+
+<p>Restart the server using <code>hugo-theme-bleak</code> as shown below.</p>
+
+<pre><code class="language-bash">$ hugo server --theme=hugo-theme-bleak --buildDrafts
+</code></pre>
+
+<p>Now, the website will use the <code>bleak</code> theme
+and will be rendered differently as shown below.</p>
+
+<p><img src="/img/quickstart/bookshelf-bleak-theme.png" alt="" /></p>
+
+<h2 id="step-7-update-config-toml-and-live-reloading-in-action">Step 7. Update config.toml and live reloading in action</h2>
+
+<p>Restart the server with the <code>robust</code> theme, as we will use it in this quickstart.</p>
+
+<pre><code class="language-bash">$ hugo server --theme=hugo_theme_robust --buildDrafts
+</code></pre>
+
+<p>The website uses the dummy values specified in <code>bookshelf/config.toml</code>.
+Let&rsquo;s update the configuration.</p>
+
+<pre><code class="language-toml">baseURL = &quot;http://example.org/&quot;
+languageCode = &quot;en-us&quot;
+title = &quot;Shekhar Gulati Book Reviews&quot;
+
+[Params]
+  Author = &quot;Shekhar Gulati&quot;
+</code></pre>
+
+<p>Hugo has inbuilt support for live reloading.
+So, as soon as you save your changes it will apply the change
+and reload the web page. You will see the changes shown below.</p>
+
+<p><img src="/img/quickstart/bookshelf-updated-config.png" alt="" /></p>
+
+<p>The same is reflected in the Hugo server logs as well.
+As soon as you changed the configuration file,
+Hugo applied those changes to the affected pages.</p>
+
+<pre><code>Config file changed: /Users/shekhargulati/bookshelf/config.toml
+1 of 1 draft rendered
+0 future content
+1 pages created
+2 paginator pages created
+0 tags created
+0 categories created
+in 11 ms
+</code></pre>
+
+<h2 id="step-8-customize-robust-theme">Step 8. Customize robust theme</h2>
+
+<p>The <code>robust</code> theme is a good start towards our online bookshelf but we want to
+customize it a bit to meet the look and feel required for the bookshelf.
+Hugo makes it very easy to customize themes.
+You can also create your themes but we will not do that today.
+If you want to create your own theme, then you should refer to
+the <a href="/themes/creation/">Hugo documentation</a>.</p>
+
+<p>The first change that we have to make is to use a different default image
+instead of the one used in the theme.
+The theme&rsquo;s default image used in both the list and single view page resides
+inside <code>themes/hugo_theme_robust/static/images/default.jpg</code>.
+We can easily override it by creating a simple directory structure
+inside the repository&rsquo;s <code>static</code> directory.</p>
+
+<p>Create an images directory inside the <code>bookshelf/static</code> directory
+and copy an image with name <code>default.jpg</code> inside it.
+We will use the default image shown below.</p>
+
+<p><img src="/img/quickstart/default.jpg" alt="" /></p>
+
+<p>Hugo will sync the changes and reload the website to use new image as shown below.</p>
+
+<p><img src="/img/quickstart/bookshelf-new-default-image.png" alt="" /></p>
+
+<p>Now, we need to change the layout of the index page so that only images are shown instead of the text. The index.html inside the layouts directory of the theme refer to partial <code>li</code> that renders the list view shown below.</p>
+
+<pre><code class="language-html">&lt;article class=&quot;li&quot;&gt;
+  &lt;a href=&quot;{{ .Permalink }}&quot; class=&quot;clearfix&quot;&gt;
+    &lt;div class=&quot;image&quot; style=&quot;background-image: url({{ $.Site.BaseURL }}images/{{ with .Params.image }}{{ . }}{{ else }}default.jpg{{ end }});&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;detail&quot;&gt;
+      &lt;time&gt;{{ with .Site.Params.DateForm }}{{ $.Date.Format . }}{{ else }}{{ $.Date.Format &quot;Mon, Jan 2, 2006&quot; }}{{ end }}&lt;/time&gt;
+      &lt;h2 class=&quot;title&quot;&gt;{{ .Title }}&lt;/h2&gt;
+      &lt;div class=&quot;summary&quot;&gt;{{ .Summary }}&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+&lt;/article&gt;
+</code></pre>
+
+<p>Create a new file li.html inside the <code>bookshelf/layouts/_default</code> directory. Copy the content shown below into the li.html. We have removed details of the book so that only image is shown.</p>
+
+<pre><code class="language-html">&lt;article class=&quot;li&quot;&gt;
+  &lt;a href=&quot;{{ .Permalink }}&quot; class=&quot;clearfix&quot;&gt;
+    &lt;div class=&quot;image&quot; style=&quot;background-image: url({{ $.Site.BaseURL }}images/{{ with .Params.image }}{{ . }}{{ else }}default.jpg{{ end }});&quot;&gt;&lt;/div&gt;
+  &lt;/a&gt;
+&lt;/article&gt;
+</code></pre>
+
+<p>Now, the website will be rendered as shown below.</p>
+
+<p><img src="/img/quickstart/bookshelf-only-picture.png" alt="" /></p>
+
+<p>Next, we want to remove information related to theme from the footer.
+So, create a new directory <code>partials</code> inside <code>bookshelf/layouts</code>.
+There, create a new file <code>default_foot.html</code> with the content copied
+from the theme&rsquo;s <code>layouts/partials/default_foot.html</code>.
+Replace the footer section with the one shown below.</p>
+
+<pre><code class="language-html">&lt;footer class=&quot;site&quot;&gt;
+  &lt;p&gt;{{ with .Site.Copyright | safeHTML }}{{ . }}{{ else }}&amp;copy; {{ $.Site.LastChange.Year }} {{ if isset $.Site.Params &quot;Author&quot; }}{{ $.Site.Params.Author }}{{ else }}{{ .Site.Title }}{{ end }}{{ end }}&lt;/p&gt;
+  &lt;p&gt;Powered by &lt;a href=&quot;http://gohugo.io&quot; target=&quot;_blank&quot;&gt;Hugo&lt;/a&gt;,&lt;/p&gt;
+&lt;/footer&gt;
+</code></pre>
+
+<p>We also have to remove the sidebar on the right.
+Copy the <code>index.html</code> from the theme&rsquo;s <code>layouts</code> directory to
+the <code>bookshelf/layouts</code> directory.
+Remove the section related to the sidebar from the HTML:</p>
+
+<pre><code class="language-html">&lt;div class=&quot;col-sm-3&quot;&gt;
+  {{ partial &quot;sidebar.html&quot; . }}
+&lt;/div&gt;
+</code></pre>
+
+<p>So far we are using the default image but we would like to use the book image so that we can relate to the book. Every book review will define a configuration setting in its front matter. Update the <code>good-to-great.md</code> as shown below.</p>
+
+<pre><code>+++
+date = &quot;2016-02-14T16:11:58+05:30&quot;
+draft = true
+title = &quot;Good to Great Book Review&quot;
+image = &quot;good-to-great.jpg&quot;
++++
+
+I read **Good to Great in January 2016**. An awesome read sharing detailed analysis on how good companies became great. Although this book is about how companies became great but we could apply a lot of the learnings on ourselves. Concepts like level 5 leader, hedgehog concept, the stockdale paradox are equally applicable to individuals.
+</code></pre>
+
+<p>Grab a (legal) image from somewhere, name it <code>good-to-great.jpg</code>,
+and place it in the <code>bookshelf/static/images</code> directory.</p>
+
+<p>After adding few more books to our shelf, the shelf appears as shown below.
+These are a few of the books that I have read within the last year.</p>
+
+<p><img src="/img/quickstart/bookshelf.png" alt="" /></p>
+
+<h2 id="step-9-make-posts-public">Step 9. Make posts public</h2>
+
+<p>So far all the posts that we have written are in draft status.
+To make a draft public, you can either run a command
+or manually change the draft status in the post to <code>false</code>.</p>
+
+<pre><code class="language-bash">$ hugo undraft content/post/good-to-great.md
+</code></pre>
+
+<p>Now, you can start the server without the <code>buildDrafts</code> option.</p>
+
+<pre><code>$ hugo server --theme=hugo_theme_robust
+</code></pre>
+
+<h2 id="step-10-integrate-disqus">Step 10. Integrate Disqus</h2>
+
+<p>Disqus allows you to integrate comments in your static blog. To enable Disqus, you just have to set <code>disqusShortname</code>  in the config.toml as shown below.</p>
+
+<pre><code>[Params]
+  Author = &quot;Shekhar Gulati&quot;
+  disqusShortname = &lt;your disqus shortname&gt;
+</code></pre>
+
+<p>Now, commenting will be enabled in your blog.</p>
+
+<p><img src="/img/quickstart/bookshelf-disqus.png" alt="" /></p>
+
+<h2 id="step-11-generate-website">Step 11. Generate website</h2>
+
+<p>To generate Hugo website source you can use
+to deploy your website on GitHub pages,
+first edit <code>bookshelf/config.toml</code>, changing the <code>baseURL</code> line to:</p>
+
+<pre><code>baseURL = &quot;https://&lt;your GitHub username&gt;.github.io/bookshelf/&quot;
+</code></pre>
+
+<p>Then type the following command.</p>
+
+<pre><code class="language-bash">$ hugo --theme=hugo_theme_robust
+</code></pre>
+
+<pre><code>0 draft content
+0 future content
+5 pages created
+2 paginator pages created
+0 tags created
+0 categories created
+in 17 ms
+</code></pre>
+
+<p>After you run the <code>hugo</code> command, a <code>bookshelf/public</code> directory
+will be created containing the generated website source.</p>
+
+<p>BTW (in case you tried),
+the website isn&rsquo;t properly accessible via the <code>file:///</code> protocol.</p>
+
+<h2 id="step-12-deploy-bookshelf-on-github-pages">Step 12. Deploy bookshelf on GitHub pages</h2>
+
+<p>Let&rsquo;s version control your bookshelf:</p>
+
+<pre><code class="language-bash">$ git init
+$ echo &quot;/public/&quot; &gt;&gt; .gitignore
+$ echo &quot;/themes/&quot; &gt;&gt; .gitignore
+$ git add --all
+$ git commit -m &quot;Initial commit&quot;
+</code></pre>
+
+<p>Now the Git repositories under <code>bookshelf/themes</code>
+won&rsquo;t conflict with your <code>bookshelf</code> repository,
+and neither will a Git repository in <code>bookshelf/public</code>.</p>
+
+<p>Create a new repository on GitHub named <code>bookshelf</code> (without a README).
+Once that&rsquo;s done, create a new Git repository on your local system
+in <code>bookshelf/public</code> and add remote:</p>
+
+<pre><code class="language-bash">$ cd public
+$ git init
+$ git remote add origin git@github.com:&lt;github-username&gt;/bookshelf.git
+</code></pre>
+
+<p>There, create and check out a new branch <code>gh-pages</code>.</p>
+
+<pre><code class="language-bash">$ git checkout -b gh-pages
+Switched to a new branch 'gh-pages'
+</code></pre>
+
+<p>Add all the files (within <code>bookshelf/public</code>) to the index,
+commit them, and push the changes to GitHub.</p>
+
+<pre><code class="language-bash">$ git add --all
+$ git commit -m &quot;bookshelf added&quot;
+$ git push -f origin gh-pages
+</code></pre>
+
+<p>In couple of minutes, your website will be live
+at <code>https://&lt;github-username&gt;.github.io/bookshelf/</code>.</p>
+
+<p>Anytime, you can regenerate your site with:</p>
+
+<pre><code class="language-bash">$ (cd ..; hugo --theme=hugo_theme_robust)
+$ git add --all
+$ git commit -m &quot;&lt;some change message&gt;&quot;
+$ git push -f origin gh-pages
+</code></pre>
+
+<hr />
+
+<p>This quickstart was originally written by <a href="https://twitter.com/shekhargulati">Shekhar Gulati</a> in his <a href="https://github.com/shekhargulati/52-technologies-in-2016">52 Technologies in 2016</a> blog series.</p>
+
+
+                    <div class="row">
+                        <div class="footer-panel">
+			  <p>Last revision: March 17, 2017 | <a href="https://github.com/spf13/hugo/commit/c5e0881f435e0250a486287dee6e953636936ca3">排版 引入雨果官方教程內容 (c5e0881)</a>
+                          <span style="float: right;">Hugo v0.19 documentation</span>
+                        </p>
+                        </div>
+                    </div>
+
+                    </div>
+                    </section>
+
+                    </div>
+
+                <div class="col-md-1">
+                    
+                    
+                    <a class="navigation next" href="/overview/installing">
+                        <i class="fa fa-angle-right"> </i>
+                    </a>
+                    
+                    
+                </div>
+              </div>
+              
+          </section>
+      </section>
+     
+  </section>
+  
+
+    
+    <script type="text/javascript" src="/vendor/jquery/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="/vendor/flesler/js/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="/vendor/twitter/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="/vendor/highlightjs/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/scripts.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script> 
+    <script type="text/javascript"> 
+    docsearch({
+      apiKey: '167e7998590aebda7f9fedcf86bc4a55',
+      indexName: 'hugodocs',
+      inputSelector: '#search-input',
+      algoliaOptions: {
+        hitsPerPage: 5
+      }
+    }); 
+    </script>
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-7131036-4', 'spf13.com');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>
+

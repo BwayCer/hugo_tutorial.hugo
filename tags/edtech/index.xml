@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Edtech on Hugo: A Fast and Flexible Website Generator</title>
+    <link>http://gohugo.io/tags/edtech/index.xml</link>
+    <description>Recent content in Edtech on Hugo: A Fast and Flexible Website Generator</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <atom:link href="http://gohugo.io/tags/edtech/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CompilED at CTL</title>
+      <link>http://gohugo.io/showcase/ctlcompiled/</link>
+      <pubDate>Mon, 25 Jul 2016 13:45:09 -0400</pubDate>
+      
+      <guid>http://gohugo.io/showcase/ctlcompiled/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

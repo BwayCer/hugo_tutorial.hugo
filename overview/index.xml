@@ -1,0 +1,1641 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview on Hugo: A Fast and Flexible Website Generator</title>
+    <link>http://gohugo.io/overview/index.xml</link>
+    <description>Recent content in Overview on Hugo: A Fast and Flexible Website Generator</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 01 Jul 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://gohugo.io/overview/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Introduction to Hugo</title>
+      <link>http://gohugo.io/overview/introduction/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/overview/introduction/</guid>
+      <description>
+
+&lt;h2 id=&#34;what-is-hugo&#34;&gt;What is Hugo?&lt;/h2&gt;
+
+&lt;p&gt;Hugo is a general-purpose website framework. Technically speaking, Hugo is
+a static site generator. Unlike other systems which dynamically build a page
+every time a visitor requests one, Hugo does the building when you create
+your content. Since websites are viewed far more often than they are
+edited, Hugo is optimized for website viewing while providing a great
+writing experience.&lt;/p&gt;
+
+&lt;p&gt;Sites built with Hugo are extremely fast and very secure. Hugo sites can
+be hosted anywhere, including &lt;a href=&#34;https://www.heroku.com/&#34;&gt;Heroku&lt;/a&gt;, &lt;a href=&#34;https://www.godaddy.com/&#34;&gt;GoDaddy&lt;/a&gt;, &lt;a href=&#34;http://www.dreamhost.com/&#34;&gt;DreamHost&lt;/a&gt;,
+&lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt;, &lt;a href=&#34;https://www.netlify.com&#34;&gt;Netlify&lt;/a&gt;, &lt;a href=&#34;https://surge.sh&#34;&gt;Surge&lt;/a&gt;, &lt;a href=&#34;https://www.aerobatic.com/&#34;&gt;Aerobatic&lt;/a&gt;, &lt;a href=&#34;https://firebase.google.com/docs/hosting/&#34;&gt;Firebase Hosting&lt;/a&gt;,
+&lt;a href=&#34;http://cloud.google.com/storage/&#34;&gt;Google Cloud Storage&lt;/a&gt;, &lt;a href=&#34;http://aws.amazon.com/s3/&#34;&gt;Amazon S3&lt;/a&gt; and &lt;a href=&#34;http://aws.amazon.com/cloudfront/&#34; title=&#34;Amazon CloudFront&#34;&gt;CloudFront&lt;/a&gt;, and work well
+with CDNs. Hugo sites run without dependencies on expensive runtimes
+like Ruby, Python or PHP and without dependencies on any databases.&lt;/p&gt;
+
+&lt;p&gt;We think of Hugo as the ideal website creation tool. With nearly instant
+build times and the ability to rebuild whenever a change is made, Hugo
+provides a very fast feedback loop. This is essential when you are
+designing websites, but also very useful when creating content.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-makes-hugo-different&#34;&gt;What makes Hugo different?&lt;/h2&gt;
+
+&lt;p&gt;Web site generators render content into HTML files. Most are &amp;ldquo;dynamic
+site generators.&amp;rdquo; That means the HTTP
+server (which is the program running on your website that the user&amp;rsquo;s
+browser talks to) runs the generator to create a new HTML file
+each and every time a user wants to view a page.&lt;/p&gt;
+
+&lt;p&gt;Creating the page dynamically means that the computer hosting
+the HTTP server has to have enough memory and CPU to effectively run
+the generator around the clock. If not, then the user has to wait
+in a queue for the page to be generated.&lt;/p&gt;
+
+&lt;p&gt;Nobody wants users to wait longer than needed, so the dynamic site
+generators programmed their systems to cache the HTML files. When
+a file is cached, a copy of it is temporarily stored on the computer.
+It is much faster for the HTTP server to send that copy the next time
+the page is requested than it is to generate it from scratch.&lt;/p&gt;
+
+&lt;p&gt;Hugo takes caching a step further. All HTML files are rendered on your
+computer. You can review the files before you copy them to the computer
+hosting the HTTP server. Since the HTML files aren&amp;rsquo;t generated dynamically,
+we say that Hugo is a &amp;ldquo;static site generator.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Not running a web site generator on your HTTP server has many benefits.
+The most noticeable is performance - HTTP servers are very good at
+sending files. So good that you can effectively serve the same number
+of pages with a fraction of the memory and CPU needed for a dynamic site.&lt;/p&gt;
+
+&lt;p&gt;Hugo has two components to help you build and test your web site. The
+one that you&amp;rsquo;ll probably use most often is the built-in HTTP server.
+When you run &lt;code&gt;hugo server&lt;/code&gt;, Hugo renders all of your content into
+HTML files and then runs an HTTP server on your computer so that you
+can see what the pages look like.&lt;/p&gt;
+
+&lt;p&gt;The second component is used when you&amp;rsquo;re ready to publish your web
+site to the computer running your website. Running Hugo without any
+actions will rebuild your entire web site using the &lt;code&gt;baseURL&lt;/code&gt; setting
+from your site&amp;rsquo;s configuration file. That&amp;rsquo;s required to have your page
+links work properly with most hosting companies.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-fast-is-hugo&#34;&gt;How fast is Hugo?&lt;/h2&gt;
+
+&lt;div class=&#34;video-container&#34;&gt;
+&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;100%&#34; height=&#34;auto&#34; src=&#34;https://www.youtube.com/embed/CdiDYZ51a2o&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;what-does-hugo-do&#34;&gt;What does Hugo do?&lt;/h2&gt;
+
+&lt;p&gt;In technical terms, Hugo takes a source directory of files and
+templates and uses these as input to create a complete website.&lt;/p&gt;
+
+&lt;p&gt;Hugo boasts the following features:&lt;/p&gt;
+
+&lt;h3 id=&#34;general&#34;&gt;General&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Extremely fast build times (~1 ms per page)&lt;/li&gt;
+&lt;li&gt;Completely cross platform: Runs on &lt;i class=&#34;fa fa-apple&#34;&gt;&lt;/i&gt;&amp;nbsp;Mac OS&amp;nbsp;X, &lt;i class=&#34;fa fa-linux&#34;&gt;&lt;/i&gt;&amp;nbsp;Linux, &lt;i class=&#34;fa fa-windows&#34;&gt;&lt;/i&gt;&amp;nbsp;Windows, and more!&lt;/li&gt;
+&lt;li&gt;Easy &lt;a href=&#34;http://gohugo.io/overview/installing/&#34;&gt;installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Render changes &lt;a href=&#34;http://gohugo.io/overview/usage/&#34;&gt;on the fly&lt;/a&gt; with &lt;a href=&#34;http://gohugo.io/extras/livereload/&#34;&gt;LiveReload&lt;/a&gt; as you develop&lt;/li&gt;
+&lt;li&gt;Complete theme support&lt;/li&gt;
+&lt;li&gt;Host your site anywhere&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;organization&#34;&gt;Organization&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Straightforward &lt;a href=&#34;http://gohugo.io/content/organization/&#34;&gt;organization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support for &lt;a href=&#34;http://gohugo.io/content/sections/&#34;&gt;website sections&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Completely customizable &lt;a href=&#34;http://gohugo.io/extras/urls/&#34;&gt;URLs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support for configurable &lt;a href=&#34;http://gohugo.io/taxonomies/overview/&#34;&gt;taxonomies&lt;/a&gt; which includes categories and tags.  Create your own custom organization of content&lt;/li&gt;
+&lt;li&gt;Ability to &lt;a href=&#34;http://gohugo.io/content/ordering/&#34;&gt;sort content&lt;/a&gt; as you desire&lt;/li&gt;
+&lt;li&gt;Automatic &lt;a href=&#34;http://gohugo.io/extras/toc/&#34;&gt;table of contents&lt;/a&gt; generation&lt;/li&gt;
+&lt;li&gt;Dynamic menu creation&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/extras/urls/&#34;&gt;Pretty URLs&lt;/a&gt; support&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/extras/permalinks/&#34;&gt;Permalink&lt;/a&gt; pattern support&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/extras/aliases/&#34;&gt;Aliases&lt;/a&gt; (redirects)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;content&#34;&gt;Content&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Native support for content written in &lt;a href=&#34;http://gohugo.io/content/example/&#34;&gt;Markdown&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Support for other languages through &lt;em&gt;external helpers&lt;/em&gt;, see &lt;a href=&#34;http://gohugo.io/content/supported-formats&#34;&gt;supported formats&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Support for TOML, YAML and JSON metadata in &lt;a href=&#34;http://gohugo.io/content/front-matter/&#34;&gt;frontmatter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Completely &lt;a href=&#34;http://gohugo.io/layout/homepage/&#34;&gt;customizable homepage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support for multiple &lt;a href=&#34;http://gohugo.io/content/types/&#34;&gt;content types&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Automatic and user defined &lt;a href=&#34;http://gohugo.io/content/summaries/&#34;&gt;summaries&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/extras/shortcodes/&#34;&gt;Shortcodes&lt;/a&gt; to enable rich content inside of Markdown&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/layout/variables/&#34;&gt;&amp;ldquo;Minutes to Read&amp;rdquo;&lt;/a&gt; functionality&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/layout/variables/&#34;&gt;&amp;ldquo;Wordcount&amp;rdquo;&lt;/a&gt; functionality&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;additional-features&#34;&gt;Additional Features&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Integrated &lt;a href=&#34;https://disqus.com/&#34;&gt;Disqus&lt;/a&gt; comment support&lt;/li&gt;
+&lt;li&gt;Integrated &lt;a href=&#34;https://google-analytics.com/&#34;&gt;Google Analytics&lt;/a&gt; support&lt;/li&gt;
+&lt;li&gt;Automatic &lt;a href=&#34;http://gohugo.io/layout/rss/&#34;&gt;RSS&lt;/a&gt; creation&lt;/li&gt;
+&lt;li&gt;Support for &lt;a href=&#34;http://golang.org/pkg/html/template/&#34;&gt;Go&lt;/a&gt;, &lt;a href=&#34;https://github.com/eknkc/amber&#34;&gt;Amber&lt;/a&gt; and &lt;a href=&#34;https://github.com/yosssi/ace&#34;&gt;Ace&lt;/a&gt; HTML templates&lt;/li&gt;
+&lt;li&gt;Syntax &lt;a href=&#34;http://gohugo.io/extras/highlighting/&#34;&gt;highlighting&lt;/a&gt; powered by &lt;a href=&#34;http://pygments.org/&#34;&gt;Pygments&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;See what&amp;rsquo;s coming next in the &lt;a href=&#34;http://gohugo.io/meta/roadmap/&#34;&gt;roadmap&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;who-should-use-hugo&#34;&gt;Who should use Hugo?&lt;/h2&gt;
+
+&lt;p&gt;Hugo is for people that prefer writing in a text editor over
+a browser.&lt;/p&gt;
+
+&lt;p&gt;Hugo is for people who want to hand code their own website without
+worrying about setting up complicated runtimes, dependencies and
+databases.&lt;/p&gt;
+
+&lt;p&gt;Hugo is for people building a blog, company site, portfolio, tumblog,
+documentation, single page site or a site with thousands of
+pages.&lt;/p&gt;
+
+&lt;h2 id=&#34;why-did-you-write-hugo&#34;&gt;Why did you write Hugo?&lt;/h2&gt;
+
+&lt;p&gt;I wrote Hugo ultimately for a few reasons. First, I was disappointed with
+WordPress, my then website solution. With it, I couldn&amp;rsquo;t create
+content as efficiently as I wanted to.
+It rendered slowly. It required me to be online to write
+posts: plus its constant security updates and the horror stories of people&amp;rsquo;s
+hacked blogs! I hated how content for it was written only in HTML, instead of the much
+simpler Markdown. Overall, I felt like WordPress got in my way
+much more than it helped me. It kept
+me from writing great content.&lt;/p&gt;
+
+&lt;p&gt;I looked at the existing static site generators
+like &lt;a href=&#34;http://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt;, &lt;a href=&#34;https://middlemanapp.com/&#34;&gt;Middleman&lt;/a&gt; and &lt;a href=&#34;http://nanoc.ws/&#34;&gt;Nanoc&lt;/a&gt;.
+All had complicated installation dependencies and took far longer to render
+my blog with its hundreds of posts than I felt was acceptable. I wanted
+a framework to be able to give me rapid feedback while making changes to the
+templates, and the 5+-minute render times were just too slow. In general,
+they were also very blog minded and didn&amp;rsquo;t have the ability to provide
+other content types and flexible URLs.&lt;/p&gt;
+
+&lt;p&gt;I wanted to develop a fast and full-featured website framework without any
+dependencies. The &lt;a href=&#34;http://golang.org/&#34; title=&#34;The Go Programming Language&#34;&gt;Go language&lt;/a&gt; seemed to have all the features I needed
+in a language. I began developing Hugo in Go and fell in love with the
+language. I hope you will enjoy using Hugo (and contributing to it) as much
+as I have writing it.&lt;/p&gt;
+
+&lt;p&gt;&amp;mdash;Steve Francia (@spf13)&lt;/p&gt;
+
+&lt;h2 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/overview/installing/&#34;&gt;Install Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/overview/quickstart/&#34;&gt;Quick start&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/community/mailing-list/&#34;&gt;Join the Mailing List&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/hugo&#34;&gt;Star us on GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://discuss.gohugo.io/&#34;&gt;Discussion Forum&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hugo Quickstart Guide</title>
+      <link>http://gohugo.io/overview/quickstart/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/overview/quickstart/</guid>
+      <description>
+
+&lt;h2 id=&#34;building-a-bookshelf&#34;&gt;Building a bookshelf&lt;/h2&gt;
+
+&lt;p&gt;In this quickstart, we will build an online bookshelf that will list books and their reviews.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Note: This quickstart depends on features introduced in Hugo v0.15.  If you have an earlier version of Hugo, you will need to &lt;a href=&#34;http://gohugo.io/overview/installing/&#34;&gt;upgrade&lt;/a&gt; before proceeding.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&#34;video-container&#34;&gt;
+&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;100%&#34; height=&#34;auto&#34; src=&#34;https://www.youtube.com/embed/w7Ft2ymGmfc&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;step-1-install-hugo&#34;&gt;Step 1. Install Hugo&lt;/h2&gt;
+
+&lt;p&gt;Go to &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;Hugo Releases&lt;/a&gt; and download the
+appropriate version for your OS and architecture.&lt;/p&gt;
+
+&lt;p&gt;Save the main executable as &lt;code&gt;hugo&lt;/code&gt; (or &lt;code&gt;hugo.exe&lt;/code&gt; on Windows) somewhere in your &lt;code&gt;PATH&lt;/code&gt; as we will be using it in the next step.&lt;/p&gt;
+
+&lt;p&gt;More complete instructions are available
+at &lt;a href=&#34;http://gohugo.io/overview/installing/&#34;&gt;Installing Hugo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re on Windows, this quickstart will assume
+you&amp;rsquo;re using &lt;a href=&#34;https://git-for-windows.github.io/&#34;&gt;Git Bash&lt;/a&gt;
+(also known as Git for Windows).
+Thus all commands will begin with the Bash prompt character (which is &lt;code&gt;$&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;Once &lt;code&gt;hugo&lt;/code&gt; is installed, make sure to run the &lt;code&gt;help&lt;/code&gt; command to verify &lt;code&gt;hugo&lt;/code&gt; installation. Below you can see part of the &lt;code&gt;help&lt;/code&gt; command output for brevity.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo help
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo is the main command, used to build your Hugo site.
+
+Hugo is a Fast and Flexible Static Site Generator
+built with love by spf13 and friends in Go.
+
+Complete documentation is available at http://gohugo.io/.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can check &lt;code&gt;hugo&lt;/code&gt; version using the command shown below.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo version
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;Hugo Static Site Generator v0.15 BuildDate: 2015-11-26T11:59:00+05:30
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;step-2-scaffold-bookshelf-hugo-site&#34;&gt;Step 2. Scaffold bookshelf hugo site&lt;/h2&gt;
+
+&lt;p&gt;Hugo has commands that allows us to quickly scaffold a Hugo managed website. Navigate to a convenient location on your filesystem and create a new Hugo site &lt;code&gt;bookshelf&lt;/code&gt; by executing the following command.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo new site bookshelf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Change directory to &lt;code&gt;bookshelf&lt;/code&gt; and you will see the following directory layout.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ tree -a
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;.
+|-- archetypes
+|-- config.toml
+|-- content
+|-- data
+|-- layouts
+`-- static
+
+5 directories, 1 file
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As mentioned in the command output, &lt;code&gt;bookshelf&lt;/code&gt; directory has 5 sub-directories and 1 file. Let&amp;rsquo;s look at each of them one by one.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;archetypes&lt;/strong&gt;: You can create new content files in Hugo using the &lt;code&gt;hugo new&lt;/code&gt; command. When you run that command, it adds few configuration properties to the post like date and title. &lt;a href=&#34;http://gohugo.io/content/archetypes/&#34;&gt;Archetype&lt;/a&gt; allows you to define your own configuration properties that will be added to the post front matter whenever &lt;code&gt;hugo new&lt;/code&gt; command is used.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;config.toml&lt;/strong&gt;: Every website should have a configuration file at the root. By default, the configuration file uses &lt;code&gt;TOML&lt;/code&gt; format but you can also use &lt;code&gt;YAML&lt;/code&gt; or &lt;code&gt;JSON&lt;/code&gt; formats as well. &lt;a href=&#34;https://github.com/toml-lang/toml&#34;&gt;TOML&lt;/a&gt; is minimal configuration file format that&amp;rsquo;s easy to read due to obvious semantics. The configuration settings mentioned in the &lt;code&gt;config.toml&lt;/code&gt; are applied to the full site. These configuration settings include &lt;code&gt;baseURL&lt;/code&gt; and &lt;code&gt;title&lt;/code&gt; of the website.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;content&lt;/strong&gt;: This is where you will store content of the website. Inside content, you will create sub-directories for different sections. Let&amp;rsquo;s suppose your website has three sections &amp;ndash; &lt;code&gt;blog&lt;/code&gt;, &lt;code&gt;article&lt;/code&gt;, and &lt;code&gt;tutorial&lt;/code&gt; then you will have three different directories for each of them inside the &lt;code&gt;content&lt;/code&gt; directory. The name of the section i.e. &lt;code&gt;blog&lt;/code&gt;, &lt;code&gt;article&lt;/code&gt;, or &lt;code&gt;tutorial&lt;/code&gt; will be used by Hugo to apply a specific layout applicable to that section.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;data&lt;/strong&gt;: This directory is used to store configuration files that can be
+used by Hugo when generating your website.
+You can write these files in YAML, JSON, or TOML format.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;layouts&lt;/strong&gt;: The content inside this directory is used to specify how your content will be converted into the static website.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;static&lt;/strong&gt;: This directory is used to store all the static content that your website will need like images, CSS, JavaScript or other static content.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;step-3-add-content&#34;&gt;Step 3. Add content&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s now add a post to our &lt;code&gt;bookshelf&lt;/code&gt;. We will use the &lt;code&gt;hugo new&lt;/code&gt; command to add a post. In January, I read &lt;a href=&#34;http://www.amazon.com/Good-Great-Some-Companies-Others/dp/0066620996/&#34;&gt;Good To Great&lt;/a&gt; book so we will start with creating a post for it. &lt;strong&gt;Make sure you are inside the &lt;code&gt;bookshelf&lt;/code&gt; directory.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo new post/good-to-great.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;/Users/shekhargulati/bookshelf/content/post/good-to-great.md created
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The above command will create a new directory &lt;code&gt;post&lt;/code&gt;
+inside the &lt;code&gt;bookshelf/content&lt;/code&gt; directory
+and create &lt;code&gt;good-to-great.md&lt;/code&gt; file inside it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ tree -a content
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;content
+`-- post
+    `-- good-to-great.md
+
+1 directory, 1 file
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The content inside the &lt;code&gt;good-to-great.md&lt;/code&gt; file looks as shown below.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;+++
+date = &amp;quot;2016-02-14T16:11:58+05:30&amp;quot;
+draft = true
+title = &amp;quot;good to great&amp;quot;
+
++++
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The content inside &lt;code&gt;+++&lt;/code&gt; is the TOML configuration for the post.
+This configuration is called &lt;strong&gt;front matter&lt;/strong&gt;.
+It enables you to define post configuration along with its content.
+By default, each post will have the three configuration properties shown above.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;date&lt;/strong&gt; specifies the date and time at which post was created.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;draft&lt;/strong&gt; specifies that post is not ready for publication yet so it will not be in the generated site.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;title&lt;/strong&gt; specifies title for the post.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let&amp;rsquo;s add a small review for &lt;strong&gt;Good to Great&lt;/strong&gt; book.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;+++
+date = &amp;quot;2016-02-14T16:11:58+05:30&amp;quot;
+draft = true
+title = &amp;quot;Good to Great Book Review&amp;quot;
+
++++
+
+I read **Good to Great in January 2016**. An awesome read sharing detailed analysis on how good companies became great.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;step-4-serve-content&#34;&gt;Step 4. Serve content&lt;/h2&gt;
+
+&lt;p&gt;Hugo has an inbuilt server that can serve your website content so that you can preview it. You can also use the inbuilt Hugo server in production. To serve content, execute the following command inside the &lt;code&gt;bookshelf&lt;/code&gt; directory.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo server
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;0 of 1 draft rendered
+0 future content
+0 pages created
+0 paginator pages created
+0 tags created
+0 categories created
+in 9 ms
+Watching for changes in /Users/shekhargulati/bookshelf/{data,content,layouts,static}
+Serving pages from memory
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will start the server on port &lt;code&gt;1313&lt;/code&gt;.
+You can view your blog at &lt;a href=&#34;http://localhost:1313/&#34;&gt;http://localhost:1313/&lt;/a&gt;.
+When you go to the link, you will see nothing.
+There are couple of reasons for that:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;As you can see in the &lt;code&gt;hugo server&lt;/code&gt; command output, Hugo didn&amp;rsquo;t render the draft. Hugo will only render drafts if you pass the &lt;code&gt;buildDrafts&lt;/code&gt; flag to the &lt;code&gt;hugo server&lt;/code&gt; command.&lt;/li&gt;
+&lt;li&gt;We have not specified how Markdown content should be rendered. We have to specify a theme that Hugo can use. We will do that in the next step.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;To render drafts, re-run the server with command shown below.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo server --buildDrafts
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;1 of 1 draft rendered
+0 future content
+1 pages created
+0 paginator pages created
+0 tags created
+0 categories created
+in 6 ms
+Watching for changes in /Users/shekhargulati/bookshelf/{data,content,layouts,static}
+Serving pages from memory
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you go to &lt;a href=&#34;http://localhost:1313/&#34;&gt;http://localhost:1313/&lt;/a&gt;,
+you still will not see anything as we have not specified a theme that Hugo should use.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-5-add-theme&#34;&gt;Step 5. Add theme&lt;/h2&gt;
+
+&lt;p&gt;Themes provide the layout and templates that will be used by Hugo to render your website. There are a lot of Open-source themes available at &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;https://themes.gohugo.io/&lt;/a&gt; that you can use.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hugo currently doesn’t ship with a &lt;code&gt;default&lt;/code&gt; theme, allowing the user to pick whichever theme best suits their project.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Themes should be added in the &lt;code&gt;themes&lt;/code&gt; directory inside the repository root.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cd themes
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, you can clone one or more themes inside the &lt;code&gt;themes&lt;/code&gt; directory.
+We will use the &lt;code&gt;robust&lt;/code&gt; theme,
+but at a commit (in its history) that works with this quickstart.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ git clone https://github.com/dim0627/hugo_theme_robust.git
+$ (cd hugo_theme_robust; git checkout b8ce466)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Leave the themes folder.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cd ..
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Start the server again.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo server --theme=hugo_theme_robust --buildDrafts
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;1 of 1 draft rendered
+0 future content
+1 pages created
+2 paginator pages created
+0 tags created
+0 categories created
+in 10 ms
+Watching for changes in /Users/shekhargulati/bookshelf/{data,content,layouts,static,themes}
+Serving pages from memory
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Note: If Hugo doesn&amp;rsquo;t find the specified theme in the &lt;code&gt;themes&lt;/code&gt; directory,
+it will throw an exception as shown below.&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;FATAL: 2016/02/14 Unable to find theme Directory: /Users/shekhargulati/bookshelf/themes/robust
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To view your website, you can go to &lt;a href=&#34;http://localhost:1313/&#34;&gt;http://localhost:1313/&lt;/a&gt;. You will see as shown below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/quickstart/bookshelf-robust-theme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s understand the layout of the theme. A theme consists of the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;theme.toml&lt;/strong&gt; is the theme configuration file that gives information
+about the theme like name and description of theme,
+author details, and theme license.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;images&lt;/strong&gt; directory contains two images &amp;ndash; &lt;code&gt;screenshot.png&lt;/code&gt; and &lt;code&gt;tn.png&lt;/code&gt;. &lt;code&gt;screenshot.png&lt;/code&gt; is the image of the list view and &lt;code&gt;tn.png&lt;/code&gt; is the single post view.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;layouts&lt;/strong&gt; directory contains different views for different content types.
+Every content type should have two files &lt;code&gt;single.html&lt;/code&gt; and &lt;code&gt;list.html&lt;/code&gt;.
+&lt;code&gt;single.html&lt;/code&gt; is used for rendering a single piece of content.
+&lt;code&gt;list.html&lt;/code&gt; is used to view a list of content items.
+For example, you will use &lt;code&gt;list.html&lt;/code&gt; to view all the posts
+that have the &lt;code&gt;programming&lt;/code&gt; tag.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;static&lt;/strong&gt; directory stores all the static assets used by the template.
+Static assets could be JavaScript libraries like jQuery or CSS styles or images,
+or any other static content.
+This directory will be copied into the final site when rendered.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;step-6-use-multiple-themes&#34;&gt;Step 6. Use multiple themes&lt;/h2&gt;
+
+&lt;p&gt;You can very easily test different layouts by switching between different themes.
+Let&amp;rsquo;s suppose we want to try out the &lt;code&gt;bleak&lt;/code&gt; theme.
+We clone the &lt;code&gt;bleak&lt;/code&gt; theme inside the &lt;code&gt;bookshelf/themes&lt;/code&gt; directory.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ git clone https://github.com/Zenithar/hugo-theme-bleak.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Restart the server using &lt;code&gt;hugo-theme-bleak&lt;/code&gt; as shown below.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo server --theme=hugo-theme-bleak --buildDrafts
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, the website will use the &lt;code&gt;bleak&lt;/code&gt; theme
+and will be rendered differently as shown below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/quickstart/bookshelf-bleak-theme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;step-7-update-config-toml-and-live-reloading-in-action&#34;&gt;Step 7. Update config.toml and live reloading in action&lt;/h2&gt;
+
+&lt;p&gt;Restart the server with the &lt;code&gt;robust&lt;/code&gt; theme, as we will use it in this quickstart.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo server --theme=hugo_theme_robust --buildDrafts
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The website uses the dummy values specified in &lt;code&gt;bookshelf/config.toml&lt;/code&gt;.
+Let&amp;rsquo;s update the configuration.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;baseURL = &amp;quot;http://example.org/&amp;quot;
+languageCode = &amp;quot;en-us&amp;quot;
+title = &amp;quot;Shekhar Gulati Book Reviews&amp;quot;
+
+[Params]
+  Author = &amp;quot;Shekhar Gulati&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Hugo has inbuilt support for live reloading.
+So, as soon as you save your changes it will apply the change
+and reload the web page. You will see the changes shown below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/quickstart/bookshelf-updated-config.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The same is reflected in the Hugo server logs as well.
+As soon as you changed the configuration file,
+Hugo applied those changes to the affected pages.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Config file changed: /Users/shekhargulati/bookshelf/config.toml
+1 of 1 draft rendered
+0 future content
+1 pages created
+2 paginator pages created
+0 tags created
+0 categories created
+in 11 ms
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;step-8-customize-robust-theme&#34;&gt;Step 8. Customize robust theme&lt;/h2&gt;
+
+&lt;p&gt;The &lt;code&gt;robust&lt;/code&gt; theme is a good start towards our online bookshelf but we want to
+customize it a bit to meet the look and feel required for the bookshelf.
+Hugo makes it very easy to customize themes.
+You can also create your themes but we will not do that today.
+If you want to create your own theme, then you should refer to
+the &lt;a href=&#34;http://gohugo.io/themes/creation/&#34;&gt;Hugo documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The first change that we have to make is to use a different default image
+instead of the one used in the theme.
+The theme&amp;rsquo;s default image used in both the list and single view page resides
+inside &lt;code&gt;themes/hugo_theme_robust/static/images/default.jpg&lt;/code&gt;.
+We can easily override it by creating a simple directory structure
+inside the repository&amp;rsquo;s &lt;code&gt;static&lt;/code&gt; directory.&lt;/p&gt;
+
+&lt;p&gt;Create an images directory inside the &lt;code&gt;bookshelf/static&lt;/code&gt; directory
+and copy an image with name &lt;code&gt;default.jpg&lt;/code&gt; inside it.
+We will use the default image shown below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/quickstart/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hugo will sync the changes and reload the website to use new image as shown below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/quickstart/bookshelf-new-default-image.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, we need to change the layout of the index page so that only images are shown instead of the text. The index.html inside the layouts directory of the theme refer to partial &lt;code&gt;li&lt;/code&gt; that renders the list view shown below.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;article class=&amp;quot;li&amp;quot;&amp;gt;
+  &amp;lt;a href=&amp;quot;{{ .Permalink }}&amp;quot; class=&amp;quot;clearfix&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;image&amp;quot; style=&amp;quot;background-image: url({{ $.Site.BaseURL }}images/{{ with .Params.image }}{{ . }}{{ else }}default.jpg{{ end }});&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;div class=&amp;quot;detail&amp;quot;&amp;gt;
+      &amp;lt;time&amp;gt;{{ with .Site.Params.DateForm }}{{ $.Date.Format . }}{{ else }}{{ $.Date.Format &amp;quot;Mon, Jan 2, 2006&amp;quot; }}{{ end }}&amp;lt;/time&amp;gt;
+      &amp;lt;h2 class=&amp;quot;title&amp;quot;&amp;gt;{{ .Title }}&amp;lt;/h2&amp;gt;
+      &amp;lt;div class=&amp;quot;summary&amp;quot;&amp;gt;{{ .Summary }}&amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/article&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Create a new file li.html inside the &lt;code&gt;bookshelf/layouts/_default&lt;/code&gt; directory. Copy the content shown below into the li.html. We have removed details of the book so that only image is shown.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;article class=&amp;quot;li&amp;quot;&amp;gt;
+  &amp;lt;a href=&amp;quot;{{ .Permalink }}&amp;quot; class=&amp;quot;clearfix&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;image&amp;quot; style=&amp;quot;background-image: url({{ $.Site.BaseURL }}images/{{ with .Params.image }}{{ . }}{{ else }}default.jpg{{ end }});&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+  &amp;lt;/a&amp;gt;
+&amp;lt;/article&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, the website will be rendered as shown below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/quickstart/bookshelf-only-picture.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Next, we want to remove information related to theme from the footer.
+So, create a new directory &lt;code&gt;partials&lt;/code&gt; inside &lt;code&gt;bookshelf/layouts&lt;/code&gt;.
+There, create a new file &lt;code&gt;default_foot.html&lt;/code&gt; with the content copied
+from the theme&amp;rsquo;s &lt;code&gt;layouts/partials/default_foot.html&lt;/code&gt;.
+Replace the footer section with the one shown below.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;footer class=&amp;quot;site&amp;quot;&amp;gt;
+  &amp;lt;p&amp;gt;{{ with .Site.Copyright | safeHTML }}{{ . }}{{ else }}&amp;amp;copy; {{ $.Site.LastChange.Year }} {{ if isset $.Site.Params &amp;quot;Author&amp;quot; }}{{ $.Site.Params.Author }}{{ else }}{{ .Site.Title }}{{ end }}{{ end }}&amp;lt;/p&amp;gt;
+  &amp;lt;p&amp;gt;Powered by &amp;lt;a href=&amp;quot;http://gohugo.io&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;Hugo&amp;lt;/a&amp;gt;,&amp;lt;/p&amp;gt;
+&amp;lt;/footer&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We also have to remove the sidebar on the right.
+Copy the &lt;code&gt;index.html&lt;/code&gt; from the theme&amp;rsquo;s &lt;code&gt;layouts&lt;/code&gt; directory to
+the &lt;code&gt;bookshelf/layouts&lt;/code&gt; directory.
+Remove the section related to the sidebar from the HTML:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div class=&amp;quot;col-sm-3&amp;quot;&amp;gt;
+  {{ partial &amp;quot;sidebar.html&amp;quot; . }}
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So far we are using the default image but we would like to use the book image so that we can relate to the book. Every book review will define a configuration setting in its front matter. Update the &lt;code&gt;good-to-great.md&lt;/code&gt; as shown below.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;+++
+date = &amp;quot;2016-02-14T16:11:58+05:30&amp;quot;
+draft = true
+title = &amp;quot;Good to Great Book Review&amp;quot;
+image = &amp;quot;good-to-great.jpg&amp;quot;
++++
+
+I read **Good to Great in January 2016**. An awesome read sharing detailed analysis on how good companies became great. Although this book is about how companies became great but we could apply a lot of the learnings on ourselves. Concepts like level 5 leader, hedgehog concept, the stockdale paradox are equally applicable to individuals.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Grab a (legal) image from somewhere, name it &lt;code&gt;good-to-great.jpg&lt;/code&gt;,
+and place it in the &lt;code&gt;bookshelf/static/images&lt;/code&gt; directory.&lt;/p&gt;
+
+&lt;p&gt;After adding few more books to our shelf, the shelf appears as shown below.
+These are a few of the books that I have read within the last year.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/quickstart/bookshelf.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;step-9-make-posts-public&#34;&gt;Step 9. Make posts public&lt;/h2&gt;
+
+&lt;p&gt;So far all the posts that we have written are in draft status.
+To make a draft public, you can either run a command
+or manually change the draft status in the post to &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo undraft content/post/good-to-great.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, you can start the server without the &lt;code&gt;buildDrafts&lt;/code&gt; option.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ hugo server --theme=hugo_theme_robust
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;step-10-integrate-disqus&#34;&gt;Step 10. Integrate Disqus&lt;/h2&gt;
+
+&lt;p&gt;Disqus allows you to integrate comments in your static blog. To enable Disqus, you just have to set &lt;code&gt;disqusShortname&lt;/code&gt;  in the config.toml as shown below.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[Params]
+  Author = &amp;quot;Shekhar Gulati&amp;quot;
+  disqusShortname = &amp;lt;your disqus shortname&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now, commenting will be enabled in your blog.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/quickstart/bookshelf-disqus.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;step-11-generate-website&#34;&gt;Step 11. Generate website&lt;/h2&gt;
+
+&lt;p&gt;To generate Hugo website source you can use
+to deploy your website on GitHub pages,
+first edit &lt;code&gt;bookshelf/config.toml&lt;/code&gt;, changing the &lt;code&gt;baseURL&lt;/code&gt; line to:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;baseURL = &amp;quot;https://&amp;lt;your GitHub username&amp;gt;.github.io/bookshelf/&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then type the following command.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo --theme=hugo_theme_robust
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;0 draft content
+0 future content
+5 pages created
+2 paginator pages created
+0 tags created
+0 categories created
+in 17 ms
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After you run the &lt;code&gt;hugo&lt;/code&gt; command, a &lt;code&gt;bookshelf/public&lt;/code&gt; directory
+will be created containing the generated website source.&lt;/p&gt;
+
+&lt;p&gt;BTW (in case you tried),
+the website isn&amp;rsquo;t properly accessible via the &lt;code&gt;file:///&lt;/code&gt; protocol.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-12-deploy-bookshelf-on-github-pages&#34;&gt;Step 12. Deploy bookshelf on GitHub pages&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s version control your bookshelf:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ git init
+$ echo &amp;quot;/public/&amp;quot; &amp;gt;&amp;gt; .gitignore
+$ echo &amp;quot;/themes/&amp;quot; &amp;gt;&amp;gt; .gitignore
+$ git add --all
+$ git commit -m &amp;quot;Initial commit&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now the Git repositories under &lt;code&gt;bookshelf/themes&lt;/code&gt;
+won&amp;rsquo;t conflict with your &lt;code&gt;bookshelf&lt;/code&gt; repository,
+and neither will a Git repository in &lt;code&gt;bookshelf/public&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Create a new repository on GitHub named &lt;code&gt;bookshelf&lt;/code&gt; (without a README).
+Once that&amp;rsquo;s done, create a new Git repository on your local system
+in &lt;code&gt;bookshelf/public&lt;/code&gt; and add remote:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cd public
+$ git init
+$ git remote add origin git@github.com:&amp;lt;github-username&amp;gt;/bookshelf.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There, create and check out a new branch &lt;code&gt;gh-pages&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ git checkout -b gh-pages
+Switched to a new branch &#39;gh-pages&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Add all the files (within &lt;code&gt;bookshelf/public&lt;/code&gt;) to the index,
+commit them, and push the changes to GitHub.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ git add --all
+$ git commit -m &amp;quot;bookshelf added&amp;quot;
+$ git push -f origin gh-pages
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In couple of minutes, your website will be live
+at &lt;code&gt;https://&amp;lt;github-username&amp;gt;.github.io/bookshelf/&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Anytime, you can regenerate your site with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ (cd ..; hugo --theme=hugo_theme_robust)
+$ git add --all
+$ git commit -m &amp;quot;&amp;lt;some change message&amp;gt;&amp;quot;
+$ git push -f origin gh-pages
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;This quickstart was originally written by &lt;a href=&#34;https://twitter.com/shekhargulati&#34;&gt;Shekhar Gulati&lt;/a&gt; in his &lt;a href=&#34;https://github.com/shekhargulati/52-technologies-in-2016&#34;&gt;52 Technologies in 2016&lt;/a&gt; blog series.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installing Hugo</title>
+      <link>http://gohugo.io/overview/installing/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/overview/installing/</guid>
+      <description>
+
+&lt;p&gt;Hugo is written in &lt;a href=&#34;http://golang.org/&#34;&gt;Go&lt;/a&gt; with support for multiple platforms.&lt;/p&gt;
+
+&lt;p&gt;The latest release can be found at &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;Hugo Releases&lt;/a&gt;.
+We currently provide pre-built binaries for
+&lt;i class=&#34;fa fa-windows&#34;&gt;&lt;/i&gt;&amp;nbsp;Windows,
+&lt;i class=&#34;fa fa-linux&#34;&gt;&lt;/i&gt;&amp;nbsp;Linux,
+&lt;i class=&#34;fa freebsd-19px&#34;&gt;&lt;/i&gt;&amp;nbsp;FreeBSD
+and &lt;i class=&#34;fa fa-apple&#34;&gt;&lt;/i&gt;&amp;nbsp;OS&amp;nbsp;X (Darwin)
+for x64, i386 and ARM architectures.&lt;/p&gt;
+
+&lt;p&gt;Hugo may also be compiled from source wherever the Go compiler tool chain can run, e.g. for other operating systems including DragonFly BSD, OpenBSD, Plan&amp;nbsp;9 and Solaris.  See &lt;a href=&#34;http://golang.org/doc/install/source&#34;&gt;http://golang.org/doc/install/source&lt;/a&gt; for the full set of supported combinations of target operating systems and compilation architectures.&lt;/p&gt;
+
+&lt;h2 id=&#34;installing-hugo-binary&#34;&gt;Installing Hugo (binary)&lt;/h2&gt;
+
+&lt;p&gt;Installation is very easy. Simply download the appropriate version for your
+platform from &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;Hugo Releases&lt;/a&gt;.
+Once downloaded it can be run from anywhere. You don&amp;rsquo;t need to install
+it into a global location. This works well for shared hosts and other systems
+where you don&amp;rsquo;t have a privileged account.&lt;/p&gt;
+
+&lt;p&gt;Ideally, you should install it somewhere in your &lt;code&gt;PATH&lt;/code&gt; for easy use.
+&lt;code&gt;/usr/local/bin&lt;/code&gt; is the most probable location.&lt;/p&gt;
+
+&lt;p&gt;On OS&amp;nbsp;X, if you have &lt;a href=&#34;http://brew.sh/&#34;&gt;Homebrew&lt;/a&gt;, installation is even
+easier: just run &lt;code&gt;brew update &amp;amp;&amp;amp; brew install hugo&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;For a more detailed explanation follow the corresponding installation guides:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/tutorials/installing-on-mac/&#34;&gt;Installation on OS X&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/tutorials/installing-on-windows/&#34;&gt;Installation on Windows&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;installing-pygments-optional&#34;&gt;Installing Pygments (optional)&lt;/h3&gt;
+
+&lt;p&gt;The Hugo executable has one &lt;em&gt;optional&lt;/em&gt; external dependency for source code highlighting (Pygments).&lt;/p&gt;
+
+&lt;p&gt;If you want to have source code highlighting using the &lt;a href=&#34;http://gohugo.io/extras/highlighting/&#34;&gt;highlight shortcode&lt;/a&gt;,
+you need to install the Python-based Pygments program. The procedure is outlined on the &lt;a href=&#34;http://pygments.org/&#34;&gt;Pygments home page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;upgrading-hugo&#34;&gt;Upgrading Hugo&lt;/h2&gt;
+
+&lt;p&gt;Upgrading Hugo is as easy as downloading and replacing the executable you’ve
+placed in your &lt;code&gt;PATH&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;installing-from-snap&#34;&gt;Installing from snap&lt;/h2&gt;
+
+&lt;p&gt;In any of the &lt;a href=&#34;http://snapcraft.io/docs/core/install&#34;&gt;Linux distributions that support snaps&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ snap install hugo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;installing-from-source&#34;&gt;Installing from source&lt;/h2&gt;
+
+&lt;h3 id=&#34;prerequisite-tools-for-downloading-and-building-source-code&#34;&gt;Prerequisite tools for downloading and building source code&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://git-scm.com/&#34;&gt;Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://golang.org/&#34;&gt;Go&lt;/a&gt; 1.5+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;get-directly-from-github&#34;&gt;Get directly from GitHub&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;$ export GOPATH=$HOME/go
+$ go get -v github.com/spf13/hugo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;go get&lt;/code&gt; will then fetch Hugo and all its dependent libraries to your
+&lt;code&gt;$GOPATH/src&lt;/code&gt; directory, and compile everything into the final &lt;code&gt;hugo&lt;/code&gt;
+(or &lt;code&gt;hugo.exe&lt;/code&gt;) executable, which you will find sitting in the
+&lt;code&gt;$GOPATH/bin/&lt;/code&gt; directory, all ready to go!&lt;/p&gt;
+
+&lt;p&gt;You may run &lt;code&gt;go get&lt;/code&gt; with the &lt;code&gt;-u&lt;/code&gt; option to update Hugo&amp;rsquo;s dependencies:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ go get -u -v github.com/spf13/hugo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;contributing&#34;&gt;Contributing&lt;/h2&gt;
+
+&lt;p&gt;Please see the &lt;a href=&#34;http://gohugo.io/doc/contributing/&#34;&gt;contributing guide&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using Hugo</title>
+      <link>http://gohugo.io/overview/usage/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/overview/usage/</guid>
+      <description>
+
+&lt;p&gt;Make sure Hugo is in your &lt;code&gt;PATH&lt;/code&gt; (or provide a path to it). Test this by:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;hljs nohighlight&#34;&gt;$ hugo help
+hugo is the main command, used to build your Hugo site.
+
+Hugo is a Fast and Flexible Static Site Generator
+built with love by spf13 and friends in Go.
+
+Complete documentation is available at http://gohugo.io/.
+
+Usage:
+  hugo [flags]
+  hugo [command]
+
+Available Commands:
+  benchmark   Benchmark Hugo by building a site a number of times.
+  config      Print the site configuration
+  convert     Convert your content to different formats
+  env         Print Hugo version and environment info
+  gen         A collection of several useful generators.
+  import      Import your site from others.
+  list        Listing out various types of content
+  new         Create new content for your site
+  server      A high performance webserver
+  undraft     Undraft changes the content&#39;s draft status from &#39;True&#39; to &#39;False&#39;
+  version     Print the version number of Hugo
+
+Flags:
+  -b, --baseURL string          hostname (and path) to the root, e.g. http://spf13.com/
+  -D, --buildDrafts             include content marked as draft
+  -E, --buildExpired            include expired content
+  -F, --buildFuture             include content with publishdate in the future
+      --cacheDir string         filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/
+      --canonifyURLs            if true, all relative URLs will be canonicalized using baseURL
+      --cleanDestinationDir     Remove files from destination not found in static directories
+      --config string           config file (default is path/config.yaml|json|toml)
+  -c, --contentDir string       filesystem path to content directory
+  -d, --destination string      filesystem path to write files to
+      --disable404              Do not render 404 page
+      --disableRSS              Do not build RSS files
+      --disableSitemap          Do not build Sitemap file
+      --enableGitInfo           Add Git revision, date and author info to the pages
+      --forceSyncStatic         Copy all files when static is changed.
+      --i18n-warnings           Print missing translations
+      --ignoreCache             Ignores the cache directory
+  -l, --layoutDir string        filesystem path to layout directory
+      --log                     Enable Logging
+      --logFile string          Log File path (if set, logging enabled automatically)
+      --noChmod                 Don&#39;t sync permission mode of files
+      --noTimes                 Don&#39;t sync modification time of files
+      --pluralizeListTitles     Pluralize titles in lists using inflect (default true)
+      --preserveTaxonomyNames   Preserve taxonomy names as written (&#34;Gérard Depardieu&#34; vs &#34;gerard-depardieu&#34;)
+      --quiet                   build in quiet mode
+      --renderToMemory          render to memory (only useful for benchmark testing)
+  -s, --source string           filesystem path to read files relative from
+      --stepAnalysis            display memory and timing of different steps of the program
+  -t, --theme string            theme to use (located in /themes/THEMENAME/)
+      --uglyURLs                if true, use /filename.html instead of /filename/
+  -v, --verbose                 verbose output
+      --verboseLog              verbose logging
+  -w, --watch                   watch filesystem for changes and recreate as needed
+
+Additional help topics:
+  hugo check     Contains some verification checks
+
+Use &#34;hugo [command] --help&#34; for more information about a command.
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2 id=&#34;common-usage-example&#34;&gt;Common Usage Example&lt;/h2&gt;
+
+&lt;p&gt;The most common use is probably to run &lt;code&gt;hugo&lt;/code&gt; with your current directory being the input directory:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;hljs nohighlight&#34;&gt;$ hugo
+0 draft content
+0 future content
+99 pages created
+0 paginator pages created
+16 tags created
+0 groups created
+in 120 ms
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;This generates your web site to the &lt;code&gt;public/&lt;/code&gt; directory,
+ready to be deployed to your web server.&lt;/p&gt;
+
+&lt;h2 id=&#34;instant-feedback-as-you-develop-your-web-site&#34;&gt;Instant feedback as you develop your web site&lt;/h2&gt;
+
+&lt;p&gt;If you are working on things and want to see the changes immediately, by default
+Hugo will watch the filesystem for changes, and rebuild your site as soon as a file is saved:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;hljs nohighlight&#34;&gt;$ hugo -s ~/Code/hugo/docs
+0 draft content
+0 future content
+99 pages created
+0 paginator pages created
+16 tags created
+0 groups created
+in 120 ms
+Watching for changes in /Users/spf13/Code/hugo/docs/content
+Press Ctrl+C to stop
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Hugo can even run a server and create a site preview at the same time!
+Hugo implements &lt;a href=&#34;http://gohugo.io/extras/livereload/&#34;&gt;LiveReload&lt;/a&gt; technology to automatically
+reload any open pages in all JavaScript-enabled browsers, including mobile.
+This is the easiest and most common way to develop a Hugo web site:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;hljs nohighlight&#34;&gt;$ hugo server -ws ~/Code/hugo/docs
+0 draft content
+0 future content
+99 pages created
+0 paginator pages created
+16 tags created
+0 groups created
+in 120 ms
+Watching for changes in /Users/spf13/Code/hugo/docs/content
+Serving pages from /Users/spf13/Code/hugo/docs/public
+Web Server is available at http://localhost:1313/
+Press Ctrl+C to stop
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;h2 id=&#34;deploying-your-web-site&#34;&gt;Deploying your web site&lt;/h2&gt;
+
+&lt;p&gt;After running &lt;code&gt;hugo server&lt;/code&gt; for local web development,
+you need to do a final &lt;code&gt;hugo&lt;/code&gt; run
+&lt;strong&gt;without the &lt;code&gt;server&lt;/code&gt; part of the command&lt;/strong&gt;
+to rebuild your site.
+You may then &lt;strong&gt;deploy your site&lt;/strong&gt; by copying the &lt;code&gt;public/&lt;/code&gt; directory
+(by FTP, SFTP, WebDAV, Rsync, &lt;code&gt;git push&lt;/code&gt;, etc.)
+to your production web server.&lt;/p&gt;
+
+&lt;p&gt;Since Hugo generates a static website, your site can be hosted anywhere,
+including &lt;a href=&#34;https://www.heroku.com/&#34;&gt;Heroku&lt;/a&gt;, &lt;a href=&#34;https://www.godaddy.com/&#34;&gt;GoDaddy&lt;/a&gt;, &lt;a href=&#34;http://www.dreamhost.com/&#34;&gt;DreamHost&lt;/a&gt;, &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt;,
+&lt;a href=&#34;http://aws.amazon.com/s3/&#34;&gt;Amazon S3&lt;/a&gt; with &lt;a href=&#34;http://aws.amazon.com/cloudfront/&#34; title=&#34;Amazon CloudFront&#34;&gt;CloudFront&lt;/a&gt;, &lt;a href=&#34;https://firebase.google.com/docs/hosting/&#34;&gt;Firebase Hosting&lt;/a&gt;,
+or any other cheap (or even free) static web hosting service.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://httpd.apache.org/&#34; title=&#34;Apache HTTP Server&#34;&gt;Apache&lt;/a&gt;, &lt;a href=&#34;http://nginx.org/&#34;&gt;nginx&lt;/a&gt;, &lt;a href=&#34;http://www.iis.net/&#34;&gt;IIS&lt;/a&gt;&amp;hellip;  Any web server software would do!&lt;/p&gt;
+
+&lt;h3 id=&#34;a-note-about-deployment&#34;&gt;A note about deployment&lt;/h3&gt;
+
+&lt;p&gt;Running &lt;code&gt;hugo&lt;/code&gt; &lt;em&gt;does not&lt;/em&gt; remove generated files before building. This means that you should delete your &lt;code&gt;public/&lt;/code&gt; directory (or the directory you specified with &lt;code&gt;-d&lt;/code&gt;/&lt;code&gt;--destination&lt;/code&gt;) before running the &lt;code&gt;hugo&lt;/code&gt; command, or you run the risk of the wrong files (e.g. drafts and/or future posts) being left in the generated site.&lt;/p&gt;
+
+&lt;p&gt;An easy way to work around this is to use different directories for development and production.&lt;/p&gt;
+
+&lt;p&gt;To start a server that builds draft content (helpful for editing), you can specify a different destination: the &lt;code&gt;dev/&lt;/code&gt; dir.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;hljs nohighlight&#34;&gt;$ hugo server -wDs ~/Code/hugo/docs -d dev
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;When the content is ready for publishing, use the default &lt;code&gt;public/&lt;/code&gt; dir:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;hljs nohighlight&#34;&gt;$ hugo -s ~/Code/hugo/docs
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;This prevents content you&amp;rsquo;re not yet ready to share
+from accidentally becoming available.&lt;/p&gt;
+
+&lt;h3 id=&#34;alternatively-serve-your-web-site-with-hugo&#34;&gt;Alternatively, serve your web site with Hugo!&lt;/h3&gt;
+
+&lt;p&gt;Yes, that&amp;rsquo;s right!  Because Hugo is so blazingly fast both in web site creation
+&lt;em&gt;and&lt;/em&gt; in web serving (thanks to its concurrent and multi-threaded design and
+its Go heritage), some users actually prefer using Hugo itself to serve their
+web site &lt;em&gt;on their production server&lt;/em&gt;!&lt;/p&gt;
+
+&lt;p&gt;No other web server software (Apache, nginx, IIS&amp;hellip;) is necessary.&lt;/p&gt;
+
+&lt;p&gt;Here is the command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;hljs nohighlight&#34;&gt;$ hugo server --baseURL=http://yoursite.org/ \
+              --port=80 \
+              --appendPort=false \
+              --bind=87.245.198.50
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;Note the &lt;code&gt;bind&lt;/code&gt; option,
+which is the interface to which the server will bind
+(defaults to &lt;code&gt;127.0.0.1&lt;/code&gt;:
+fine for most development use cases).
+Some hosts, such as Amazon Web Services,
+run NAT (network address translation);
+sometimes it can be hard to figure out the actual IP address.
+Using &lt;code&gt;--bind=0.0.0.0&lt;/code&gt; will bind to all interfaces.&lt;/p&gt;
+
+&lt;p&gt;This way, you may actually deploy just the source files,
+and Hugo on your server will generate the resulting web site
+on-the-fly and serve them at the same time.&lt;/p&gt;
+
+&lt;p&gt;You may optionally add &lt;code&gt;--disableLiveReload=true&lt;/code&gt; if you do not want
+the JavaScript code for LiveReload to be added to your web pages.&lt;/p&gt;
+
+&lt;p&gt;Interested? Here are some great tutorials contributed by Hugo users:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://fredix.xyz/2014/10/hugo-syncthing/&#34;&gt;hugo, syncthing&lt;/a&gt; (French) by Frédéric Logier (@fredix)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Configuring Hugo</title>
+      <link>http://gohugo.io/overview/configuration/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/overview/configuration/</guid>
+      <description>
+
+&lt;p&gt;The directory structure of a Hugo web site&amp;mdash;or more precisely,
+of the source files containing its content and templates&amp;mdash;provide
+most of the configuration information that Hugo needs.
+Therefore, in essence,
+many web sites wouldn&amp;rsquo;t actually need a configuration file.
+This is because Hugo is designed to recognize certain typical usage patterns
+(and it expects them, by default).&lt;/p&gt;
+
+&lt;p&gt;Nevertheless, Hugo does search for a configuration file bearing
+a particular name in the root of your web site&amp;rsquo;s source directory.
+First, it looks for a &lt;code&gt;./config.toml&lt;/code&gt; file.
+If that&amp;rsquo;s not present, it will seek a &lt;code&gt;./config.yaml&lt;/code&gt; file,
+followed by a &lt;code&gt;./config.json&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;p&gt;In this &lt;code&gt;config&lt;/code&gt; file for your web site,
+you can include precise directions to Hugo regarding
+how it should render your site, as well as define its menus,
+and set various other site-wide parameters.&lt;/p&gt;
+
+&lt;p&gt;Another way that web site configuration can be accomplished is through
+operating system environment variables.
+For instance, the following command will work on Unix-like systems&amp;mdash;it
+sets a web site&amp;rsquo;s title:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ env HUGO_TITLE=&amp;quot;Some Title&amp;quot; hugo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(&lt;strong&gt;Note:&lt;/strong&gt; all such environment variable names must be prefixed with
+&lt;code&gt;HUGO_&lt;/code&gt;.)&lt;/p&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;p&gt;Following is a typical example of a YAML configuration file.
+Three periods end the document:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;---
+baseURL: &amp;quot;http://yoursite.example.com/&amp;quot;
+...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Following is an example TOML configuration file with some default values.
+The values under &lt;code&gt;[params]&lt;/code&gt; will populate the &lt;code&gt;.Site.Params&lt;/code&gt; variable
+for use in templates:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;contentDir = &amp;quot;content&amp;quot;
+layoutDir = &amp;quot;layouts&amp;quot;
+publishDir = &amp;quot;public&amp;quot;
+buildDrafts = false
+baseURL = &amp;quot;http://yoursite.example.com/&amp;quot;
+canonifyURLs = true
+
+[taxonomies]
+  category = &amp;quot;categories&amp;quot;
+  tag = &amp;quot;tags&amp;quot;
+
+[params]
+  description = &amp;quot;Tesla&#39;s Awesome Hugo Site&amp;quot;
+  author = &amp;quot;Nikola Tesla&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here is a YAML configuration file which sets a few more options:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;---
+baseURL: &amp;quot;http://yoursite.example.com/&amp;quot;
+title: &amp;quot;Yoyodyne Widget Blogging&amp;quot;
+footnoteReturnLinkContents: &amp;quot;↩&amp;quot;
+permalinks:
+  post: /:year/:month/:title/
+params:
+  Subtitle: &amp;quot;Spinning the cogs in the widgets&amp;quot;
+  AuthorName: &amp;quot;John Doe&amp;quot;
+  GitHubUser: &amp;quot;spf13&amp;quot;
+  ListOfFoo:
+    - &amp;quot;foo1&amp;quot;
+    - &amp;quot;foo2&amp;quot;
+  SidebarRecentLimit: 5
+...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;configuration-variables&#34;&gt;Configuration variables&lt;/h2&gt;
+
+&lt;p&gt;Following is a list of Hugo-defined variables you can configure,
+along with their current, default values:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;---
+archetypeDir:               &amp;quot;archetypes&amp;quot;
+# hostname (and path) to the root, e.g. http://spf13.com/
+baseURL:                    &amp;quot;&amp;quot;
+# include content marked as draft
+buildDrafts:                false
+# include content with publishdate in the future
+buildFuture:                false
+# include content already expired
+buildExpired:               false
+# enable this to make all relative URLs relative to content root. Note that this does not affect absolute URLs.
+relativeURLs:               false
+canonifyURLs:               false
+# config file (default is path/config.yaml|json|toml)
+config:                     &amp;quot;config.toml&amp;quot;
+contentDir:                 &amp;quot;content&amp;quot;
+dataDir:                    &amp;quot;data&amp;quot;
+defaultExtension:           &amp;quot;html&amp;quot;
+defaultLayout:              &amp;quot;post&amp;quot;
+# Missing translations will default to this content language
+defaultContentLanguage:     &amp;quot;en&amp;quot;
+# Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
+defaultContentLanguageInSubdir: false
+# The below example will disable all page types and will render nothing.
+disableKinds = [&amp;quot;page&amp;quot;, &amp;quot;home&amp;quot;, &amp;quot;section&amp;quot;, &amp;quot;taxonomy&amp;quot;, &amp;quot;taxonomyTerm&amp;quot;, &amp;quot;RSS&amp;quot;, &amp;quot;sitemap&amp;quot;, &amp;quot;robotsTXT&amp;quot;, &amp;quot;404&amp;quot;]
+disableLiveReload:          false
+# Do not build RSS files
+disableRSS:                 false
+# Do not build Sitemap file
+disableSitemap:             false
+# Enable GitInfo feature
+enableGitInfo:              false
+# Build robots.txt file
+enableRobotsTXT:            false
+# Do not render 404 page
+disable404:                 false
+# Do not inject generator meta tag on homepage
+disableHugoGeneratorInject: false
+# edit new content with this editor, if provided
+editor:                     &amp;quot;&amp;quot;
+# Enable Emoji emoticons support for page content.
+# See www.emoji-cheat-sheet.com
+enableEmoji:                false
+# Show a placeholder instead of the default value or an empty string if a translation is missing
+enableMissingTranslationPlaceholders: false
+footnoteAnchorPrefix:       &amp;quot;&amp;quot;
+footnoteReturnLinkContents: &amp;quot;&amp;quot;
+# google analytics tracking id
+googleAnalytics:            &amp;quot;&amp;quot;
+languageCode:               &amp;quot;&amp;quot;
+layoutDir:                  &amp;quot;layouts&amp;quot;
+# Enable Logging
+log:                        false
+# Log File path (if set, logging enabled automatically)
+logFile:                    &amp;quot;&amp;quot;
+# &amp;quot;yaml&amp;quot;, &amp;quot;toml&amp;quot;, &amp;quot;json&amp;quot;
+metaDataFormat:             &amp;quot;toml&amp;quot;
+newContentEditor:           &amp;quot;&amp;quot;
+# Don&#39;t sync permission mode of files
+noChmod:                    false
+# Don&#39;t sync modification time of files
+noTimes:                    false
+paginate:                   10
+paginatePath:               &amp;quot;page&amp;quot;
+permalinks:
+# Pluralize titles in lists using inflect
+pluralizeListTitles:        true
+# Preserve special characters in taxonomy names (&amp;quot;Gérard Depardieu&amp;quot; vs &amp;quot;Gerard Depardieu&amp;quot;)
+preserveTaxonomyNames:      false
+# filesystem path to write files to
+publishDir:                 &amp;quot;public&amp;quot;
+# enables syntax guessing for code fences without specified language
+pygmentsCodeFencesGuessSyntax: false
+# color-codes for highlighting derived from this style
+pygmentsStyle:              &amp;quot;monokai&amp;quot;
+# true: use pygments-css or false: color-codes directly
+pygmentsUseClasses:         false
+# maximum number of items in the RSS feed
+rssLimit:                   15
+# default sitemap configuration map
+sitemap:
+# filesystem path to read files relative from
+source:                     &amp;quot;&amp;quot;
+staticDir:                  &amp;quot;static&amp;quot;
+# display memory and timing of different steps of the program
+stepAnalysis:               false
+# theme to use (located by default in /themes/THEMENAME/)
+themesDir:                  &amp;quot;themes&amp;quot;
+theme:                      &amp;quot;&amp;quot;
+title:                      &amp;quot;&amp;quot;
+# if true, use /filename.html instead of /filename/
+uglyURLs:                   false
+# Do not make the url/path to lowercase
+disablePathToLower:         false
+# if true, auto-detect Chinese/Japanese/Korean Languages in the content. (.Summary and .WordCount can work properly in CJKLanguage)
+hasCJKLanguage:             false
+# verbose output
+verbose:                    false
+# verbose logging
+verboseLog:                 false
+# watch filesystem for changes and recreate as needed
+watch:                      true
+---
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;ignore-various-files-when-rendering&#34;&gt;Ignore various files when rendering&lt;/h2&gt;
+
+&lt;p&gt;The following statement inside &lt;code&gt;./config.toml&lt;/code&gt; will cause Hugo to ignore files
+ending with &lt;code&gt;.foo&lt;/code&gt; and &lt;code&gt;.boo&lt;/code&gt; when rendering:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;ignoreFiles = [ &amp;quot;\\.foo$&amp;quot;, &amp;quot;\\.boo$&amp;quot; ]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The above is a list of regular expressions.
+Note that the backslash (&lt;code&gt;\&lt;/code&gt;) character is escaped, to keep TOML happy.&lt;/p&gt;
+
+&lt;h2 id=&#34;configure-blackfriday-rendering&#34;&gt;Configure Blackfriday rendering&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/russross/blackfriday&#34;&gt;Blackfriday&lt;/a&gt; is Hugo&amp;rsquo;s
+&lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt;
+rendering engine.&lt;/p&gt;
+
+&lt;p&gt;In the main, Hugo typically configures Blackfriday with a sane set of defaults.
+These defaults should fit most use cases, reasonably well.&lt;/p&gt;
+
+&lt;p&gt;However, if you have unusual needs with respect to Markdown,
+Hugo exposes some of its Blackfriday behavior options for you to alter.
+The following table lists these Hugo options,
+paired with the corresponding flags from Blackfriday&amp;rsquo;s source code (for the latter, see
+&lt;a href=&#34;https://github.com/russross/blackfriday/blob/master/html.go&#34;&gt;html.go&lt;/a&gt; and
+&lt;a href=&#34;https://github.com/russross/blackfriday/blob/master/markdown.go&#34;&gt;markdown.go&lt;/a&gt;):&lt;/p&gt;
+
+&lt;table class=&#34;table table-bordered-configuration&#34;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Flag&lt;/th&gt;
+            &lt;th&gt;Default&lt;/th&gt;
+            &lt;th&gt;Blackfriday flag&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;code&gt;&lt;strong&gt;taskLists&lt;/strong&gt;&lt;/code&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;code&gt;&lt;/code&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&#34;purpose-description&#34; colspan=&#34;3&#34;&gt;
+                &lt;span class=&#34;purpose-title&#34;&gt;Purpose:&lt;/span&gt;
+                &lt;code&gt;false&lt;/code&gt; turns off GitHub-style automatic task/TODO
+                list generation.
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;code&gt;&lt;strong&gt;smartypants&lt;/strong&gt;&lt;/code&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;code&gt;HTML_USE_SMARTYPANTS&lt;/code&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&#34;purpose-description&#34; colspan=&#34;3&#34;&gt;
+                &lt;span class=&#34;purpose-title&#34;&gt;Purpose:&lt;/span&gt;
+                &lt;code&gt;false&lt;/code&gt; disables smart punctuation substitutions
+                including smart quotes, smart dashes, smart fractions, etc.
+                If &lt;code&gt;true&lt;/code&gt;, it may be fine-tuned with the
+                &lt;code&gt;angledQuotes&lt;/code&gt;,
+                &lt;code&gt;fractions&lt;/code&gt;,
+                &lt;code&gt;smartDashes&lt;/code&gt; and
+                &lt;code&gt;latexDashes&lt;/code&gt; flags (see below).
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;code&gt;&lt;strong&gt;angledQuotes&lt;/strong&gt;&lt;/code&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;code&gt;HTML_SMARTYPANTS_ANGLED_QUOTES&lt;/code&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&#34;purpose-description&#34; colspan=&#34;3&#34;&gt;
+                &lt;span class=&#34;purpose-title&#34;&gt;Purpose:&lt;/span&gt;
+                &lt;code&gt;true&lt;/code&gt; enables smart, angled double quotes.&lt;br&gt;
+                &lt;small&gt;
+                    &lt;strong&gt;Example:&lt;/strong&gt;
+                    &lt;code&gt;&#34;Hugo&#34;&lt;/code&gt; renders to
+                    «Hugo» instead of “Hugo”.
+                &lt;/small&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;code&gt;&lt;strong&gt;fractions&lt;/strong&gt;&lt;/code&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;code&gt;HTML_SMARTYPANTS_FRACTIONS&lt;/code&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&#34;purpose-description&#34; colspan=&#34;3&#34;&gt;
+                &lt;span class=&#34;purpose-title&#34;&gt;Purpose:&lt;/span&gt;
+                &lt;code&gt;false&lt;/code&gt; disables smart fractions.&lt;br&gt;
+                &lt;small&gt;
+                    &lt;strong&gt;Example:&lt;/strong&gt;
+                    &lt;code&gt;5/12&lt;/code&gt; renders to
+                    &lt;sup&gt;5&lt;/sup&gt;&amp;frasl;&lt;sub&gt;12&lt;/sub&gt;
+                    (&lt;code&gt;&amp;lt;sup&amp;gt;5&amp;lt;/sup&amp;gt;&amp;amp;frasl;&amp;lt;sub&amp;gt;12&amp;lt;/sub&amp;gt;&lt;/code&gt;).&lt;br&gt;
+                    &lt;strong&gt;Caveat:&lt;/strong&gt;
+                    Even with &lt;code&gt;fractions = false&lt;/code&gt;,
+                    Blackfriday still converts
+                    1/2, 1/4 and 3/4 respectively to
+                    ½ (&lt;code&gt;&amp;amp;frac12;&lt;/code&gt;),
+                    ¼ (&lt;code&gt;&amp;amp;frac14;&lt;/code&gt;) and
+                    ¾ (&lt;code&gt;&amp;amp;frac34;&lt;/code&gt;),
+                    but only these three.&lt;/small&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;code&gt;&lt;strong&gt;smartDashes&lt;/strong&gt;&lt;/code&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;code&gt;HTML_SMARTYPANTS_DASHES&lt;/code&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&#34;purpose-description&#34; colspan=&#34;3&#34;&gt;
+                &lt;span class=&#34;purpose-title&#34;&gt;Purpose:&lt;/span&gt;
+                &lt;code&gt;false&lt;/code&gt; disables smart dashes; i.e., the conversion
+                of multiple hyphens into en&amp;nbsp;dash or em&amp;nbsp;dash.
+                If &lt;code&gt;true&lt;/code&gt;, its behavior can be modified with the
+                &lt;code&gt;latexDashes&lt;/code&gt; flag below.
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;code&gt;&lt;strong&gt;latexDashes&lt;/strong&gt;&lt;/code&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;code&gt;HTML_SMARTYPANTS_LATEX_DASHES&lt;/code&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&#34;purpose-description&#34; colspan=&#34;3&#34;&gt;
+                &lt;span class=&#34;purpose-title&#34;&gt;Purpose:&lt;/span&gt;
+                &lt;code&gt;false&lt;/code&gt; disables LaTeX-style smart dashes and
+                selects conventional smart dashes. Assuming
+                &lt;code&gt;smartDashes&lt;/code&gt; (above), if this is:
+                &lt;ul&gt;
+                    &lt;li&gt;
+                        &lt;strong&gt;&lt;code&gt;true&lt;/code&gt;,&lt;/strong&gt; then
+                        &lt;code&gt;--&lt;/code&gt; is translated into “&amp;ndash;”
+                        (&lt;code&gt;&amp;amp;ndash;&lt;/code&gt;), whereas
+                        &lt;code&gt;---&lt;/code&gt; is translated into “&amp;mdash;”
+                        (&lt;code&gt;&amp;amp;mdash;&lt;/code&gt;).
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;strong&gt;&lt;code&gt;false&lt;/code&gt;,&lt;/strong&gt; then
+                        &lt;code&gt;--&lt;/code&gt; is translated into “&amp;mdash;”
+                        (&lt;code&gt;&amp;amp;mdash;&lt;/code&gt;), whereas a
+                        &lt;em&gt;spaced&lt;/em&gt; single hyphen between two words
+                        is translated into an en&amp;nbsp;dash&amp;mdash;e.g.,
+                        &lt;code&gt;12 June - 3 July&lt;/code&gt; becomes
+                        &lt;code&gt;12 June &amp;amp;ndash; 3 July&lt;/code&gt;.
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;code&gt;&lt;strong&gt;hrefTargetBlank&lt;/strong&gt;&lt;/code&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;code&gt;HTML_HREF_TARGET_BLANK&lt;/code&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&#34;purpose-description&#34; colspan=&#34;3&#34;&gt;
+                &lt;span class=&#34;purpose-title&#34;&gt;Purpose:&lt;/span&gt;
+                &lt;code&gt;true&lt;/code&gt; opens external links in a new window or tab.
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;code&gt;&lt;strong&gt;plainIDAnchors&lt;/strong&gt;&lt;/code&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;
+            &lt;td&gt;
+                &lt;code&gt;FootnoteAnchorPrefix&lt;/code&gt; and
+                &lt;code&gt;HeaderIDSuffix&lt;/code&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&#34;purpose-description&#34; colspan=&#34;3&#34;&gt;
+                &lt;span class=&#34;purpose-title&#34;&gt;Purpose:&lt;/span&gt;
+                &lt;code&gt;true&lt;/code&gt; renders any header and footnote IDs
+                without the document ID.&lt;br&gt;
+                &lt;small&gt;
+                    &lt;strong&gt;Example:&lt;/strong&gt;
+                    renders &lt;code&gt;#my-header&lt;/code&gt; instead of
+                    &lt;code&gt;#my-header:bec3ed8ba720b9073ab75abcf3ba5d97&lt;/code&gt;.
+                &lt;/small&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;code&gt;&lt;strong&gt;extensions&lt;/strong&gt;&lt;/code&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;code&gt;[]&lt;/code&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;code&gt;EXTENSION_*&lt;/code&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&#34;purpose-description&#34; colspan=&#34;3&#34;&gt;
+                &lt;span class=&#34;purpose-title&#34;&gt;Purpose:&lt;/span&gt;
+                Enable one or more of Blackfriday&#39;s Markdown extensions
+                (if they aren&#39;t Hugo defaults).&lt;br&gt;
+                &lt;small&gt;
+                    &lt;strong&gt;Example:&lt;/strong&gt; &amp;nbsp;
+                    Include &lt;code&gt;&#34;hardLineBreak&#34;&lt;/code&gt;
+                    in the list to enable Blackfriday&#39;s
+                    &lt;code&gt;EXTENSION_HARD_LINE_BREAK&lt;/code&gt;.
+                &lt;/small&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;code&gt;&lt;strong&gt;extensionsmask&lt;/strong&gt;&lt;/code&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;code&gt;[]&lt;/code&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;code&gt;EXTENSION_*&lt;/code&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&#34;purpose-description&#34; colspan=&#34;3&#34;&gt;
+                &lt;span class=&#34;purpose-title&#34;&gt;Purpose:&lt;/span&gt;
+                Disable one or more of Blackfriday&#39;s Markdown extensions
+                (if they are Hugo defaults).&lt;br&gt;
+                &lt;small&gt;
+                    &lt;strong&gt;Example:&lt;/strong&gt; &amp;nbsp;
+                    Include &lt;code&gt;&#34;autoHeaderIds&#34;&lt;/code&gt;
+                    in the list to disable Blackfriday&#39;s
+                    &lt;code&gt;EXTENSION_AUTO_HEADER_IDS&lt;/code&gt;.
+                &lt;/small&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;These flags are &lt;strong&gt;case sensitive&lt;/strong&gt; (as of Hugo v0.15)!&lt;/li&gt;
+&lt;li&gt;These flags must be grouped under the &lt;code&gt;blackfriday&lt;/code&gt; key
+and can be set on &lt;strong&gt;both the site level and the page level&lt;/strong&gt;.
+Any setting on a page will override the site setting
+there. For example:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table class=&#34;table&#34;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;TOML&lt;/th&gt;
+            &lt;th&gt;YAML&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr style=&#34;vertical-align: top;&#34;&gt;
+            &lt;td style=&#34;width: 50%;&#34;&gt;
+&lt;pre&gt;&lt;code&gt;[blackfriday]
+  angledQuotes = true
+  fractions = false
+  plainIDAnchors = true
+  extensions = [&#34;hardLineBreak&#34;]
+&lt;/code&gt;&lt;/pre&gt;
+            &lt;/td&gt;
+            &lt;td&gt;
+&lt;pre&gt;&lt;code&gt;blackfriday:
+  angledQuotes: true
+  fractions: false
+  plainIDAnchors: true
+  extensions:
+    - hardLineBreak
+&lt;/code&gt;&lt;/pre&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Source Organization</title>
+      <link>http://gohugo.io/overview/source-directory/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/overview/source-directory/</guid>
+      <description>
+
+&lt;p&gt;Hugo takes a single directory and uses it as the input for creating a complete
+website.&lt;/p&gt;
+
+&lt;p&gt;The top level of a source directory will typically have the following elements:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;▸ archetypes/
+▸ content/
+▸ data/
+▸ i18n/
+▸ layouts/
+▸ static/
+▸ themes/
+  config.toml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Learn more about the different directories and what their purpose is:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/overview/configuration/&#34;&gt;config&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/extras/datafiles/&#34;&gt;data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/content/multilingual/#translation-of-strings&#34;&gt;i18n&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/content/archetypes/&#34;&gt;archetypes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/content/organization/&#34;&gt;content&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/templates/overview/&#34;&gt;layouts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/themes/creation/#static&#34;&gt;static&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gohugo.io/themes/overview/&#34;&gt;themes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+
+&lt;p&gt;An example directory may look like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.
+├── config.toml
+├── archetypes
+|   └── default.md
+├── content
+|   ├── post
+|   |   ├── firstpost.md
+|   |   └── secondpost.md
+|   └── quote
+|   |   ├── first.md
+|   |   └── second.md
+├── data
+├── i18n
+├── layouts
+|   ├── _default
+|   |   ├── single.html
+|   |   └── list.html
+|   ├── partials
+|   |   ├── header.html
+|   |   └── footer.html
+|   ├── taxonomies
+|   |   ├── category.html
+|   |   ├── post.html
+|   |   ├── quote.html
+|   |   └── tag.html
+|   ├── post
+|   |   ├── li.html
+|   |   ├── single.html
+|   |   └── summary.html
+|   ├── quote
+|   |   ├── li.html
+|   |   ├── single.html
+|   |   └── summary.html
+|   ├── shortcodes
+|   |   ├── img.html
+|   |   ├── vimeo.html
+|   |   └── youtube.html
+|   ├── index.html
+|   └── sitemap.xml
+├── themes
+|   ├── hyde
+|   └── doc
+└── static
+    ├── css
+    └── js
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This directory structure tells us a lot about this site:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The website intends to have two different types of content: &lt;em&gt;posts&lt;/em&gt; and &lt;em&gt;quotes&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;It will also apply two different taxonomies to that content: &lt;em&gt;categories&lt;/em&gt; and &lt;em&gt;tags&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;It will be displaying content in 3 different views: a list, a summary and a full page view.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;content-for-home-page-and-other-list-pages&#34;&gt;Content for home page and other list pages&lt;/h2&gt;
+
+&lt;p&gt;Since Hugo 0.18, &amp;ldquo;everything&amp;rdquo; is a &lt;code&gt;Page&lt;/code&gt; that can have content and metadata, like &lt;code&gt;.Params&lt;/code&gt;, attached to it &amp;ndash; and share the same set of &lt;a href=&#34;http://gohugo.io/templates/variables/&#34;&gt;page variables&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To add content and frontmatter to the home page, a section, a taxonomy or a taxonomy terms listing, add a markdown file with the base name &lt;code&gt;_index&lt;/code&gt; on the relevant place on the file system.&lt;/p&gt;
+
+&lt;p&gt;For the default Markdown content, the filename will be &lt;code&gt;_index.md&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Se the example directory tree below.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note that you don&amp;rsquo;t have to create &lt;code&gt;_index&lt;/code&gt; file for every section, taxonomy and similar, a default page will be created if not present, but with no content and default values for &lt;code&gt;.Title&lt;/code&gt; etc.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;└── content
+    ├── _index.md
+    ├── categories
+    │   ├── _index.md
+    │   └── photo
+    │       └── _index.md
+    ├── post
+    │   ├── _index.md
+    │   └── firstpost.md
+    └── tags
+        ├── _index.md
+        └── hugo
+            └── _index.md
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

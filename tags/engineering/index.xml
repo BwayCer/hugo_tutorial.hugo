@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Engineering on Hugo: A Fast and Flexible Website Generator</title>
+    <link>http://gohugo.io/tags/engineering/index.xml</link>
+    <description>Recent content in Engineering on Hugo: A Fast and Flexible Website Generator</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <atom:link href="http://gohugo.io/tags/engineering/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>InVision Engineering Blog</title>
+      <link>http://gohugo.io/showcase/invision/</link>
+      <pubDate>Sat, 28 Jan 2017 12:04:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/invision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Mongodb Engineering Journal</title>
+      <link>http://gohugo.io/showcase/mongodb-eng-journal/</link>
+      <pubDate>Wed, 09 Mar 2016 14:14:16 -0500</pubDate>
+      
+      <guid>http://gohugo.io/showcase/mongodb-eng-journal/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

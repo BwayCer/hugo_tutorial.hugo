@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Educational on Hugo: A Fast and Flexible Website Generator</title>
+    <link>http://gohugo.io/tags/educational/index.xml</link>
+    <description>Recent content in Educational on Hugo: A Fast and Flexible Website Generator</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <atom:link href="http://gohugo.io/tags/educational/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>devmonk</title>
+      <link>http://gohugo.io/showcase/devmonk/</link>
+      <pubDate>Tue, 26 Aug 2014 11:31:02 -0400</pubDate>
+      
+      <guid>http://gohugo.io/showcase/devmonk/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

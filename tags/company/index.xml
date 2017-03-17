@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Company on Hugo: A Fast and Flexible Website Generator</title>
+    <link>http://gohugo.io/tags/company/index.xml</link>
+    <description>Recent content in Company on Hugo: A Fast and Flexible Website Generator</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <atom:link href="http://gohugo.io/tags/company/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Promotive</title>
+      <link>http://gohugo.io/showcase/promotive/</link>
+      <pubDate>Tue, 21 Feb 2017 12:26:26 +0100</pubDate>
+      
+      <guid>http://gohugo.io/showcase/promotive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>InVision Engineering Blog</title>
+      <link>http://gohugo.io/showcase/invision/</link>
+      <pubDate>Sat, 28 Jan 2017 12:04:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/invision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clearhaus</title>
+      <link>http://gohugo.io/showcase/clearhaus/</link>
+      <pubDate>Fri, 21 Oct 2016 12:37:00 +0200</pubDate>
+      
+      <guid>http://gohugo.io/showcase/clearhaus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Appernetic</title>
+      <link>http://gohugo.io/showcase/appernetic/</link>
+      <pubDate>Tue, 26 Apr 2016 13:33:33 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/appernetic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Barricade</title>
+      <link>http://gohugo.io/showcase/barricade/</link>
+      <pubDate>Fri, 15 Apr 2016 14:14:28 +0100</pubDate>
+      
+      <guid>http://gohugo.io/showcase/barricade/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Pipeline Architect</title>
+      <link>http://gohugo.io/showcase/datapipelinearchitect/</link>
+      <pubDate>Thu, 04 Feb 2016 18:30:07 -0500</pubDate>
+      
+      <guid>http://gohugo.io/showcase/datapipelinearchitect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rakuten Tech Blog</title>
+      <link>http://gohugo.io/showcase/rakutentech/</link>
+      <pubDate>Wed, 20 Jan 2016 07:32:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/rakutentech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Camunda Blog</title>
+      <link>http://gohugo.io/showcase/camunda-blog/</link>
+      <pubDate>Tue, 01 Dec 2015 04:20:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/camunda-blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Camunda Docs</title>
+      <link>http://gohugo.io/showcase/camunda-docs/</link>
+      <pubDate>Tue, 01 Dec 2015 04:20:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/camunda-docs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RIDING BYTES</title>
+      <link>http://gohugo.io/showcase/ridingbytes/</link>
+      <pubDate>Sun, 27 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/ridingbytes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>eSolia.com</title>
+      <link>http://gohugo.io/showcase/esolia-com/</link>
+      <pubDate>Tue, 07 Jul 2015 04:32:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/esolia-com/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>eSolia.pro</title>
+      <link>http://gohugo.io/showcase/esolia-pro/</link>
+      <pubDate>Tue, 07 Jul 2015 04:32:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/esolia-pro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vamp.io</title>
+      <link>http://gohugo.io/showcase/vamp/</link>
+      <pubDate>Thu, 26 Jun 2014 15:45:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/vamp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CloudShark</title>
+      <link>http://gohugo.io/showcase/cloudshark/</link>
+      <pubDate>Thu, 27 Mar 2014 09:45:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/cloudshark/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

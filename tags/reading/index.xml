@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reading on Hugo: A Fast and Flexible Website Generator</title>
+    <link>http://gohugo.io/tags/reading/index.xml</link>
+    <description>Recent content in Reading on Hugo: A Fast and Flexible Website Generator</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <atom:link href="http://gohugo.io/tags/reading/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ReadText</title>
+      <link>http://gohugo.io/showcase/readtext/</link>
+      <pubDate>Mon, 16 Nov 2015 08:36:00 +0000</pubDate>
+      
+      <guid>http://gohugo.io/showcase/readtext/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
