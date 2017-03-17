@@ -17,12 +17,12 @@ enableGitInfo = true
   group = "groups"
 
 [[menu.main]]
-    name = "Download Hugo"
+    name = "下載雨果"
     pre = "<i class='fa fa-download'></i>"
     url = "https://github.com/spf13/hugo/releases"
     weight = -200
 [[menu.main]]
-    name = "Site Showcase"
+    name = "網站展示"
     pre = "<i class='fa fa-cubes'></i>"
     url = "/showcase/"
     weight = -180
@@ -32,32 +32,32 @@ enableGitInfo = true
     url = "http://themes.gohugo.io"
     weight = -170
 [[menu.main]]
-    name = "Press & Articles"
+    name = "新聞及文章"
     pre = "<i class='fa fa-bullhorn'></i>"
     url = "/community/press/"
     weight = -160
 [[menu.main]]
-    name = "Discuss Hugo"
+    name = "討論雨果"
     pre = "<i class='fa fa-comments'></i>"
     url = "http://discuss.gohugo.io/"
     weight = -150
 [[menu.main]]
-    name = "About Hugo"
+    name = "關於雨果"
     identifier = "about"
     pre = "<i class='fa fa-heart'></i>"
     weight = -110
 [[menu.main]]
-    name = "Getting Started"
+    name = "入門"
     identifier = "getting started"
     pre = "<i class='fa fa-road'></i>"
     weight = -100
 [[menu.main]]
-    name = "Content"
+    name = "內容"
     identifier = "content"
     pre = "<i class='fa fa-file-text'></i>"
     weight = -90
 [[menu.main]]
-    name = "Themes"
+    name = "主題"
     identifier = "themes"
     pre = "<i class='fa fa-desktop'></i>"
     weight = -85
@@ -67,22 +67,22 @@ enableGitInfo = true
     url = "http://themes.gohugo.io"
     weight = -170
 [[menu.main]]
-    name = "Templates"
+    name = "模板"
     identifier = "layout"
     pre = "<i class='fa fa-columns'></i>"
     weight = -80
 [[menu.main]]
-    name = "Taxonomies"
+    name = "分類"
     identifier = "taxonomy"
     pre = "<i class='fa fa-tags'></i>"
     weight = -70
 [[menu.main]]
-    name = "Extras"
+    name = "額外"
     identifier = "extras"
     pre = "<i class='fa fa-gift'></i>"
     weight = -60
 [[menu.main]]
-    name = "Community"
+    name = "社區"
     identifier = "community"
     pre = "<i class='fa fa-group'></i>"
     weight = -50
@@ -92,22 +92,22 @@ enableGitInfo = true
     url = "http://discuss.gohugo.io"
     weight = 150
 [[menu.main]]
-    name = "Tutorials"
+    name = "教程"
     identifier = "tutorials"
     pre = "<i class='fa fa-book'></i>"
     weight = -40
 [[menu.main]]
-    name = "Troubleshooting"
+    name = "故障排除"
     identifier = "troubleshooting"
     pre = "<i class='fa fa-wrench'></i>"
     weight = -30
 [[menu.main]]
-    name = "Tools"
+    name = "工具"
     url = "/tools/"
     pre = "<i class='fa fa-cogs'></i>"
     weight = -25
 [[menu.main]]
-    name = "Hugo Cmd Reference"
+    name = "雨果命令參考"
     identifier = "commands"
     pre = "<i class='fa fa-space-shuttle'></i>"
     weight = -20
