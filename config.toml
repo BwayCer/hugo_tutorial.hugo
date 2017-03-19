@@ -3,6 +3,7 @@ baseurl = "http://gohugo.io/"
 MetaDataFormat = "yaml"
 pluralizeListTitles = false
 enableGitInfo = true
+relativeURLs = true
 
 [blackfriday]
   plainIDAnchors = true
