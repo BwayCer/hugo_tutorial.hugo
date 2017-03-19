@@ -9,7 +9,7 @@ menu:
 next: /templates/terms
 notoc: true
 prev: /templates/list
-title: Homepage
+title: 首頁 Homepage
 weight: 50
 ---
 
@@ -30,9 +30,14 @@ list of pages can be found in the [Lists Template](/templates/list/).
 
 Note that a home page can also have a content file with frontmatter,  see [Source Organization]({{< relref "overview/source-directory.md#content-for-home-page-and-other-list-pages" >}}).
 
-## Which Template will be rendered?
+## 將顯示哪個模板？ Which Template will be rendered?
+雨果制定一套規則來挑選哪個模板將被具體的呈現。
+
 Hugo uses a set of rules to figure out which template to use when
 rendering a specific page.
+
+雨果使用以下的優先順序列表。
+若該路徑不存在，將依序向下讀取。
 
 Hugo will use the following prioritized list. If a file isn’t present,
 then the next one in the list will be used. This enables you to craft
@@ -47,7 +52,7 @@ the list will be needed.
 * /themes/`THEME`/layouts/\_default/list.html
 * /themes/`THEME`/layouts/\_default/single.html
 
-## Example index.html
+## index.html 示範 Example index.html
 This content template is used for [spf13.com](http://spf13.com/).
 
 It makes use of [partial templates](/templates/partials/) and uses a similar approach as a [List](/templates/list/).

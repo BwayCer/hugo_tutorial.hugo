@@ -1,5 +1,5 @@
 title = "Hugo: A Fast and Flexible Website Generator"
-baseurl = "http://gohugo.io/"
+baseurl = "https://bwaycer.github.io/"
 MetaDataFormat = "yaml"
 pluralizeListTitles = false
 enableGitInfo = true
@@ -48,7 +48,7 @@ relativeURLs = true
     pre = "<i class='fa fa-heart'></i>"
     weight = -110
 [[menu.main]]
-    name = "入門"
+    name = "開始"
     identifier = "getting started"
     pre = "<i class='fa fa-road'></i>"
     weight = -100

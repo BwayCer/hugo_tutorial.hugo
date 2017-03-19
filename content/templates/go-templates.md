@@ -9,7 +9,7 @@ menu:
     parent: layout
 next: /templates/ace
 prev: /templates/overview
-title: Go Template Primer
+title: Go 模板啟蒙讀本
 weight: 15
 toc: true
 ---
@@ -24,7 +24,7 @@ similarities in Go templates.
 This document is a brief primer on using Go templates. The [Go docs][gohtmltemplate]
 go into more depth and cover features that aren't mentioned here.
 
-## Introduction to Go Templates
+## Go 模板介紹 Introduction to Go Templates
 
 Go templates provide an extremely simple template language. It adheres to the
 belief that only the most basic of logic belongs in the template or view layer.
@@ -34,24 +34,38 @@ A unique characteristic of Go templates is they are content aware. Variables and
 content will be sanitized depending on the context of where they are used. More
 details can be found in the [Go docs][gohtmltemplate].
 
-## Basic Syntax
+## 基本語法 Basic  Syntax
+
+Go lang 模板是添加了變數和函數的 HTML 文件。
 
 Go lang templates are HTML files with the addition of variables and
 functions.
 
+**Go 的變數和函數包覆在 {{ }} 中簡易的被使用。**
+
 **Go variables and functions are accessible within {{ }}**
+
+訪問預定義的變數 "foo"：
 
 Accessing a predefined variable "foo":
 
     {{ foo }}
 
+**參數使用空格分隔。**
+
 **Parameters are separated using spaces**
+
+調用 `add` 函數並輸入 1, 2：
 
 Calling the `add` function with input of 1, 2:
 
     {{ add 1 2 }}
 
+**方法和欄位通過「點」符號來訪問。**
+
 **Methods and fields are accessed via dot notation**
+
+訪問頁面參數 "bar"：
 
 Accessing the Page Parameter "bar"
 
@@ -62,7 +76,7 @@ Accessing the Page Parameter "bar"
     {{ if or (isset .Params "alt") (isset .Params "caption") }} Caption {{ end }}
 
 
-## Variables
+## 變數 Variables
 
 Each Go template has a struct (object) made available to it. In Hugo, each
 template is passed page struct. More details are available on the
@@ -78,7 +92,7 @@ Variables can also be defined and referenced.
     {{ $address }}
 
 
-## Functions
+## 函數 Functions
 
 Go template ships with a few functions which provide basic functionality. The Go
 template system also provides a mechanism for applications to extend the
@@ -99,7 +113,11 @@ functions cannot be added without recompiling Hugo.
 (There are more boolean operators, detailed in the
 [template documentation](http://golang.org/pkg/text/template/#hdr-Functions).)
 
-## Includes
+## 引入 Includes
+
+當引入其他模板時，你將傳遞其能訪問的資料給它。
+要傳遞當前的上下文請記得語法包括尾隨的點。
+要載入的模板位置始終相對於在 Hugo 裡 /layout/ 目錄。
 
 When including another template, you will pass to it the data it will be
 able to access. To pass along the current context, please remember to
@@ -110,17 +128,21 @@ the /layout/ directory within Hugo.
 
     {{ template "partials/header.html" . }}
 
+然而，Hugo v0.12 開始你也能使用 `partial` 去調用
+[partial templates](/templates/partials/)
+：
+
 And, starting with Hugo v0.12, you may also use the `partial` call
 for [partial templates](/templates/partials/):
 
     {{ partial "header.html" . }}
 
 
-## Logic
+## 邏輯 Logic
 
 Go templates provide the most basic iteration and conditional logic.
 
-### Iteration
+### 迭代 Iteration
 
 Just like in Go, the Go templates make heavy use of `range` to iterate over
 a map, array or slice. The following are different examples of how to use
@@ -145,7 +167,7 @@ range.
         {{ $element }}
     {{ end }}
 
-### Conditionals
+### 條件 Conditionals
 
 `if`, `else`, `with`, `or` & `and` provide the framework for handling conditional
 logic in Go Templates. Like `range`, each statement is closed with `end`.
@@ -190,7 +212,7 @@ The first example above could be simplified as:
         {{ index .Params "caption" }}
     {{ end }}
 
-## Pipes
+## 管道 Pipes
 
 One of the most powerful components of Go templates is the ability to
 stack actions one after another. This is done by using pipes. Borrowed
@@ -218,6 +240,10 @@ is the same as
 
 Access the page parameter called "disqus_url" and escape the HTML.
 
+`index` 函數是 [Go][] 的內置函數，你能讀關於它
+[這裡][gostdlibpkgtexttemplate]
+。 `index`：
+
 The `index` function is a [Go][] built-in, and you can read about it [here][gostdlibpkgtexttemplate]. `index`:
 
 > ...returns the result of indexing its first argument by the following arguments. Thus "index x 1 2 3" is, in Go syntax, `x[1][2][3]`. Each indexed item must be a map, slice, or array.
@@ -234,7 +260,7 @@ Could be rewritten as
     Stuff Here
     {{ end }}
 
-### Internet Explorer conditional comments using Pipes
+### 對 IE 瀏覽器使用條件式註解的方法 Internet Explorer conditional comments using Pipes
 
 By default, Go Templates remove HTML comments from output. This has the unfortunate side effect of removing Internet Explorer conditional comments. As a workaround, use something like this:
 
@@ -248,7 +274,7 @@ Alternatively, use the backtick (`` ` ``) to quote the IE conditional comments, 
 {{ `<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->` | safeHTML }}
 ```
 
-## Context (a.k.a. the dot)
+## 上下文（又名： 「點」） Context (a.k.a. the dot)
 
 The most easily overlooked concept to understand about Go templates is that `{{ . }}`
 always refers to the current context. In the top level of your template, this
@@ -258,7 +284,9 @@ the value of the current item. When inside of a loop, the context has changed:
 to
 access this from within the loop, you will likely want to do one of the following:
 
-1. Set it to a variable instead of depending on the context.  For example:
+1. 設置一變數而不是依據上下文，例如：
+
+    Set it to a variable instead of depending on the context.  For example:
 
         {{ $title := .Site.Title }}
         {{ range .Params.tags }}
@@ -268,12 +296,17 @@ access this from within the loop, you will likely want to do one of the followin
           </li>
         {{ end }}
 
+    注意一旦進入迴圈，`{{ . }}` 的值就已經改變。
+    我們有在迴圈外定義了變數，所以我們能在內部去訪問。
+
     Notice how once we have entered the loop the value of `{{ . }}` has changed. We
     have defined a variable outside of the loop so we have access to it from within
     the loop.
 
-2. Use `$.` to access the global context from anywhere.
-   Here is an equivalent example:
+2. 使用 `$.` 在任意地方去訪問全域變數，這是與上述有相同效果的範例：
+
+    Use `$.` to access the global context from anywhere.
+    Here is an equivalent example:
 
         {{ range .Params.tags }}
           <li>
@@ -287,15 +320,22 @@ access this from within the loop, you will likely want to do one of the followin
     a [documented feature](http://golang.org/pkg/text/template/#hdr-Variables)
     of Go text/template.  Very handy, eh?
 
+    > 然而，有個小魔法能使它停止工作，如果有人惡作劇去重新定義 `$`，如： `{{ $ := .Site }}`。
+    > *（不，不要這麼做）*
+
     > However, this little magic would cease to work if someone were to
     > mischievously redefine `$`, e.g. `{{ $ := .Site }}`.
     > *(No, don't do it!)*
     > You may, of course, recover from this mischief by using `{{ $ := . }}`
     > in a global context to reset `$` to its default value.
 
-## Whitespace
+## 空格 Whitespace
+
+Go 1.6 後包含修剪 Go 標籤兩側空格的功能，透過包含連字符（-）和空格添加在緊鄰對應側的 `{{` 或 `}}` 分隔符。
 
 Go 1.6 includes the ability to trim the whitespace from either side of a Go tag by including a hyphen (`-`) and space immediately beside the corresponding `{{` or `}}` delimiter.
+
+例如，以下的 Go 模板：
 
 For instance, the following Go template:
 
@@ -305,6 +345,8 @@ For instance, the following Go template:
 </div>
 ```
 
+HTML 將輸出包含換行和水平縮排：
+
 will include the newlines and horizontal tab in its HTML output:
 
 ```html
@@ -312,6 +354,8 @@ will include the newlines and horizontal tab in its HTML output:
   Hello, World!
 </div>
 ```
+
+而使用
 
 whereas using
 
@@ -321,11 +365,15 @@ whereas using
 </div>
 ```
 
+在這情況下將簡單地輸出 `<div>Hello, World!</div>`。
+
 in that case will output simply `<div>Hello, World!</div>`.
+
+Go 將以下字符視為空格： 空白、水平縮排、回車和換行。
 
 Go considers the following characters as whitespace: space, horizontal tab, carriage return and newline.
 
-# Hugo Parameters
+# 雨果參數 Hugo Parameters
 
 Hugo provides the option of passing values to the template language
 through the site configuration (for sitewide values), or through the meta
@@ -334,15 +382,24 @@ type (supported by your front matter/config format) and use them however
 you want to inside of your templates.
 
 
-## Using Content (page) Parameters
+## 使用 Content（頁面）參數 Using Content (page) Parameters
+
+在每個內容片段，你能提供參數給模板使用。
+這發生在
+[前提內容](/content/front-matter/)
+。
 
 In each piece of content, you can provide variables to be used by the
 templates. This happens in the [front matter](/content/front-matter/).
+
+這是一個被使用在本文檔中的範例。
 
 An example of this is used in this documentation site. Most of the pages
 benefit from having the table of contents provided. Sometimes the TOC just
 doesn't make a lot of sense. We've defined a variable in our front matter
 of some pages to turn off the TOC from being displayed.
+
+這是前提內容的範例：
 
 Here is the example front matter:
 
@@ -359,6 +416,8 @@ notoc: true
 ---
 ```
 
+這是在模板中相對應的程式碼：
+
 Here is the corresponding code inside of the template:
 
       {{ if not .Params.notoc }}
@@ -369,9 +428,13 @@ Here is the corresponding code inside of the template:
 
 
 
-## Using Site (config) Parameters
+## 使用 Site（設定檔）參數 Using Site (config) Parameters
+你能添加 site 參數在最上層設定文件（例如：`config.yaml`）當中，其可被用於 partials。
+
 In your top-level configuration file (e.g., `config.yaml`) you can define site
 parameters, which are values which will be available to you in partials.
+
+例如，你可以聲明：
 
 For instance, you might declare:
 
@@ -381,6 +444,10 @@ params:
   TwitterUser: "spf13"
   SidebarRecentLimit: 5
 ```
+
+在頁腳的布局，你能聲明 `<footer>` 僅在 `CopyrightHTML` 參數有提供時顯示。
+然後如果它有值，你能使用 HTML-safe 來聲明它，因此 HTML 實體不會再次被轉譯。
+這將讓你能在每年一月一號更簡單的更新透過最上層的設定文件而不是在你的模板中。
 
 Within a footer layout, you might then declare a `<footer>` which is only
 provided if the `CopyrightHTML` parameter is provided, and if it is given,
@@ -418,7 +485,7 @@ so, such as in this example:
 </nav>
 ```
 
-# Template example: Show only upcoming events
+# 模板示範： 顯示即將到來的事件 Template example: Show only upcoming events
 
 Go allows you to do more than what's shown here.  Using Hugo's
 [`where`](/templates/functions/#where) function and Go built-ins, we can list

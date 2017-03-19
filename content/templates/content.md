@@ -3,7 +3,7 @@ aliases:
 - /layout/content/
 lastmod: 2015-05-22
 date: 2013-07-01
-linktitle: Single Content
+linktitle: 特有內容 Single Content
 menu:
   main:
     parent: layout
@@ -18,7 +18,7 @@ The primary view of content in Hugo is the single view. Hugo, for every
 Markdown file provided, will render it with a single template.
 
 
-## Which Template will be rendered?
+## 將顯示哪個模板？ Which Template will be rendered?
 Hugo uses a set of rules to figure out which template to use when
 rendering a specific page.
 
@@ -27,6 +27,12 @@ then the next one in the list will be used. This enables you to craft
 specific layouts when you want to without creating more templates
 than necessary. For most sites, only the `_default` file at the end of
 the list will be needed.
+
+用戶能在
+[front-matter](/content/front-matter/)
+指定 `type` 和 `layout`。
+`Section` 基於 content file 的位置所確定。
+如果 `type` 有值，其將取代 `section`。
 
 Users can specify the `type` and `layout` in the [front-matter](/content/front-matter/). `Section`
 is determined based on the content file’s location. If `type` is provided,
@@ -51,8 +57,13 @@ Content pages are of the type "page" and have all the [page
 variables](/layout/variables/) and [site
 variables](/templates/variables/) available to use in the templates.
 
+在以下的範例中我們創建兩種不同的內容類型以及預設內容類型。
+
 In the following examples we have created two different content types as well as
 a default content type.
+
+預設內容模板在該類型並沒提供特定模板的情況下被使用。
+預設類型與其他類型的運作相同，唯獨其目錄被命名為 "\_default"。
 
 The default content template to be used in the event that a specific
 template has not been provided for that type. The default type works the
@@ -68,6 +79,13 @@ same as the other types, but the directory must be called "\_default".
 
 
 ### post/single.html
+這內容模板在
+[spf13.com](http://spf13.com/)
+中被使用。
+這文件使用了
+[partial templates](/templates/partials/)
+。
+
 This content template is used for [spf13.com](http://spf13.com/).
 It makes use of [partial templates](/templates/partials/)
 
@@ -116,6 +134,13 @@ It makes use of [partial templates](/templates/partials/)
 
 
 ### project/single.html
+這內容模板在
+[spf13.com](http://spf13.com/)
+中被使用。
+這文件使用了
+[partial templates](/templates/partials/)
+。
+
 This content template is used for [spf13.com](http://spf13.com/).
 It makes use of [partial templates](/templates/partials/)
 
@@ -159,6 +184,9 @@ It makes use of [partial templates](/templates/partials/)
     {{ end }}
 
     {{ partial "footer.html" . }}
+
+注意 project/single.html 模板如何使用此模板特有的附加參數。
+這不需要提前定義。
 
 Notice how the project/single.html template uses an additional parameter unique
 to this template. This doesn't need to be defined ahead of time. If the key is
