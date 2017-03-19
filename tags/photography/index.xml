@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Photography on Hugo: A Fast and Flexible Website Generator</title>
-    <link>http://gohugo.io/tags/photography/index.xml</link>
+    <link>https://bwaycer.github.io/tags/photography/index.xml</link>
     <description>Recent content in Photography on Hugo: A Fast and Flexible Website Generator</description>
     <generator>Hugo -- gohugo.io</generator>
-    <atom:link href="http://gohugo.io/tags/photography/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bwaycer.github.io/tags/photography/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Davide Petilli</title>
-      <link>http://gohugo.io/showcase/davidepetilli/</link>
+      <link>https://bwaycer.github.io/showcase/davidepetilli/</link>
       <pubDate>Fri, 01 Nov 2013 07:32:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/showcase/davidepetilli/</guid>
+      <guid>https://bwaycer.github.io/showcase/davidepetilli/</guid>
       <description></description>
     </item>
     

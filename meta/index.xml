@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Meta on Hugo: A Fast and Flexible Website Generator</title>
-    <link>http://gohugo.io/meta/index.xml</link>
+    <link>https://bwaycer.github.io/meta/index.xml</link>
     <description>Recent content in Meta on Hugo: A Fast and Flexible Website Generator</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 01 Jul 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://gohugo.io/meta/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bwaycer.github.io/meta/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Release Notes</title>
-      <link>http://gohugo.io/meta/release-notes/</link>
+      <link>https://bwaycer.github.io/meta/release-notes/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/meta/release-notes/</guid>
+      <guid>https://bwaycer.github.io/meta/release-notes/</guid>
       <description>
 
 &lt;h1 id=&#34;0-19-february-27th-2017&#34;&gt;&lt;strong&gt;0.19&lt;/strong&gt; February 27th 2017&lt;/h1&gt;
@@ -1865,7 +1865,7 @@ them&lt;/a&gt;.&lt;/p&gt;
 &lt;li&gt;Add &lt;code&gt;AsciiDoc&lt;/code&gt; support using external helpers.&lt;/li&gt;
 &lt;li&gt;Add experimental support for &lt;a href=&#34;https://github.com/miekg/mmark&#34;&gt;&lt;code&gt;Mmark&lt;/code&gt;&lt;/a&gt; markdown processor&lt;/li&gt;
 &lt;li&gt;Bash autocomplete support via &lt;code&gt;genautocomplete&lt;/code&gt; command&lt;/li&gt;
-&lt;li&gt;Add section menu support for a &lt;a href=&#34;http://gohugo.io/extras/menus/#section-menu-for-the-lazy-blogger&#34;&gt;Section Menu for &amp;ldquo;the Lazy Blogger&amp;rdquo;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add section menu support for a &lt;a href=&#34;../extras/menus/#section-menu-for-the-lazy-blogger&#34;&gt;Section Menu for &amp;ldquo;the Lazy Blogger&amp;rdquo;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Add support for &lt;code&gt;Ace&lt;/code&gt; base templates&lt;/li&gt;
 &lt;li&gt;Adding &lt;code&gt;RelativeURLs = true&lt;/code&gt; to site config will now make all the relative URLs relative to the content root.&lt;/li&gt;
 &lt;li&gt;New template functions:
@@ -1947,7 +1947,7 @@ maintainers and their tremendous contributions this release.&lt;/p&gt;
 &lt;h3 id=&#34;new-major-features&#34;&gt;New major features&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Support for &lt;a href=&#34;http://gohugo.io/extras/datafiles/&#34;&gt;data files&lt;/a&gt; in &lt;a href=&#34;http://yaml.org/&#34;&gt;YAML&lt;/a&gt;,
+&lt;li&gt;Support for &lt;a href=&#34;../extras/datafiles/&#34;&gt;data files&lt;/a&gt; in &lt;a href=&#34;http://yaml.org/&#34;&gt;YAML&lt;/a&gt;,
 &lt;a href=&#34;http://www.json.org/&#34;&gt;JSON&lt;/a&gt;, or &lt;a href=&#34;https://github.com/toml-lang/toml&#34;&gt;TOML&lt;/a&gt;
 located in the &lt;code&gt;data&lt;/code&gt; directory (
 
@@ -1955,7 +1955,7 @@ located in the &lt;code&gt;data&lt;/code&gt; directory (
 
 
 )&lt;/li&gt;
-&lt;li&gt;Support for &lt;a href=&#34;http://gohugo.io/extras/dynamiccontent/&#34;&gt;dynamic content&lt;/a&gt; by loading JSON &amp;amp; CSV
+&lt;li&gt;Support for &lt;a href=&#34;../extras/dynamiccontent/&#34;&gt;dynamic content&lt;/a&gt; by loading JSON &amp;amp; CSV
 from remote sources via GetJson and GetCsv in short codes or other layout
 files (
 
@@ -1963,7 +1963,7 @@ files (
 
 
 )&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/extras/pagination/&#34;&gt;Pagination support&lt;/a&gt; for home page, sections and
+&lt;li&gt;&lt;a href=&#34;../extras/pagination/&#34;&gt;Pagination support&lt;/a&gt; for home page, sections and
 taxonomies (
 
 &lt;a href=&#34;//github.com/spf13/hugo/issues/750&#34;&gt;#750&lt;/a&gt;
@@ -1975,11 +1975,11 @@ taxonomies (
 &lt;ul&gt;
 &lt;li&gt;A new, generic Next/Prev functionality is added to all lists of pages
 (sections, taxonomies, etc.)&lt;/li&gt;
-&lt;li&gt;Add in-section &lt;a href=&#34;http://gohugo.io/templates/variables/&#34;&gt;Next/Prev&lt;/a&gt; content pointers&lt;/li&gt;
+&lt;li&gt;Add in-section &lt;a href=&#34;../templates/variables/&#34;&gt;Next/Prev&lt;/a&gt; content pointers&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Scratch&lt;/code&gt; &amp;ndash; &lt;a href=&#34;http://gohugo.io/extras/scratch&#34;&gt;a &amp;ldquo;scratchpad&amp;rdquo;&lt;/a&gt; for your node- and page-scoped
+&lt;li&gt;&lt;code&gt;Scratch&lt;/code&gt; &amp;ndash; &lt;a href=&#34;../extras/scratch&#34;&gt;a &amp;ldquo;scratchpad&amp;rdquo;&lt;/a&gt; for your node- and page-scoped
 variables&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/extras/crossreferences/&#34;&gt;Cross Reference&lt;/a&gt; support to easily link documents
+&lt;li&gt;&lt;a href=&#34;../extras/crossreferences/&#34;&gt;Cross Reference&lt;/a&gt; support to easily link documents
 together with the ref and relref shortcodes.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://ace.yoss.si/&#34;&gt;Ace&lt;/a&gt; template engine support (
 
@@ -1987,7 +1987,7 @@ together with the ref and relref shortcodes.&lt;/li&gt;
 
 
 )&lt;/li&gt;
-&lt;li&gt;A new &lt;a href=&#34;http://gohugo.io/extras/shortcodes/&#34;&gt;shortcode&lt;/a&gt; token of &lt;code&gt;{{&amp;lt; &amp;gt;}}&lt;/code&gt; (raw HTML)
+&lt;li&gt;A new &lt;a href=&#34;../extras/shortcodes/&#34;&gt;shortcode&lt;/a&gt; token of &lt;code&gt;{{&amp;lt; &amp;gt;}}&lt;/code&gt; (raw HTML)
 alongside the existing &lt;code&gt;{{% %}}&lt;/code&gt; (Markdown)&lt;/li&gt;
 &lt;li&gt;A top level &lt;code&gt;Hugo&lt;/code&gt; variable (on Page &amp;amp; Node) is added with various build
 information&lt;/li&gt;
@@ -2007,9 +2007,9 @@ new features and make Hugo even speedier&lt;/li&gt;
 &lt;h3 id=&#34;notable-enhancements-to-existing-features&#34;&gt;Notable enhancements to existing features&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;The &lt;a href=&#34;http://gohugo.io/extras/shortcodes/&#34;&gt;shortcode&lt;/a&gt; handling is rewritten for speed and
+&lt;li&gt;The &lt;a href=&#34;../extras/shortcodes/&#34;&gt;shortcode&lt;/a&gt; handling is rewritten for speed and
 better error messages.&lt;/li&gt;
-&lt;li&gt;Several improvements to the &lt;a href=&#34;http://gohugo.io/templates/functions/&#34;&gt;template functions&lt;/a&gt;:
+&lt;li&gt;Several improvements to the &lt;a href=&#34;../templates/functions/&#34;&gt;template functions&lt;/a&gt;:
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;where&lt;/code&gt; is now even more powerful and accepts SQL-like syntax with the
@@ -2031,7 +2031,7 @@ operators &lt;code&gt;==&lt;/code&gt;, &lt;code&gt;eq&lt;/code&gt;; &lt;code&gt;
 &lt;li&gt;&lt;code&gt;replace&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;dateFormat&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Several &lt;a href=&#34;http://gohugo.io/overview/configuration/#configure-blackfriday-rendering:a66b35d20295cb764719ac8bd35837ec&#34;&gt;configurable improvements related to Markdown
+&lt;li&gt;Several &lt;a href=&#34;../overview/configuration/#configure-blackfriday-rendering:a66b35d20295cb764719ac8bd35837ec&#34;&gt;configurable improvements related to Markdown
 rendering&lt;/a&gt;:
 
 &lt;ul&gt;
@@ -2065,7 +2065,7 @@ and providing measurable performance improvements overall&lt;/li&gt;
 &lt;li&gt;Changes to docs:
 
 &lt;ul&gt;
-&lt;li&gt;A new &lt;a href=&#34;http://gohugo.io/troubleshooting/overview/&#34;&gt;Troubleshooting&lt;/a&gt; section is added&lt;/li&gt;
+&lt;li&gt;A new &lt;a href=&#34;../troubleshooting/overview/&#34;&gt;Troubleshooting&lt;/a&gt; section is added&lt;/li&gt;
 &lt;li&gt;It&amp;rsquo;s now searchable through Google Custom Search (
 
 &lt;a href=&#34;//github.com/spf13/hugo/issues/753&#34;&gt;#753&lt;/a&gt;
@@ -2075,12 +2075,12 @@ and providing measurable performance improvements overall&lt;/li&gt;
 &lt;li&gt;Some new great tutorials:
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/tutorials/automated-deployments/&#34;&gt;Automated deployments with
+&lt;li&gt;&lt;a href=&#34;../tutorials/automated-deployments/&#34;&gt;Automated deployments with
 Wercker&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/tutorials/creating-a-new-theme/&#34;&gt;Creating a new theme&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutorials/creating-a-new-theme/&#34;&gt;Creating a new theme&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/content/archetypes/&#34;&gt;&lt;code&gt;hugo new&lt;/code&gt;&lt;/a&gt; now copies the content in addition to the front matter&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../content/archetypes/&#34;&gt;&lt;code&gt;hugo new&lt;/code&gt;&lt;/a&gt; now copies the content in addition to the front matter&lt;/li&gt;
 &lt;li&gt;Improved unit test coverage&lt;/li&gt;
 &lt;li&gt;Fixed a lot of Windows-related path issues&lt;/li&gt;
 &lt;li&gt;Improved error messages for template and rendering errors&lt;/li&gt;
@@ -2112,19 +2112,19 @@ templates.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;10 &lt;a href=&#34;https://github.com/spf13/hugoThemes&#34;&gt;new themes&lt;/a&gt; created by the community&lt;/li&gt;
-&lt;li&gt;Fully themable &lt;a href=&#34;http://gohugo.io/templates/partials/&#34;&gt;Partials&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/templates/404/&#34;&gt;404 template&lt;/a&gt; support in themes&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/extras/shortcodes/&#34;&gt;Shortcode&lt;/a&gt; support in themes&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/templates/views/&#34;&gt;Views&lt;/a&gt; support in themes&lt;/li&gt;
-&lt;li&gt;Inner &lt;a href=&#34;http://gohugo.io/extras/shortcodes/&#34;&gt;shortcode&lt;/a&gt; content now treated as Markdown&lt;/li&gt;
+&lt;li&gt;Fully themable &lt;a href=&#34;../templates/partials/&#34;&gt;Partials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../templates/404/&#34;&gt;404 template&lt;/a&gt; support in themes&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../extras/shortcodes/&#34;&gt;Shortcode&lt;/a&gt; support in themes&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../templates/views/&#34;&gt;Views&lt;/a&gt; support in themes&lt;/li&gt;
+&lt;li&gt;Inner &lt;a href=&#34;../extras/shortcodes/&#34;&gt;shortcode&lt;/a&gt; content now treated as Markdown&lt;/li&gt;
 &lt;li&gt;Support for header ids in Markdown (# Header {#myid})&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/templates/list/&#34;&gt;Where&lt;/a&gt; template function to filter lists of content, taxonomies, etc.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/templates/list/&#34;&gt;GroupBy&lt;/a&gt; &amp;amp; &lt;a href=&#34;http://gohugo.io/templates/list/&#34;&gt;GroupByDate&lt;/a&gt; methods to group pages&lt;/li&gt;
-&lt;li&gt;Taxonomy &lt;a href=&#34;http://gohugo.io/taxonomies/methods/&#34;&gt;pages list&lt;/a&gt; now sortable, filterable, limitable &amp;amp; groupable&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../templates/list/&#34;&gt;Where&lt;/a&gt; template function to filter lists of content, taxonomies, etc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../templates/list/&#34;&gt;GroupBy&lt;/a&gt; &amp;amp; &lt;a href=&#34;../templates/list/&#34;&gt;GroupByDate&lt;/a&gt; methods to group pages&lt;/li&gt;
+&lt;li&gt;Taxonomy &lt;a href=&#34;../taxonomies/methods/&#34;&gt;pages list&lt;/a&gt; now sortable, filterable, limitable &amp;amp; groupable&lt;/li&gt;
 &lt;li&gt;General cleanup to taxonomies &amp;amp; documentation to make it more clear and consistent&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/showcase/&#34;&gt;Showcase&lt;/a&gt; returned and has been expanded&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../showcase/&#34;&gt;Showcase&lt;/a&gt; returned and has been expanded&lt;/li&gt;
 &lt;li&gt;Pretty links now always have trailing slashes&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/overview/configuration/&#34;&gt;BaseUrl&lt;/a&gt; can now include a subdirectory&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../overview/configuration/&#34;&gt;BaseUrl&lt;/a&gt; can now include a subdirectory&lt;/li&gt;
 &lt;li&gt;Better feedback about draft &amp;amp; future post rendering&lt;/li&gt;
 &lt;li&gt;A variety of improvements to &lt;a href=&#34;http://gohugo.io/&#34;&gt;the website&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -2137,21 +2137,21 @@ templates.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Considerably faster&amp;hellip; about 3 - 4x faster on average&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/extras/livereload/&#34;&gt;LiveReload&lt;/a&gt;. Hugo will automatically reload the browser when the build is complete&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../extras/livereload/&#34;&gt;LiveReload&lt;/a&gt;. Hugo will automatically reload the browser when the build is complete&lt;/li&gt;
 &lt;li&gt;Theme engine w/&lt;a href=&#34;https://github.com/spf13/hugoThemes&#34;&gt;Theme Repository&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/extras/menus/&#34;&gt;Menu system&lt;/a&gt; with support for active page&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/extras/builders/&#34;&gt;Builders&lt;/a&gt; to quickly create a new site, content or theme&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/templates/sitemap/&#34;&gt;XML sitemap&lt;/a&gt; generation&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/extras/comments/&#34;&gt;Integrated Disqus&lt;/a&gt; support&lt;/li&gt;
-&lt;li&gt;Streamlined &lt;a href=&#34;http://gohugo.io/templates/overview/&#34;&gt;template organization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../extras/menus/&#34;&gt;Menu system&lt;/a&gt; with support for active page&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../extras/builders/&#34;&gt;Builders&lt;/a&gt; to quickly create a new site, content or theme&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../templates/sitemap/&#34;&gt;XML sitemap&lt;/a&gt; generation&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../extras/comments/&#34;&gt;Integrated Disqus&lt;/a&gt; support&lt;/li&gt;
+&lt;li&gt;Streamlined &lt;a href=&#34;../templates/overview/&#34;&gt;template organization&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://gohugo.io/&#34;&gt;Brand new docs site&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Support for publishDate which allows for posts to be dated in the future&lt;/li&gt;
-&lt;li&gt;More &lt;a href=&#34;http://gohugo.io/content/ordering/&#34;&gt;sort&lt;/a&gt; options&lt;/li&gt;
+&lt;li&gt;More &lt;a href=&#34;../content/ordering/&#34;&gt;sort&lt;/a&gt; options&lt;/li&gt;
 &lt;li&gt;Logging support&lt;/li&gt;
 &lt;li&gt;Much better error handling&lt;/li&gt;
 &lt;li&gt;More informative verbose output&lt;/li&gt;
-&lt;li&gt;Renamed Indexes &amp;gt; &lt;a href=&#34;http://gohugo.io/taxonomies/overview/&#34;&gt;Taxonomies&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Renamed Chrome &amp;gt; &lt;a href=&#34;http://gohugo.io/templates/partials/&#34;&gt;Partials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Renamed Indexes &amp;gt; &lt;a href=&#34;../taxonomies/overview/&#34;&gt;Taxonomies&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Renamed Chrome &amp;gt; &lt;a href=&#34;../templates/partials/&#34;&gt;Partials&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
@@ -2161,19 +2161,19 @@ templates.&lt;/p&gt;
 &lt;p&gt;This release represents over 110 code commits from 29 different contributors.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/extras/highlighting/&#34;&gt;Syntax highlighting&lt;/a&gt; powered by pygments (&lt;strong&gt;slow&lt;/strong&gt;)&lt;/li&gt;
-&lt;li&gt;Ability to &lt;a href=&#34;http://gohugo.io/content/ordering/&#34;&gt;sort content&lt;/a&gt; many more ways&lt;/li&gt;
-&lt;li&gt;Automatic &lt;a href=&#34;http://gohugo.io/extras/toc/&#34;&gt;table of contents&lt;/a&gt; generation&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../extras/highlighting/&#34;&gt;Syntax highlighting&lt;/a&gt; powered by pygments (&lt;strong&gt;slow&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;Ability to &lt;a href=&#34;../content/ordering/&#34;&gt;sort content&lt;/a&gt; many more ways&lt;/li&gt;
+&lt;li&gt;Automatic &lt;a href=&#34;../extras/toc/&#34;&gt;table of contents&lt;/a&gt; generation&lt;/li&gt;
 &lt;li&gt;Support for Unicode URLs, aliases and indexes&lt;/li&gt;
-&lt;li&gt;Configurable per-section &lt;a href=&#34;http://gohugo.io/extras/permalinks/&#34;&gt;permalink&lt;/a&gt; pattern support&lt;/li&gt;
-&lt;li&gt;Support for &lt;a href=&#34;http://gohugo.io/extras/shortcodes/&#34;&gt;paired shortcodes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Shipping with some &lt;a href=&#34;http://gohugo.io/extras/shortcodes/&#34;&gt;shortcodes&lt;/a&gt; (highlight &amp;amp; figure)&lt;/li&gt;
-&lt;li&gt;Adding &lt;a href=&#34;http://gohugo.io/extras/urls/&#34;&gt;canonify&lt;/a&gt; option to keep urls relative&lt;/li&gt;
-&lt;li&gt;A bunch of &lt;a href=&#34;http://gohugo.io/layout/functions/&#34;&gt;additional template functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Configurable per-section &lt;a href=&#34;../extras/permalinks/&#34;&gt;permalink&lt;/a&gt; pattern support&lt;/li&gt;
+&lt;li&gt;Support for &lt;a href=&#34;../extras/shortcodes/&#34;&gt;paired shortcodes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Shipping with some &lt;a href=&#34;../extras/shortcodes/&#34;&gt;shortcodes&lt;/a&gt; (highlight &amp;amp; figure)&lt;/li&gt;
+&lt;li&gt;Adding &lt;a href=&#34;../extras/urls/&#34;&gt;canonify&lt;/a&gt; option to keep urls relative&lt;/li&gt;
+&lt;li&gt;A bunch of &lt;a href=&#34;../layout/functions/&#34;&gt;additional template functions&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Watching very large sites now works on Mac&lt;/li&gt;
-&lt;li&gt;RSS generation improved. Limited to 50 items by default, can limit further in &lt;a href=&#34;http://gohugo.io/layout/rss/&#34;&gt;template&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Boolean params now supported in &lt;a href=&#34;http://gohugo.io/content/front-matter/&#34;&gt;frontmatter&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Launched website &lt;a href=&#34;http://gohugo.io/showcase/&#34;&gt;showcase&lt;/a&gt;. Show off your own hugo site!&lt;/li&gt;
+&lt;li&gt;RSS generation improved. Limited to 50 items by default, can limit further in &lt;a href=&#34;../layout/rss/&#34;&gt;template&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Boolean params now supported in &lt;a href=&#34;../content/front-matter/&#34;&gt;frontmatter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Launched website &lt;a href=&#34;../showcase/&#34;&gt;showcase&lt;/a&gt;. Show off your own hugo site!&lt;/li&gt;
 &lt;li&gt;A bunch of &lt;a href=&#34;https://github.com/spf13/hugo/commits/master&#34;&gt;bug fixes&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2184,19 +2184,19 @@ templates.&lt;/p&gt;
 &lt;p&gt;This release represents over 220 code commits from 22 different contributors.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;New &lt;a href=&#34;http://gohugo.io/overview/usage/&#34;&gt;command based interface&lt;/a&gt; similar to git (&lt;code&gt;hugo server -s ./&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;New &lt;a href=&#34;../overview/usage/&#34;&gt;command based interface&lt;/a&gt; similar to git (&lt;code&gt;hugo server -s ./&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;Amber template support&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/extras/aliases/&#34;&gt;Aliases&lt;/a&gt; (redirects)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../extras/aliases/&#34;&gt;Aliases&lt;/a&gt; (redirects)&lt;/li&gt;
 &lt;li&gt;Support for top level pages (in addition to homepage)&lt;/li&gt;
 &lt;li&gt;Complete overhaul of the documentation site&lt;/li&gt;
 &lt;li&gt;Full Windows support&lt;/li&gt;
-&lt;li&gt;Better index support including &lt;a href=&#34;http://gohugo.io/content/ordering/&#34;&gt;ordering by content weight&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Better index support including &lt;a href=&#34;../content/ordering/&#34;&gt;ordering by content weight&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Add params to site config, available in .Site.Params from templates&lt;/li&gt;
 &lt;li&gt;Friendlier json support&lt;/li&gt;
 &lt;li&gt;Support for html &amp;amp; xml content (with frontmatter support)&lt;/li&gt;
-&lt;li&gt;Support for &lt;a href=&#34;http://gohugo.io/content/summaries/&#34;&gt;summary&lt;/a&gt; content divider (&lt;code&gt;&amp;lt;!&amp;#45;&amp;#45;more&amp;#45;&amp;#45;&amp;gt;&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;HTML in &lt;a href=&#34;http://gohugo.io/content/summaries/&#34;&gt;summary&lt;/a&gt; (when using divider)&lt;/li&gt;
-&lt;li&gt;Added &lt;a href=&#34;http://gohugo.io/layout/variables/&#34;&gt;&amp;ldquo;Minutes to Read&amp;rdquo;&lt;/a&gt; functionality&lt;/li&gt;
+&lt;li&gt;Support for &lt;a href=&#34;../content/summaries/&#34;&gt;summary&lt;/a&gt; content divider (&lt;code&gt;&amp;lt;!&amp;#45;&amp;#45;more&amp;#45;&amp;#45;&amp;gt;&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;HTML in &lt;a href=&#34;../content/summaries/&#34;&gt;summary&lt;/a&gt; (when using divider)&lt;/li&gt;
+&lt;li&gt;Added &lt;a href=&#34;../layout/variables/&#34;&gt;&amp;ldquo;Minutes to Read&amp;rdquo;&lt;/a&gt; functionality&lt;/li&gt;
 &lt;li&gt;Support for a custom 404 page&lt;/li&gt;
 &lt;li&gt;Cleanup of how content organization is handled&lt;/li&gt;
 &lt;li&gt;Loads of unit and performance tests&lt;/li&gt;
@@ -2205,11 +2205,11 @@ templates.&lt;/p&gt;
 &lt;li&gt;Support for relative permalinks&lt;/li&gt;
 &lt;li&gt;Fixed watching being triggered multiple times for the same event&lt;/li&gt;
 &lt;li&gt;Watch now ignores temp files (as created by Vim)&lt;/li&gt;
-&lt;li&gt;Configurable number of posts on &lt;a href=&#34;http://gohugo.io/layout/homepage/&#34;&gt;homepage&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/content/front-matter/&#34;&gt;Front matter&lt;/a&gt; supports multiple types (int, string, date, float)&lt;/li&gt;
+&lt;li&gt;Configurable number of posts on &lt;a href=&#34;../layout/homepage/&#34;&gt;homepage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../content/front-matter/&#34;&gt;Front matter&lt;/a&gt; supports multiple types (int, string, date, float)&lt;/li&gt;
 &lt;li&gt;Indexes can now use a default template&lt;/li&gt;
 &lt;li&gt;Addition of truncated bool to content to determine if should show &amp;lsquo;more&amp;rsquo; link&lt;/li&gt;
-&lt;li&gt;Support for &lt;a href=&#34;http://gohugo.io/layout/variables/&#34;&gt;linkTitles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support for &lt;a href=&#34;../layout/variables/&#34;&gt;linkTitles&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Better handling of most errors with directions on how to resolve&lt;/li&gt;
 &lt;li&gt;Support for more date / time formats&lt;/li&gt;
 &lt;li&gt;Support for go 1.2&lt;/li&gt;
@@ -2266,10 +2266,10 @@ templates.&lt;/p&gt;
     
     <item>
       <title>Hugo Roadmap</title>
-      <link>http://gohugo.io/meta/roadmap/</link>
+      <link>https://bwaycer.github.io/meta/roadmap/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/meta/roadmap/</guid>
+      <guid>https://bwaycer.github.io/meta/roadmap/</guid>
       <description>&lt;p&gt;In no particular order, here is what we are working on:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -2284,17 +2284,17 @@ templates.&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;Feel free to &lt;a href=&#34;http://gohugo.io/tutorials/how-to-contribute-to-hugo/&#34;&gt;contribute&lt;/a&gt; or open a &lt;a href=&#34;https://github.com/spf13/hugo/issues/new&#34;&gt;new issue&lt;/a&gt; if you have an idea for a new feature.)&lt;/p&gt;
+&lt;p&gt;Feel free to &lt;a href=&#34;../tutorials/how-to-contribute-to-hugo/&#34;&gt;contribute&lt;/a&gt; or open a &lt;a href=&#34;https://github.com/spf13/hugo/issues/new&#34;&gt;new issue&lt;/a&gt; if you have an idea for a new feature.)&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
     </item>
     
     <item>
       <title>License</title>
-      <link>http://gohugo.io/meta/license/</link>
+      <link>https://bwaycer.github.io/meta/license/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/meta/license/</guid>
+      <guid>https://bwaycer.github.io/meta/license/</guid>
       <description>
 
 &lt;p&gt;Hugo v0.15 and later are released under the Apache 2.0 license.

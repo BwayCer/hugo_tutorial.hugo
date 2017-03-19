@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Themes on Hugo: A Fast and Flexible Website Generator</title>
-    <link>http://gohugo.io/themes/index.xml</link>
+    <link>https://bwaycer.github.io/themes/index.xml</link>
     <description>Recent content in Themes on Hugo: A Fast and Flexible Website Generator</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 12 May 2014 10:03:52 +0000</lastBuildDate>
-    <atom:link href="http://gohugo.io/themes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bwaycer.github.io/themes/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Themes Overview</title>
-      <link>http://gohugo.io/themes/overview/</link>
+      <link>https://bwaycer.github.io/themes/overview/</link>
       <pubDate>Mon, 12 May 2014 10:03:52 +0000</pubDate>
       
-      <guid>http://gohugo.io/themes/overview/</guid>
+      <guid>https://bwaycer.github.io/themes/overview/</guid>
       <description>&lt;p&gt;Hugo provides a robust theming system which is simple, yet capable of producing
 even the most complicated websites.&lt;/p&gt;
 
@@ -22,7 +22,7 @@ ready for using in your own site.&lt;/p&gt;
 
 &lt;p&gt;Hugo themes have been designed to be the perfect balance between
 simplicity and functionality. Hugo themes are powered by the excellent
-Go template library. If you are new to Go templates, see our &lt;a href=&#34;http://gohugo.io/templates/go-templates/&#34;&gt;primer on
+Go template library. If you are new to Go templates, see our &lt;a href=&#34;../templates/go-templates/&#34;&gt;primer on
 Go templates&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Hugo themes support all modern features you come to expect. They are
@@ -39,10 +39,10 @@ pick whichever theme best suits their project.&lt;/p&gt;
     
     <item>
       <title>Installing Themes</title>
-      <link>http://gohugo.io/themes/installing/</link>
+      <link>https://bwaycer.github.io/themes/installing/</link>
       <pubDate>Mon, 12 May 2014 10:09:49 +0000</pubDate>
       
-      <guid>http://gohugo.io/themes/installing/</guid>
+      <guid>https://bwaycer.github.io/themes/installing/</guid>
       <description>
 
 &lt;p&gt;Community-contributed &lt;a href=&#34;http://themes.gohugo.io/&#34;&gt;Hugo themes&lt;/a&gt;, showcased
@@ -87,10 +87,10 @@ an example configuration file.&lt;/p&gt;
     
     <item>
       <title>Using a Theme</title>
-      <link>http://gohugo.io/themes/usage/</link>
+      <link>https://bwaycer.github.io/themes/usage/</link>
       <pubDate>Mon, 12 May 2014 10:09:27 +0000</pubDate>
       
-      <guid>http://gohugo.io/themes/usage/</guid>
+      <guid>https://bwaycer.github.io/themes/usage/</guid>
       <description>&lt;p&gt;Please make certain you have installed the themes you want to use in the
 &lt;code&gt;/themes&lt;/code&gt; directory.&lt;/p&gt;
 
@@ -107,16 +107,16 @@ an example configuration file.&lt;/p&gt;
 &lt;p&gt;The &lt;em&gt;ThemeName&lt;/em&gt; must match the name of the directory inside &lt;code&gt;/themes&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Hugo will then apply the theme first, then apply anything that is in the local
-directory. To learn more, go to &lt;a href=&#34;http://gohugo.io/themes/customizing/&#34;&gt;customizing themes&lt;/a&gt;.&lt;/p&gt;
+directory. To learn more, go to &lt;a href=&#34;../themes/customizing/&#34;&gt;customizing themes&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Customizing a Theme</title>
-      <link>http://gohugo.io/themes/customizing/</link>
+      <link>https://bwaycer.github.io/themes/customizing/</link>
       <pubDate>Mon, 12 May 2014 10:09:34 +0000</pubDate>
       
-      <guid>http://gohugo.io/themes/customizing/</guid>
+      <guid>https://bwaycer.github.io/themes/customizing/</guid>
       <description>
 
 &lt;p&gt;&lt;em&gt;The following are key concepts for Hugo site customization. Hugo permits you to &lt;strong&gt;supplement or override&lt;/strong&gt; any theme template or static file, with files in your working directory.&lt;/em&gt;&lt;/p&gt;
@@ -141,9 +141,9 @@ directory. To learn more, go to &lt;a href=&#34;http://gohugo.io/themes/customiz
 
 &lt;p&gt;Anytime Hugo looks for a matching template, it will first check the working directory before looking in the theme directory. If you would like to modify a template, simply create that template in your local &lt;code&gt;layouts&lt;/code&gt; directory.&lt;/p&gt;
 
-&lt;p&gt;In the &lt;a href=&#34;http://gohugo.io/templates/overview/&#34;&gt;template documentation&lt;/a&gt; &lt;em&gt;each different template type explains the rules it uses to determine which template to use&lt;/em&gt;. Read and understand these rules carefully.&lt;/p&gt;
+&lt;p&gt;In the &lt;a href=&#34;../templates/overview/&#34;&gt;template documentation&lt;/a&gt; &lt;em&gt;each different template type explains the rules it uses to determine which template to use&lt;/em&gt;. Read and understand these rules carefully.&lt;/p&gt;
 
-&lt;p&gt;This is especially helpful when the theme creator used &lt;a href=&#34;http://gohugo.io/templates/partials/&#34;&gt;partial templates&lt;/a&gt;. These partial templates are perfect for easy injection into the theme with minimal maintenance to ensure future compatibility.&lt;/p&gt;
+&lt;p&gt;This is especially helpful when the theme creator used &lt;a href=&#34;../templates/partials/&#34;&gt;partial templates&lt;/a&gt;. These partial templates are perfect for easy injection into the theme with minimal maintenance to ensure future compatibility.&lt;/p&gt;
 
 &lt;p&gt;For example:&lt;/p&gt;
 
@@ -171,10 +171,10 @@ directory. To learn more, go to &lt;a href=&#34;http://gohugo.io/themes/customiz
     
     <item>
       <title>Creating a Theme</title>
-      <link>http://gohugo.io/themes/creation/</link>
+      <link>https://bwaycer.github.io/themes/creation/</link>
       <pubDate>Mon, 12 May 2014 10:09:17 +0000</pubDate>
       
-      <guid>http://gohugo.io/themes/creation/</guid>
+      <guid>https://bwaycer.github.io/themes/creation/</guid>
       <description>
 
 &lt;p&gt;Hugo has the ability to create a new theme in your themes directory for you
@@ -184,12 +184,12 @@ using the &lt;code&gt;hugo new&lt;/code&gt; command.&lt;/p&gt;
 
 &lt;p&gt;This command will initialize all of the files and directories a basic theme
 would need. Hugo themes are written in the Go template language. If you are new
-to Go, the &lt;a href=&#34;http://gohugo.io/layout/go-templates/&#34;&gt;Go template primer&lt;/a&gt; will help you get started.&lt;/p&gt;
+to Go, the &lt;a href=&#34;../layout/go-templates/&#34;&gt;Go template primer&lt;/a&gt; will help you get started.&lt;/p&gt;
 
 &lt;h2 id=&#34;theme-components&#34;&gt;Theme Components&lt;/h2&gt;
 
 &lt;p&gt;A theme consists of templates and static assets such as javascript and css
-files. Themes can also optionally provide &lt;a href=&#34;http://gohugo.io/content/archetypes/&#34;&gt;archetypes&lt;/a&gt;
+files. Themes can also optionally provide &lt;a href=&#34;../content/archetypes/&#34;&gt;archetypes&lt;/a&gt;
 which are archetypal content types used by the &lt;code&gt;hugo new&lt;/code&gt; command.&lt;/p&gt;
 
 &lt;h3 id=&#34;layouts&#34;&gt;Layouts&lt;/h3&gt;
@@ -211,7 +211,7 @@ a large amount of flexibility.&lt;/p&gt;
 
 &lt;h3 id=&#34;partial-templates&#34;&gt;Partial Templates&lt;/h3&gt;
 
-&lt;p&gt;Theme creators should liberally use &lt;a href=&#34;http://gohugo.io/templates/partials/&#34;&gt;partial templates&lt;/a&gt;
+&lt;p&gt;Theme creators should liberally use &lt;a href=&#34;../templates/partials/&#34;&gt;partial templates&lt;/a&gt;
 throughout their theme files. Not only is a good DRY practice to include shared
 code, but partials are a special template type that enables the themes end user
 to be able to overwrite just a small piece of a file or inject code into the
@@ -236,11 +236,11 @@ common to organize the static content into:&lt;/p&gt;
 
 &lt;p&gt;If your theme makes use of specific keys in the front matter, it is a good idea
 to provide an archetype for each content type you have. Archetypes follow the
-&lt;a href=&#34;http://gohugo.io/content/archetypes/&#34;&gt;guidelines provided&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;../content/archetypes/&#34;&gt;guidelines provided&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&#34;generator-meta-tag&#34;&gt;Generator meta tag&lt;/h3&gt;
 
-&lt;p&gt;With a growing community around Hugo we recommend theme creators to include the &lt;a href=&#34;http://gohugo.io/templates/variables/#hugo-variables&#34;&gt;Generator meta tag&lt;/a&gt; with &lt;code&gt;.Hugo.Generator&lt;/code&gt; in the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; of your HTML code. The output  might looks like &lt;code&gt;&amp;lt;meta name=&amp;quot;generator&amp;quot; content=&amp;quot;Hugo 0.13&amp;quot; /&amp;gt;&lt;/code&gt; and helps us to analyse the usage and popularity of Hugo.&lt;/p&gt;
+&lt;p&gt;With a growing community around Hugo we recommend theme creators to include the &lt;a href=&#34;../templates/variables/#hugo-variables&#34;&gt;Generator meta tag&lt;/a&gt; with &lt;code&gt;.Hugo.Generator&lt;/code&gt; in the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; of your HTML code. The output  might looks like &lt;code&gt;&amp;lt;meta name=&amp;quot;generator&amp;quot; content=&amp;quot;Hugo 0.13&amp;quot; /&amp;gt;&lt;/code&gt; and helps us to analyse the usage and popularity of Hugo.&lt;/p&gt;
 </description>
     </item>
     

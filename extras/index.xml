@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Extras on Hugo: A Fast and Flexible Website Generator</title>
-    <link>http://gohugo.io/extras/index.xml</link>
+    <link>https://bwaycer.github.io/extras/index.xml</link>
     <description>Recent content in Extras on Hugo: A Fast and Flexible Website Generator</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 11 Dec 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://gohugo.io/extras/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bwaycer.github.io/extras/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>GitInfo</title>
-      <link>http://gohugo.io/extras/gitinfo/</link>
+      <link>https://bwaycer.github.io/extras/gitinfo/</link>
       <pubDate>Sun, 11 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/extras/gitinfo/</guid>
+      <guid>https://bwaycer.github.io/extras/gitinfo/</guid>
       <description>
 
 &lt;p&gt;Hugo provides a way to integrate Git data into your site.&lt;/p&gt;
@@ -54,10 +54,10 @@ line or by setting &lt;code&gt;enableGitInfo&lt;/code&gt; to &lt;code&gt;true&lt
     
     <item>
       <title>Analytics in Hugo</title>
-      <link>http://gohugo.io/extras/analytics/</link>
+      <link>https://bwaycer.github.io/extras/analytics/</link>
       <pubDate>Sat, 06 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/extras/analytics/</guid>
+      <guid>https://bwaycer.github.io/extras/analytics/</guid>
       <description>
 
 &lt;p&gt;Hugo ships with prebuilt internal templates for Google Analytics tracking, including both synchronous and asynchronous tracking codes.&lt;/p&gt;
@@ -85,14 +85,14 @@ line or by setting &lt;code&gt;enableGitInfo&lt;/code&gt; to &lt;code&gt;true&lt
     
     <item>
       <title>Custom robots.txt</title>
-      <link>http://gohugo.io/extras/robots-txt/</link>
+      <link>https://bwaycer.github.io/extras/robots-txt/</link>
       <pubDate>Tue, 08 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/extras/robots-txt/</guid>
+      <guid>https://bwaycer.github.io/extras/robots-txt/</guid>
       <description>&lt;p&gt;Hugo can generated a customized &lt;a href=&#34;http://www.robotstxt.org/&#34;&gt;robots.txt&lt;/a&gt; in the
-&lt;a href=&#34;http://gohugo.io/templates/go-templates/&#34;&gt;same way as any other templates&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://bwaycer.github.io/templates/go-templates/&#34;&gt;same way as any other templates&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;To enable it, just set &lt;code&gt;enableRobotsTXT&lt;/code&gt; option to &lt;code&gt;true&lt;/code&gt; in the &lt;a href=&#34;http://gohugo.io/overview/configuration/&#34;&gt;configuration file&lt;/a&gt;. By default, it generates a robots.txt, which allows everything, with the following content:&lt;/p&gt;
+&lt;p&gt;To enable it, just set &lt;code&gt;enableRobotsTXT&lt;/code&gt; option to &lt;code&gt;true&lt;/code&gt; in the &lt;a href=&#34;https://bwaycer.github.io/overview/configuration/&#34;&gt;configuration file&lt;/a&gt;. By default, it generates a robots.txt, which allows everything, with the following content:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-http&#34;&gt;User-agent: *
 &lt;/code&gt;&lt;/pre&gt;
@@ -118,10 +118,10 @@ Disallow: {{.RelPermalink}}{{end}}
     
     <item>
       <title>Traversing Local Files</title>
-      <link>http://gohugo.io/extras/localfiles/</link>
+      <link>https://bwaycer.github.io/extras/localfiles/</link>
       <pubDate>Fri, 12 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/extras/localfiles/</guid>
+      <guid>https://bwaycer.github.io/extras/localfiles/</guid>
       <description>
 
 &lt;h2 id=&#34;traversing-local-files&#34;&gt;Traversing Local Files&lt;/h2&gt;
@@ -181,39 +181,39 @@ So, let&amp;rsquo;s list some of its CSS files.
     &lt;th&gt;Name&lt;/th&gt;
     &lt;tr&gt;
         &lt;td&gt;1440&lt;/td&gt;
-        &lt;td&gt;&lt;a href=&#34;http://gohugo.io/css/bootstrap-additions-gohugo.css&#34;&gt; bootstrap-additions-gohugo.css&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;../css/bootstrap-additions-gohugo.css&#34;&gt; bootstrap-additions-gohugo.css&lt;/a&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
         &lt;td&gt;2629&lt;/td&gt;
-        &lt;td&gt;&lt;a href=&#34;http://gohugo.io/css/bootstrap-changes-gohugo.css&#34;&gt; bootstrap-changes-gohugo.css&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;../css/bootstrap-changes-gohugo.css&#34;&gt; bootstrap-changes-gohugo.css&lt;/a&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
         &lt;td&gt;22485&lt;/td&gt;
-        &lt;td&gt;&lt;a href=&#34;http://gohugo.io/css/bootstrap-stripped-gohugo.css&#34;&gt; bootstrap-stripped-gohugo.css&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;../css/bootstrap-stripped-gohugo.css&#34;&gt; bootstrap-stripped-gohugo.css&lt;/a&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
         &lt;td&gt;2368&lt;/td&gt;
-        &lt;td&gt;&lt;a href=&#34;http://gohugo.io/css/content-style.css&#34;&gt; content-style.css&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;../css/content-style.css&#34;&gt; content-style.css&lt;/a&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
         &lt;td&gt;1277&lt;/td&gt;
-        &lt;td&gt;&lt;a href=&#34;http://gohugo.io/css/home-page-style-responsive.css&#34;&gt; home-page-style-responsive.css&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;../css/home-page-style-responsive.css&#34;&gt; home-page-style-responsive.css&lt;/a&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
         &lt;td&gt;3542&lt;/td&gt;
-        &lt;td&gt;&lt;a href=&#34;http://gohugo.io/css/home-page-style.css&#34;&gt; home-page-style.css&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;../css/home-page-style.css&#34;&gt; home-page-style.css&lt;/a&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
         &lt;td&gt;2828&lt;/td&gt;
-        &lt;td&gt;&lt;a href=&#34;http://gohugo.io/css/hugofont.css&#34;&gt; hugofont.css&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;../css/hugofont.css&#34;&gt; hugofont.css&lt;/a&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
         &lt;td&gt;1117&lt;/td&gt;
-        &lt;td&gt;&lt;a href=&#34;http://gohugo.io/css/style-responsive.css&#34;&gt; style-responsive.css&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;../css/style-responsive.css&#34;&gt; style-responsive.css&lt;/a&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
         &lt;td&gt;13897&lt;/td&gt;
-        &lt;td&gt;&lt;a href=&#34;http://gohugo.io/css/style.css&#34;&gt; style.css&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;../css/style.css&#34;&gt; style.css&lt;/a&gt;&lt;/td&gt;
     &lt;/tr&gt;
 &lt;/table&gt;
 
@@ -231,15 +231,15 @@ Otherwise, it becomes relative to the current web page.&lt;/p&gt;
     
     <item>
       <title>Data-driven Content</title>
-      <link>http://gohugo.io/extras/datadrivencontent/</link>
+      <link>https://bwaycer.github.io/extras/datadrivencontent/</link>
       <pubDate>Sat, 14 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/extras/datadrivencontent/</guid>
+      <guid>https://bwaycer.github.io/extras/datadrivencontent/</guid>
       <description>
 
 &lt;p&gt;Data-driven content with a static site generator? Yes, it is possible!&lt;/p&gt;
 
-&lt;p&gt;In addition to the &lt;a href=&#34;http://gohugo.io/extras/datafiles/&#34;&gt;data files&lt;/a&gt; feature, we have also
+&lt;p&gt;In addition to the &lt;a href=&#34;../extras/datafiles/&#34;&gt;data files&lt;/a&gt; feature, we have also
 implemented the feature &amp;ldquo;Data-driven Content&amp;rdquo;, which lets you load
 any &lt;a href=&#34;http://www.json.org/&#34;&gt;JSON&lt;/a&gt; or
 &lt;a href=&#34;http://en.wikipedia.org/wiki/Comma-separated_values&#34;&gt;CSV&lt;/a&gt; file
@@ -353,7 +353,7 @@ extension does not matter but the content does.&lt;/p&gt;
 
 &lt;h2 id=&#34;livereload&#34;&gt;LiveReload&lt;/h2&gt;
 
-&lt;p&gt;There is no chance to trigger a &lt;a href=&#34;http://gohugo.io/extras/livereload/&#34;&gt;LiveReload&lt;/a&gt; when
+&lt;p&gt;There is no chance to trigger a &lt;a href=&#34;../extras/livereload/&#34;&gt;LiveReload&lt;/a&gt; when
 the content of an URL changes. However, when a local JSON/CSV file changes,
 then a LiveReload will be triggered of course. Symlinks are not supported.&lt;/p&gt;
 
@@ -377,19 +377,19 @@ your Markdown files until the content has been downloaded.&lt;/p&gt;
     
     <item>
       <title>Data Files</title>
-      <link>http://gohugo.io/extras/datafiles/</link>
+      <link>https://bwaycer.github.io/extras/datafiles/</link>
       <pubDate>Thu, 22 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/extras/datafiles/</guid>
+      <guid>https://bwaycer.github.io/extras/datafiles/</guid>
       <description>
 
-&lt;p&gt;In addition to the &lt;a href=&#34;http://gohugo.io/templates/variables/&#34;&gt;built-in variables&lt;/a&gt; available from Hugo, you can specify your own custom data that can be accessed via templates or shortcodes.&lt;/p&gt;
+&lt;p&gt;In addition to the &lt;a href=&#34;../templates/variables/&#34;&gt;built-in variables&lt;/a&gt; available from Hugo, you can specify your own custom data that can be accessed via templates or shortcodes.&lt;/p&gt;
 
 &lt;p&gt;Hugo supports loading data from &lt;a href=&#34;http://yaml.org/&#34;&gt;YAML&lt;/a&gt;, &lt;a href=&#34;http://www.json.org/&#34;&gt;JSON&lt;/a&gt;, and &lt;a href=&#34;https://github.com/toml-lang/toml&#34;&gt;TOML&lt;/a&gt; files located in the &lt;code&gt;data&lt;/code&gt; directory.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;It even works with &lt;a href=&#34;http://gohugo.io/extras/livereload/&#34;&gt;LiveReload&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;It even works with &lt;a href=&#34;../extras/livereload/&#34;&gt;LiveReload&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Data Files can also be used in &lt;a href=&#34;http://gohugo.io/themes/overview/&#34;&gt;themes&lt;/a&gt;, but note: If the same &lt;code&gt;key&lt;/code&gt; is used in both the main data folder and in the theme&amp;rsquo;s data folder, the main one will win. So, for theme authors,  for theme specific data items that shouldn&amp;rsquo;t be overridden, it can be wise to prefix the folder structure with a namespace, e.g. &lt;code&gt;mytheme/data/mytheme/somekey/...&lt;/code&gt;. To check if any such duplicate exists, run hugo with the &lt;code&gt;-v&lt;/code&gt; flag, e.g. &lt;code&gt;hugo -v&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Data Files can also be used in &lt;a href=&#34;../themes/overview/&#34;&gt;themes&lt;/a&gt;, but note: If the same &lt;code&gt;key&lt;/code&gt; is used in both the main data folder and in the theme&amp;rsquo;s data folder, the main one will win. So, for theme authors,  for theme specific data items that shouldn&amp;rsquo;t be overridden, it can be wise to prefix the folder structure with a namespace, e.g. &lt;code&gt;mytheme/data/mytheme/somekey/...&lt;/code&gt;. To check if any such duplicate exists, run hugo with the &lt;code&gt;-v&lt;/code&gt; flag, e.g. &lt;code&gt;hugo -v&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;the-data-folder&#34;&gt;The Data Folder&lt;/h2&gt;
 
@@ -478,10 +478,10 @@ Achievements:
     
     <item>
       <title>Scratch</title>
-      <link>http://gohugo.io/extras/scratch/</link>
+      <link>https://bwaycer.github.io/extras/scratch/</link>
       <pubDate>Thu, 22 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/extras/scratch/</guid>
+      <guid>https://bwaycer.github.io/extras/scratch/</guid>
       <description>
 
 &lt;p&gt;&lt;code&gt;Scratch&lt;/code&gt; &amp;ndash; a &amp;ldquo;scratchpad&amp;rdquo; for your page-scoped variables. In most cases you can do well without &lt;code&gt;Scratch&lt;/code&gt;, but there are some use cases that aren&amp;rsquo;t solvable with Go&amp;rsquo;s templates without &lt;code&gt;Scratch&lt;/code&gt;&amp;rsquo;s help, due to scoping issues.&lt;/p&gt;
@@ -538,10 +538,10 @@ Achievements:
     
     <item>
       <title>Cross-References</title>
-      <link>http://gohugo.io/extras/crossreferences/</link>
+      <link>https://bwaycer.github.io/extras/crossreferences/</link>
       <pubDate>Tue, 25 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/extras/crossreferences/</guid>
+      <guid>https://bwaycer.github.io/extras/crossreferences/</guid>
       <description>
 
 &lt;p&gt;Hugo makes it easy to link documents together with the &lt;code&gt;ref&lt;/code&gt; and &lt;code&gt;relref&lt;/code&gt; shortcodes. These shortcodes are also used to safely provide links to headings inside of your content, whether across documents or within a document. The only difference between &lt;code&gt;ref&lt;/code&gt; and &lt;code&gt;relref&lt;/code&gt; is whether the resulting URL is absolute (&lt;code&gt;http://1.com/about/&lt;/code&gt;) or relative (&lt;code&gt;/about/&lt;/code&gt;).&lt;/p&gt;
@@ -649,7 +649,7 @@ hugo-a-fast-modern-static-web-engine
 
 &lt;h3 id=&#34;what-about-duplicate-heading-anchors&#34;&gt;What About Duplicate Heading Anchors?&lt;/h3&gt;
 
-&lt;p&gt;The technique outlined above works well enough, but some documents have headings with identical text, like the &lt;a href=&#34;http://gohugo.io/extras/shortcodes/&#34;&gt;shortcodes&lt;/a&gt; page—there are three headings with the text &amp;ldquo;Example&amp;rdquo;. You can specify heading anchors manually:&lt;/p&gt;
+&lt;p&gt;The technique outlined above works well enough, but some documents have headings with identical text, like the &lt;a href=&#34;../extras/shortcodes/&#34;&gt;shortcodes&lt;/a&gt; page—there are three headings with the text &amp;ldquo;Example&amp;rdquo;. You can specify heading anchors manually:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;### Example {#example-1}
 ### Example {#example-2}
@@ -700,10 +700,10 @@ was generated, not the document identifier; &lt;code&gt;ref&lt;/code&gt; and &lt
 rest for you.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;a href=&#39;{{&amp;lt; relref &amp;quot;blog/post.md#example&amp;quot; &amp;gt;}}&#39;&amp;gt;Post Example&amp;lt;/a&amp;gt;
-&amp;lt;a href=&#39;http://gohugo.io/blog/post.md#81df004…&#39;&amp;gt;Post Example&amp;lt;/a&amp;gt;
+&amp;lt;a href=&#39;../blog/post.md#81df004…&#39;&amp;gt;Post Example&amp;lt;/a&amp;gt;
 
 [Post Two Example]({{&amp;lt; relref &amp;quot;blog/post2.md#example&amp;quot; &amp;gt;}})
-&amp;lt;a href=&#39;http://gohugo.io/blog/post2.md#8cf1599…&#39;&amp;gt;Post Two Example&amp;lt;/a&amp;gt;
+&amp;lt;a href=&#39;../blog/post2.md#8cf1599…&#39;&amp;gt;Post Two Example&amp;lt;/a&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Now you know.&lt;/p&gt;
@@ -712,10 +712,10 @@ rest for you.&lt;/p&gt;
     
     <item>
       <title>Comments in Hugo</title>
-      <link>http://gohugo.io/extras/comments/</link>
+      <link>https://bwaycer.github.io/extras/comments/</link>
       <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/extras/comments/</guid>
+      <guid>https://bwaycer.github.io/extras/comments/</guid>
       <description>
 
 &lt;p&gt;As Hugo is a static site generator, the content produced is static and doesn’t interact with the users. The most common interaction people ask for is comment capability.&lt;/p&gt;
@@ -809,10 +809,10 @@ for a given piece of content:&lt;/p&gt;
     
     <item>
       <title>Hugo Builders</title>
-      <link>http://gohugo.io/extras/builders/</link>
+      <link>https://bwaycer.github.io/extras/builders/</link>
       <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/extras/builders/</guid>
+      <guid>https://bwaycer.github.io/extras/builders/</guid>
       <description>
 
 &lt;p&gt;Hugo provides the functionality to quickly get a site, theme or page
@@ -830,7 +830,7 @@ started.&lt;/p&gt;
 quickly.&lt;/p&gt;
 
 &lt;p&gt;Hugo will only touch the files and create the directories (in the right
-places), &lt;a href=&#34;http://gohugo.io/overview/configuration/&#34;&gt;configuration&lt;/a&gt; and content are up to
+places), &lt;a href=&#34;../overview/configuration/&#34;&gt;configuration&lt;/a&gt; and content are up to
 you&amp;hellip; but luckily we have builders for content (see below).&lt;/p&gt;
 
 &lt;h2 id=&#34;new-theme&#34;&gt;New Theme&lt;/h2&gt;
@@ -844,7 +844,7 @@ you&amp;hellip; but luckily we have builders for content (see below).&lt;/p&gt;
 the needed files in your themes directory. Hugo will provide you with a
 license and theme.toml file with most of the work done for you.&lt;/p&gt;
 
-&lt;p&gt;Follow the &lt;a href=&#34;http://gohugo.io/themes/creation/&#34;&gt;Theme Creation Guide&lt;/a&gt; once the builder is
+&lt;p&gt;Follow the &lt;a href=&#34;../themes/creation/&#34;&gt;Theme Creation Guide&lt;/a&gt; once the builder is
 done.&lt;/p&gt;
 
 &lt;h2 id=&#34;new-content&#34;&gt;New Content&lt;/h2&gt;
@@ -852,7 +852,7 @@ done.&lt;/p&gt;
 &lt;p&gt;You will use this builder the most of all. Every time you want to create
 a new piece of content, the content builder will get you started right.&lt;/p&gt;
 
-&lt;p&gt;Leveraging &lt;a href=&#34;http://gohugo.io/content/archetypes/&#34;&gt;content archetypes&lt;/a&gt; the content builder
+&lt;p&gt;Leveraging &lt;a href=&#34;../content/archetypes/&#34;&gt;content archetypes&lt;/a&gt; the content builder
 will not only insert the current date and appropriate metadata, but it
 will pre-populate values based on the content type.&lt;/p&gt;
 
@@ -866,10 +866,10 @@ path starts from your content directory. Now, Hugo watches your content director
     
     <item>
       <title>LiveReload</title>
-      <link>http://gohugo.io/extras/livereload/</link>
+      <link>https://bwaycer.github.io/extras/livereload/</link>
       <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/extras/livereload/</guid>
+      <guid>https://bwaycer.github.io/extras/livereload/</guid>
       <description>
 
 &lt;p&gt;Hugo may not be the first static site generator to utilize LiveReload
@@ -945,10 +945,10 @@ Hugo injects the LiveReload &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; befo
     
     <item>
       <title>Menus</title>
-      <link>http://gohugo.io/extras/menus/</link>
+      <link>https://bwaycer.github.io/extras/menus/</link>
       <pubDate>Wed, 14 May 2014 02:36:37 +0000</pubDate>
       
-      <guid>http://gohugo.io/extras/menus/</guid>
+      <guid>https://bwaycer.github.io/extras/menus/</guid>
       <description>
 
 &lt;p&gt;Hugo has a simple yet powerful menu system that permits content to be
@@ -971,7 +971,7 @@ placed in menus with a good degree of control without a lot of work.&lt;/p&gt;
 &lt;code&gt;.Site.Menus&lt;/code&gt; by name. For example, if I have a menu called &lt;code&gt;main&lt;/code&gt;, I would
 access it via &lt;code&gt;.Site.Menus.main&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;If you make use of the &lt;a href=&#34;http://gohugo.io/content/multilingual/#menus&#34;&gt;multilingual feature&lt;/a&gt; you can define menus language independent.&lt;/p&gt;
+&lt;p&gt;If you make use of the &lt;a href=&#34;../content/multilingual/#menus&#34;&gt;multilingual feature&lt;/a&gt; you can define menus language independent.&lt;/p&gt;
 
 &lt;p&gt;A menu entry has the following properties:&lt;/p&gt;
 
@@ -1043,7 +1043,7 @@ menu:
 &lt;h2 id=&#34;adding-non-content-entries-to-a-menu&#34;&gt;Adding (non-content) entries to a menu&lt;/h2&gt;
 
 &lt;p&gt;You can also add entries to menus that aren’t attached to a piece of
-content. This takes place in the sitewide &lt;a href=&#34;http://gohugo.io/overview/configuration/&#34;&gt;config file&lt;/a&gt;.&lt;/p&gt;
+content. This takes place in the sitewide &lt;a href=&#34;../overview/configuration/&#34;&gt;config file&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Here’s an example &lt;code&gt;config.toml&lt;/code&gt;:&lt;/p&gt;
 
@@ -1147,7 +1147,7 @@ able to build your menu however you want.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: use the &lt;code&gt;absLangURL&lt;/code&gt; or &lt;code&gt;relLangURL&lt;/code&gt; if your theme makes use of the &lt;a href=&#34;http://gohugo.io/content/multilingual/&#34;&gt;multilingual feature&lt;/a&gt;. In contrast to &lt;code&gt;absURL&lt;/code&gt; and &lt;code&gt;relURL&lt;/code&gt; it adds the correct language prefix to the url. &lt;a href=&#34;http://gohugo.io/templates/functions/#urls&#34;&gt;Read more&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: use the &lt;code&gt;absLangURL&lt;/code&gt; or &lt;code&gt;relLangURL&lt;/code&gt; if your theme makes use of the &lt;a href=&#34;../content/multilingual/&#34;&gt;multilingual feature&lt;/a&gt;. In contrast to &lt;code&gt;absURL&lt;/code&gt; and &lt;code&gt;relURL&lt;/code&gt; it adds the correct language prefix to the url. &lt;a href=&#34;../templates/functions/#urls&#34;&gt;Read more&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&#34;section-menu-for-the-lazy-blogger&#34;&gt;Section Menu for &amp;ldquo;the Lazy Blogger&amp;rdquo;&lt;/h2&gt;
@@ -1344,14 +1344,20 @@ able to build your menu however you want.&lt;/p&gt;
     </item>
     
     <item>
-      <title>URLs</title>
-      <link>http://gohugo.io/extras/urls/</link>
+      <title>網址 URLs</title>
+      <link>https://bwaycer.github.io/extras/urls/</link>
       <pubDate>Fri, 03 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/extras/urls/</guid>
+      <guid>https://bwaycer.github.io/extras/urls/</guid>
       <description>
 
-&lt;h2 id=&#34;pretty-urls&#34;&gt;Pretty URLs&lt;/h2&gt;
+&lt;h2 id=&#34;漂亮的網址-pretty-urls&#34;&gt;漂亮的網址 Pretty URLs&lt;/h2&gt;
+
+&lt;p&gt;預設的情況，雨果用「漂亮的」網址來創建內容。
+例如： 內容被建立於 &lt;code&gt;/content/extras/urls.md&lt;/code&gt;
+將被渲染於 &lt;code&gt;/public/extras/urls/index.html&lt;/code&gt; 位置。
+因此可在瀏覽器中訪問透過 &lt;a href=&#34;http://example.com/extras/urls/&#34;&gt;http://example.com/extras/urls/&lt;/a&gt;
+不需要非標準的服務器端配置也能運行這些漂亮的網址。&lt;/p&gt;
 
 &lt;p&gt;By default, Hugo creates content with &amp;lsquo;pretty&amp;rsquo; URLs. For example,
 content created at &lt;code&gt;/content/extras/urls.md&lt;/code&gt; will be rendered at
@@ -1359,21 +1365,39 @@ content created at &lt;code&gt;/content/extras/urls.md&lt;/code&gt; will be rend
 at &lt;a href=&#34;http://example.com/extras/urls/&#34;&gt;http://example.com/extras/urls/&lt;/a&gt;.  No non-standard server-side
 configuration is required for these pretty URLs to work.&lt;/p&gt;
 
+&lt;p&gt;若你願意使用我們所稱的「醜陋的網址」，例如
+&lt;a href=&#34;http://example.com/extras/urls.html&#34;&gt;http://example.com/extras/urls.html&lt;/a&gt; 。
+你很幸運，雨果是能夠使用醜陋的網址創建整個網站。
+簡單地增加 &lt;code&gt;uglyurls = true&lt;/code&gt; 在網站的設定檔 &lt;code&gt;config.toml&lt;/code&gt;
+中，或者在命令行中使用 &lt;code&gt;--uglyURLs=true&lt;/code&gt; 旗標。&lt;/p&gt;
+
 &lt;p&gt;If you would like to have what we call &amp;ldquo;ugly URLs&amp;rdquo;,
 e.g.&amp;nbsp;&lt;a href=&#34;http://example.com/extras/urls.html&#34;&gt;http://example.com/extras/urls.html&lt;/a&gt;, you are in luck.
 Hugo supports the ability to create your entire site with ugly URLs.
 Simply add &lt;code&gt;uglyurls = true&lt;/code&gt; to your site-wide &lt;code&gt;config.toml&lt;/code&gt;,
 or use the &lt;code&gt;--uglyURLs=true&lt;/code&gt; flag on the command line.&lt;/p&gt;
 
+&lt;p&gt;如果你想要特定的內容片段擁有確切的網址，可以在前提內容中的 &lt;code&gt;url&lt;/code&gt; 參數指定路徑。
+更多細節見 &lt;a href=&#34;../content/organization/&#34;&gt;Content Organization&lt;/a&gt; 。&lt;/p&gt;
+
 &lt;p&gt;If you want a specific piece of content to have an exact URL, you can
-specify this in the front matter under the &lt;code&gt;url&lt;/code&gt; key. See &lt;a href=&#34;http://gohugo.io/content/organization/&#34;&gt;Content
+specify this in the front matter under the &lt;code&gt;url&lt;/code&gt; key. See &lt;a href=&#34;../content/organization/&#34;&gt;Content
 Organization&lt;/a&gt; for more details.&lt;/p&gt;
 
-&lt;h2 id=&#34;canonicalization&#34;&gt;Canonicalization&lt;/h2&gt;
+&lt;h2 id=&#34;標準化-canonicalization&#34;&gt;標準化 Canonicalization&lt;/h2&gt;
+
+&lt;p&gt;預設情況下，在輸入中遇到的所有相對的網址（站內的連結）會保持不變， 例如
+&lt;code&gt;/css/foo.css&lt;/code&gt; 依然維持 &lt;code&gt;/css/foo.css&lt;/code&gt;， 即 &lt;code&gt;canonifyURLs: false&lt;/code&gt;。&lt;/p&gt;
 
 &lt;p&gt;By default, all relative URLs encountered in the input are left unmodified,
 e.g. &lt;code&gt;/css/foo.css&lt;/code&gt; would stay as &lt;code&gt;/css/foo.css&lt;/code&gt;,
 i.e. &lt;code&gt;canonifyURLs&lt;/code&gt; defaults to &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;若把 &lt;code&gt;canonifyURLs&lt;/code&gt; 設定為 &lt;code&gt;true&lt;/code&gt;，所有相對的網址將使用 &lt;code&gt;baseURL&lt;/code&gt; 進行 &lt;em&gt;標準化&lt;/em&gt; 。
+例如： 假設你在網站的設定檔 &lt;code&gt;config.toml&lt;/code&gt; 配置
+&lt;code&gt;baseURL = http://yoursite.example.com/&lt;/code&gt;
+選項，則相對網址 &lt;code&gt;/css/foo.css&lt;/code&gt;
+將轉變為絕對的網址 &lt;code&gt;http://yoursite.example.com/css/foo.css&lt;/code&gt;。&lt;/p&gt;
 
 &lt;p&gt;By setting &lt;code&gt;canonifyURLs&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt;, all relative URLs would instead
 be &lt;em&gt;canonicalized&lt;/em&gt; using &lt;code&gt;baseURL&lt;/code&gt;.  For example, assuming you have
@@ -1381,34 +1405,55 @@ be &lt;em&gt;canonicalized&lt;/em&gt; using &lt;code&gt;baseURL&lt;/code&gt;.  F
 &lt;code&gt;config.toml&lt;/code&gt;, the relative URL &lt;code&gt;/css/foo.css&lt;/code&gt; would be turned into
 the absolute URL &lt;code&gt;http://yoursite.example.com/css/foo.css&lt;/code&gt;.&lt;/p&gt;
 
+&lt;p&gt;標準化的好處有可以修定所有網址改為絕對路徑，這可能有助於一些解析任務。
+Note though that all real browsers handle this
+client-side without issues.&lt;/p&gt;
+
 &lt;p&gt;Benefits of canonicalization include fixing all URLs to be absolute, which may
 aid with some parsing tasks.  Note though that all real browsers handle this
 client-side without issues.&lt;/p&gt;
+
+&lt;p&gt;未標準化的好處可維持與資源相對的結構。
+因此 http 和 https 能基於頁面檢索方式而決定。&lt;/p&gt;
 
 &lt;p&gt;Benefits of non-canonicalization include being able to have resource inclusion
 be scheme-relative, so that http vs https can be decided based on how this
 page was retrieved.&lt;/p&gt;
 
 &lt;blockquote&gt;
+&lt;p&gt;注意： 在 2014 年 5 月釋出的雨果 v0.11 版本中，&lt;code&gt;canonifyURLs&lt;/code&gt; 的預設值從 &lt;code&gt;true&lt;/code&gt; 切換為 &lt;code&gt;false&lt;/code&gt;。
+我們認為這是更好的默認值且應該繼續保持這種情況。
+因此，如果你是由 v0.10 或舊版本中升級，請根據此情況來確認和調整您的網站。&lt;/p&gt;
+
 &lt;p&gt;Note: In the May 2014 release of Hugo v0.11, the default value of &lt;code&gt;canonifyURLs&lt;/code&gt; was switched from &lt;code&gt;true&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt;, which we think is the better default and should continue to be the case going forward. So, please verify and adjust your website accordingly if you are upgrading from v0.10 or older versions.&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;p&gt;若要找出網站中 &lt;code&gt;canonifyURLs&lt;/code&gt; 的當前值，你能使用 v0.13 所增加更便利的命令 &lt;code&gt;hugo config&lt;/code&gt;：&lt;/p&gt;
 
 &lt;p&gt;To find out the current value of &lt;code&gt;canonifyURLs&lt;/code&gt; for your website, you may use the handy &lt;code&gt;hugo config&lt;/code&gt; command added in v0.13:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;hugo config | grep -i canon
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;p&gt;或者，如果你使用沒有安裝 &lt;code&gt;grep&lt;/code&gt; 的視窗系統：&lt;/p&gt;
+
 &lt;p&gt;Or, if you are on Windows and do not have &lt;code&gt;grep&lt;/code&gt; installed:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;hugo config | FINDSTR /I canon
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;relative-urls&#34;&gt;Relative URLs&lt;/h2&gt;
+&lt;h2 id=&#34;相對的網址-relative-urls&#34;&gt;相對的網址 Relative URLs&lt;/h2&gt;
+
+&lt;p&gt;預設情況下，雨果不會更改所有相對的網址，當你想要從本地文件系統中瀏覽網站時，這可能會有問題。&lt;/p&gt;
 
 &lt;p&gt;By default, all relative URLs are left unchanged by Hugo,
 which can be problematic when you want to make your site browsable from a local file system.&lt;/p&gt;
 
+&lt;p&gt;在網站配置中將 &lt;code&gt;relativeURLs&lt;/code&gt; 設為 &lt;code&gt;true&lt;/code&gt; 會使雨果重寫所有相對的網址以相對於當前內容。&lt;/p&gt;
+
 &lt;p&gt;Setting &lt;code&gt;relativeURLs&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in the site configuration will cause Hugo to rewrite all relative URLs to be relative to the current content.&lt;/p&gt;
+
+&lt;p&gt;例如，如果 &lt;code&gt;/post/first/&lt;/code&gt; 頁面包含相對的網址 &lt;code&gt;/about/&lt;/code&gt; 的鏈接，雨果將該網址重寫為 &lt;code&gt;../../about/&lt;/code&gt;。&lt;/p&gt;
 
 &lt;p&gt;For example, if the &lt;code&gt;/post/first/&lt;/code&gt; page contained a link with a relative URL of &lt;code&gt;/about/&lt;/code&gt;, Hugo would rewrite that URL to &lt;code&gt;../../about/&lt;/code&gt;.&lt;/p&gt;
 </description>
@@ -1416,13 +1461,13 @@ which can be problematic when you want to make your site browsable from a local 
     
     <item>
       <title>Pagination</title>
-      <link>http://gohugo.io/extras/pagination/</link>
+      <link>https://bwaycer.github.io/extras/pagination/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/extras/pagination/</guid>
+      <guid>https://bwaycer.github.io/extras/pagination/</guid>
       <description>
 
-&lt;p&gt;Hugo supports pagination for the home page, sections and taxonomies. It&amp;rsquo;s built to be easy use, but with loads of flexibility when needed. The real power shines when you combine it with &lt;a href=&#34;http://gohugo.io/templates/functions/&#34;&gt;&lt;code&gt;where&lt;/code&gt;&lt;/a&gt;, with its SQL-like operators, &lt;code&gt;first&lt;/code&gt; and others &amp;mdash; you can even &lt;a href=&#34;http://gohugo.io/templates/list/&#34;&gt;order the content&lt;/a&gt; the way you&amp;rsquo;ve become used to with Hugo.&lt;/p&gt;
+&lt;p&gt;Hugo supports pagination for the home page, sections and taxonomies. It&amp;rsquo;s built to be easy use, but with loads of flexibility when needed. The real power shines when you combine it with &lt;a href=&#34;../templates/functions/&#34;&gt;&lt;code&gt;where&lt;/code&gt;&lt;/a&gt;, with its SQL-like operators, &lt;code&gt;first&lt;/code&gt; and others &amp;mdash; you can even &lt;a href=&#34;../templates/list/&#34;&gt;order the content&lt;/a&gt; the way you&amp;rsquo;ve become used to with Hugo.&lt;/p&gt;
 
 &lt;h2 id=&#34;configuration&#34;&gt;Configuration&lt;/h2&gt;
 
@@ -1520,12 +1565,17 @@ which can be problematic when you want to make your site browsable from a local 
     </item>
     
     <item>
-      <title>Permalinks</title>
-      <link>http://gohugo.io/extras/permalinks/</link>
+      <title>固定鏈接</title>
+      <link>https://bwaycer.github.io/extras/permalinks/</link>
       <pubDate>Mon, 18 Nov 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/extras/permalinks/</guid>
-      <description>&lt;p&gt;By default, content is laid out into the target &lt;code&gt;publishdir&lt;/code&gt; (public)
+      <guid>https://bwaycer.github.io/extras/permalinks/</guid>
+      <description>&lt;p&gt;預設情況下，內容被放置於 &lt;code&gt;publishdir&lt;/code&gt;（預設：public）的目標命名空間並與 &lt;code&gt;contentdir&lt;/code&gt; 的階層相匹配。
+網站配置選項 &lt;code&gt;permalinks&lt;/code&gt; 允許你去調整每部分的基礎。
+它將改變文件被寫入的位置和改變頁面內部「標準的（&amp;rdquo;canonical&amp;rdquo;）」位置。
+參考 &lt;code&gt;.RelPermalink&lt;/code&gt; 的模板會遵守此選項的映射結果做調整。&lt;/p&gt;
+
+&lt;p&gt;By default, content is laid out into the target &lt;code&gt;publishdir&lt;/code&gt; (public)
 namespace matching its layout within the &lt;code&gt;contentdir&lt;/code&gt; hierarchy.
 The &lt;code&gt;permalinks&lt;/code&gt; site configuration option allows you to adjust this on a
 per-section basis.
@@ -1533,6 +1583,8 @@ This will change where the files are written to and will change the page&amp;rsq
 internal &amp;ldquo;canonical&amp;rdquo; location, such that template references to
 &lt;code&gt;.RelPermalink&lt;/code&gt; will honour the adjustments made as a result of the mappings
 in this option.&lt;/p&gt;
+
+&lt;p&gt;例如，如果你有一個部分是 &lt;code&gt;post&lt;/code&gt;，然後你想要基於年月份去調整標準的路徑階層，那麼你可以這樣使用：&lt;/p&gt;
 
 &lt;p&gt;For instance, if one of your sections is called &lt;code&gt;post&lt;/code&gt;, and you want to adjust
 the canonical path to be hierarchical based on the year and month, then you
@@ -1542,27 +1594,38 @@ might use:&lt;/p&gt;
   post: /:year/:month/:title/
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;p&gt;只有 &lt;code&gt;post/&lt;/code&gt; 下的內容會被重寫。
+包含 &lt;code&gt;date: 2013-11-18T19:20:00-05:00&lt;/code&gt;
+且被命名為 &lt;code&gt;content/post/sample-entry&lt;/code&gt;
+的文件最終的渲染頁會出現在 &lt;code&gt;public/2013/11/sample-entry/index.html&lt;/code&gt;
+且到達網址改為透過
+&lt;a href=&#34;http://yoursite.example.com/2013/11/sample-entry/&#34;&gt;http://yoursite.example.com/2013/11/sample-entry/&lt;/a&gt;
+。&lt;/p&gt;
+
 &lt;p&gt;Only the content under &lt;code&gt;post/&lt;/code&gt; will be so rewritten.
 A file named &lt;code&gt;content/post/sample-entry&lt;/code&gt; which contains a line
 &lt;code&gt;date: 2013-11-18T19:20:00-05:00&lt;/code&gt; might end up with the rendered page
 appearing at &lt;code&gt;public/2013/11/sample-entry/index.html&lt;/code&gt; and be reachable via
 the URL &lt;a href=&#34;http://yoursite.example.com/2013/11/sample-entry/&#34;&gt;http://yoursite.example.com/2013/11/sample-entry/&lt;/a&gt;.&lt;/p&gt;
 
+&lt;p&gt;以下為 permalink 定義的可用值列表。
+其中引用的時間都取決於內容的 &lt;code&gt;date&lt;/code&gt;。&lt;/p&gt;
+
 &lt;p&gt;The following is a list of values that can be used in a permalink definition.
 All references to time are dependent on the content&amp;rsquo;s date.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;:year&lt;/strong&gt; the 4-digit year&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;:month&lt;/strong&gt; the 2-digit month&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;:monthname&lt;/strong&gt; the name of the month&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;:day&lt;/strong&gt; the 2-digit day&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;:weekday&lt;/strong&gt; the 1-digit day of the week (Sunday = 0)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;:weekdayname&lt;/strong&gt; the name of the day of the week&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;:yearday&lt;/strong&gt; the 1- to 3-digit day of the year&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;:section&lt;/strong&gt; the content&amp;rsquo;s section&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;:title&lt;/strong&gt; the content&amp;rsquo;s title&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;:year&lt;/strong&gt; 四碼數字的年份。 the 4-digit year&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;:month&lt;/strong&gt; 兩碼數字的月份。 the 2-digit month&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;:monthname&lt;/strong&gt; 月份的英文名。 the name of the month&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;:day&lt;/strong&gt; 兩碼數字的日期。 the 2-digit day&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;:weekday&lt;/strong&gt; 一碼數字的星期（如：Sunday = 0）。 the 1-digit day of the week (Sunday = 0)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;:weekdayname&lt;/strong&gt; 星期的英文名。 the name of the day of the week&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;:yearday&lt;/strong&gt; 一至三碼的數字，一年當中的第幾日。 the 1- to 3-digit day of the year&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;:section&lt;/strong&gt; 內容的部分（&lt;code&gt;content/&amp;quot;section&amp;quot;&lt;/code&gt;）。 the content&amp;rsquo;s section&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;:title&lt;/strong&gt; 內容的標題。 the content&amp;rsquo;s title&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;:slug&lt;/strong&gt; the content&amp;rsquo;s slug (or title if no slug)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;:filename&lt;/strong&gt; the content&amp;rsquo;s filename (without extension)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;:filename&lt;/strong&gt; 內容的檔名（不含副檔名）。 the content&amp;rsquo;s filename (without extension)&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

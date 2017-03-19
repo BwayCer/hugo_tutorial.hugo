@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Paperless on Hugo: A Fast and Flexible Website Generator</title>
-    <link>http://gohugo.io/tags/paperless/index.xml</link>
+    <link>https://bwaycer.github.io/tags/paperless/index.xml</link>
     <description>Recent content in Paperless on Hugo: A Fast and Flexible Website Generator</description>
     <generator>Hugo -- gohugo.io</generator>
-    <atom:link href="http://gohugo.io/tags/paperless/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bwaycer.github.io/tags/paperless/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Mayan EDMS</title>
-      <link>http://gohugo.io/showcase/mayan-edms/</link>
+      <link>https://bwaycer.github.io/showcase/mayan-edms/</link>
       <pubDate>Mon, 13 Jun 2016 19:38:56 -0400</pubDate>
       
-      <guid>http://gohugo.io/showcase/mayan-edms/</guid>
+      <guid>https://bwaycer.github.io/showcase/mayan-edms/</guid>
       <description></description>
     </item>
     

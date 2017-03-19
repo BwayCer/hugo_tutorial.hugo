@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rickcogley on Hugo: A Fast and Flexible Website Generator</title>
-    <link>http://gohugo.io/tags/rickcogley/index.xml</link>
+    <link>https://bwaycer.github.io/tags/rickcogley/index.xml</link>
     <description>Recent content in Rickcogley on Hugo: A Fast and Flexible Website Generator</description>
     <generator>Hugo -- gohugo.io</generator>
-    <atom:link href="http://gohugo.io/tags/rickcogley/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bwaycer.github.io/tags/rickcogley/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>eSolia.com</title>
-      <link>http://gohugo.io/showcase/esolia-com/</link>
+      <link>https://bwaycer.github.io/showcase/esolia-com/</link>
       <pubDate>Tue, 07 Jul 2015 04:32:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/showcase/esolia-com/</guid>
+      <guid>https://bwaycer.github.io/showcase/esolia-com/</guid>
       <description></description>
     </item>
     
     <item>
       <title>eSolia.pro</title>
-      <link>http://gohugo.io/showcase/esolia-pro/</link>
+      <link>https://bwaycer.github.io/showcase/esolia-pro/</link>
       <pubDate>Tue, 07 Jul 2015 04:32:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/showcase/esolia-pro/</guid>
+      <guid>https://bwaycer.github.io/showcase/esolia-pro/</guid>
       <description></description>
     </item>
     
     <item>
       <title>rick.cogley.info</title>
-      <link>http://gohugo.io/showcase/rick-cogley-info/</link>
+      <link>https://bwaycer.github.io/showcase/rick-cogley-info/</link>
       <pubDate>Wed, 20 May 2015 04:32:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/showcase/rick-cogley-info/</guid>
+      <guid>https://bwaycer.github.io/showcase/rick-cogley-info/</guid>
       <description></description>
     </item>
     

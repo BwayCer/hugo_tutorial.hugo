@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Community on Hugo: A Fast and Flexible Website Generator</title>
-    <link>http://gohugo.io/tags/community/index.xml</link>
+    <link>https://bwaycer.github.io/tags/community/index.xml</link>
     <description>Recent content in Community on Hugo: A Fast and Flexible Website Generator</description>
     <generator>Hugo -- gohugo.io</generator>
-    <atom:link href="http://gohugo.io/tags/community/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bwaycer.github.io/tags/community/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>bugtrackers.io</title>
-      <link>http://gohugo.io/showcase/bugtrackers.io/</link>
+      <link>https://bwaycer.github.io/showcase/bugtrackers.io/</link>
       <pubDate>Tue, 27 Oct 2015 09:02:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/showcase/bugtrackers.io/</guid>
+      <guid>https://bwaycer.github.io/showcase/bugtrackers.io/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Firefox Site Compatibility</title>
-      <link>http://gohugo.io/showcase/fxsitecompat/</link>
+      <link>https://bwaycer.github.io/showcase/fxsitecompat/</link>
       <pubDate>Tue, 26 Aug 2014 19:40:00 -0400</pubDate>
       
-      <guid>http://gohugo.io/showcase/fxsitecompat/</guid>
+      <guid>https://bwaycer.github.io/showcase/fxsitecompat/</guid>
       <description></description>
     </item>
     
     <item>
       <title>YSlow Rules</title>
-      <link>http://gohugo.io/showcase/yslow-rules/</link>
+      <link>https://bwaycer.github.io/showcase/yslow-rules/</link>
       <pubDate>Mon, 07 Apr 2014 10:45:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/showcase/yslow-rules/</guid>
+      <guid>https://bwaycer.github.io/showcase/yslow-rules/</guid>
       <description></description>
     </item>
     

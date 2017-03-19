@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Overview on Hugo: A Fast and Flexible Website Generator</title>
-    <link>http://gohugo.io/overview/index.xml</link>
+    <link>https://bwaycer.github.io/overview/index.xml</link>
     <description>Recent content in Overview on Hugo: A Fast and Flexible Website Generator</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 01 Jul 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://gohugo.io/overview/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bwaycer.github.io/overview/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Introduction to Hugo</title>
-      <link>http://gohugo.io/overview/introduction/</link>
+      <link>https://bwaycer.github.io/overview/introduction/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/overview/introduction/</guid>
+      <guid>https://bwaycer.github.io/overview/introduction/</guid>
       <description>
 
 &lt;h2 id=&#34;what-is-hugo&#34;&gt;What is Hugo?&lt;/h2&gt;
@@ -98,8 +98,8 @@ templates and uses these as input to create a complete website.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Extremely fast build times (~1 ms per page)&lt;/li&gt;
 &lt;li&gt;Completely cross platform: Runs on &lt;i class=&#34;fa fa-apple&#34;&gt;&lt;/i&gt;&amp;nbsp;Mac OS&amp;nbsp;X, &lt;i class=&#34;fa fa-linux&#34;&gt;&lt;/i&gt;&amp;nbsp;Linux, &lt;i class=&#34;fa fa-windows&#34;&gt;&lt;/i&gt;&amp;nbsp;Windows, and more!&lt;/li&gt;
-&lt;li&gt;Easy &lt;a href=&#34;http://gohugo.io/overview/installing/&#34;&gt;installation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Render changes &lt;a href=&#34;http://gohugo.io/overview/usage/&#34;&gt;on the fly&lt;/a&gt; with &lt;a href=&#34;http://gohugo.io/extras/livereload/&#34;&gt;LiveReload&lt;/a&gt; as you develop&lt;/li&gt;
+&lt;li&gt;Easy &lt;a href=&#34;../overview/installing/&#34;&gt;installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Render changes &lt;a href=&#34;../overview/usage/&#34;&gt;on the fly&lt;/a&gt; with &lt;a href=&#34;../extras/livereload/&#34;&gt;LiveReload&lt;/a&gt; as you develop&lt;/li&gt;
 &lt;li&gt;Complete theme support&lt;/li&gt;
 &lt;li&gt;Host your site anywhere&lt;/li&gt;
 &lt;/ul&gt;
@@ -107,33 +107,33 @@ templates and uses these as input to create a complete website.&lt;/p&gt;
 &lt;h3 id=&#34;organization&#34;&gt;Organization&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Straightforward &lt;a href=&#34;http://gohugo.io/content/organization/&#34;&gt;organization&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Support for &lt;a href=&#34;http://gohugo.io/content/sections/&#34;&gt;website sections&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Completely customizable &lt;a href=&#34;http://gohugo.io/extras/urls/&#34;&gt;URLs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Support for configurable &lt;a href=&#34;http://gohugo.io/taxonomies/overview/&#34;&gt;taxonomies&lt;/a&gt; which includes categories and tags.  Create your own custom organization of content&lt;/li&gt;
-&lt;li&gt;Ability to &lt;a href=&#34;http://gohugo.io/content/ordering/&#34;&gt;sort content&lt;/a&gt; as you desire&lt;/li&gt;
-&lt;li&gt;Automatic &lt;a href=&#34;http://gohugo.io/extras/toc/&#34;&gt;table of contents&lt;/a&gt; generation&lt;/li&gt;
+&lt;li&gt;Straightforward &lt;a href=&#34;../content/organization/&#34;&gt;organization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support for &lt;a href=&#34;../content/sections/&#34;&gt;website sections&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Completely customizable &lt;a href=&#34;../extras/urls/&#34;&gt;URLs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support for configurable &lt;a href=&#34;../taxonomies/overview/&#34;&gt;taxonomies&lt;/a&gt; which includes categories and tags.  Create your own custom organization of content&lt;/li&gt;
+&lt;li&gt;Ability to &lt;a href=&#34;../content/ordering/&#34;&gt;sort content&lt;/a&gt; as you desire&lt;/li&gt;
+&lt;li&gt;Automatic &lt;a href=&#34;../extras/toc/&#34;&gt;table of contents&lt;/a&gt; generation&lt;/li&gt;
 &lt;li&gt;Dynamic menu creation&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/extras/urls/&#34;&gt;Pretty URLs&lt;/a&gt; support&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/extras/permalinks/&#34;&gt;Permalink&lt;/a&gt; pattern support&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/extras/aliases/&#34;&gt;Aliases&lt;/a&gt; (redirects)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../extras/urls/&#34;&gt;Pretty URLs&lt;/a&gt; support&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../extras/permalinks/&#34;&gt;Permalink&lt;/a&gt; pattern support&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../extras/aliases/&#34;&gt;Aliases&lt;/a&gt; (redirects)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;content&#34;&gt;Content&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Native support for content written in &lt;a href=&#34;http://gohugo.io/content/example/&#34;&gt;Markdown&lt;/a&gt;
+&lt;li&gt;Native support for content written in &lt;a href=&#34;../content/example/&#34;&gt;Markdown&lt;/a&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Support for other languages through &lt;em&gt;external helpers&lt;/em&gt;, see &lt;a href=&#34;http://gohugo.io/content/supported-formats&#34;&gt;supported formats&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support for other languages through &lt;em&gt;external helpers&lt;/em&gt;, see &lt;a href=&#34;../content/supported-formats&#34;&gt;supported formats&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Support for TOML, YAML and JSON metadata in &lt;a href=&#34;http://gohugo.io/content/front-matter/&#34;&gt;frontmatter&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Completely &lt;a href=&#34;http://gohugo.io/layout/homepage/&#34;&gt;customizable homepage&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Support for multiple &lt;a href=&#34;http://gohugo.io/content/types/&#34;&gt;content types&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Automatic and user defined &lt;a href=&#34;http://gohugo.io/content/summaries/&#34;&gt;summaries&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/extras/shortcodes/&#34;&gt;Shortcodes&lt;/a&gt; to enable rich content inside of Markdown&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/layout/variables/&#34;&gt;&amp;ldquo;Minutes to Read&amp;rdquo;&lt;/a&gt; functionality&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/layout/variables/&#34;&gt;&amp;ldquo;Wordcount&amp;rdquo;&lt;/a&gt; functionality&lt;/li&gt;
+&lt;li&gt;Support for TOML, YAML and JSON metadata in &lt;a href=&#34;../content/front-matter/&#34;&gt;frontmatter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Completely &lt;a href=&#34;../layout/homepage/&#34;&gt;customizable homepage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support for multiple &lt;a href=&#34;../content/types/&#34;&gt;content types&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Automatic and user defined &lt;a href=&#34;../content/summaries/&#34;&gt;summaries&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../extras/shortcodes/&#34;&gt;Shortcodes&lt;/a&gt; to enable rich content inside of Markdown&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../layout/variables/&#34;&gt;&amp;ldquo;Minutes to Read&amp;rdquo;&lt;/a&gt; functionality&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../layout/variables/&#34;&gt;&amp;ldquo;Wordcount&amp;rdquo;&lt;/a&gt; functionality&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;additional-features&#34;&gt;Additional Features&lt;/h3&gt;
@@ -141,12 +141,12 @@ templates and uses these as input to create a complete website.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Integrated &lt;a href=&#34;https://disqus.com/&#34;&gt;Disqus&lt;/a&gt; comment support&lt;/li&gt;
 &lt;li&gt;Integrated &lt;a href=&#34;https://google-analytics.com/&#34;&gt;Google Analytics&lt;/a&gt; support&lt;/li&gt;
-&lt;li&gt;Automatic &lt;a href=&#34;http://gohugo.io/layout/rss/&#34;&gt;RSS&lt;/a&gt; creation&lt;/li&gt;
+&lt;li&gt;Automatic &lt;a href=&#34;../layout/rss/&#34;&gt;RSS&lt;/a&gt; creation&lt;/li&gt;
 &lt;li&gt;Support for &lt;a href=&#34;http://golang.org/pkg/html/template/&#34;&gt;Go&lt;/a&gt;, &lt;a href=&#34;https://github.com/eknkc/amber&#34;&gt;Amber&lt;/a&gt; and &lt;a href=&#34;https://github.com/yosssi/ace&#34;&gt;Ace&lt;/a&gt; HTML templates&lt;/li&gt;
-&lt;li&gt;Syntax &lt;a href=&#34;http://gohugo.io/extras/highlighting/&#34;&gt;highlighting&lt;/a&gt; powered by &lt;a href=&#34;http://pygments.org/&#34;&gt;Pygments&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Syntax &lt;a href=&#34;../extras/highlighting/&#34;&gt;highlighting&lt;/a&gt; powered by &lt;a href=&#34;http://pygments.org/&#34;&gt;Pygments&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;See what&amp;rsquo;s coming next in the &lt;a href=&#34;http://gohugo.io/meta/roadmap/&#34;&gt;roadmap&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See what&amp;rsquo;s coming next in the &lt;a href=&#34;../meta/roadmap/&#34;&gt;roadmap&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;who-should-use-hugo&#34;&gt;Who should use Hugo?&lt;/h2&gt;
 
@@ -193,9 +193,9 @@ as I have writing it.&lt;/p&gt;
 &lt;h2 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/overview/installing/&#34;&gt;Install Hugo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/overview/quickstart/&#34;&gt;Quick start&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/community/mailing-list/&#34;&gt;Join the Mailing List&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../overview/installing/&#34;&gt;Install Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../overview/quickstart/&#34;&gt;Quick start&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../community/mailing-list/&#34;&gt;Join the Mailing List&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/spf13/hugo&#34;&gt;Star us on GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://discuss.gohugo.io/&#34;&gt;Discussion Forum&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -204,10 +204,10 @@ as I have writing it.&lt;/p&gt;
     
     <item>
       <title>Hugo Quickstart Guide</title>
-      <link>http://gohugo.io/overview/quickstart/</link>
+      <link>https://bwaycer.github.io/overview/quickstart/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/overview/quickstart/</guid>
+      <guid>https://bwaycer.github.io/overview/quickstart/</guid>
       <description>
 
 &lt;h2 id=&#34;building-a-bookshelf&#34;&gt;Building a bookshelf&lt;/h2&gt;
@@ -215,7 +215,7 @@ as I have writing it.&lt;/p&gt;
 &lt;p&gt;In this quickstart, we will build an online bookshelf that will list books and their reviews.&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;Note: This quickstart depends on features introduced in Hugo v0.15.  If you have an earlier version of Hugo, you will need to &lt;a href=&#34;http://gohugo.io/overview/installing/&#34;&gt;upgrade&lt;/a&gt; before proceeding.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: This quickstart depends on features introduced in Hugo v0.15.  If you have an earlier version of Hugo, you will need to &lt;a href=&#34;../overview/installing/&#34;&gt;upgrade&lt;/a&gt; before proceeding.&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;div class=&#34;video-container&#34;&gt;
@@ -232,7 +232,7 @@ appropriate version for your OS and architecture.&lt;/p&gt;
 &lt;p&gt;Save the main executable as &lt;code&gt;hugo&lt;/code&gt; (or &lt;code&gt;hugo.exe&lt;/code&gt; on Windows) somewhere in your &lt;code&gt;PATH&lt;/code&gt; as we will be using it in the next step.&lt;/p&gt;
 
 &lt;p&gt;More complete instructions are available
-at &lt;a href=&#34;http://gohugo.io/overview/installing/&#34;&gt;Installing Hugo&lt;/a&gt;.&lt;/p&gt;
+at &lt;a href=&#34;../overview/installing/&#34;&gt;Installing Hugo&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;If you&amp;rsquo;re on Windows, this quickstart will assume
 you&amp;rsquo;re using &lt;a href=&#34;https://git-for-windows.github.io/&#34;&gt;Git Bash&lt;/a&gt;
@@ -286,7 +286,7 @@ Complete documentation is available at http://gohugo.io/.
 &lt;p&gt;As mentioned in the command output, &lt;code&gt;bookshelf&lt;/code&gt; directory has 5 sub-directories and 1 file. Let&amp;rsquo;s look at each of them one by one.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;archetypes&lt;/strong&gt;: You can create new content files in Hugo using the &lt;code&gt;hugo new&lt;/code&gt; command. When you run that command, it adds few configuration properties to the post like date and title. &lt;a href=&#34;http://gohugo.io/content/archetypes/&#34;&gt;Archetype&lt;/a&gt; allows you to define your own configuration properties that will be added to the post front matter whenever &lt;code&gt;hugo new&lt;/code&gt; command is used.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;archetypes&lt;/strong&gt;: You can create new content files in Hugo using the &lt;code&gt;hugo new&lt;/code&gt; command. When you run that command, it adds few configuration properties to the post like date and title. &lt;a href=&#34;../content/archetypes/&#34;&gt;Archetype&lt;/a&gt; allows you to define your own configuration properties that will be added to the post front matter whenever &lt;code&gt;hugo new&lt;/code&gt; command is used.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;config.toml&lt;/strong&gt;: Every website should have a configuration file at the root. By default, the configuration file uses &lt;code&gt;TOML&lt;/code&gt; format but you can also use &lt;code&gt;YAML&lt;/code&gt; or &lt;code&gt;JSON&lt;/code&gt; formats as well. &lt;a href=&#34;https://github.com/toml-lang/toml&#34;&gt;TOML&lt;/a&gt; is minimal configuration file format that&amp;rsquo;s easy to read due to obvious semantics. The configuration settings mentioned in the &lt;code&gt;config.toml&lt;/code&gt; are applied to the full site. These configuration settings include &lt;code&gt;baseURL&lt;/code&gt; and &lt;code&gt;title&lt;/code&gt; of the website.&lt;/p&gt;&lt;/li&gt;
 
@@ -463,7 +463,7 @@ it will throw an exception as shown below.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;To view your website, you can go to &lt;a href=&#34;http://localhost:1313/&#34;&gt;http://localhost:1313/&lt;/a&gt;. You will see as shown below.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/quickstart/bookshelf-robust-theme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/quickstart/bookshelf-robust-theme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Let&amp;rsquo;s understand the layout of the theme. A theme consists of the following:&lt;/p&gt;
 
@@ -504,7 +504,7 @@ We clone the &lt;code&gt;bleak&lt;/code&gt; theme inside the &lt;code&gt;bookshe
 &lt;p&gt;Now, the website will use the &lt;code&gt;bleak&lt;/code&gt; theme
 and will be rendered differently as shown below.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/quickstart/bookshelf-bleak-theme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/quickstart/bookshelf-bleak-theme.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;step-7-update-config-toml-and-live-reloading-in-action&#34;&gt;Step 7. Update config.toml and live reloading in action&lt;/h2&gt;
 
@@ -528,7 +528,7 @@ title = &amp;quot;Shekhar Gulati Book Reviews&amp;quot;
 So, as soon as you save your changes it will apply the change
 and reload the web page. You will see the changes shown below.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/quickstart/bookshelf-updated-config.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/quickstart/bookshelf-updated-config.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The same is reflected in the Hugo server logs as well.
 As soon as you changed the configuration file,
@@ -551,7 +551,7 @@ customize it a bit to meet the look and feel required for the bookshelf.
 Hugo makes it very easy to customize themes.
 You can also create your themes but we will not do that today.
 If you want to create your own theme, then you should refer to
-the &lt;a href=&#34;http://gohugo.io/themes/creation/&#34;&gt;Hugo documentation&lt;/a&gt;.&lt;/p&gt;
+the &lt;a href=&#34;../themes/creation/&#34;&gt;Hugo documentation&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The first change that we have to make is to use a different default image
 instead of the one used in the theme.
@@ -564,11 +564,11 @@ inside the repository&amp;rsquo;s &lt;code&gt;static&lt;/code&gt; directory.&lt;
 and copy an image with name &lt;code&gt;default.jpg&lt;/code&gt; inside it.
 We will use the default image shown below.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/quickstart/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/quickstart/default.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Hugo will sync the changes and reload the website to use new image as shown below.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/quickstart/bookshelf-new-default-image.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/quickstart/bookshelf-new-default-image.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now, we need to change the layout of the index page so that only images are shown instead of the text. The index.html inside the layouts directory of the theme refer to partial &lt;code&gt;li&lt;/code&gt; that renders the list view shown below.&lt;/p&gt;
 
@@ -595,7 +595,7 @@ We will use the default image shown below.&lt;/p&gt;
 
 &lt;p&gt;Now, the website will be rendered as shown below.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/quickstart/bookshelf-only-picture.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/quickstart/bookshelf-only-picture.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Next, we want to remove information related to theme from the footer.
 So, create a new directory &lt;code&gt;partials&lt;/code&gt; inside &lt;code&gt;bookshelf/layouts&lt;/code&gt;.
@@ -637,7 +637,7 @@ and place it in the &lt;code&gt;bookshelf/static/images&lt;/code&gt; directory.&
 &lt;p&gt;After adding few more books to our shelf, the shelf appears as shown below.
 These are a few of the books that I have read within the last year.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/quickstart/bookshelf.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/quickstart/bookshelf.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;step-9-make-posts-public&#34;&gt;Step 9. Make posts public&lt;/h2&gt;
 
@@ -664,7 +664,7 @@ or manually change the draft status in the post to &lt;code&gt;false&lt;/code&gt
 
 &lt;p&gt;Now, commenting will be enabled in your blog.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/quickstart/bookshelf-disqus.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../img/quickstart/bookshelf-disqus.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;step-11-generate-website&#34;&gt;Step 11. Generate website&lt;/h2&gt;
 
@@ -752,10 +752,10 @@ $ git push -f origin gh-pages
     
     <item>
       <title>Installing Hugo</title>
-      <link>http://gohugo.io/overview/installing/</link>
+      <link>https://bwaycer.github.io/overview/installing/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/overview/installing/</guid>
+      <guid>https://bwaycer.github.io/overview/installing/</guid>
       <description>
 
 &lt;p&gt;Hugo is written in &lt;a href=&#34;http://golang.org/&#34;&gt;Go&lt;/a&gt; with support for multiple platforms.&lt;/p&gt;
@@ -787,15 +787,15 @@ easier: just run &lt;code&gt;brew update &amp;amp;&amp;amp; brew install hugo&lt
 &lt;p&gt;For a more detailed explanation follow the corresponding installation guides:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/tutorials/installing-on-mac/&#34;&gt;Installation on OS X&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/tutorials/installing-on-windows/&#34;&gt;Installation on Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutorials/installing-on-mac/&#34;&gt;Installation on OS X&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutorials/installing-on-windows/&#34;&gt;Installation on Windows&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;installing-pygments-optional&#34;&gt;Installing Pygments (optional)&lt;/h3&gt;
 
 &lt;p&gt;The Hugo executable has one &lt;em&gt;optional&lt;/em&gt; external dependency for source code highlighting (Pygments).&lt;/p&gt;
 
-&lt;p&gt;If you want to have source code highlighting using the &lt;a href=&#34;http://gohugo.io/extras/highlighting/&#34;&gt;highlight shortcode&lt;/a&gt;,
+&lt;p&gt;If you want to have source code highlighting using the &lt;a href=&#34;../extras/highlighting/&#34;&gt;highlight shortcode&lt;/a&gt;,
 you need to install the Python-based Pygments program. The procedure is outlined on the &lt;a href=&#34;http://pygments.org/&#34;&gt;Pygments home page&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;upgrading-hugo&#34;&gt;Upgrading Hugo&lt;/h2&gt;
@@ -837,16 +837,16 @@ $ go get -v github.com/spf13/hugo
 
 &lt;h2 id=&#34;contributing&#34;&gt;Contributing&lt;/h2&gt;
 
-&lt;p&gt;Please see the &lt;a href=&#34;http://gohugo.io/doc/contributing/&#34;&gt;contributing guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Please see the &lt;a href=&#34;../doc/contributing/&#34;&gt;contributing guide&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Using Hugo</title>
-      <link>http://gohugo.io/overview/usage/</link>
+      <link>https://bwaycer.github.io/overview/usage/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/overview/usage/</guid>
+      <guid>https://bwaycer.github.io/overview/usage/</guid>
       <description>
 
 &lt;p&gt;Make sure Hugo is in your &lt;code&gt;PATH&lt;/code&gt; (or provide a path to it). Test this by:&lt;/p&gt;
@@ -955,7 +955,7 @@ Press Ctrl+C to stop
 
 
 &lt;p&gt;Hugo can even run a server and create a site preview at the same time!
-Hugo implements &lt;a href=&#34;http://gohugo.io/extras/livereload/&#34;&gt;LiveReload&lt;/a&gt; technology to automatically
+Hugo implements &lt;a href=&#34;../extras/livereload/&#34;&gt;LiveReload&lt;/a&gt; technology to automatically
 reload any open pages in all JavaScript-enabled browsers, including mobile.
 This is the easiest and most common way to develop a Hugo web site:&lt;/p&gt;
 
@@ -1056,10 +1056,10 @@ the JavaScript code for LiveReload to be added to your web pages.&lt;/p&gt;
     
     <item>
       <title>Configuring Hugo</title>
-      <link>http://gohugo.io/overview/configuration/</link>
+      <link>https://bwaycer.github.io/overview/configuration/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/overview/configuration/</guid>
+      <guid>https://bwaycer.github.io/overview/configuration/</guid>
       <description>
 
 &lt;p&gt;The directory structure of a Hugo web site&amp;mdash;or more precisely,
@@ -1515,10 +1515,10 @@ there. For example:&lt;/li&gt;
     
     <item>
       <title>Source Organization</title>
-      <link>http://gohugo.io/overview/source-directory/</link>
+      <link>https://bwaycer.github.io/overview/source-directory/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/overview/source-directory/</guid>
+      <guid>https://bwaycer.github.io/overview/source-directory/</guid>
       <description>
 
 &lt;p&gt;Hugo takes a single directory and uses it as the input for creating a complete
@@ -1539,14 +1539,14 @@ website.&lt;/p&gt;
 &lt;p&gt;Learn more about the different directories and what their purpose is:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/overview/configuration/&#34;&gt;config&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/extras/datafiles/&#34;&gt;data&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/content/multilingual/#translation-of-strings&#34;&gt;i18n&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/content/archetypes/&#34;&gt;archetypes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/content/organization/&#34;&gt;content&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/templates/overview/&#34;&gt;layouts&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/themes/creation/#static&#34;&gt;static&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/themes/overview/&#34;&gt;themes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../overview/configuration/&#34;&gt;config&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../extras/datafiles/&#34;&gt;data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../content/multilingual/#translation-of-strings&#34;&gt;i18n&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../content/archetypes/&#34;&gt;archetypes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../content/organization/&#34;&gt;content&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../templates/overview/&#34;&gt;layouts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../themes/creation/#static&#34;&gt;static&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../themes/overview/&#34;&gt;themes&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
@@ -1610,7 +1610,7 @@ website.&lt;/p&gt;
 
 &lt;h2 id=&#34;content-for-home-page-and-other-list-pages&#34;&gt;Content for home page and other list pages&lt;/h2&gt;
 
-&lt;p&gt;Since Hugo 0.18, &amp;ldquo;everything&amp;rdquo; is a &lt;code&gt;Page&lt;/code&gt; that can have content and metadata, like &lt;code&gt;.Params&lt;/code&gt;, attached to it &amp;ndash; and share the same set of &lt;a href=&#34;http://gohugo.io/templates/variables/&#34;&gt;page variables&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Since Hugo 0.18, &amp;ldquo;everything&amp;rdquo; is a &lt;code&gt;Page&lt;/code&gt; that can have content and metadata, like &lt;code&gt;.Params&lt;/code&gt;, attached to it &amp;ndash; and share the same set of &lt;a href=&#34;../templates/variables/&#34;&gt;page variables&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;To add content and frontmatter to the home page, a section, a taxonomy or a taxonomy terms listing, add a markdown file with the base name &lt;code&gt;_index&lt;/code&gt; on the relevant place on the file system.&lt;/p&gt;
 

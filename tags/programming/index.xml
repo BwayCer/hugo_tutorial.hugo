@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on Hugo: A Fast and Flexible Website Generator</title>
-    <link>http://gohugo.io/tags/programming/index.xml</link>
+    <link>https://bwaycer.github.io/tags/programming/index.xml</link>
     <description>Recent content in Programming on Hugo: A Fast and Flexible Website Generator</description>
     <generator>Hugo -- gohugo.io</generator>
-    <atom:link href="http://gohugo.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bwaycer.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Petani Kode</title>
-      <link>http://gohugo.io/showcase/petanikode/</link>
+      <link>https://bwaycer.github.io/showcase/petanikode/</link>
       <pubDate>Tue, 10 Jan 2017 07:32:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/showcase/petanikode/</guid>
+      <guid>https://bwaycer.github.io/showcase/petanikode/</guid>
       <description></description>
     </item>
     
     <item>
       <title>klingt net</title>
-      <link>http://gohugo.io/showcase/klingt-net/</link>
+      <link>https://bwaycer.github.io/showcase/klingt-net/</link>
       <pubDate>Sun, 15 May 2016 23:18:16 +0200</pubDate>
       
-      <guid>http://gohugo.io/showcase/klingt-net/</guid>
+      <guid>https://bwaycer.github.io/showcase/klingt-net/</guid>
       <description></description>
     </item>
     

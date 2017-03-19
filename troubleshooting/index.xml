@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Troubleshooting on Hugo: A Fast and Flexible Website Generator</title>
-    <link>http://gohugo.io/troubleshooting/index.xml</link>
+    <link>https://bwaycer.github.io/troubleshooting/index.xml</link>
     <description>Recent content in Troubleshooting on Hugo: A Fast and Flexible Website Generator</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 18 Jan 2015 02:41:52 -0700</lastBuildDate>
-    <atom:link href="http://gohugo.io/troubleshooting/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bwaycer.github.io/troubleshooting/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Troubleshooting Overview</title>
-      <link>http://gohugo.io/troubleshooting/overview/</link>
+      <link>https://bwaycer.github.io/troubleshooting/overview/</link>
       <pubDate>Sun, 18 Jan 2015 02:41:52 -0700</pubDate>
       
-      <guid>http://gohugo.io/troubleshooting/overview/</guid>
+      <guid>https://bwaycer.github.io/troubleshooting/overview/</guid>
       <description>&lt;p&gt;Got stuck?  Worry not!  Chances are other users have encountered
 the exact same problem as you have, brought it up for
 &lt;a href=&#34;http://discuss.gohugo.io/&#34;&gt;discussion&lt;/a&gt;, and have likely found a solution
@@ -22,8 +22,8 @@ through the collective wisdom of our vibrant Hugo community!&lt;/p&gt;
 &lt;p&gt;Here are some examples:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/troubleshooting/strange-eof-error/&#34;&gt;&lt;code&gt;hugo new&lt;/code&gt; aborts with cryptic EOF error&lt;/a&gt; (affects v0.12 and lower)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/troubleshooting/categories-with-accented-characters/&#34;&gt;Categories with accented characters inaccessible&lt;/a&gt; (affects Mac OS&amp;nbsp;X users)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../troubleshooting/strange-eof-error/&#34;&gt;&lt;code&gt;hugo new&lt;/code&gt; aborts with cryptic EOF error&lt;/a&gt; (affects v0.12 and lower)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../troubleshooting/categories-with-accented-characters/&#34;&gt;Categories with accented characters inaccessible&lt;/a&gt; (affects Mac OS&amp;nbsp;X users)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://discuss.gohugo.io/t/deployment-workflow/90/15&#34;&gt;My CSS files aren&amp;rsquo;t loaded!&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://discuss.gohugo.io/t/image-gallery/594&#34;&gt;How do I include an image gallery on my website?&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&amp;hellip; And a lot more!&lt;/li&gt;
@@ -51,10 +51,10 @@ Hugo for everybody!  (Thank you!)  See you on the forum!&lt;/p&gt;
     
     <item>
       <title>Strange EOF error</title>
-      <link>http://gohugo.io/troubleshooting/strange-eof-error/</link>
+      <link>https://bwaycer.github.io/troubleshooting/strange-eof-error/</link>
       <pubDate>Thu, 08 Jan 2015 16:11:23 -0700</pubDate>
       
-      <guid>http://gohugo.io/troubleshooting/strange-eof-error/</guid>
+      <guid>https://bwaycer.github.io/troubleshooting/strange-eof-error/</guid>
       <description>
 
 &lt;h2 id=&#34;trouble-hugo-new-aborts-with-cryptic-eof-error&#34;&gt;Trouble: &lt;code&gt;hugo new&lt;/code&gt; aborts with cryptic EOF error&lt;/h2&gt;
@@ -101,10 +101,10 @@ in the upcoming v0.13 release,&lt;/p&gt;
     
     <item>
       <title>Accented Categories</title>
-      <link>http://gohugo.io/troubleshooting/categories-with-accented-characters/</link>
+      <link>https://bwaycer.github.io/troubleshooting/categories-with-accented-characters/</link>
       <pubDate>Thu, 08 Jan 2015 16:32:00 -0700</pubDate>
       
-      <guid>http://gohugo.io/troubleshooting/categories-with-accented-characters/</guid>
+      <guid>https://bwaycer.github.io/troubleshooting/categories-with-accented-characters/</guid>
       <description>
 
 &lt;h2 id=&#34;trouble-categories-with-accented-characters&#34;&gt;Trouble: Categories with accented characters&lt;/h2&gt;

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Community on Hugo: A Fast and Flexible Website Generator</title>
-    <link>http://gohugo.io/community/index.xml</link>
+    <link>https://bwaycer.github.io/community/index.xml</link>
     <description>Recent content in Community on Hugo: A Fast and Flexible Website Generator</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 01 Jul 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://gohugo.io/community/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bwaycer.github.io/community/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Mailing List</title>
-      <link>http://gohugo.io/community/mailing-list/</link>
+      <link>https://bwaycer.github.io/community/mailing-list/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/community/mailing-list/</guid>
+      <guid>https://bwaycer.github.io/community/mailing-list/</guid>
       <description>
 
 &lt;h2 id=&#34;discussion-forum&#34;&gt;Discussion Forum&lt;/h2&gt;
@@ -60,10 +60,10 @@
     
     <item>
       <title>Press, Blogs and Media Coverage</title>
-      <link>http://gohugo.io/community/press/</link>
+      <link>https://bwaycer.github.io/community/press/</link>
       <pubDate>Mon, 24 Mar 2014 20:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/community/press/</guid>
+      <guid>https://bwaycer.github.io/community/press/</guid>
       <description>
 
 &lt;h3 id=&#34;help-keep-this-list-up-to-date&#34;&gt;Help keep this list up to date&lt;/h3&gt;
@@ -804,13 +804,13 @@
     
     <item>
       <title>Contributing to Hugo</title>
-      <link>http://gohugo.io/community/contributing/</link>
+      <link>https://bwaycer.github.io/community/contributing/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/community/contributing/</guid>
+      <guid>https://bwaycer.github.io/community/contributing/</guid>
       <description>
 
-&lt;p&gt;All contributions to Hugo are welcome. Whether you want to scratch an itch or simply contribute to the project, feel free to pick something from the &lt;a href=&#34;http://gohugo.io/meta/roadmap/&#34;&gt;roadmap&lt;/a&gt; or contact &lt;a href=&#34;http://spf13.com/&#34;&gt;spf13&lt;/a&gt; about what may make sense to do next.&lt;/p&gt;
+&lt;p&gt;All contributions to Hugo are welcome. Whether you want to scratch an itch or simply contribute to the project, feel free to pick something from the &lt;a href=&#34;../meta/roadmap/&#34;&gt;roadmap&lt;/a&gt; or contact &lt;a href=&#34;http://spf13.com/&#34;&gt;spf13&lt;/a&gt; about what may make sense to do next.&lt;/p&gt;
 
 &lt;p&gt;You should fork the project and make your changes.  &lt;em&gt;We encourage pull requests to discuss code changes.&lt;/em&gt;&lt;/p&gt;
 
@@ -825,7 +825,7 @@
 
 &lt;h2 id=&#34;contribution-overview&#34;&gt;Contribution Overview&lt;/h2&gt;
 
-&lt;p&gt;We wrote a &lt;a href=&#34;http://gohugo.io/tutorials/how-to-contribute-to-hugo/&#34;&gt;detailed guide&lt;/a&gt; for newcomers that guides you step by step to your first contribution. If you are more experienced, follow the guide below.&lt;/p&gt;
+&lt;p&gt;We wrote a &lt;a href=&#34;../tutorials/how-to-contribute-to-hugo/&#34;&gt;detailed guide&lt;/a&gt; for newcomers that guides you step by step to your first contribution. If you are more experienced, follow the guide below.&lt;/p&gt;
 
 &lt;h1 id=&#34;building-from-source&#34;&gt;Building from source&lt;/h1&gt;
 
@@ -861,7 +861,7 @@ mv hugo /usr/local/bin/
 
 &lt;h1 id=&#34;showcase-additions&#34;&gt;Showcase additions&lt;/h1&gt;
 
-&lt;p&gt;You got your new website running and it&amp;rsquo;s powered by Hugo? Great. You can add your website with a few steps to the &lt;a href=&#34;http://gohugo.io/showcase/&#34;&gt;showcase&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You got your new website running and it&amp;rsquo;s powered by Hugo? Great. You can add your website with a few steps to the &lt;a href=&#34;../showcase/&#34;&gt;showcase&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;First, make sure that you created a &lt;a href=&#34;https://help.github.com/articles/fork-a-repo/&#34;&gt;fork&lt;/a&gt; of Hugo on Github and cloned your fork on your local computer. Next, create a separate branch for your additions:&lt;/p&gt;
 

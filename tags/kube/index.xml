@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kube on Hugo: A Fast and Flexible Website Generator</title>
-    <link>http://gohugo.io/tags/kube/index.xml</link>
+    <link>https://bwaycer.github.io/tags/kube/index.xml</link>
     <description>Recent content in Kube on Hugo: A Fast and Flexible Website Generator</description>
     <generator>Hugo -- gohugo.io</generator>
-    <atom:link href="http://gohugo.io/tags/kube/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bwaycer.github.io/tags/kube/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>consequently.org</title>
-      <link>http://gohugo.io/showcase/consequently/</link>
+      <link>https://bwaycer.github.io/showcase/consequently/</link>
       <pubDate>Wed, 11 Feb 2015 13:21:27 +1100</pubDate>
       
-      <guid>http://gohugo.io/showcase/consequently/</guid>
+      <guid>https://bwaycer.github.io/showcase/consequently/</guid>
       <description></description>
     </item>
     

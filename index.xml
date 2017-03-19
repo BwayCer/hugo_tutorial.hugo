@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo: A Fast and Flexible Website Generator</title>
-    <link>http://gohugo.io/index.xml</link>
+    <link>https://bwaycer.github.io/index.xml</link>
     <description>Recent content on Hugo: A Fast and Flexible Website Generator</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 08 Jan 2015 16:11:23 -0700</lastBuildDate>
-    <atom:link href="http://gohugo.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bwaycer.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Strange EOF error</title>
-      <link>http://gohugo.io/troubleshooting/strange-eof-error/</link>
+      <link>https://bwaycer.github.io/troubleshooting/strange-eof-error/</link>
       <pubDate>Thu, 08 Jan 2015 16:11:23 -0700</pubDate>
       
-      <guid>http://gohugo.io/troubleshooting/strange-eof-error/</guid>
+      <guid>https://bwaycer.github.io/troubleshooting/strange-eof-error/</guid>
       <description>
 
 &lt;h2 id=&#34;trouble-hugo-new-aborts-with-cryptic-eof-error&#34;&gt;Trouble: &lt;code&gt;hugo new&lt;/code&gt; aborts with cryptic EOF error&lt;/h2&gt;
@@ -60,10 +60,10 @@ in the upcoming v0.13 release,&lt;/p&gt;
     
     <item>
       <title>Introduction to Hugo</title>
-      <link>http://gohugo.io/overview/introduction/</link>
+      <link>https://bwaycer.github.io/overview/introduction/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/overview/introduction/</guid>
+      <guid>https://bwaycer.github.io/overview/introduction/</guid>
       <description>
 
 &lt;h2 id=&#34;what-is-hugo&#34;&gt;What is Hugo?&lt;/h2&gt;
@@ -148,8 +148,8 @@ templates and uses these as input to create a complete website.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Extremely fast build times (~1 ms per page)&lt;/li&gt;
 &lt;li&gt;Completely cross platform: Runs on &lt;i class=&#34;fa fa-apple&#34;&gt;&lt;/i&gt;&amp;nbsp;Mac OS&amp;nbsp;X, &lt;i class=&#34;fa fa-linux&#34;&gt;&lt;/i&gt;&amp;nbsp;Linux, &lt;i class=&#34;fa fa-windows&#34;&gt;&lt;/i&gt;&amp;nbsp;Windows, and more!&lt;/li&gt;
-&lt;li&gt;Easy &lt;a href=&#34;http://gohugo.io/overview/installing/&#34;&gt;installation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Render changes &lt;a href=&#34;http://gohugo.io/overview/usage/&#34;&gt;on the fly&lt;/a&gt; with &lt;a href=&#34;http://gohugo.io/extras/livereload/&#34;&gt;LiveReload&lt;/a&gt; as you develop&lt;/li&gt;
+&lt;li&gt;Easy &lt;a href=&#34;./overview/installing/&#34;&gt;installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Render changes &lt;a href=&#34;./overview/usage/&#34;&gt;on the fly&lt;/a&gt; with &lt;a href=&#34;./extras/livereload/&#34;&gt;LiveReload&lt;/a&gt; as you develop&lt;/li&gt;
 &lt;li&gt;Complete theme support&lt;/li&gt;
 &lt;li&gt;Host your site anywhere&lt;/li&gt;
 &lt;/ul&gt;
@@ -157,33 +157,33 @@ templates and uses these as input to create a complete website.&lt;/p&gt;
 &lt;h3 id=&#34;organization&#34;&gt;Organization&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Straightforward &lt;a href=&#34;http://gohugo.io/content/organization/&#34;&gt;organization&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Support for &lt;a href=&#34;http://gohugo.io/content/sections/&#34;&gt;website sections&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Completely customizable &lt;a href=&#34;http://gohugo.io/extras/urls/&#34;&gt;URLs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Support for configurable &lt;a href=&#34;http://gohugo.io/taxonomies/overview/&#34;&gt;taxonomies&lt;/a&gt; which includes categories and tags.  Create your own custom organization of content&lt;/li&gt;
-&lt;li&gt;Ability to &lt;a href=&#34;http://gohugo.io/content/ordering/&#34;&gt;sort content&lt;/a&gt; as you desire&lt;/li&gt;
-&lt;li&gt;Automatic &lt;a href=&#34;http://gohugo.io/extras/toc/&#34;&gt;table of contents&lt;/a&gt; generation&lt;/li&gt;
+&lt;li&gt;Straightforward &lt;a href=&#34;./content/organization/&#34;&gt;organization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support for &lt;a href=&#34;./content/sections/&#34;&gt;website sections&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Completely customizable &lt;a href=&#34;./extras/urls/&#34;&gt;URLs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support for configurable &lt;a href=&#34;./taxonomies/overview/&#34;&gt;taxonomies&lt;/a&gt; which includes categories and tags.  Create your own custom organization of content&lt;/li&gt;
+&lt;li&gt;Ability to &lt;a href=&#34;./content/ordering/&#34;&gt;sort content&lt;/a&gt; as you desire&lt;/li&gt;
+&lt;li&gt;Automatic &lt;a href=&#34;./extras/toc/&#34;&gt;table of contents&lt;/a&gt; generation&lt;/li&gt;
 &lt;li&gt;Dynamic menu creation&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/extras/urls/&#34;&gt;Pretty URLs&lt;/a&gt; support&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/extras/permalinks/&#34;&gt;Permalink&lt;/a&gt; pattern support&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/extras/aliases/&#34;&gt;Aliases&lt;/a&gt; (redirects)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./extras/urls/&#34;&gt;Pretty URLs&lt;/a&gt; support&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./extras/permalinks/&#34;&gt;Permalink&lt;/a&gt; pattern support&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./extras/aliases/&#34;&gt;Aliases&lt;/a&gt; (redirects)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;content&#34;&gt;Content&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Native support for content written in &lt;a href=&#34;http://gohugo.io/content/example/&#34;&gt;Markdown&lt;/a&gt;
+&lt;li&gt;Native support for content written in &lt;a href=&#34;./content/example/&#34;&gt;Markdown&lt;/a&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Support for other languages through &lt;em&gt;external helpers&lt;/em&gt;, see &lt;a href=&#34;http://gohugo.io/content/supported-formats&#34;&gt;supported formats&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support for other languages through &lt;em&gt;external helpers&lt;/em&gt;, see &lt;a href=&#34;./content/supported-formats&#34;&gt;supported formats&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Support for TOML, YAML and JSON metadata in &lt;a href=&#34;http://gohugo.io/content/front-matter/&#34;&gt;frontmatter&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Completely &lt;a href=&#34;http://gohugo.io/layout/homepage/&#34;&gt;customizable homepage&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Support for multiple &lt;a href=&#34;http://gohugo.io/content/types/&#34;&gt;content types&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Automatic and user defined &lt;a href=&#34;http://gohugo.io/content/summaries/&#34;&gt;summaries&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/extras/shortcodes/&#34;&gt;Shortcodes&lt;/a&gt; to enable rich content inside of Markdown&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/layout/variables/&#34;&gt;&amp;ldquo;Minutes to Read&amp;rdquo;&lt;/a&gt; functionality&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/layout/variables/&#34;&gt;&amp;ldquo;Wordcount&amp;rdquo;&lt;/a&gt; functionality&lt;/li&gt;
+&lt;li&gt;Support for TOML, YAML and JSON metadata in &lt;a href=&#34;./content/front-matter/&#34;&gt;frontmatter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Completely &lt;a href=&#34;./layout/homepage/&#34;&gt;customizable homepage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support for multiple &lt;a href=&#34;./content/types/&#34;&gt;content types&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Automatic and user defined &lt;a href=&#34;./content/summaries/&#34;&gt;summaries&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./extras/shortcodes/&#34;&gt;Shortcodes&lt;/a&gt; to enable rich content inside of Markdown&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./layout/variables/&#34;&gt;&amp;ldquo;Minutes to Read&amp;rdquo;&lt;/a&gt; functionality&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./layout/variables/&#34;&gt;&amp;ldquo;Wordcount&amp;rdquo;&lt;/a&gt; functionality&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;additional-features&#34;&gt;Additional Features&lt;/h3&gt;
@@ -191,12 +191,12 @@ templates and uses these as input to create a complete website.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Integrated &lt;a href=&#34;https://disqus.com/&#34;&gt;Disqus&lt;/a&gt; comment support&lt;/li&gt;
 &lt;li&gt;Integrated &lt;a href=&#34;https://google-analytics.com/&#34;&gt;Google Analytics&lt;/a&gt; support&lt;/li&gt;
-&lt;li&gt;Automatic &lt;a href=&#34;http://gohugo.io/layout/rss/&#34;&gt;RSS&lt;/a&gt; creation&lt;/li&gt;
+&lt;li&gt;Automatic &lt;a href=&#34;./layout/rss/&#34;&gt;RSS&lt;/a&gt; creation&lt;/li&gt;
 &lt;li&gt;Support for &lt;a href=&#34;http://golang.org/pkg/html/template/&#34;&gt;Go&lt;/a&gt;, &lt;a href=&#34;https://github.com/eknkc/amber&#34;&gt;Amber&lt;/a&gt; and &lt;a href=&#34;https://github.com/yosssi/ace&#34;&gt;Ace&lt;/a&gt; HTML templates&lt;/li&gt;
-&lt;li&gt;Syntax &lt;a href=&#34;http://gohugo.io/extras/highlighting/&#34;&gt;highlighting&lt;/a&gt; powered by &lt;a href=&#34;http://pygments.org/&#34;&gt;Pygments&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Syntax &lt;a href=&#34;./extras/highlighting/&#34;&gt;highlighting&lt;/a&gt; powered by &lt;a href=&#34;http://pygments.org/&#34;&gt;Pygments&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;See what&amp;rsquo;s coming next in the &lt;a href=&#34;http://gohugo.io/meta/roadmap/&#34;&gt;roadmap&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See what&amp;rsquo;s coming next in the &lt;a href=&#34;./meta/roadmap/&#34;&gt;roadmap&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;who-should-use-hugo&#34;&gt;Who should use Hugo?&lt;/h2&gt;
 
@@ -243,9 +243,9 @@ as I have writing it.&lt;/p&gt;
 &lt;h2 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/overview/installing/&#34;&gt;Install Hugo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/overview/quickstart/&#34;&gt;Quick start&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gohugo.io/community/mailing-list/&#34;&gt;Join the Mailing List&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./overview/installing/&#34;&gt;Install Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./overview/quickstart/&#34;&gt;Quick start&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;./community/mailing-list/&#34;&gt;Join the Mailing List&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/spf13/hugo&#34;&gt;Star us on GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://discuss.gohugo.io/&#34;&gt;Discussion Forum&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -254,10 +254,10 @@ as I have writing it.&lt;/p&gt;
     
     <item>
       <title>Continuous deployment with Bitbucket &amp; Aerobatic</title>
-      <link>http://gohugo.io/tutorials/hosting-on-bitbucket/</link>
+      <link>https://bwaycer.github.io/tutorials/hosting-on-bitbucket/</link>
       <pubDate>Sat, 04 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/tutorials/hosting-on-bitbucket/</guid>
+      <guid>https://bwaycer.github.io/tutorials/hosting-on-bitbucket/</guid>
       <description>
 
 &lt;h1 id=&#34;continuous-deployment-with-bitbucket-aerobatic&#34;&gt;Continuous deployment with Bitbucket &amp;amp; Aerobatic&lt;/h1&gt;
@@ -296,7 +296,7 @@ View now at https://hugo-docs-test.aerobatic.io
 
 &lt;p&gt;We will now create a git repository and then push our code to Bitbucket. In Bitbucket, create a repository.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/tutorials/hosting-on-bitbucket/bitbucket-create-repo.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/tutorials/hosting-on-bitbucket/bitbucket-create-repo.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# initialize new git repository
 git init
@@ -370,7 +370,7 @@ git push -u origin master
 
 &lt;p&gt;At this point, you can now create and edit blog posts directly in the Bitbucket UI.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/tutorials/hosting-on-bitbucket/bitbucket-blog-post.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/tutorials/hosting-on-bitbucket/bitbucket-blog-post.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;suggested-next-steps&#34;&gt;Suggested next steps&lt;/h2&gt;
 
@@ -380,10 +380,10 @@ git push -u origin master
     
     <item>
       <title>Hosting on GitLab Pages</title>
-      <link>http://gohugo.io/tutorials/hosting-on-gitlab/</link>
+      <link>https://bwaycer.github.io/tutorials/hosting-on-gitlab/</link>
       <pubDate>Thu, 23 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/tutorials/hosting-on-gitlab/</guid>
+      <guid>https://bwaycer.github.io/tutorials/hosting-on-gitlab/</guid>
       <description>
 
 &lt;h1 id=&#34;continuous-deployment-with-gitlab&#34;&gt;Continuous deployment with GitLab&lt;/h1&gt;
@@ -392,7 +392,7 @@ git push -u origin master
 
 &lt;p&gt;In this tutorial, we will use &lt;a href=&#34;https://gitlab.com/&#34;&gt;GitLab&lt;/a&gt; to build, deploy, and host a &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; site. With Hugo and GitLab, this is incredibly easy.&lt;/p&gt;
 
-&lt;p&gt;It is assumed that you know how to use git for version control and have a GitLab account, and that you have gone through the &lt;a href=&#34;http://gohugo.io/overview/quickstart/&#34;&gt;quickstart guide&lt;/a&gt; and already have a Hugo site on your local machine.&lt;/p&gt;
+&lt;p&gt;It is assumed that you know how to use git for version control and have a GitLab account, and that you have gone through the &lt;a href=&#34;./overview/quickstart/&#34;&gt;quickstart guide&lt;/a&gt; and already have a Hugo site on your local machine.&lt;/p&gt;
 
 &lt;h2 id=&#34;create-gitlab-ci-yml&#34;&gt;Create .gitlab-ci.yml&lt;/h2&gt;
 
@@ -443,10 +443,10 @@ After the build has passed, your new website is available at &lt;a href=&#34;htt
     
     <item>
       <title>How to contribute to Hugo</title>
-      <link>http://gohugo.io/tutorials/how-to-contribute-to-hugo/</link>
+      <link>https://bwaycer.github.io/tutorials/how-to-contribute-to-hugo/</link>
       <pubDate>Sun, 03 Apr 2016 13:21:56 +0200</pubDate>
       
-      <guid>http://gohugo.io/tutorials/how-to-contribute-to-hugo/</guid>
+      <guid>https://bwaycer.github.io/tutorials/how-to-contribute-to-hugo/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
@@ -542,11 +542,11 @@ hub version 2.2.2
 
 &lt;p&gt;Open the &lt;a href=&#34;https://github.com/spf13/hugo&#34;&gt;Hugo repository&lt;/a&gt; on Github and click on the &amp;ldquo;Fork&amp;rdquo; button in the top right.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/tutorials/how-to-contribute-to-hugo/forking-a-repository.png&#34; alt=&#34;Fork button&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/tutorials/how-to-contribute-to-hugo/forking-a-repository.png&#34; alt=&#34;Fork button&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Now open your fork repository on GitHub and copy the remote url of your fork. You can choose between HTTPS and SSH as protocol that Git should use for the following operations. HTTPS works always &lt;a href=&#34;https://help.github.com/articles/which-remote-url-should-i-use/&#34;&gt;if you&amp;rsquo;re not sure&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/tutorials/how-to-contribute-to-hugo/copy-remote-url.png&#34; alt=&#34;Copy remote url&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/tutorials/how-to-contribute-to-hugo/copy-remote-url.png&#34; alt=&#34;Copy remote url&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Switch back to the terminal and move into the directory of the cloned master repository from the last step.&lt;/p&gt;
 
@@ -603,7 +603,7 @@ git pull
 
 &lt;h3 id=&#34;contributing-to-the-documentation&#34;&gt;Contributing to the documentation&lt;/h3&gt;
 
-&lt;p&gt;Perhaps you want to start contributing to the docs. Then you can ignore most of the following steps. You can find the documentation within the cloned repository in the subfolder &lt;code&gt;docs&lt;/code&gt;. Change the directory with &lt;code&gt;cd docs&lt;/code&gt;. Install the &lt;a href=&#34;http://gohugo.io/overview/installing/&#34;&gt;latest release&lt;/a&gt;. Or read on and build Hugo from source.&lt;/p&gt;
+&lt;p&gt;Perhaps you want to start contributing to the docs. Then you can ignore most of the following steps. You can find the documentation within the cloned repository in the subfolder &lt;code&gt;docs&lt;/code&gt;. Change the directory with &lt;code&gt;cd docs&lt;/code&gt;. Install the &lt;a href=&#34;./overview/installing/&#34;&gt;latest release&lt;/a&gt;. Or read on and build Hugo from source.&lt;/p&gt;
 
 &lt;p&gt;You can start Hugo&amp;rsquo;s built-in server via &lt;code&gt;hugo server&lt;/code&gt;. Browse the documentation by entering &lt;a href=&#34;http://localhost:1313&#34;&gt;http://localhost:1313&lt;/a&gt; in the address bar of your browser. The server automatically updates the page if you change its content.&lt;/p&gt;
 
@@ -728,7 +728,7 @@ squash 3502f2e Refactoring and typo fixes
 
 &lt;p&gt;You should find a green button labeld with &amp;ldquo;New pull request&amp;rdquo;. But GitHub is clever and probably suggests you a pull request like in the beige box below:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/tutorials/how-to-contribute-to-hugo/open-pull-request.png&#34; alt=&#34;Open a pull request&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/tutorials/how-to-contribute-to-hugo/open-pull-request.png&#34; alt=&#34;Open a pull request&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;The new page summaries the most important information of your pull request. Scroll down and you find the additions of all your commits. Make sure everything looks as expected and click on &amp;ldquo;Create pull request&amp;rdquo;.&lt;/p&gt;
 
@@ -736,13 +736,13 @@ squash 3502f2e Refactoring and typo fixes
 
 &lt;p&gt;Last but not least you should accept the contributor license agreement (CLA). A new comment should be added automatically to your pull request. Click on the yellow badge, accept the agreement and authenticate yourself with your GitHub account. It just takes a few clicks and only needs to be done once.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/tutorials/how-to-contribute-to-hugo/accept-cla.png&#34; alt=&#34;Accept the CLA&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/tutorials/how-to-contribute-to-hugo/accept-cla.png&#34; alt=&#34;Accept the CLA&#34;&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;automatic-builds&#34;&gt;Automatic builds&lt;/h3&gt;
 
 &lt;p&gt;We use the &lt;a href=&#34;https://travis-ci.org/spf13/hugo&#34;&gt;Travis CI loop&lt;/a&gt; (Linux and OS&amp;nbsp;X) and &lt;a href=&#34;https://ci.appveyor.com/project/spf13/hugo/branch/master&#34;&gt;AppVeyor&lt;/a&gt; (Windows) to compile Hugo with your additions. This should ensure that everything works as expected before merging your pull request. This in most cases only relevant if you made changes to the codebase of Hugo.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/tutorials/how-to-contribute-to-hugo/ci-errors.png&#34; alt=&#34;Automic builds and their status&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/tutorials/how-to-contribute-to-hugo/ci-errors.png&#34; alt=&#34;Automic builds and their status&#34;&gt;&lt;/p&gt;
 
 &lt;p&gt;Above you can see that Travis wasn&amp;rsquo;t able to compile the changes in this pull request. Click on &amp;ldquo;Details&amp;rdquo; and try to investigate why the build failed. But it doesn&amp;rsquo;t have to be your fault. Mostly, the &lt;code&gt;master&lt;/code&gt; branch that we used as foundation for your pull request should build without problems.&lt;/p&gt;
 
@@ -756,10 +756,10 @@ squash 3502f2e Refactoring and typo fixes
     
     <item>
       <title>Creating a New Theme</title>
-      <link>http://gohugo.io/tutorials/creating-a-new-theme/</link>
+      <link>https://bwaycer.github.io/tutorials/creating-a-new-theme/</link>
       <pubDate>Thu, 26 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/tutorials/creating-a-new-theme/</guid>
+      <guid>https://bwaycer.github.io/tutorials/creating-a-new-theme/</guid>
       <description>
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
@@ -1463,7 +1463,7 @@ use &lt;code&gt;hugo server --watch=false&lt;/code&gt;.&lt;/p&gt;
 &lt;h4 id=&#34;reload&#34;&gt;Reload&lt;/h4&gt;
 
 &lt;p&gt;Hugo&amp;rsquo;s built in web server includes
-&lt;a href=&#34;http://gohugo.io/extras/livereload/&#34;&gt;LiveReload&lt;/a&gt; functionality. When any page is updated
+&lt;a href=&#34;./extras/livereload/&#34;&gt;LiveReload&lt;/a&gt; functionality. When any page is updated
 in the filesystem, the web browser is told to refresh its currently-open tabs
 from your web site. Usually, this happens faster than you can say,
 &amp;ldquo;Wow, that&amp;rsquo;s totally amazing!&amp;rdquo;&lt;/p&gt;
@@ -2579,14 +2579,14 @@ and your About page (sensibly) doesn&amp;rsquo;t.&lt;/p&gt;
     
     <item>
       <title>Create a Multilingual Site</title>
-      <link>http://gohugo.io/tutorials/create-a-multilingual-site/</link>
+      <link>https://bwaycer.github.io/tutorials/create-a-multilingual-site/</link>
       <pubDate>Wed, 08 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/tutorials/create-a-multilingual-site/</guid>
+      <guid>https://bwaycer.github.io/tutorials/create-a-multilingual-site/</guid>
       <description>
 
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Since v0.17 Hugo has built-in support for the creation of multilingual website. &lt;a href=&#34;http://gohugo.io/content/multilingual/&#34;&gt;Read more about it&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Since v0.17 Hugo has built-in support for the creation of multilingual website. &lt;a href=&#34;./content/multilingual/&#34;&gt;Read more about it&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
@@ -2740,10 +2740,10 @@ function hugodeploy-acmejp {
     
     <item>
       <title>Installing on Windows</title>
-      <link>http://gohugo.io/tutorials/installing-on-windows/</link>
+      <link>https://bwaycer.github.io/tutorials/installing-on-windows/</link>
       <pubDate>Mon, 30 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/tutorials/installing-on-windows/</guid>
+      <guid>https://bwaycer.github.io/tutorials/installing-on-windows/</guid>
       <description>
 
 &lt;h1 id=&#34;installing-hugo-on-windows&#34;&gt;Installing Hugo on Windows&lt;/h1&gt;
@@ -2882,10 +2882,10 @@ C:\Hugo\Sites\example.com&amp;gt;dir
     
     <item>
       <title>Installing on a Mac</title>
-      <link>http://gohugo.io/tutorials/installing-on-mac/</link>
+      <link>https://bwaycer.github.io/tutorials/installing-on-mac/</link>
       <pubDate>Sun, 22 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/tutorials/installing-on-mac/</guid>
+      <guid>https://bwaycer.github.io/tutorials/installing-on-mac/</guid>
       <description>
 
 &lt;h1 id=&#34;installing-hugo-on-a-mac&#34;&gt;Installing Hugo on a Mac&lt;/h1&gt;
@@ -2974,7 +2974,7 @@ Hugo Static Site Generator v0.13 BuildDate: 2015-03-09T21:34:47-05:00
 &lt;h3 id=&#34;step-3-you-re-done&#34;&gt;Step 3: You&amp;rsquo;re Done&lt;/h3&gt;
 
 &lt;p&gt;You&amp;rsquo;ve installed Hugo. Now you need to set up your site. Read the
-&lt;a href=&#34;http://gohugo.io/overview/quickstart/&#34;&gt;Quickstart guide&lt;/a&gt;, explore the rest of the
+&lt;a href=&#34;./overview/quickstart/&#34;&gt;Quickstart guide&lt;/a&gt;, explore the rest of the
 documentation, and if you still have questions
 &lt;a href=&#34;http://discuss.gohugo.io/&#34; title=&#34;Discussion forum&#34;&gt;just ask!&lt;/a&gt;&lt;/p&gt;
 
@@ -3063,7 +3063,7 @@ $ which hugo
 &lt;h3 id=&#34;step-5-you-re-done&#34;&gt;Step 5: You&amp;rsquo;re Done&lt;/h3&gt;
 
 &lt;p&gt;You&amp;rsquo;ve installed Hugo. Now you need to set up your site. Read the
-&lt;a href=&#34;http://gohugo.io/overview/quickstart/&#34;&gt;Quickstart guide&lt;/a&gt;, explore the rest of the
+&lt;a href=&#34;./overview/quickstart/&#34;&gt;Quickstart guide&lt;/a&gt;, explore the rest of the
 documentation, and if you still have questions
 &lt;a href=&#34;http://discuss.gohugo.io/&#34; title=&#34;Discussion forum&#34;&gt;just ask!&lt;/a&gt;&lt;/p&gt;
 
@@ -3117,10 +3117,10 @@ introduced a breaking change.&lt;/p&gt;
     
     <item>
       <title>Automated deployments with Wercker</title>
-      <link>http://gohugo.io/tutorials/automated-deployments/</link>
+      <link>https://bwaycer.github.io/tutorials/automated-deployments/</link>
       <pubDate>Mon, 12 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/tutorials/automated-deployments/</guid>
+      <guid>https://bwaycer.github.io/tutorials/automated-deployments/</guid>
       <description>
 
 &lt;h1 id=&#34;automated-deployments-with-wercker&#34;&gt;Automated deployments with Wercker&lt;/h1&gt;
@@ -3168,7 +3168,7 @@ git clone https://github.com/spf13/herring-cove.git
 
 &lt;p&gt;If everything is fine, you should be able to see something similar to the image below when you go to localhost:1313 in your browser.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/tutorials/automated-deployments/creating-a-basic-hugo-site.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/tutorials/automated-deployments/creating-a-basic-hugo-site.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;setting-up-version-control&#34;&gt;Setting up version control&lt;/h2&gt;
 
@@ -3202,73 +3202,73 @@ git clone https://github.com/spf13/herring-cove.git
 git push -u origin master
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/tutorials/automated-deployments/adding-the-project-to-github.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/tutorials/automated-deployments/adding-the-project-to-github.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;welcome-to-wercker&#34;&gt;Welcome to wercker&lt;/h2&gt;
 
 &lt;p&gt;Let&amp;rsquo;s start by setting up an account for Wercker. To do so we&amp;rsquo;ll go to &lt;a href=&#34;http://wercker.com&#34;&gt;http://wercker.com&lt;/a&gt; and click on the &lt;strong&gt;Sign up&lt;/strong&gt; button.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/tutorials/automated-deployments/wercker-sign-up.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/tutorials/automated-deployments/wercker-sign-up.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;register&#34;&gt;Register&lt;/h2&gt;
 
 &lt;p&gt;To make life easier for ourselves, we will then register using GitHub. If you don&amp;rsquo;t have a GitHub account, or don&amp;rsquo;t want to use it for your account, you can of course register with a username and password as well.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/tutorials/automated-deployments/wercker-sign-up-page.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/tutorials/automated-deployments/wercker-sign-up-page.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;connect-github-bitbucket&#34;&gt;Connect GitHub/Bitbucket&lt;/h2&gt;
 
 &lt;p&gt;After you are registered, you will need to link your GitHub and/or Bitbucket account to Wercker. You do this by going to your profile settings, and then &amp;ldquo;Git connections&amp;rdquo; If you registered using GitHub it will most likely look like the image below. To connect a missing service, simply click on the connect button which will then send you to either GitHub or Bitbucket where you might need to log in and approve their access to your account.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/tutorials/automated-deployments/wercker-git-connections.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/tutorials/automated-deployments/wercker-git-connections.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;add-your-project&#34;&gt;Add your project&lt;/h2&gt;
 
 &lt;p&gt;Now that we&amp;rsquo;ve got all the preliminaries out of the way, it&amp;rsquo;s time to set up our application. For this we click on the &lt;strong&gt;+ Create&lt;/strong&gt; button next to Applications, and then we&amp;rsquo;ll choose to use GitHub as our provider.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/tutorials/automated-deployments/wercker-add-app.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/tutorials/automated-deployments/wercker-add-app.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;select-a-repository&#34;&gt;Select a repository&lt;/h2&gt;
 
 &lt;p&gt;Clicking this will make Wercker show you all the repositories you have on GitHub, but you can easily filter them as well. So we search for our repository, select it, and then click on &amp;ldquo;Use selected repo&amp;rdquo;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/tutorials/automated-deployments/wercker-select-repository.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/tutorials/automated-deployments/wercker-select-repository.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;select-the-repository-owner&#34;&gt;Select the repository owner&lt;/h2&gt;
 
 &lt;p&gt;In the next step, Wercker asks you to select the repository owner. Just select your own GitHub account and continue.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/tutorials/automated-deployments/wercker-select-owner.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/tutorials/automated-deployments/wercker-select-owner.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;configure-access&#34;&gt;Configure access&lt;/h2&gt;
 
 &lt;p&gt;This step can be slightly tricky. As Wercker doesn&amp;rsquo;t access to check out your private projects by default it will ask you what you want to do. When your project is public, as needs to be the case if you wish to use GitHub Pages, the top choice is recommended. When you use this it will simply check out the code in the same way anybody visiting the project on GitHub can do.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/tutorials/automated-deployments/wercker-access.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/tutorials/automated-deployments/wercker-access.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;wercker-yml&#34;&gt;Wercker.yml&lt;/h2&gt;
 
 &lt;p&gt;Wercker will now attempt to create an initial &lt;em&gt;wercker.yml&lt;/em&gt; file for you. Or rather, it will create the code you can copy into it yourself. Because there is nothing special about our project according to Wercker, we will simply get the &lt;code&gt;debian&lt;/code&gt; box. So what we do now is create a &lt;em&gt;wercker.yml&lt;/em&gt; file in the root of our project that contains the provided configuration, and after we finish setting up the app we will expand this file to make it actually do something.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/tutorials/automated-deployments/werckeryml.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/tutorials/automated-deployments/werckeryml.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;public-or-not&#34;&gt;Public or not&lt;/h2&gt;
 
 &lt;p&gt;This is a personal choice, you can make an app public so that everyone can see more details about it. This doesn&amp;rsquo;t give you any real benefits either way in general, although as part of the tutorial I have of course made this app public so you can see it in action &lt;a href=&#34;https://app.wercker.com/#applications/5586dcbdaf7de9c51b02b0d5&#34;&gt;yourself&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/tutorials/automated-deployments/public-or-not.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/tutorials/automated-deployments/public-or-not.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;and-we-ve-got-an-app&#34;&gt;And we&amp;rsquo;ve got an app&lt;/h2&gt;
 
 &lt;p&gt;The application is added now, and Wercker will be offering you the chance to trigger a build. As we haven&amp;rsquo;t pushed up the &lt;strong&gt;wercker.yml&lt;/strong&gt; file however, we will politely decline this option.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/tutorials/automated-deployments/and-we-ve-got-an-app.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/tutorials/automated-deployments/and-we-ve-got-an-app.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;adding-steps&#34;&gt;Adding steps&lt;/h2&gt;
 
 &lt;p&gt;And now we&amp;rsquo;re going to add the steps themselves. First, we go to the &amp;ldquo;Registry&amp;rdquo; action in the top menu and then search for &amp;ldquo;hugo build&amp;rdquo;. The first result is the &lt;strong&gt;Hugo-Build&lt;/strong&gt; task, which we select.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/tutorials/automated-deployments/wercker-search.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/tutorials/automated-deployments/wercker-search.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;using-hugo-build&#34;&gt;Using Hugo-Build&lt;/h2&gt;
 
@@ -3293,7 +3293,7 @@ git push origin master
 
 &lt;p&gt;Once completed a nice tick should have appeared in front of your first build, and if you want you can look at the details by clicking on it. However, we&amp;rsquo;re not done yet as we still need to deploy it to GitHub Pages.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/tutorials/automated-deployments/using-hugo-build.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/tutorials/automated-deployments/using-hugo-build.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;adding-a-github-pages-step&#34;&gt;Adding a GitHub Pages step&lt;/h2&gt;
 
@@ -3322,13 +3322,13 @@ deploy:
 
 &lt;p&gt;And lastly, you can see here that this has a &lt;strong&gt;$GIT_TOKEN&lt;/strong&gt; variable. This is used for pushing our changes up to GitHub and we will need to configure this before we can do that. We do this by going to our app&amp;rsquo;s settings and clicking on &lt;strong&gt;Deploy targets&lt;/strong&gt;. Now, we &lt;strong&gt;Add deploy target&lt;/strong&gt; and select &lt;strong&gt;Custom deploy&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/tutorials/automated-deployments/adding-a-github-pages-step.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/tutorials/automated-deployments/adding-a-github-pages-step.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;configure-the-deploy-step&#34;&gt;Configure the deploy step&lt;/h2&gt;
 
 &lt;p&gt;Simply fill in the name, and make sure you enable &lt;strong&gt;auto deploy&lt;/strong&gt; from the &lt;strong&gt;master&lt;/strong&gt; branch. Next you add a variable for the &lt;strong&gt;GIT_TOKEN&lt;/strong&gt;, for this you&amp;rsquo;ll need to create an access token in GitHub. How to do that is described on a &lt;a href=&#34;https://help.github.com/articles/creating-an-access-token-for-command-line-use/&#34;&gt;GitHub help page&lt;/a&gt;. With the deploy step configured in Wercker, we can push the updated wercker.yml file to GitHub and it will create the GitHub pages site for us. The example site we used here is accessible under hugo-wercker.ig.nore.me&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://gohugo.io/img/tutorials/automated-deployments/configure-the-deploy-step.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./img/tutorials/automated-deployments/configure-the-deploy-step.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 
@@ -3340,10 +3340,10 @@ deploy:
     
     <item>
       <title>Accented Categories</title>
-      <link>http://gohugo.io/troubleshooting/categories-with-accented-characters/</link>
+      <link>https://bwaycer.github.io/troubleshooting/categories-with-accented-characters/</link>
       <pubDate>Thu, 08 Jan 2015 16:32:00 -0700</pubDate>
       
-      <guid>http://gohugo.io/troubleshooting/categories-with-accented-characters/</guid>
+      <guid>https://bwaycer.github.io/troubleshooting/categories-with-accented-characters/</guid>
       <description>
 
 &lt;h2 id=&#34;trouble-categories-with-accented-characters&#34;&gt;Trouble: Categories with accented characters&lt;/h2&gt;
@@ -3401,10 +3401,10 @@ deploy:
     
     <item>
       <title>Themes Overview</title>
-      <link>http://gohugo.io/themes/overview/</link>
+      <link>https://bwaycer.github.io/themes/overview/</link>
       <pubDate>Mon, 12 May 2014 10:03:52 +0000</pubDate>
       
-      <guid>http://gohugo.io/themes/overview/</guid>
+      <guid>https://bwaycer.github.io/themes/overview/</guid>
       <description>&lt;p&gt;Hugo provides a robust theming system which is simple, yet capable of producing
 even the most complicated websites.&lt;/p&gt;
 
@@ -3413,7 +3413,7 @@ ready for using in your own site.&lt;/p&gt;
 
 &lt;p&gt;Hugo themes have been designed to be the perfect balance between
 simplicity and functionality. Hugo themes are powered by the excellent
-Go template library. If you are new to Go templates, see our &lt;a href=&#34;http://gohugo.io/templates/go-templates/&#34;&gt;primer on
+Go template library. If you are new to Go templates, see our &lt;a href=&#34;./templates/go-templates/&#34;&gt;primer on
 Go templates&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Hugo themes support all modern features you come to expect. They are
@@ -3430,10 +3430,10 @@ pick whichever theme best suits their project.&lt;/p&gt;
     
     <item>
       <title>Hosting on GitHub Pages</title>
-      <link>http://gohugo.io/tutorials/github-pages-blog/</link>
+      <link>https://bwaycer.github.io/tutorials/github-pages-blog/</link>
       <pubDate>Fri, 21 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/tutorials/github-pages-blog/</guid>
+      <guid>https://bwaycer.github.io/tutorials/github-pages-blog/</guid>
       <description>
 
 &lt;p&gt;&lt;em&gt;This tutorial was contributed by &lt;a href=&#34;http://spencerlyon.com/&#34;&gt;Spencer Lyon&lt;/a&gt; (Personal/Organization Pages) and &lt;a href=&#34;https://github.com/gunnarmorling/&#34;&gt;Gunnar Morling&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
@@ -3632,16 +3632,16 @@ This will put the CNAME file to the root of the published site as required by Gi
 
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 
-&lt;p&gt;Hopefully this tutorial helped you to get your website off its feet and out into the open! If you have any further questions, feel free to contact the community through the &lt;a href=&#34;http://gohugo.io/community/mailing-list/&#34;&gt;discussion forum&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Hopefully this tutorial helped you to get your website off its feet and out into the open! If you have any further questions, feel free to contact the community through the &lt;a href=&#34;./community/mailing-list/&#34;&gt;discussion forum&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>MathJax Support</title>
-      <link>http://gohugo.io/tutorials/mathjax/</link>
+      <link>https://bwaycer.github.io/tutorials/mathjax/</link>
       <pubDate>Thu, 20 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/tutorials/mathjax/</guid>
+      <guid>https://bwaycer.github.io/tutorials/mathjax/</guid>
       <description>
 
 &lt;h2 id=&#34;what-is-mathjax&#34;&gt;What is MathJax?&lt;/h2&gt;
@@ -3721,13 +3721,13 @@ MathJax.Hub.Config({
     
     <item>
       <title>Migrate to Hugo from Jekyll</title>
-      <link>http://gohugo.io/tutorials/migrate-from-jekyll/</link>
+      <link>https://bwaycer.github.io/tutorials/migrate-from-jekyll/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/tutorials/migrate-from-jekyll/</guid>
+      <guid>https://bwaycer.github.io/tutorials/migrate-from-jekyll/</guid>
       <description>
 
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Hugo 0.15 comes with a &lt;code&gt;hugo import jekyll&lt;/code&gt; command, see &lt;a href=&#34;http://gohugo.io/commands/hugo_import_jekyll/&#34;&gt;import from Jekyll&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Hugo 0.15 comes with a &lt;code&gt;hugo import jekyll&lt;/code&gt; command, see &lt;a href=&#34;./commands/hugo_import_jekyll/&#34;&gt;import from Jekyll&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;move-static-content-to-static&#34;&gt;Move static content to &lt;code&gt;static&lt;/code&gt;&lt;/h2&gt;
 
@@ -3751,7 +3751,7 @@ With Jekyll, something that looked like&lt;/p&gt;
 
 &lt;h2 id=&#34;create-your-hugo-configuration-file&#34;&gt;Create your Hugo configuration file&lt;/h2&gt;
 
-&lt;p&gt;Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the &lt;a href=&#34;http://gohugo.io/overview/configuration/&#34;&gt;Hugo configuration documentation&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the &lt;a href=&#34;./overview/configuration/&#34;&gt;Hugo configuration documentation&lt;/a&gt; for details.&lt;/p&gt;
 
 &lt;h2 id=&#34;set-your-configuration-publish-folder-to-site&#34;&gt;Set your configuration publish folder to &lt;code&gt;_site&lt;/code&gt;&lt;/h2&gt;
 
@@ -3777,13 +3777,13 @@ git submodule add -b gh-pages git@github.com:your-username/your-repo.git public
 
 &lt;h2 id=&#34;convert-jekyll-templates-to-hugo-templates&#34;&gt;Convert Jekyll templates to Hugo templates&lt;/h2&gt;
 
-&lt;p&gt;That&amp;rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to &lt;a href=&#34;http://jekyllrb.com/docs/templates/&#34;&gt;Jekyll&amp;rsquo;s template documentation&lt;/a&gt; if you need to refresh your memory on how you built your blog and &lt;a href=&#34;http://gohugo.io/layout/templates/&#34;&gt;Hugo&amp;rsquo;s template&lt;/a&gt; to learn Hugo&amp;rsquo;s way.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to &lt;a href=&#34;http://jekyllrb.com/docs/templates/&#34;&gt;Jekyll&amp;rsquo;s template documentation&lt;/a&gt; if you need to refresh your memory on how you built your blog and &lt;a href=&#34;./layout/templates/&#34;&gt;Hugo&amp;rsquo;s template&lt;/a&gt; to learn Hugo&amp;rsquo;s way.&lt;/p&gt;
 
 &lt;p&gt;As a single reference data point, converting my templates for &lt;a href=&#34;http://heyitsalex.net/&#34;&gt;heyitsalex.net&lt;/a&gt; took me no more than a few hours.&lt;/p&gt;
 
 &lt;h2 id=&#34;convert-jekyll-plugins-to-hugo-shortcodes&#34;&gt;Convert Jekyll plugins to Hugo shortcodes&lt;/h2&gt;
 
-&lt;p&gt;Jekyll has &lt;a href=&#34;http://jekyllrb.com/docs/plugins/&#34;&gt;plugins&lt;/a&gt;; Hugo has &lt;a href=&#34;http://gohugo.io/doc/shortcodes/&#34;&gt;shortcodes&lt;/a&gt;. It&amp;rsquo;s fairly trivial to do a port.&lt;/p&gt;
+&lt;p&gt;Jekyll has &lt;a href=&#34;http://jekyllrb.com/docs/plugins/&#34;&gt;plugins&lt;/a&gt;; Hugo has &lt;a href=&#34;./doc/shortcodes/&#34;&gt;shortcodes&lt;/a&gt;. It&amp;rsquo;s fairly trivial to do a port.&lt;/p&gt;
 
 &lt;h3 id=&#34;implementation&#34;&gt;Implementation&lt;/h3&gt;
 

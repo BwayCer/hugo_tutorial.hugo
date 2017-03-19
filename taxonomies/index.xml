@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Taxonomies on Hugo: A Fast and Flexible Website Generator</title>
-    <link>http://gohugo.io/taxonomies/index.xml</link>
+    <link>https://bwaycer.github.io/taxonomies/index.xml</link>
     <description>Recent content in Taxonomies on Hugo: A Fast and Flexible Website Generator</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 01 Jul 2013 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://gohugo.io/taxonomies/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bwaycer.github.io/taxonomies/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Taxonomy Overview</title>
-      <link>http://gohugo.io/taxonomies/overview/</link>
+      <link>https://bwaycer.github.io/taxonomies/overview/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/taxonomies/overview/</guid>
+      <guid>https://bwaycer.github.io/taxonomies/overview/</guid>
       <description>
 
 &lt;p&gt;Hugo includes support for user-defined groupings of content called
@@ -107,10 +107,10 @@ Moonrise Kingdom            &amp;lt;- Content
     
     <item>
       <title>Using Taxonomies</title>
-      <link>http://gohugo.io/taxonomies/usage/</link>
+      <link>https://bwaycer.github.io/taxonomies/usage/</link>
       <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/taxonomies/usage/</guid>
+      <guid>https://bwaycer.github.io/taxonomies/usage/</guid>
       <description>
 
 &lt;h2 id=&#34;defining-taxonomies-for-a-site&#34;&gt;Defining taxonomies for a site&lt;/h2&gt;
@@ -163,7 +163,7 @@ fixed and titleized on the archive page.&lt;/p&gt;
 
 &lt;p&gt;However, if you want to have a taxonomy value with special characters
 such as &lt;code&gt;Gérard Depardieu&lt;/code&gt; instead of &lt;code&gt;Gerard Depardieu&lt;/code&gt;,
-you need to set the &lt;code&gt;preserveTaxonomyNames&lt;/code&gt; &lt;a href=&#34;http://gohugo.io/overview/configuration/&#34;&gt;site configuration&lt;/a&gt; variable to &lt;code&gt;true&lt;/code&gt;.
+you need to set the &lt;code&gt;preserveTaxonomyNames&lt;/code&gt; &lt;a href=&#34;../overview/configuration/&#34;&gt;site configuration&lt;/a&gt; variable to &lt;code&gt;true&lt;/code&gt;.
 Hugo will then preserve special characters in taxonomy values
 but will still titleize the values for titles and normalize them in URLs.&lt;/p&gt;
 
@@ -205,21 +205,21 @@ project_url = &amp;quot;https://github.com/spf13/hugo&amp;quot;
 
 &lt;h2 id=&#34;add-content-file-with-frontmatter&#34;&gt;Add content file with frontmatter&lt;/h2&gt;
 
-&lt;p&gt;See &lt;a href=&#34;http://gohugo.io/overview/source-directory/#content-for-home-page-and-other-list-pages&#34;&gt;Source Organization&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;../overview/source-directory/#content-for-home-page-and-other-list-pages&#34;&gt;Source Organization&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Displaying Taxonomies</title>
-      <link>http://gohugo.io/taxonomies/displaying/</link>
+      <link>https://bwaycer.github.io/taxonomies/displaying/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/taxonomies/displaying/</guid>
+      <guid>https://bwaycer.github.io/taxonomies/displaying/</guid>
       <description>
 
 &lt;p&gt;There are four common ways you can display the data in your
 taxonomies in addition to the automatic taxonomy pages created by hugo
-using the &lt;a href=&#34;http://gohugo.io/templates/list/&#34;&gt;list templates&lt;/a&gt;:&lt;/p&gt;
+using the &lt;a href=&#34;../templates/list/&#34;&gt;list templates&lt;/a&gt;:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;For a given piece of content, you can list the terms attached&lt;/li&gt;
@@ -262,7 +262,7 @@ To list such taxonomy use the following:&lt;/p&gt;
 {{ end }}
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Alternatively, you may use the &lt;a href=&#34;http://gohugo.io/templates/functions/#delimit&#34;&gt;delimit&lt;/a&gt;
+&lt;p&gt;Alternatively, you may use the &lt;a href=&#34;../templates/functions/#delimit&#34;&gt;delimit&lt;/a&gt;
 template function as a shortcut if the taxonomies should just be listed
 with a separator.  See 
 
@@ -355,29 +355,29 @@ them from the &lt;code&gt;.Site&lt;/code&gt; variable which is available on ever
     
     <item>
       <title>Taxonomy Templates</title>
-      <link>http://gohugo.io/taxonomies/templates/</link>
+      <link>https://bwaycer.github.io/taxonomies/templates/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/taxonomies/templates/</guid>
+      <guid>https://bwaycer.github.io/taxonomies/templates/</guid>
       <description>&lt;p&gt;There are two different templates that the use of taxonomies will require you to provide.&lt;/p&gt;
 
 &lt;p&gt;Both templates are covered in detail in the templates section.&lt;/p&gt;
 
-&lt;p&gt;A &lt;a href=&#34;http://gohugo.io/templates/list/&#34;&gt;list template&lt;/a&gt; is any template that will be used to render multiple pieces of
+&lt;p&gt;A &lt;a href=&#34;../templates/list/&#34;&gt;list template&lt;/a&gt; is any template that will be used to render multiple pieces of
 content in a single html page. This template will be used to generate
 all the automatically created taxonomy pages.&lt;/p&gt;
 
-&lt;p&gt;A &lt;a href=&#34;http://gohugo.io/templates/terms/&#34;&gt;taxonomy terms template&lt;/a&gt; is a template used to
+&lt;p&gt;A &lt;a href=&#34;../templates/terms/&#34;&gt;taxonomy terms template&lt;/a&gt; is a template used to
 generate the list of terms for a given template.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Ordering Taxonomies</title>
-      <link>http://gohugo.io/taxonomies/ordering/</link>
+      <link>https://bwaycer.github.io/taxonomies/ordering/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/taxonomies/ordering/</guid>
+      <guid>https://bwaycer.github.io/taxonomies/ordering/</guid>
       <description>
 
 &lt;p&gt;Hugo provides the ability to both:&lt;/p&gt;
@@ -411,7 +411,7 @@ generate the list of terms for a given template.&lt;/p&gt;
 &amp;lt;/ul&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://gohugo.io/templates/list/&#34;&gt;See Also Taxonomy Lists&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../templates/list/&#34;&gt;See Also Taxonomy Lists&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;ordering-content-within-taxonomies&#34;&gt;Ordering Content within Taxonomies&lt;/h2&gt;
 
@@ -450,10 +450,10 @@ Front Matter with weighted tags and categories
     
     <item>
       <title>Using Taxonomies</title>
-      <link>http://gohugo.io/taxonomies/methods/</link>
+      <link>https://bwaycer.github.io/taxonomies/methods/</link>
       <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/taxonomies/methods/</guid>
+      <guid>https://bwaycer.github.io/taxonomies/methods/</guid>
       <description>
 
 &lt;p&gt;Hugo makes a set of values and methods available on the various Taxonomy structures.&lt;/p&gt;
@@ -493,7 +493,7 @@ Front Matter with weighted tags and categories
 &lt;dt&gt;.Count&lt;/dt&gt;
 &lt;dd&gt;The number of pieces of content assigned to this term.&lt;/dd&gt;
 &lt;dt&gt;.Pages&lt;/dt&gt;
-&lt;dd&gt;All Pages assigned to this term. All &lt;a href=&#34;http://gohugo.io/templates/list/&#34;&gt;list methods&lt;/a&gt; are available to this.&lt;/dd&gt;
+&lt;dd&gt;All Pages assigned to this term. All &lt;a href=&#34;../templates/list/&#34;&gt;list methods&lt;/a&gt; are available to this.&lt;/dd&gt;
 &lt;/dl&gt;
 
 &lt;h2 id=&#34;weightedpages&#34;&gt;WeightedPages&lt;/h2&gt;
@@ -507,7 +507,7 @@ Front Matter with weighted tags and categories
 &lt;dt&gt;.Count(term)&lt;/dt&gt;
 &lt;dd&gt;The number of pieces of content assigned to this term.&lt;/dd&gt;
 &lt;dt&gt;.Pages&lt;/dt&gt;
-&lt;dd&gt;Returns a slice of pages, which then can be ordered using any of the &lt;a href=&#34;http://gohugo.io/templates/list/&#34;&gt;list methods&lt;/a&gt;.&lt;/dd&gt;
+&lt;dd&gt;Returns a slice of pages, which then can be ordered using any of the &lt;a href=&#34;../templates/list/&#34;&gt;list methods&lt;/a&gt;.&lt;/dd&gt;
 &lt;/dl&gt;
 </description>
     </item>

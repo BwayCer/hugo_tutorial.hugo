@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Interviews on Hugo: A Fast and Flexible Website Generator</title>
-    <link>http://gohugo.io/tags/interviews/index.xml</link>
+    <link>https://bwaycer.github.io/tags/interviews/index.xml</link>
     <description>Recent content in Interviews on Hugo: A Fast and Flexible Website Generator</description>
     <generator>Hugo -- gohugo.io</generator>
-    <atom:link href="http://gohugo.io/tags/interviews/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bwaycer.github.io/tags/interviews/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>bugtrackers.io</title>
-      <link>http://gohugo.io/showcase/bugtrackers.io/</link>
+      <link>https://bwaycer.github.io/showcase/bugtrackers.io/</link>
       <pubDate>Tue, 27 Oct 2015 09:02:00 +0000</pubDate>
       
-      <guid>http://gohugo.io/showcase/bugtrackers.io/</guid>
+      <guid>https://bwaycer.github.io/showcase/bugtrackers.io/</guid>
       <description></description>
     </item>
     
