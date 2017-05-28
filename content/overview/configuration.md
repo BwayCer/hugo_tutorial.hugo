@@ -3,7 +3,7 @@ aliases:
 - /doc/configuration/
 lastmod: 2016-09-17
 date: 2013-07-01
-linktitle: Configuration
+linktitle: 配置 Configuration
 menu:
   main:
     parent: getting started
@@ -40,9 +40,9 @@ sets a web site's title:
 $ env HUGO_TITLE="Some Title" hugo
 ```
 (**Note:** all such environment variable names must be prefixed with
-<code>HUGO_</code>.)
+<code>HUGO\_</code>.)
 
-## Examples
+## 範例 Examples
 
 Following is a typical example of a YAML configuration file.
 Three periods end the document:
@@ -199,6 +199,152 @@ along with their current, default values:
     # watch filesystem for changes and recreate as needed
     watch:                      true
     ---
+
+### 整理中（譯者加）
+
+```yaml
+## 開發設定值
+
+# newContentEditor： （預設值： ""） 使用此編輯器開啟新內容
+newContentEditor: vim
+# metaDataFormat： （預設值： "toml"） 文本頭部的中介資料格式，有效值： `yaml`, `toml`, `json`
+#     此值功能是在 `hugo new file.md` 時設定前提內容格式，而非決定有效的格式
+#     前提內容的有效格式是以開頭及結尾符做區別，`---` 為 `yaml`；`+++` 為 `toml`。
+metaDataFormat: yaml
+# verbose： （預設值： false） verbose output
+verbose: true
+# logFile： （預設值： ""） 日誌檔案寫入路徑，並啟用日誌
+# verboseLog： （預設值： false） verbose logging
+# disableLiveReload： （預設值： false） 是否禁用及時更新
+#     https://gohugo.io/extras/livereload/
+# noTimes： （預設值： false） 是否不同步文件修改（modification）時間
+
+
+### 開發設定值 - 模板配置
+
+# archetypeDir： （預設值： "archetypes"） 文本模型資料夾，見 https://gohugo.io/content/archetypes/
+# contentDir： （預設值： "content"）
+# dataDir： （預設值： "data"） 變量參數資料夾，見 https://gohugo.io/extras/datafiles/
+# layoutDir： （預設值： "layouts"）
+# staticDir： （預設值： "static"）
+# themesDir： （預設值： "themes"） 主題風格資料夾路徑
+# publishDir： （預設值： "public"） filesystem path to write files to
+# paginate： （預設值： 10）
+#     http://gohugo.io/extras/pagination/
+# paginatePath： （預設值： "page"）
+# permalinks： 固定連接，自定義路由
+#     見 https://gohugo.io/extras/permalinks/
+# defaultLayout： （預設值： "post"）
+
+
+### 路由
+
+# source： （預設值： ""） filesystem path to read files relative from
+source: http://bwaycer.github/
+# watch： （預設值： true） watch filesystem for changes and recreate as needed
+# uglyURLs： （預設值： false） 是否顯示副檔名
+# disablePathToLower： （預設值： false） 是否網址維持原始名稱而非統一小寫
+
+
+### 網站資訊
+
+# baseURL： （預設值： ""） 根的主機名或路徑
+baseURL: https://bwaycer.github.io/about/
+# languageCode： （預設值： ""）
+languageCode: zh
+# title： （預設值： ""） 網站名稱
+title: 關於我
+# theme： （預設值： ""） 採用的樣式名稱
+theme: hugo-identity-theme # https://github.com/aerohub/hugo-identity-theme.git
+
+
+### 多國語系
+
+# defaultContentLanguage： （預設值： "en"） 缺少翻譯時默認使用此語言的內容
+# defaultContentLanguageInSubdir： （預設值： false）
+#     是否默認語言的內容被放置於相對的子路徑下（如：`/en/`），此路徑將自動重定向
+# enableMissingTranslationPlaceholders： （預設值： false） 缺少翻譯時使用佔位符（placeholder）替代默認值或者空值
+Languages:
+    zh:
+        - title: 關於我
+          weight: 1
+          params:
+              - linkedin: english-link
+    en:
+        - title: My blog
+          weight: 1
+          params:
+              - linkedin: english-link
+# pygmentsCodeFencesGuessSyntax： （預設值： false） enables syntax guessing for code fences without specified language
+# hasCJKLanguage： （預設值： false）
+#     if true, auto-detect Chinese/Japanese/Korean Languages in the content.
+#     (.Summary and .WordCount can work properly in CJKLanguage)
+
+
+### 生成文檔
+
+# buildDrafts： （預設值： false） 是否生成頁面時忽略草稿標記
+# buildFuture： （預設值： false） include content with publishdate in the future
+# buildExpired： （預設值： false） include content already expired
+# relativeURLs： （預設值： false） 是否啟用相對路徑
+#     enable this to make all relative URLs relative to content root.
+#     Note that this does not affect absolute URLs.
+# canonifyURLs： （預設值： false） if true, all relative URLs will be canonicalized using baseURL
+#     ？ 問號相關 https://seo.dns.com.tw/archives/1184
+# enableEmoji： （預設值： false） 是否啟用表情符號
+#     關於可用表情符號見： www.emoji-cheat-sheet.com
+# pygmentsStyle： （預設值： "monokai"） 著色筆風格
+#     見： https://gohugo.io/extras/highlighting/
+#     關於高亮語法風格見： http://pygments.org/
+# pygmentsUseClasses： （預設值： false） 是否使用類組名而非個別標籤的風格屬性來著色
+# disableRSS： （預設值： false） 是否不生成 RSS 文件
+# rssLimit： （預設值： 15） RSS 的最大顯示數量
+# disableSitemap： （預設值： false） 是否不生成 Sitemap 文件
+# sitemap： default sitemap configuration map
+#    https://gohugo.io/templates/sitemap/
+# enableGitInfo： （預設值： false） Enable GitInfo feature
+# enableRobotsTXT： （預設值： false） 是否生成 robots.txt 文件
+# disable404： （預設值： false） 是否不顯示 404 頁面
+
+
+### 額外功能
+
+# googleAnalytics： （預設值： ""） 谷歌分析的追蹤識別碼
+
+
+### 未知
+
+# defaultExtension： （預設值： "html"）
+# disableKinds： （預設值： [ "page", "home", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404" ]）
+#     The below example will disable all page types and will render nothing.
+#     ? 看不懂 http://www.ctolib.com/topics-111201.html
+# disableHugoGeneratorInject： （預設值： false） Do not inject generator meta tag on homepage
+# footnoteAnchorPrefix： （預設值： ""）
+# footnoteReturnLinkContents： （預設值： ""）
+# noChmod： （預設值： false） Don't sync permission mode of files
+# pluralizeListTitles： （預設值： true） Pluralize titles in lists using inflect
+# preserveTaxonomyNames： （預設值： true） 是否在分類名稱（taxonomy names）中保留特殊字符
+#     （如：`Gérard Depardieu` vs `Gerard Depardieu`）
+# stepAnalysis： （預設值： false） 是否顯示記憶體和程序的不同步驟的時序（timing of different steps of the program）
+stepAnalysis: true
+```
+
+關於 `googleAnalytics` 谷歌分析的使用可參考 [分析](/extras/analytics/) 。
+
+### 棄用？（譯者加）
+
+* **config**：
+  * 預設值： `config.toml`
+  * 解說： 設定檔路徑，允許 `toml`、`yaml`、`json` 等附檔名。 （在 `hugo new site` 時可透過 `-f, --format` 指定）
+  * 結果： 依 `toml`、`yaml`、`json` 的順序讀取。 此結果在 `/data/` 資料夾下也一樣。
+* **log**：
+  * 預設值： `false`
+  * 解說： 是否啟用日誌。
+  * 結果： 沒 `logFile` 也無法保存日誌，淪為虛設。
+* **editor**：
+  * 預設值： `""`。
+  * 解說： 使用此編輯器開啟新內容。
+  * 結果： 沒有作用，反而 `newContentEditor` 有其所述的功能。
 
 ## Ignore various files when rendering
 

@@ -1,7 +1,7 @@
 ---
 lastmod: 2015-09-28
 date: 2013-07-01
-linktitle: Types
+linktitle: 類型 Types
 menu:
   main:
     parent: content
@@ -73,7 +73,7 @@ as your site requires. All that is required for these additional
 views is that a template exists in each `/layouts/TYPE` directory
 with the same name.
 
-### Create a corresponding archetype
+### 創建相對應的原型 Create a corresponding archetype
 
 Create a file called <code><em>type</em>.md</code> in the `/archetypes` directory. *E.g. `/archetypes/post.md`*.
 
