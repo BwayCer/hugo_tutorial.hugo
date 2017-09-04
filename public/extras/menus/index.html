@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documentation of Hugo, a fast and flexible static site generator built with love by spf13, bep and friends in Go">
+    <meta name="author" content="Steve Francia (spf13) and friends">
+    <meta name="generator" content="Hugo 0.19" />
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+
+    <title>Hugo - Menus</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap-stripped-gohugo.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap-changes-gohugo.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap-additions-gohugo.css">
+
+    <link rel="stylesheet" type="text/css" href="../../vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" />
+    <link href="../../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../css/content-style.css" />
+    <link href="../../css/style-responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../../vendor/highlightjs/css/monokai-sublime.css">
+
+  </head>
+
+  <body>
+  
+  <section id="container" class="">
+
+      
+      <header class="header black-bg">
+            <div class="toggle-nav">
+                <i class="fa fa-bars"></i>
+                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"></div>
+            </div>
+
+            
+            <a href="../../" class="logo"><img src="../../img/hugo-logo.png" style="height: 40px; vertical-align: bottom;"> <span style="font-size: small; text-transform: none;">v0.19</span></a>
+            
+            <div class="top-nav notification-row">
+                
+                <div class="hidden-xs nav-github pull-right">
+                    <span rel="show-github" data-user="spf13" data-repo="hugo" data-type="follow"></span>
+                    <span rel="show-github" data-user="spf13" data-repo="hugo"></span>
+                    <span rel="show-github" data-user="spf13" data-repo="hugo" data-type="fork"></span>
+                </div>
+            </div>
+
+            <div class="nav title-row" id="top_menu">
+                <h1 class="nav top-menu">Menus</h1>
+            </div>
+      </header>
+      
+
+
+<aside>
+    <div id="sidebar" class="nav-collapse">
+        
+        <ul class="sidebar-menu">
+          
+          
+              
+                <li>
+                <a class="" href="https://github.com/spf13/hugo/releases">
+                    <i class='fa fa-download'></i>
+                    
+                    <span>下載雨果</span>
+                </a>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="../../showcase/">
+                    <i class='fa fa-cubes'></i>
+                    
+                    <span>網站展示</span>
+                </a>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="../../community/press/">
+                    <i class='fa fa-bullhorn'></i>
+                    
+                    <span>新聞及文章</span>
+                </a>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="http://discuss.gohugo.io/">
+                    <i class='fa fa-comments'></i>
+                    
+                    <span>討論雨果</span>
+                </a>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-heart'></i>
+                
+                <span>關於雨果</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="../../meta/release-notes/">Release Notes</a> </li>
+                    
+                    <li><a href="../../meta/roadmap/">Hugo Roadmap</a> </li>
+                    
+                    <li><a href="../../meta/license/">License</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-road'></i>
+                
+                <span>開始</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="../../overview/introduction/">Introduction</a> </li>
+                    
+                    <li><a href="../../overview/quickstart/">Quickstart</a> </li>
+                    
+                    <li><a href="../../overview/installing/">Installing Hugo</a> </li>
+                    
+                    <li><a href="../../overview/usage/">Using Hugo</a> </li>
+                    
+                    <li><a href="../../overview/configuration/">Configuration</a> </li>
+                    
+                    <li><a href="../../overview/source-directory/">Source Organization</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-file-text'></i>
+                
+                <span>內容</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="../../content/organization/">Organization</a> </li>
+                    
+                    <li><a href="../../content/supported-formats/">Supported Formats</a> </li>
+                    
+                    <li><a href="../../content/front-matter/">Front Matter</a> </li>
+                    
+                    <li><a href="../../content/sections/">Sections</a> </li>
+                    
+                    <li><a href="../../content/types/">Types</a> </li>
+                    
+                    <li><a href="../../content/archetypes/">Archetypes</a> </li>
+                    
+                    <li><a href="../../content/ordering/">Ordering</a> </li>
+                    
+                    <li><a href="../../content/summaries/">Summaries</a> </li>
+                    
+                    <li><a href="../../content/markdown-extras/">Markdown Extras</a> </li>
+                    
+                    <li><a href="../../content/multilingual/">Multilingual Mode</a> </li>
+                    
+                    <li><a href="../../content/example/">Example</a> </li>
+                    
+                    <li><a href="../../content/using-index-md/">Using _index.md</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-desktop'></i>
+                
+                <span>主題</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="http://themes.gohugo.io">Theme Showcase</a> </li>
+                    
+                    <li><a href="../../themes/overview/">Themes Overview</a> </li>
+                    
+                    <li><a href="../../themes/installing/">Installing Themes</a> </li>
+                    
+                    <li><a href="../../themes/usage/">Using a Theme</a> </li>
+                    
+                    <li><a href="../../themes/customizing/">Customizing a Theme</a> </li>
+                    
+                    <li><a href="../../themes/creation/">Creating a Theme</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-columns'></i>
+                
+                <span>模板</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="../../templates/overview/">概述 Overview</a> </li>
+                    
+                    <li><a href="../../templates/go-templates/">Go 模板啟蒙讀本</a> </li>
+                    
+                    <li><a href="../../templates/ace/">Ace templates</a> </li>
+                    
+                    <li><a href="../../templates/amber/">Amber templates</a> </li>
+                    
+                    <li><a href="../../templates/functions/">Functions</a> </li>
+                    
+                    <li><a href="../../templates/variables/">Variables</a> </li>
+                    
+                    <li><a href="../../templates/content/">特有內容 Single Content</a> </li>
+                    
+                    <li><a href="../../templates/list/">List of Content</a> </li>
+                    
+                    <li><a href="../../templates/homepage/">首頁 Homepage</a> </li>
+                    
+                    <li><a href="../../templates/terms/">Taxonomy Terms</a> </li>
+                    
+                    <li><a href="../../templates/views/">Content Views</a> </li>
+                    
+                    <li><a href="../../templates/blocks/">Block Templates</a> </li>
+                    
+                    <li><a href="../../templates/partials/">Partial Templates</a> </li>
+                    
+                    <li><a href="../../templates/rss/">RSS</a> </li>
+                    
+                    <li><a href="../../templates/sitemap/">Sitemap</a> </li>
+                    
+                    <li><a href="../../templates/404/">Custom 404 page</a> </li>
+                    
+                    <li><a href="../../templates/debugging/">Debugging</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-tags'></i>
+                
+                <span>分類</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="../../taxonomies/overview/">Overview</a> </li>
+                    
+                    <li><a href="../../taxonomies/usage/">Usage</a> </li>
+                    
+                    <li><a href="../../taxonomies/displaying/">Displaying</a> </li>
+                    
+                    <li><a href="../../taxonomies/templates/">Templates</a> </li>
+                    
+                    <li><a href="../../taxonomies/ordering/">Ordering</a> </li>
+                    
+                    <li><a href="../../taxonomies/methods/">Structure &amp; Methods</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu active">
+            <a href="javascript:;" class="">
+                <i class='fa fa-gift'></i>
+                
+                <span>額外</span>
+                <span class="menu-arrow fa fa-angle-down"></span>
+            </a>
+                <ul class="sub open">
+                    
+                    <li><a href="../../extras/aliases/">Aliases</a> </li>
+                    
+                    <li><a href="../../extras/analytics/">Analytics</a> </li>
+                    
+                    <li><a href="../../extras/builders/">Builders</a> </li>
+                    
+                    <li><a href="../../extras/comments/">Comments</a> </li>
+                    
+                    <li><a href="../../extras/crossreferences/">Cross-References</a> </li>
+                    
+                    <li><a href="../../extras/robots-txt/">Custom robots.txt</a> </li>
+                    
+                    <li><a href="../../extras/datafiles/">Data Files</a> </li>
+                    
+                    <li><a href="../../extras/datadrivencontent/">Data-driven Content</a> </li>
+                    
+                    <li><a href="../../extras/gitinfo/">GitInfo</a> </li>
+                    
+                    <li><a href="../../extras/livereload/">LiveReload</a> </li>
+                    
+                    <li class="active"><a href="../../extras/menus/">Menus</a> </li>
+                    
+                    <li><a href="../../extras/pagination/">Pagination</a> </li>
+                    
+                    <li><a href="../../extras/scratch/">Scratch</a> </li>
+                    
+                    <li><a href="../../extras/shortcodes/">Shortcodes</a> </li>
+                    
+                    <li><a href="../../extras/highlighting/">Syntax Highlighting</a> </li>
+                    
+                    <li><a href="../../extras/toc/">Table of Contents</a> </li>
+                    
+                    <li><a href="../../extras/localfiles/">Traversing Local Files</a> </li>
+                    
+                    <li><a href="../../extras/permalinks/">固定鏈接</a> </li>
+                    
+                    <li><a href="../../extras/urls/">網址 URLs</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-group'></i>
+                
+                <span>社區</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="../../community/mailing-list/">Mailing List</a> </li>
+                    
+                    <li><a href="../../community/contributing/">Contributing to Hugo</a> </li>
+                    
+                    <li><a href="http://discuss.gohugo.io">Discussion Forum</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-book'></i>
+                
+                <span>教程</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="../../tutorials/automated-deployments/">Automated deployments</a> </li>
+                    
+                    <li><a href="../../tutorials/creating-a-new-theme/">Creating a New Theme</a> </li>
+                    
+                    <li><a href="../../tutorials/hosting-on-bitbucket/">Hosting on Bitbucket</a> </li>
+                    
+                    <li><a href="../../tutorials/github-pages-blog/">Hosting on GitHub</a> </li>
+                    
+                    <li><a href="../../tutorials/hosting-on-gitlab/">Hosting on GitLab</a> </li>
+                    
+                    <li><a href="../../tutorials/how-to-contribute-to-hugo/">How to contribute</a> </li>
+                    
+                    <li><a href="../../tutorials/installing-on-mac/">Installing on Mac</a> </li>
+                    
+                    <li><a href="../../tutorials/installing-on-windows/">Installing on Windows</a> </li>
+                    
+                    <li><a href="../../tutorials/mathjax/">MathJax Support</a> </li>
+                    
+                    <li><a href="../../tutorials/migrate-from-jekyll/">Migrating from Jekyll</a> </li>
+                    
+                    <li><a href="../../tutorials/create-a-multilingual-site/">Multilingual Site</a> </li>
+                    
+                    <li><a href="../../tutorials/deployment-with-rsync/">Deployment with rsync</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-wrench'></i>
+                
+                <span>故障排除</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="../../troubleshooting/strange-eof-error/">Strange EOF error</a> </li>
+                    
+                    <li><a href="../../troubleshooting/categories-with-accented-characters/">Accented Categories</a> </li>
+                    
+                    <li><a href="../../troubleshooting/overview/">Troubleshooting Overview</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="../../tools/">
+                    <i class='fa fa-cogs'></i>
+                    
+                    <span>工具</span>
+                </a>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="../../commands/">
+                    <i class='fa fa-space-shuttle'></i>
+                    
+                    <span>雨果命令參考</span>
+                </a>
+              
+              </li>
+          
+            <li> <a href="https://github.com/spf13/hugo/issues" target="blank"><i class='fa fa-life-ring'></i> <span>Issues & Help</span></a> </li>
+            
+              <li><a href="https://github.com/spf13/hugo/edit/master/docs/content/extras/menus.md" target="blank"><i class='fa fa-edit'></i> Refine this Page</a> </li>
+            
+        </ul>
+        
+    </div>
+</aside>
+
+
+
+      
+      <section id="main-content">
+          <section class="wrapper">
+
+              
+                  
+                      
+                      
+                          
+                          
+                          
+                      
+                      
+                  
+              
+
+              <div class="row">
+                  <div class="col-md-1">
+                      
+                      
+                      <a class="navigation prev" href="../../extras/livereload">
+                      <i class="fa fa-angle-left"></i>
+                      </a>
+                      
+                      
+                  </div>
+                <div class="col-md-10">
+                    <section class="panel">
+                          
+                              
+                          
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2 cse">
+                                <input type="search" id="search-input" placeholder="Search...">
+                            </div>
+                        </div>
+
+
+<div class="col-lg-8 col-md-12">
+
+
+<p>Hugo has a simple yet powerful menu system that permits content to be
+placed in menus with a good degree of control without a lot of work.</p>
+
+<p><em>TIP:</em> If all you want is a simple menu for your sections, see <a href="#section-menu-for-the-lazy-blogger">Section Menu for &ldquo;the Lazy Blogger&rdquo;</a>.</p>
+
+<p>Some of the features of Hugo Menus:</p>
+
+<ul>
+<li>Place content in one or many menus</li>
+<li>Handle nested menus with unlimited depth</li>
+<li>Create menu entries without being attached to any content</li>
+<li>Distinguish active element (and active branch)</li>
+</ul>
+
+<h2 id="what-is-a-menu">What is a menu?</h2>
+
+<p>A menu is a named array of menu entries accessible on the site under
+<code>.Site.Menus</code> by name. For example, if I have a menu called <code>main</code>, I would
+access it via <code>.Site.Menus.main</code>.</p>
+
+<p>If you make use of the <a href="../../content/multilingual/#menus">multilingual feature</a> you can define menus language independent.</p>
+
+<p>A menu entry has the following properties:</p>
+
+<ul>
+<li><code>URL        string</code></li>
+<li><code>Name       string</code></li>
+<li><code>Menu       string</code></li>
+<li><code>Identifier string</code></li>
+<li><code>Pre        template.HTML</code></li>
+<li><code>Post       template.HTML</code></li>
+<li><code>Weight     int</code></li>
+<li><code>Parent     string</code></li>
+<li><code>Children   Menu</code></li>
+</ul>
+
+<p>And the following functions:</p>
+
+<ul>
+<li><code>HasChildren() bool</code></li>
+</ul>
+
+<p>Additionally, the <code>Page</code> object has two functions, which can be used when rendering menus:</p>
+
+<ul>
+<li><code>IsMenuCurrent (menu string, menuEntry *MenuEntry ) bool</code></li>
+<li><code>HasMenuCurrent** (menu string, menuEntry *MenuEntry) bool</code></li>
+</ul>
+
+<p>See <a href="#menu-functions">Menu Functions</a> for explanations of these functions, and <a href="#rendering-nested-menus">Rendering Nested Menus</a> for an example of their use.</p>
+
+<h2 id="adding-content-to-menus">Adding content to menus</h2>
+
+<p>Hugo supports a couple of different methods of adding a piece of content
+to the front matter.</p>
+
+<h3 id="simple">Simple</h3>
+
+<p>If all you need to do is add an entry to a menu, the simple form works
+well.</p>
+
+<p><strong>A single menu:</strong></p>
+
+<pre><code>---
+menu: &quot;main&quot;
+---
+</code></pre>
+
+<p><strong>Multiple menus:</strong></p>
+
+<pre><code>---
+menu: [&quot;main&quot;, &quot;footer&quot;]
+---
+</code></pre>
+
+<h3 id="advanced">Advanced</h3>
+
+<p>If more control is required, then the advanced approach gives you the
+control you want. All of the menu entry properties listed above are
+available.</p>
+
+<pre><code>---
+menu:
+  main:
+    parent: 'extras'
+    weight: 20
+---
+</code></pre>
+
+<h2 id="adding-non-content-entries-to-a-menu">Adding (non-content) entries to a menu</h2>
+
+<p>You can also add entries to menus that aren’t attached to a piece of
+content. This takes place in the sitewide <a href="../../overview/configuration/">config file</a>.</p>
+
+<p>Here’s an example <code>config.toml</code>:</p>
+
+<pre><code>[[menu.main]]
+    name = &quot;about hugo&quot;
+    pre = &quot;&lt;i class='fa fa-heart'&gt;&lt;/i&gt;&quot;
+    weight = -110
+    identifier = &quot;about&quot;
+    url = &quot;/about/&quot;
+[[menu.main]]
+    name = &quot;getting started&quot;
+    pre = &quot;&lt;i class='fa fa-road'&gt;&lt;/i&gt;&quot;
+    weight = -100
+    url = &quot;/getting-started/&quot;
+</code></pre>
+
+<p>And the equivalent example <code>config.yaml</code>:</p>
+
+<pre><code>---
+menu:
+  main:
+      - Name: &quot;about hugo&quot;
+        Pre: &quot;&lt;i class='fa fa-heart'&gt;&lt;/i&gt;&quot;
+        Weight: -110
+        Identifier: &quot;about&quot;
+        URL: &quot;/about/&quot;
+      - Name: &quot;getting started&quot;
+        Pre: &quot;&lt;i class='fa fa-road'&gt;&lt;/i&gt;&quot;
+        Weight: -100
+        URL: &quot;/getting-started/&quot;
+---
+</code></pre>
+
+<p><strong>NOTE:</strong> The URLs must be relative to the context root. If the <code>baseURL</code> is <code>http://example.com/mysite/</code>, then the URLs in the menu must not include the context root <code>mysite</code>. Using an absolute URL will overide the baseURL. If the <code>URL</code> is <code>http://subdomain.example.com/</code>, the output will be <code>http://subdomain.example.com</code>.</p>
+
+<h2 id="nesting">Nesting</h2>
+
+<p>All nesting of content is done via the <code>parent</code> field.</p>
+
+<p>The parent of an entry should be the identifier of another entry.
+Identifier should be unique (within a menu).</p>
+
+<p>The following order is used to determine an Identifier:</p>
+
+<blockquote>
+<p>Name &gt; LinkTitle &gt; Title.</p>
+</blockquote>
+
+<p>This means that the title will be used unless
+linktitle is present, etc. In practice Name and Identifier are never
+displayed and only used to structure relationships.</p>
+
+<p>In this example, the top level of the menu is defined in the config file
+and all content entries are attached to one of these entries via the
+<code>parent</code> field.</p>
+
+<h2 id="rendering-menus">Rendering menus</h2>
+
+<p>Hugo makes no assumptions about how your rendered HTML will be
+structured. Instead, it provides all of the functions you will need to be
+able to build your menu however you want.</p>
+
+<p>The following is an example:</p>
+
+<pre><code>&lt;!--sidebar start--&gt;
+&lt;aside&gt;
+    &lt;div id=&quot;sidebar&quot; class=&quot;nav-collapse&quot;&gt;
+        &lt;!-- sidebar menu start--&gt;
+        &lt;ul class=&quot;sidebar-menu&quot;&gt;
+          {{ $currentPage := . }}
+          {{ range .Site.Menus.main }}
+              {{ if .HasChildren }}
+
+            &lt;li class=&quot;sub-menu{{if $currentPage.HasMenuCurrent &quot;main&quot; . }} active{{end}}&quot;&gt;
+            &lt;a href=&quot;javascript:;&quot; class=&quot;&quot;&gt;
+                {{ .Pre }}
+                &lt;span&gt;{{ .Name }}&lt;/span&gt;
+                &lt;span class=&quot;menu-arrow arrow_carrot-right&quot;&gt;&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;ul class=&quot;sub&quot;&gt;
+                {{ range .Children }}
+                &lt;li{{if $currentPage.IsMenuCurrent &quot;main&quot; . }} class=&quot;active&quot;{{end}}&gt;&lt;a href=&quot;{{.URL}}&quot;&gt; {{ .Name }} &lt;/a&gt; &lt;/li&gt;
+                {{ end }}
+            &lt;/ul&gt;
+          {{else}}
+            &lt;li&gt;
+            &lt;a href=&quot;{{.URL}}&quot;&gt;
+                {{ .Pre }}
+                &lt;span&gt;{{ .Name }}&lt;/span&gt;
+            &lt;/a&gt;
+          {{end}}
+          &lt;/li&gt;
+          {{end}}
+            &lt;li&gt; &lt;a href=&quot;https://github.com/spf13/hugo/issues&quot; target=&quot;blank&quot;&gt;Questions and Issues&lt;/a&gt; &lt;/li&gt;
+            &lt;li&gt; &lt;a href=&quot;#&quot; target=&quot;blank&quot;&gt;Edit this Page&lt;/a&gt; &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;!-- sidebar menu end--&gt;
+    &lt;/div&gt;
+&lt;/aside&gt;
+&lt;!--sidebar end--&gt;
+</code></pre>
+
+<blockquote>
+<p><strong>Note</strong>: use the <code>absLangURL</code> or <code>relLangURL</code> if your theme makes use of the <a href="../../content/multilingual/">multilingual feature</a>. In contrast to <code>absURL</code> and <code>relURL</code> it adds the correct language prefix to the url. <a href="../../templates/functions/#urls">Read more</a>.</p>
+</blockquote>
+
+<h2 id="section-menu-for-the-lazy-blogger">Section Menu for &ldquo;the Lazy Blogger&rdquo;</h2>
+
+<p>To enable this menu, add this to your site config, i.e. <code>config.toml</code>:</p>
+
+<pre><code>SectionPagesMenu = &quot;main&quot;
+</code></pre>
+
+<p>The menu name can be anything, but take a note of what it is.</p>
+
+<p>This will create a menu with all the sections as menu items and all the sections&rsquo; pages as &ldquo;shadow-members&rdquo;. The <em>shadow</em> implies that the pages isn&rsquo;t represented by a menu-item themselves, but this enables you to create a top-level menu like this:</p>
+
+<pre><code>  &lt;nav class=&quot;sidebar-nav&quot;&gt;
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        &lt;a class=&quot;sidebar-nav-item{{if or ($currentPage.IsMenuCurrent &quot;main&quot; .) ($currentPage.HasMenuCurrent &quot;main&quot; .) }} active{{end}}&quot; href=&quot;{{.URL}}&quot;&gt;{{ .Name }}&lt;/a&gt;
+        {{ end }}
+    &lt;/nav&gt;
+
+</code></pre>
+
+<p>In the above, the menu item is marked as active if on the current section&rsquo;s list page or on a page in that section.</p>
+
+<p>The above is all that&rsquo;s needed. But if you want custom menu items, e.g. changing weight or name, you can define them manually in the site config, i.e. <code>config.toml</code>:</p>
+
+<pre><code> [[menu.main]]
+        name = &quot;This is the blog section&quot;
+        weight = -110
+        identifier = &quot;blog&quot;
+        url = &quot;/blog/&quot;
+
+</code></pre>
+
+<p><strong>Note</strong> that the <code>identifier</code> must match the section name.</p>
+
+<h2 id="menu-functions">Menu Functions</h2>
+
+<p>Suppose you have the menu structure shown below.</p>
+
+<pre><code>    [menu.main]
+    │
+    ├───colour
+    │   │
+    │   ├───warm
+    │   │   ├───orange
+    │   │   ├───red
+    │   │   └───yellow
+    │   │
+    │   └───cool
+    │       ├───blue
+    │       ├───green
+    │       └───purple
+    │   
+    └───tool
+        ├───hammer
+        ├───shovel
+        └───saw
+</code></pre>
+
+<p>For each menu item, you can determine:</p>
+
+<ul>
+<li>If the menu item has any children: <code>.HasChildren()</code></li>
+<li>If the menu item is a parent of the page you are currently rendering: <code>.Page.HasMenuCurrent()</code></li>
+<li>If the menu item <strong>is</strong> the page you are currently rendering: <code>.Page.IsMenuCurrent()</code></li>
+</ul>
+
+<p>For example, if you are currently rendering the page <code>/colour/warm</code>, the values of <code>.HasChildren</code>, <code>HasMenuCurrent</code>, and <code>IsMenuCurrent</code> would be as shown below:</p>
+
+<pre><code>
+    [menu.main]           |                |               |             |
+    │                     |                |               |             |
+    ├───colour            | HasMenuCurrent |               | HasChildren |
+    │   ├───&lt;&lt; WARM &gt;&gt;    |                | IsMenuCurrent | HasChildren |
+    │   │   ├───orange    |                |               |             |
+    │   │   ├───red       |                |               |             |
+    │   │   └───yellow    |                |               |             |
+    │   └───cool          |                |               | HasChildren |
+    │       ├───blue      |                |               |             |
+    │       ├───green     |                |               |             |
+    │       └───purple    |                |               |             |
+    └───tool              |                |               | HasChildren |
+        ├───hammer        |                |               |             |
+        ├───shovel        |                |               |             |
+        └───saw           |                |               |             |
+</code></pre>
+
+<h2 id="rendering-nested-menus">Rendering nested menus</h2>
+
+<p>Hugo supports nested menus with as many levels as you like.</p>
+
+<p>Nested menus can be rendered using a recursive partial template, such as the example below.</p>
+
+<pre><code>&lt;!-- layouts/index.html, layouts/_default/single.html, ... --&gt;
+&lt;h1&gt;{{ .Title }}&lt;/h1&gt;
+&lt;!-- Put this line in your main template, at the place where you want to
+     render the menu. --&gt;
+{{ partial &quot;menu_include.html&quot; . }} 
+</code></pre>
+
+<pre><code>&lt;!-- layouts/partials/menu_include.html --&gt;
+{{ partial &quot;menu_recursive.html&quot; (dict &quot;menu&quot; .Site.Menus.main &quot;page&quot; . &quot;site&quot; .Site) }}
+</code></pre>
+
+<pre><code>&lt;!-- layouts/partials/menu_recursive.html --&gt;
+{{ $page := .page }}
+{{ $site := .site }}
+&lt;ul&gt;
+{{ range .menu }}
+  {{ $is := $page.IsMenuCurrent &quot;main&quot; . }}
+  {{ $has := $page.HasMenuCurrent &quot;main&quot; . }}
+  {{ if .HasChildren }} 
+    &lt;li&gt;
+      &lt;a href=&quot;{{ .URL }}&quot;&gt;
+        {{ .Name }}
+        {{ if $is }}[Is]{{ end }}
+        {{ if $has }}[Has]{{ end }}
+        {{ if .HasChildren }}[Children]{{ end }}
+      &lt;/a&gt;
+        &lt;!-- If the menu item has children, include this partial template again (recursively) --&gt;
+        {{ partial &quot;menu_recursive.html&quot; (dict &quot;menu&quot; .Children &quot;page&quot; $page &quot;site&quot; $site) }}
+    &lt;/li&gt;
+  {{ else }}
+    &lt;li&gt;
+      &lt;a href=&quot;{{ .URL }}&quot;&gt;
+        {{ .Name }}
+        {{ if $is }}[Is]{{ end }}
+        {{ if $has }}[Has]{{ end }}
+        {{ if .HasChildren }}[Children]{{ end }}
+      &lt;/a&gt;
+    &lt;/li&gt;
+  {{ end }}
+{{ end }}
+&lt;/ul&gt;
+</code></pre>
+
+<p>This example code renders the words <code>[Is]</code>, <code>[Has]</code>, and <code>[Children]</code> to demonstrate how the <code>IsMenuCurrent()</code>, <code>HasMenuCurrent()</code>, and <code>HasChildren()</code> functions work.</p>
+
+<p>You can customise this example to implement features such as:</p>
+
+<ul>
+<li><p>Highlight the current item, by applying a CSS style:</p>
+
+<pre><code>&lt;a href=&quot;{{ .URL }}&quot;{{ if $is }} class=&quot;active&quot;{{ end }}&gt;
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</code></pre></li>
+
+<li><p>Highlight parents of the current item, by applying a CSS style:</p>
+
+<pre><code>&lt;a href=&quot;{{ .URL }}&quot;{{ if $has }} class=&quot;parent-active&quot;{{ end }}&gt;
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</code></pre></li>
+
+<li><p>Only render sub-menus for parents of the current menu item, and the current menu item itself:</p>
+
+<pre><code>{{ if or $is $has }}
+    {{ partial &quot;menu_recursive.html&quot; (dict &quot;menu&quot; .Children &quot;page&quot; $page &quot;site&quot; $site) }}
+{{ end }}
+</code></pre></li>
+</ul>
+
+<p>A working example, implementing these features, is shown below.</p>
+
+<pre><code>&lt;!-- layouts/partials/menu_recursive.html --&gt;
+{{ $page := .page }}
+{{ $site := .site }}
+&lt;ul&gt;
+&lt;!-- Menu items sorted alphabetically by name --&gt;
+{{ range .menu.ByName }}
+  {{ $is := $page.IsMenuCurrent &quot;main&quot; . }}
+  {{ $has := $page.HasMenuCurrent &quot;main&quot; . }}
+  {{ if .HasChildren }} 
+    &lt;li&gt;
+      &lt;a href=&quot;{{ .URL }}&quot; class=&quot;{{ if $is }} active{{ end }}{{ if $has }} parent-active{{ end }}&quot;&gt;
+        {{ .Name }}
+        &lt;!-- Show a » symbol if there is a sub-menu we haven't rendered --&gt;
+        {{ if not (or $is $has) }}»{{ end }}
+      &lt;/a&gt;
+      &lt;!-- Only render sub-menu for parent items and the current item --&gt;
+      {{ if or $is $has }}
+        {{ partial &quot;menu_recursive.html&quot; (dict &quot;menu&quot; .Children &quot;page&quot; $page &quot;site&quot; $site) }}
+      {{ end }}
+    &lt;/li&gt;
+  {{ else }}
+    &lt;li&gt;
+      &lt;a href=&quot;{{ .URL }}&quot; class=&quot;{{ if $is }}active{{end}}&quot;&gt;{{ .Name }}&lt;/a&gt;
+    &lt;/li&gt;
+  {{ end }}
+{{ end }}
+&lt;/ul&gt;
+</code></pre>
+
+</div>
+<div id="toc" class="col-lg-offset-6 toc ">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#what-is-a-menu">What is a menu?</a></li>
+<li><a href="#adding-content-to-menus">Adding content to menus</a>
+<ul>
+<li><a href="#simple">Simple</a></li>
+<li><a href="#advanced">Advanced</a></li>
+</ul></li>
+<li><a href="#adding-non-content-entries-to-a-menu">Adding (non-content) entries to a menu</a></li>
+<li><a href="#nesting">Nesting</a></li>
+<li><a href="#rendering-menus">Rendering menus</a></li>
+<li><a href="#section-menu-for-the-lazy-blogger">Section Menu for &ldquo;the Lazy Blogger&rdquo;</a></li>
+<li><a href="#menu-functions">Menu Functions</a></li>
+<li><a href="#rendering-nested-menus">Rendering nested menus</a></li>
+</ul></li>
+</ul>
+</nav>
+</div>
+
+                    <div class="row">
+                        <div class="footer-panel">
+			  <p>Last revision: March 17, 2017 | <a href="https://github.com/spf13/hugo/commit/133594b8bfd9bbfdee5f60b09e563be4d40a1b9c">排版 引入雨果官方教程內容 (133594b)</a>
+                          <span style="float: right;">Hugo v0.19 documentation</span>
+                        </p>
+                        </div>
+                    </div>
+
+                    </div>
+                    </section>
+
+                    </div>
+
+                <div class="col-md-1">
+                    
+                    
+                    <a class="navigation next" href="../../extras/pagination">
+                        <i class="fa fa-angle-right"> </i>
+                    </a>
+                    
+                    
+                </div>
+              </div>
+              
+          </section>
+      </section>
+     
+  </section>
+  
+
+    
+    <script type="text/javascript" src="../../vendor/jquery/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../vendor/flesler/js/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="../../vendor/twitter/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="../../vendor/highlightjs/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../js/scripts.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script> 
+    <script type="text/javascript"> 
+    docsearch({
+      apiKey: '167e7998590aebda7f9fedcf86bc4a55',
+      indexName: 'hugodocs',
+      inputSelector: '#search-input',
+      algoliaOptions: {
+        hitsPerPage: 5
+      }
+    }); 
+    </script>
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-7131036-4', 'spf13.com');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>
+

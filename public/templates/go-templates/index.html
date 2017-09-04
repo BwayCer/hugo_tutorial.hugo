@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documentation of Hugo, a fast and flexible static site generator built with love by spf13, bep and friends in Go">
+    <meta name="author" content="Steve Francia (spf13) and friends">
+    <meta name="generator" content="Hugo 0.19" />
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+
+    <title>Hugo - Go 模板啟蒙讀本</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap-stripped-gohugo.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap-changes-gohugo.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap-additions-gohugo.css">
+
+    <link rel="stylesheet" type="text/css" href="../../vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" />
+    <link href="../../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../css/content-style.css" />
+    <link href="../../css/style-responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../../vendor/highlightjs/css/monokai-sublime.css">
+
+  </head>
+
+  <body>
+  
+  <section id="container" class="">
+
+      
+      <header class="header black-bg">
+            <div class="toggle-nav">
+                <i class="fa fa-bars"></i>
+                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"></div>
+            </div>
+
+            
+            <a href="../../" class="logo"><img src="../../img/hugo-logo.png" style="height: 40px; vertical-align: bottom;"> <span style="font-size: small; text-transform: none;">v0.19</span></a>
+            
+            <div class="top-nav notification-row">
+                
+                <div class="hidden-xs nav-github pull-right">
+                    <span rel="show-github" data-user="spf13" data-repo="hugo" data-type="follow"></span>
+                    <span rel="show-github" data-user="spf13" data-repo="hugo"></span>
+                    <span rel="show-github" data-user="spf13" data-repo="hugo" data-type="fork"></span>
+                </div>
+            </div>
+
+            <div class="nav title-row" id="top_menu">
+                <h1 class="nav top-menu">Go 模板啟蒙讀本</h1>
+            </div>
+      </header>
+      
+
+
+<aside>
+    <div id="sidebar" class="nav-collapse">
+        
+        <ul class="sidebar-menu">
+          
+          
+              
+                <li>
+                <a class="" href="https://github.com/spf13/hugo/releases">
+                    <i class='fa fa-download'></i>
+                    
+                    <span>下載雨果</span>
+                </a>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="../../showcase/">
+                    <i class='fa fa-cubes'></i>
+                    
+                    <span>網站展示</span>
+                </a>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="../../community/press/">
+                    <i class='fa fa-bullhorn'></i>
+                    
+                    <span>新聞及文章</span>
+                </a>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="http://discuss.gohugo.io/">
+                    <i class='fa fa-comments'></i>
+                    
+                    <span>討論雨果</span>
+                </a>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-heart'></i>
+                
+                <span>關於雨果</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="../../meta/release-notes/">Release Notes</a> </li>
+                    
+                    <li><a href="../../meta/roadmap/">Hugo Roadmap</a> </li>
+                    
+                    <li><a href="../../meta/license/">License</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-road'></i>
+                
+                <span>開始</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="../../overview/introduction/">Introduction</a> </li>
+                    
+                    <li><a href="../../overview/quickstart/">Quickstart</a> </li>
+                    
+                    <li><a href="../../overview/installing/">Installing Hugo</a> </li>
+                    
+                    <li><a href="../../overview/usage/">Using Hugo</a> </li>
+                    
+                    <li><a href="../../overview/configuration/">Configuration</a> </li>
+                    
+                    <li><a href="../../overview/source-directory/">Source Organization</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-file-text'></i>
+                
+                <span>內容</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="../../content/organization/">Organization</a> </li>
+                    
+                    <li><a href="../../content/supported-formats/">Supported Formats</a> </li>
+                    
+                    <li><a href="../../content/front-matter/">Front Matter</a> </li>
+                    
+                    <li><a href="../../content/sections/">Sections</a> </li>
+                    
+                    <li><a href="../../content/types/">Types</a> </li>
+                    
+                    <li><a href="../../content/archetypes/">Archetypes</a> </li>
+                    
+                    <li><a href="../../content/ordering/">Ordering</a> </li>
+                    
+                    <li><a href="../../content/summaries/">Summaries</a> </li>
+                    
+                    <li><a href="../../content/markdown-extras/">Markdown Extras</a> </li>
+                    
+                    <li><a href="../../content/multilingual/">Multilingual Mode</a> </li>
+                    
+                    <li><a href="../../content/example/">Example</a> </li>
+                    
+                    <li><a href="../../content/using-index-md/">Using _index.md</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-desktop'></i>
+                
+                <span>主題</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="http://themes.gohugo.io">Theme Showcase</a> </li>
+                    
+                    <li><a href="../../themes/overview/">Themes Overview</a> </li>
+                    
+                    <li><a href="../../themes/installing/">Installing Themes</a> </li>
+                    
+                    <li><a href="../../themes/usage/">Using a Theme</a> </li>
+                    
+                    <li><a href="../../themes/customizing/">Customizing a Theme</a> </li>
+                    
+                    <li><a href="../../themes/creation/">Creating a Theme</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu active">
+            <a href="javascript:;" class="">
+                <i class='fa fa-columns'></i>
+                
+                <span>模板</span>
+                <span class="menu-arrow fa fa-angle-down"></span>
+            </a>
+                <ul class="sub open">
+                    
+                    <li><a href="../../templates/overview/">概述 Overview</a> </li>
+                    
+                    <li class="active"><a href="../../templates/go-templates/">Go 模板啟蒙讀本</a> </li>
+                    
+                    <li><a href="../../templates/ace/">Ace templates</a> </li>
+                    
+                    <li><a href="../../templates/amber/">Amber templates</a> </li>
+                    
+                    <li><a href="../../templates/functions/">Functions</a> </li>
+                    
+                    <li><a href="../../templates/variables/">Variables</a> </li>
+                    
+                    <li><a href="../../templates/content/">特有內容 Single Content</a> </li>
+                    
+                    <li><a href="../../templates/list/">List of Content</a> </li>
+                    
+                    <li><a href="../../templates/homepage/">首頁 Homepage</a> </li>
+                    
+                    <li><a href="../../templates/terms/">Taxonomy Terms</a> </li>
+                    
+                    <li><a href="../../templates/views/">Content Views</a> </li>
+                    
+                    <li><a href="../../templates/blocks/">Block Templates</a> </li>
+                    
+                    <li><a href="../../templates/partials/">Partial Templates</a> </li>
+                    
+                    <li><a href="../../templates/rss/">RSS</a> </li>
+                    
+                    <li><a href="../../templates/sitemap/">Sitemap</a> </li>
+                    
+                    <li><a href="../../templates/404/">Custom 404 page</a> </li>
+                    
+                    <li><a href="../../templates/debugging/">Debugging</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-tags'></i>
+                
+                <span>分類</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="../../taxonomies/overview/">Overview</a> </li>
+                    
+                    <li><a href="../../taxonomies/usage/">Usage</a> </li>
+                    
+                    <li><a href="../../taxonomies/displaying/">Displaying</a> </li>
+                    
+                    <li><a href="../../taxonomies/templates/">Templates</a> </li>
+                    
+                    <li><a href="../../taxonomies/ordering/">Ordering</a> </li>
+                    
+                    <li><a href="../../taxonomies/methods/">Structure &amp; Methods</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-gift'></i>
+                
+                <span>額外</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="../../extras/aliases/">Aliases</a> </li>
+                    
+                    <li><a href="../../extras/analytics/">Analytics</a> </li>
+                    
+                    <li><a href="../../extras/builders/">Builders</a> </li>
+                    
+                    <li><a href="../../extras/comments/">Comments</a> </li>
+                    
+                    <li><a href="../../extras/crossreferences/">Cross-References</a> </li>
+                    
+                    <li><a href="../../extras/robots-txt/">Custom robots.txt</a> </li>
+                    
+                    <li><a href="../../extras/datafiles/">Data Files</a> </li>
+                    
+                    <li><a href="../../extras/datadrivencontent/">Data-driven Content</a> </li>
+                    
+                    <li><a href="../../extras/gitinfo/">GitInfo</a> </li>
+                    
+                    <li><a href="../../extras/livereload/">LiveReload</a> </li>
+                    
+                    <li><a href="../../extras/menus/">Menus</a> </li>
+                    
+                    <li><a href="../../extras/pagination/">Pagination</a> </li>
+                    
+                    <li><a href="../../extras/scratch/">Scratch</a> </li>
+                    
+                    <li><a href="../../extras/shortcodes/">Shortcodes</a> </li>
+                    
+                    <li><a href="../../extras/highlighting/">Syntax Highlighting</a> </li>
+                    
+                    <li><a href="../../extras/toc/">Table of Contents</a> </li>
+                    
+                    <li><a href="../../extras/localfiles/">Traversing Local Files</a> </li>
+                    
+                    <li><a href="../../extras/permalinks/">固定鏈接</a> </li>
+                    
+                    <li><a href="../../extras/urls/">網址 URLs</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-group'></i>
+                
+                <span>社區</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="../../community/mailing-list/">Mailing List</a> </li>
+                    
+                    <li><a href="../../community/contributing/">Contributing to Hugo</a> </li>
+                    
+                    <li><a href="http://discuss.gohugo.io">Discussion Forum</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-book'></i>
+                
+                <span>教程</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="../../tutorials/automated-deployments/">Automated deployments</a> </li>
+                    
+                    <li><a href="../../tutorials/creating-a-new-theme/">Creating a New Theme</a> </li>
+                    
+                    <li><a href="../../tutorials/hosting-on-bitbucket/">Hosting on Bitbucket</a> </li>
+                    
+                    <li><a href="../../tutorials/github-pages-blog/">Hosting on GitHub</a> </li>
+                    
+                    <li><a href="../../tutorials/hosting-on-gitlab/">Hosting on GitLab</a> </li>
+                    
+                    <li><a href="../../tutorials/how-to-contribute-to-hugo/">How to contribute</a> </li>
+                    
+                    <li><a href="../../tutorials/installing-on-mac/">Installing on Mac</a> </li>
+                    
+                    <li><a href="../../tutorials/installing-on-windows/">Installing on Windows</a> </li>
+                    
+                    <li><a href="../../tutorials/mathjax/">MathJax Support</a> </li>
+                    
+                    <li><a href="../../tutorials/migrate-from-jekyll/">Migrating from Jekyll</a> </li>
+                    
+                    <li><a href="../../tutorials/create-a-multilingual-site/">Multilingual Site</a> </li>
+                    
+                    <li><a href="../../tutorials/deployment-with-rsync/">Deployment with rsync</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-wrench'></i>
+                
+                <span>故障排除</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="../../troubleshooting/strange-eof-error/">Strange EOF error</a> </li>
+                    
+                    <li><a href="../../troubleshooting/categories-with-accented-characters/">Accented Categories</a> </li>
+                    
+                    <li><a href="../../troubleshooting/overview/">Troubleshooting Overview</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="../../tools/">
+                    <i class='fa fa-cogs'></i>
+                    
+                    <span>工具</span>
+                </a>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="../../commands/">
+                    <i class='fa fa-space-shuttle'></i>
+                    
+                    <span>雨果命令參考</span>
+                </a>
+              
+              </li>
+          
+            <li> <a href="https://github.com/spf13/hugo/issues" target="blank"><i class='fa fa-life-ring'></i> <span>Issues & Help</span></a> </li>
+            
+              <li><a href="https://github.com/spf13/hugo/edit/master/docs/content/templates/go-templates.md" target="blank"><i class='fa fa-edit'></i> Refine this Page</a> </li>
+            
+        </ul>
+        
+    </div>
+</aside>
+
+
+
+      
+      <section id="main-content">
+          <section class="wrapper">
+
+              
+                  
+                      
+                      
+                          
+                          
+                          
+                      
+                      
+                  
+              
+
+              <div class="row">
+                  <div class="col-md-1">
+                      
+                      
+                      <a class="navigation prev" href="../../templates/overview">
+                      <i class="fa fa-angle-left"></i>
+                      </a>
+                      
+                      
+                  </div>
+                <div class="col-md-10">
+                    <section class="panel">
+                          
+                              
+                          
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2 cse">
+                                <input type="search" id="search-input" placeholder="Search...">
+                            </div>
+                        </div>
+
+
+<div class="col-lg-8 col-md-12">
+
+
+<p>Hugo uses the excellent <a href="http://golang.org/">Go</a> <a href="http://golang.org/pkg/html/template/">html/template</a> library for
+its template engine. It is an extremely lightweight engine that provides a very
+small amount of logic. In our experience it is just the right amount of
+logic to be able to create a good static website. If you have used other
+template systems from different languages or frameworks, you will find a lot of
+similarities in Go templates.</p>
+
+<p>This document is a brief primer on using Go templates. The <a href="http://golang.org/pkg/html/template/">Go docs</a>
+go into more depth and cover features that aren&rsquo;t mentioned here.</p>
+
+<h2 id="go-模板介紹-introduction-to-go-templates">Go 模板介紹 Introduction to Go Templates</h2>
+
+<p>Go templates provide an extremely simple template language. It adheres to the
+belief that only the most basic of logic belongs in the template or view layer.
+One consequence of this simplicity is that Go templates parse very quickly.</p>
+
+<p>A unique characteristic of Go templates is they are content aware. Variables and
+content will be sanitized depending on the context of where they are used. More
+details can be found in the <a href="http://golang.org/pkg/html/template/">Go docs</a>.</p>
+
+<h2 id="基本語法-basic-syntax">基本語法 Basic  Syntax</h2>
+
+<p>Go lang 模板是添加了變數和函數的 HTML 文件。</p>
+
+<p>Go lang templates are HTML files with the addition of variables and
+functions.</p>
+
+<p><strong>Go 的變數和函數包覆在 {{ }} 中簡易的被使用。</strong></p>
+
+<p><strong>Go variables and functions are accessible within {{ }}</strong></p>
+
+<p>訪問預定義的變數 &ldquo;foo&rdquo;：</p>
+
+<p>Accessing a predefined variable &ldquo;foo&rdquo;:</p>
+
+<pre><code>{{ foo }}
+</code></pre>
+
+<p><strong>參數使用空格分隔。</strong></p>
+
+<p><strong>Parameters are separated using spaces</strong></p>
+
+<p>調用 <code>add</code> 函數並輸入 1, 2：</p>
+
+<p>Calling the <code>add</code> function with input of 1, 2:</p>
+
+<pre><code>{{ add 1 2 }}
+</code></pre>
+
+<p><strong>方法和欄位通過「點」符號來訪問。</strong></p>
+
+<p><strong>Methods and fields are accessed via dot notation</strong></p>
+
+<p>訪問頁面參數 &ldquo;bar&rdquo;：</p>
+
+<p>Accessing the Page Parameter &ldquo;bar&rdquo;</p>
+
+<pre><code>{{ .Params.bar }}
+</code></pre>
+
+<p><strong>Parentheses can be used to group items together</strong></p>
+
+<pre><code>{{ if or (isset .Params &quot;alt&quot;) (isset .Params &quot;caption&quot;) }} Caption {{ end }}
+</code></pre>
+
+<h2 id="變數-variables">變數 Variables</h2>
+
+<p>Each Go template has a struct (object) made available to it. In Hugo, each
+template is passed page struct. More details are available on the
+<a href="../../layout/variables/">variables</a> page.</p>
+
+<p>A variable is accessed by referencing the variable name.</p>
+
+<pre><code>&lt;title&gt;{{ .Title }}&lt;/title&gt;
+</code></pre>
+
+<p>Variables can also be defined and referenced.</p>
+
+<pre><code>{{ $address := &quot;123 Main St.&quot;}}
+{{ $address }}
+</code></pre>
+
+<h2 id="函數-functions">函數 Functions</h2>
+
+<p>Go template ships with a few functions which provide basic functionality. The Go
+template system also provides a mechanism for applications to extend the
+available functions with their own. <a href="../../layout/functions/">Hugo template
+functions</a> provide some additional functionality we believe
+are useful for building websites. Functions are called by using their name
+followed by the required parameters separated by spaces. Template
+functions cannot be added without recompiling Hugo.</p>
+
+<p><strong>Example 1: Adding numbers</strong></p>
+
+<pre><code>{{ add 1 2 }}
+</code></pre>
+
+<p><strong>Example 2: Comparing numbers</strong></p>
+
+<pre><code>{{ lt 1 2 }}
+</code></pre>
+
+<p>(There are more boolean operators, detailed in the
+<a href="http://golang.org/pkg/text/template/#hdr-Functions">template documentation</a>.)</p>
+
+<h2 id="引入-includes">引入 Includes</h2>
+
+<p>當引入其他模板時，你將傳遞其能訪問的資料給它。
+要傳遞當前的上下文請記得語法包括尾隨的點。
+要載入的模板位置始終相對於在 Hugo 裡 /layout/ 目錄。</p>
+
+<p>When including another template, you will pass to it the data it will be
+able to access. To pass along the current context, please remember to
+include a trailing dot. The templates location will always be starting at
+the /layout/ directory within Hugo.</p>
+
+<p><strong>Example:</strong></p>
+
+<pre><code>{{ template &quot;partials/header.html&quot; . }}
+</code></pre>
+
+<p>然而，Hugo v0.12 開始你也能使用 <code>partial</code> 去調用
+<a href="../../templates/partials/">partial templates</a>
+：</p>
+
+<p>And, starting with Hugo v0.12, you may also use the <code>partial</code> call
+for <a href="../../templates/partials/">partial templates</a>:</p>
+
+<pre><code>{{ partial &quot;header.html&quot; . }}
+</code></pre>
+
+<h2 id="邏輯-logic">邏輯 Logic</h2>
+
+<p>Go templates provide the most basic iteration and conditional logic.</p>
+
+<h3 id="迭代-iteration">迭代 Iteration</h3>
+
+<p>Just like in Go, the Go templates make heavy use of <code>range</code> to iterate over
+a map, array or slice. The following are different examples of how to use
+range.</p>
+
+<p><strong>Example 1: Using Context</strong></p>
+
+<pre><code>{{ range array }}
+    {{ . }}
+{{ end }}
+</code></pre>
+
+<p><strong>Example 2: Declaring value variable name</strong></p>
+
+<pre><code>{{range $element := array}}
+    {{ $element }}
+{{ end }}
+</code></pre>
+
+<p><strong>Example 2: Declaring key and value variable name</strong></p>
+
+<pre><code>{{range $index, $element := array}}
+    {{ $index }}
+    {{ $element }}
+{{ end }}
+</code></pre>
+
+<h3 id="條件-conditionals">條件 Conditionals</h3>
+
+<p><code>if</code>, <code>else</code>, <code>with</code>, <code>or</code> &amp; <code>and</code> provide the framework for handling conditional
+logic in Go Templates. Like <code>range</code>, each statement is closed with <code>end</code>.</p>
+
+<p>Go Templates treat the following values as false:</p>
+
+<ul>
+<li>false</li>
+<li>0</li>
+<li>any array, slice, map, or string of length zero</li>
+</ul>
+
+<p><strong>Example 1: <code>if</code></strong></p>
+
+<pre><code>{{ if isset .Params &quot;title&quot; }}&lt;h4&gt;{{ index .Params &quot;title&quot; }}&lt;/h4&gt;{{ end }}
+</code></pre>
+
+<p><strong>Example 2: <code>if</code> … <code>else</code></strong></p>
+
+<pre><code>{{ if isset .Params &quot;alt&quot; }}
+    {{ index .Params &quot;alt&quot; }}
+{{else}}
+    {{ index .Params &quot;caption&quot; }}
+{{ end }}
+</code></pre>
+
+<p><strong>Example 3: <code>and</code> &amp; <code>or</code></strong></p>
+
+<pre><code>{{ if and (or (isset .Params &quot;title&quot;) (isset .Params &quot;caption&quot;)) (isset .Params &quot;attr&quot;)}}
+</code></pre>
+
+<p><strong>Example 4: <code>with</code></strong></p>
+
+<p>An alternative way of writing &ldquo;<code>if</code>&rdquo; and then referencing the same value
+is to use &ldquo;<code>with</code>&rdquo; instead. <code>with</code> rebinds the context <code>.</code> within its scope,
+and skips the block if the variable is absent.</p>
+
+<p>The first example above could be simplified as:</p>
+
+<pre><code>{{ with .Params.title }}&lt;h4&gt;{{ . }}&lt;/h4&gt;{{ end }}
+</code></pre>
+
+<p><strong>Example 5: <code>if</code> … <code>else if</code></strong></p>
+
+<pre><code>{{ if isset .Params &quot;alt&quot; }}
+    {{ index .Params &quot;alt&quot; }}
+{{ else if isset .Params &quot;caption&quot; }}
+    {{ index .Params &quot;caption&quot; }}
+{{ end }}
+</code></pre>
+
+<h2 id="管道-pipes">管道 Pipes</h2>
+
+<p>One of the most powerful components of Go templates is the ability to
+stack actions one after another. This is done by using pipes. Borrowed
+from Unix pipes, the concept is simple, each pipeline&rsquo;s output becomes the
+input of the following pipe.</p>
+
+<p>Because of the very simple syntax of Go templates, the pipe is essential
+to being able to chain together function calls. One limitation of the
+pipes is that they only can work with a single value and that value
+becomes the last parameter of the next pipeline.</p>
+
+<p>A few simple examples should help convey how to use the pipe.</p>
+
+<p><strong>Example 1:</strong></p>
+
+<pre><code>{{ shuffle (seq 1 5) }}
+</code></pre>
+
+<p>is the same as</p>
+
+<pre><code>{{ (seq 1 5) | shuffle }}
+</code></pre>
+
+<p><strong>Example 2:</strong></p>
+
+<pre><code>{{ index .Params &quot;disqus_url&quot; | html }}
+</code></pre>
+
+<p>Access the page parameter called &ldquo;disqus_url&rdquo; and escape the HTML.</p>
+
+<p><code>index</code> 函數是 <a href="http://golang.org/">Go</a> 的內置函數，你能讀關於它
+<a href="http://golang.org/pkg/text/template/">這裡</a>
+。 <code>index</code>：</p>
+
+<p>The <code>index</code> function is a <a href="http://golang.org/">Go</a> built-in, and you can read about it <a href="http://golang.org/pkg/text/template/">here</a>. <code>index</code>:</p>
+
+<blockquote>
+<p>&hellip;returns the result of indexing its first argument by the following arguments. Thus &ldquo;index x 1 2 3&rdquo; is, in Go syntax, <code>x[1][2][3]</code>. Each indexed item must be a map, slice, or array.</p>
+</blockquote>
+
+<p><strong>Example 3:</strong></p>
+
+<pre><code>{{ if or (or (isset .Params &quot;title&quot;) (isset .Params &quot;caption&quot;)) (isset .Params &quot;attr&quot;) }}
+Stuff Here
+{{ end }}
+</code></pre>
+
+<p>Could be rewritten as</p>
+
+<pre><code>{{ if isset .Params &quot;caption&quot; | or isset .Params &quot;title&quot; | or isset .Params &quot;attr&quot; }}
+Stuff Here
+{{ end }}
+</code></pre>
+
+<h3 id="對-ie-瀏覽器使用條件式註解的方法-internet-explorer-conditional-comments-using-pipes">對 IE 瀏覽器使用條件式註解的方法 Internet Explorer conditional comments using Pipes</h3>
+
+<p>By default, Go Templates remove HTML comments from output. This has the unfortunate side effect of removing Internet Explorer conditional comments. As a workaround, use something like this:</p>
+
+<pre><code>{{ &quot;&lt;!--[if lt IE 9]&gt;&quot; | safeHTML }}
+  &lt;script src=&quot;html5shiv.js&quot;&gt;&lt;/script&gt;
+{{ &quot;&lt;![endif]--&gt;&quot; | safeHTML }}
+</code></pre>
+
+<p>Alternatively, use the backtick (<code>`</code>) to quote the IE conditional comments, avoiding the tedious task of escaping every double quotes (<code>&quot;</code>) inside, as demonstrated in the <a href="http://golang.org/pkg/text/template/#hdr-Examples">examples</a> in the Go text/template documentation, e.g.:</p>
+
+<pre><code>{{ `&lt;!--[if lt IE 7]&gt;&lt;html class=&quot;no-js lt-ie9 lt-ie8 lt-ie7&quot;&gt;&lt;![endif]--&gt;` | safeHTML }}
+</code></pre>
+
+<h2 id="上下文-又名-點-context-a-k-a-the-dot">上下文（又名： 「點」） Context (a.k.a. the dot)</h2>
+
+<p>The most easily overlooked concept to understand about Go templates is that <code>{{ . }}</code>
+always refers to the current context. In the top level of your template, this
+will be the data set made available to it. Inside of a iteration, however, it will have
+the value of the current item. When inside of a loop, the context has changed:
+<code>{{ . }}</code> will no longer refer to the data available to the entire page. If you need
+to
+access this from within the loop, you will likely want to do one of the following:</p>
+
+<ol>
+<li><p>設置一變數而不是依據上下文，例如：</p>
+
+<p>Set it to a variable instead of depending on the context.  For example:</p>
+
+<pre><code>{{ $title := .Site.Title }}
+{{ range .Params.tags }}
+  &lt;li&gt;
+    &lt;a href=&quot;{{ $baseURL }}/tags/{{ . | urlize }}&quot;&gt;{{ . }}&lt;/a&gt;
+    - {{ $title }}
+  &lt;/li&gt;
+{{ end }}
+</code></pre>
+
+<p>注意一旦進入迴圈，<code>{{ . }}</code> 的值就已經改變。
+我們有在迴圈外定義了變數，所以我們能在內部去訪問。</p>
+
+<p>Notice how once we have entered the loop the value of <code>{{ . }}</code> has changed. We
+have defined a variable outside of the loop so we have access to it from within
+the loop.</p></li>
+
+<li><p>使用 <code>$.</code> 在任意地方去訪問全域變數，這是與上述有相同效果的範例：</p>
+
+<p>Use <code>$.</code> to access the global context from anywhere.
+Here is an equivalent example:</p>
+
+<pre><code>{{ range .Params.tags }}
+  &lt;li&gt;
+    &lt;a href=&quot;{{ $baseURL }}/tags/{{ . | urlize }}&quot;&gt;{{ . }}&lt;/a&gt;
+    - {{ $.Site.Title }}
+  &lt;/li&gt;
+{{ end }}
+</code></pre>
+
+<p>This is because <code>$</code>, a special variable, is set to the starting value
+of <code>.</code> the dot by default,
+a <a href="http://golang.org/pkg/text/template/#hdr-Variables">documented feature</a>
+of Go text/template.  Very handy, eh?</p>
+
+<blockquote>
+<p>然而，有個小魔法能使它停止工作，如果有人惡作劇去重新定義 <code>$</code>，如： <code>{{ $ := .Site }}</code>。
+<em>（不，不要這麼做）</em></p>
+
+<p>However, this little magic would cease to work if someone were to
+mischievously redefine <code>$</code>, e.g. <code>{{ $ := .Site }}</code>.
+<em>(No, don&rsquo;t do it!)</em>
+You may, of course, recover from this mischief by using <code>{{ $ := . }}</code>
+in a global context to reset <code>$</code> to its default value.</p>
+</blockquote></li>
+</ol>
+
+<h2 id="空格-whitespace">空格 Whitespace</h2>
+
+<p>Go 1.6 後包含修剪 Go 標籤兩側空格的功能，透過包含連字符（-）和空格添加在緊鄰對應側的 <code>{{</code> 或 <code>}}</code> 分隔符。</p>
+
+<p>Go 1.6 includes the ability to trim the whitespace from either side of a Go tag by including a hyphen (<code>-</code>) and space immediately beside the corresponding <code>{{</code> or <code>}}</code> delimiter.</p>
+
+<p>例如，以下的 Go 模板：</p>
+
+<p>For instance, the following Go template:</p>
+
+<pre><code class="language-html">&lt;div&gt;
+  {{ .Title }}
+&lt;/div&gt;
+</code></pre>
+
+<p>HTML 將輸出包含換行和水平縮排：</p>
+
+<p>will include the newlines and horizontal tab in its HTML output:</p>
+
+<pre><code class="language-html">&lt;div&gt;
+  Hello, World!
+&lt;/div&gt;
+</code></pre>
+
+<p>而使用</p>
+
+<p>whereas using</p>
+
+<pre><code class="language-html">&lt;div&gt;
+  {{- .Title -}}
+&lt;/div&gt;
+</code></pre>
+
+<p>在這情況下將簡單地輸出 <code>&lt;div&gt;Hello, World!&lt;/div&gt;</code>。</p>
+
+<p>in that case will output simply <code>&lt;div&gt;Hello, World!&lt;/div&gt;</code>.</p>
+
+<p>Go 將以下字符視為空格： 空白、水平縮排、回車和換行。</p>
+
+<p>Go considers the following characters as whitespace: space, horizontal tab, carriage return and newline.</p>
+
+<h1 id="雨果參數-hugo-parameters">雨果參數 Hugo Parameters</h1>
+
+<p>Hugo provides the option of passing values to the template language
+through the site configuration (for sitewide values), or through the meta
+data of each specific piece of content. You can define any values of any
+type (supported by your front matter/config format) and use them however
+you want to inside of your templates.</p>
+
+<h2 id="使用-content-頁面-參數-using-content-page-parameters">使用 Content（頁面）參數 Using Content (page) Parameters</h2>
+
+<p>在每個內容片段，你能提供參數給模板使用。
+這發生在
+<a href="../../content/front-matter/">前提內容</a>
+。</p>
+
+<p>In each piece of content, you can provide variables to be used by the
+templates. This happens in the <a href="../../content/front-matter/">front matter</a>.</p>
+
+<p>這是一個被使用在本文檔中的範例。</p>
+
+<p>An example of this is used in this documentation site. Most of the pages
+benefit from having the table of contents provided. Sometimes the TOC just
+doesn&rsquo;t make a lot of sense. We&rsquo;ve defined a variable in our front matter
+of some pages to turn off the TOC from being displayed.</p>
+
+<p>這是前提內容的範例：</p>
+
+<p>Here is the example front matter:</p>
+
+<pre><code>---
+title: &quot;Permalinks&quot;
+lastmod: 2015-11-30
+date: &quot;2013-11-18&quot;
+aliases:
+  - &quot;/doc/permalinks/&quot;
+groups: [&quot;extras&quot;]
+groups_weight: 30
+notoc: true
+---
+</code></pre>
+
+<p>這是在模板中相對應的程式碼：</p>
+
+<p>Here is the corresponding code inside of the template:</p>
+
+<pre><code>  {{ if not .Params.notoc }}
+    &lt;div id=&quot;toc&quot; class=&quot;well col-md-4 col-sm-6&quot;&gt;
+    {{ .TableOfContents }}
+    &lt;/div&gt;
+  {{ end }}
+</code></pre>
+
+<h2 id="使用-site-設定檔-參數-using-site-config-parameters">使用 Site（設定檔）參數 Using Site (config) Parameters</h2>
+
+<p>你能添加 site 參數在最上層設定文件（例如：<code>config.yaml</code>）當中，其可被用於 partials。</p>
+
+<p>In your top-level configuration file (e.g., <code>config.yaml</code>) you can define site
+parameters, which are values which will be available to you in partials.</p>
+
+<p>例如，你可以聲明：</p>
+
+<p>For instance, you might declare:</p>
+
+<pre><code class="language-yaml">params:
+  CopyrightHTML: &quot;Copyright &amp;#xA9; 2013 John Doe. All Rights Reserved.&quot;
+  TwitterUser: &quot;spf13&quot;
+  SidebarRecentLimit: 5
+</code></pre>
+
+<p>在頁腳的布局，你能聲明 <code>&lt;footer&gt;</code> 僅在 <code>CopyrightHTML</code> 參數有提供時顯示。
+然後如果它有值，你能使用 HTML-safe 來聲明它，因此 HTML 實體不會再次被轉譯。
+這將讓你能在每年一月一號更簡單的更新透過最上層的設定文件而不是在你的模板中。</p>
+
+<p>Within a footer layout, you might then declare a <code>&lt;footer&gt;</code> which is only
+provided if the <code>CopyrightHTML</code> parameter is provided, and if it is given,
+you would declare it to be HTML-safe, so that the HTML entity is not escaped
+again.  This would let you easily update just your top-level config file each
+January 1st, instead of hunting through your templates.</p>
+
+<pre><code>{{if .Site.Params.CopyrightHTML}}&lt;footer&gt;
+&lt;div class=&quot;text-center&quot;&gt;{{.Site.Params.CopyrightHTML | safeHTML}}&lt;/div&gt;
+&lt;/footer&gt;{{end}}
+</code></pre>
+
+<p>An alternative way of writing the &ldquo;<code>if</code>&rdquo; and then referencing the same value
+is to use &ldquo;<code>with</code>&rdquo; instead. With rebinds the context <code>.</code> within its scope,
+and skips the block if the variable is absent:</p>
+
+<pre><code>{{with .Site.Params.TwitterUser}}&lt;span class=&quot;twitter&quot;&gt;
+&lt;a href=&quot;https://twitter.com/{{.}}&quot; rel=&quot;author&quot;&gt;
+&lt;img src=&quot;/images/twitter.png&quot; width=&quot;48&quot; height=&quot;48&quot; title=&quot;Twitter: {{.}}&quot;
+ alt=&quot;Twitter&quot;&gt;&lt;/a&gt;
+&lt;/span&gt;{{end}}
+</code></pre>
+
+<p>Finally, if you want to pull &ldquo;magic constants&rdquo; out of your layouts, you can do
+so, such as in this example:</p>
+
+<pre><code>&lt;nav class=&quot;recent&quot;&gt;
+  &lt;h1&gt;Recent Posts&lt;/h1&gt;
+  &lt;ul&gt;{{range first .Site.Params.SidebarRecentLimit .Site.Pages}}
+    &lt;li&gt;&lt;a href=&quot;{{.RelPermalink}}&quot;&gt;{{.Title}}&lt;/a&gt;&lt;/li&gt;
+  {{end}}&lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+
+<h1 id="模板示範-顯示即將到來的事件-template-example-show-only-upcoming-events">模板示範： 顯示即將到來的事件 Template example: Show only upcoming events</h1>
+
+<p>Go allows you to do more than what&rsquo;s shown here.  Using Hugo&rsquo;s
+<a href="../../templates/functions/#where"><code>where</code></a> function and Go built-ins, we can list
+only the items from <code>content/events/</code> whose date (set in the front matter) is in
+the future:</p>
+
+<pre><code>&lt;h4&gt;Upcoming Events&lt;/h4&gt;
+&lt;ul class=&quot;upcoming-events&quot;&gt;
+{{ range where .Data.Pages.ByDate &quot;Section&quot; &quot;events&quot; }}
+  {{ if ge .Date.Unix .Now.Unix }}
+    &lt;li&gt;&lt;span class=&quot;event-type&quot;&gt;{{ .Type | title }} —&lt;/span&gt;
+      {{ .Title }}
+      on &lt;span class=&quot;event-date&quot;&gt;
+      {{ .Date.Format &quot;2 January at 3:04pm&quot; }}&lt;/span&gt;
+      at {{ .Params.place }}
+    &lt;/li&gt;
+  {{ end }}
+{{ end }}
+</code></pre>
+
+</div>
+<div id="toc" class="col-lg-offset-6 toc ">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#go-模板介紹-introduction-to-go-templates">Go 模板介紹 Introduction to Go Templates</a></li>
+<li><a href="#基本語法-basic-syntax">基本語法 Basic  Syntax</a></li>
+<li><a href="#變數-variables">變數 Variables</a></li>
+<li><a href="#函數-functions">函數 Functions</a></li>
+<li><a href="#引入-includes">引入 Includes</a></li>
+<li><a href="#邏輯-logic">邏輯 Logic</a>
+<ul>
+<li><a href="#迭代-iteration">迭代 Iteration</a></li>
+<li><a href="#條件-conditionals">條件 Conditionals</a></li>
+</ul></li>
+<li><a href="#管道-pipes">管道 Pipes</a>
+<ul>
+<li><a href="#對-ie-瀏覽器使用條件式註解的方法-internet-explorer-conditional-comments-using-pipes">對 IE 瀏覽器使用條件式註解的方法 Internet Explorer conditional comments using Pipes</a></li>
+</ul></li>
+<li><a href="#上下文-又名-點-context-a-k-a-the-dot">上下文（又名： 「點」） Context (a.k.a. the dot)</a></li>
+<li><a href="#空格-whitespace">空格 Whitespace</a></li>
+</ul></li>
+<li><a href="#雨果參數-hugo-parameters">雨果參數 Hugo Parameters</a>
+<ul>
+<li><a href="#使用-content-頁面-參數-using-content-page-parameters">使用 Content（頁面）參數 Using Content (page) Parameters</a></li>
+<li><a href="#使用-site-設定檔-參數-using-site-config-parameters">使用 Site（設定檔）參數 Using Site (config) Parameters</a></li>
+</ul></li>
+<li><a href="#模板示範-顯示即將到來的事件-template-example-show-only-upcoming-events">模板示範： 顯示即將到來的事件 Template example: Show only upcoming events</a></li>
+</ul>
+</nav>
+</div>
+
+                    <div class="row">
+                        <div class="footer-panel">
+			  <p>Last revision: March 17, 2017 | <a href="https://github.com/spf13/hugo/commit/133594b8bfd9bbfdee5f60b09e563be4d40a1b9c">排版 引入雨果官方教程內容 (133594b)</a>
+                          <span style="float: right;">Hugo v0.19 documentation</span>
+                        </p>
+                        </div>
+                    </div>
+
+                    </div>
+                    </section>
+
+                    </div>
+
+                <div class="col-md-1">
+                    
+                    
+                    <a class="navigation next" href="../../templates/ace">
+                        <i class="fa fa-angle-right"> </i>
+                    </a>
+                    
+                    
+                </div>
+              </div>
+              
+          </section>
+      </section>
+     
+  </section>
+  
+
+    
+    <script type="text/javascript" src="../../vendor/jquery/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../vendor/flesler/js/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="../../vendor/twitter/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="../../vendor/highlightjs/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../js/scripts.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script> 
+    <script type="text/javascript"> 
+    docsearch({
+      apiKey: '167e7998590aebda7f9fedcf86bc4a55',
+      indexName: 'hugodocs',
+      inputSelector: '#search-input',
+      algoliaOptions: {
+        hitsPerPage: 5
+      }
+    }); 
+    </script>
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-7131036-4', 'spf13.com');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>
+

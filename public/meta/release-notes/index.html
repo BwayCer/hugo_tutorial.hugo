@@ -1,0 +1,2801 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documentation of Hugo, a fast and flexible static site generator built with love by spf13, bep and friends in Go">
+    <meta name="author" content="Steve Francia (spf13) and friends">
+    <meta name="generator" content="Hugo 0.19" />
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+
+    <title>Hugo - Release Notes</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap-stripped-gohugo.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap-changes-gohugo.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap-additions-gohugo.css">
+
+    <link rel="stylesheet" type="text/css" href="../../vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" />
+    <link href="../../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../css/content-style.css" />
+    <link href="../../css/style-responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../../vendor/highlightjs/css/monokai-sublime.css">
+
+  </head>
+
+  <body>
+  
+  <section id="container" class="">
+
+      
+      <header class="header black-bg">
+            <div class="toggle-nav">
+                <i class="fa fa-bars"></i>
+                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"></div>
+            </div>
+
+            
+            <a href="../../" class="logo"><img src="../../img/hugo-logo.png" style="height: 40px; vertical-align: bottom;"> <span style="font-size: small; text-transform: none;">v0.19</span></a>
+            
+            <div class="top-nav notification-row">
+                
+                <div class="hidden-xs nav-github pull-right">
+                    <span rel="show-github" data-user="spf13" data-repo="hugo" data-type="follow"></span>
+                    <span rel="show-github" data-user="spf13" data-repo="hugo"></span>
+                    <span rel="show-github" data-user="spf13" data-repo="hugo" data-type="fork"></span>
+                </div>
+            </div>
+
+            <div class="nav title-row" id="top_menu">
+                <h1 class="nav top-menu">Release Notes</h1>
+            </div>
+      </header>
+      
+
+
+<aside>
+    <div id="sidebar" class="nav-collapse">
+        
+        <ul class="sidebar-menu">
+          
+          
+              
+                <li>
+                <a class="" href="https://github.com/spf13/hugo/releases">
+                    <i class='fa fa-download'></i>
+                    
+                    <span>下載雨果</span>
+                </a>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="../../showcase/">
+                    <i class='fa fa-cubes'></i>
+                    
+                    <span>網站展示</span>
+                </a>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="../../community/press/">
+                    <i class='fa fa-bullhorn'></i>
+                    
+                    <span>新聞及文章</span>
+                </a>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="http://discuss.gohugo.io/">
+                    <i class='fa fa-comments'></i>
+                    
+                    <span>討論雨果</span>
+                </a>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu active">
+            <a href="javascript:;" class="">
+                <i class='fa fa-heart'></i>
+                
+                <span>關於雨果</span>
+                <span class="menu-arrow fa fa-angle-down"></span>
+            </a>
+                <ul class="sub open">
+                    
+                    <li class="active"><a href="../../meta/release-notes/">Release Notes</a> </li>
+                    
+                    <li><a href="../../meta/roadmap/">Hugo Roadmap</a> </li>
+                    
+                    <li><a href="../../meta/license/">License</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-road'></i>
+                
+                <span>開始</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="../../overview/introduction/">Introduction</a> </li>
+                    
+                    <li><a href="../../overview/quickstart/">Quickstart</a> </li>
+                    
+                    <li><a href="../../overview/installing/">Installing Hugo</a> </li>
+                    
+                    <li><a href="../../overview/usage/">Using Hugo</a> </li>
+                    
+                    <li><a href="../../overview/configuration/">Configuration</a> </li>
+                    
+                    <li><a href="../../overview/source-directory/">Source Organization</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-file-text'></i>
+                
+                <span>內容</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="../../content/organization/">Organization</a> </li>
+                    
+                    <li><a href="../../content/supported-formats/">Supported Formats</a> </li>
+                    
+                    <li><a href="../../content/front-matter/">Front Matter</a> </li>
+                    
+                    <li><a href="../../content/sections/">Sections</a> </li>
+                    
+                    <li><a href="../../content/types/">Types</a> </li>
+                    
+                    <li><a href="../../content/archetypes/">Archetypes</a> </li>
+                    
+                    <li><a href="../../content/ordering/">Ordering</a> </li>
+                    
+                    <li><a href="../../content/summaries/">Summaries</a> </li>
+                    
+                    <li><a href="../../content/markdown-extras/">Markdown Extras</a> </li>
+                    
+                    <li><a href="../../content/multilingual/">Multilingual Mode</a> </li>
+                    
+                    <li><a href="../../content/example/">Example</a> </li>
+                    
+                    <li><a href="../../content/using-index-md/">Using _index.md</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-desktop'></i>
+                
+                <span>主題</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="http://themes.gohugo.io">Theme Showcase</a> </li>
+                    
+                    <li><a href="../../themes/overview/">Themes Overview</a> </li>
+                    
+                    <li><a href="../../themes/installing/">Installing Themes</a> </li>
+                    
+                    <li><a href="../../themes/usage/">Using a Theme</a> </li>
+                    
+                    <li><a href="../../themes/customizing/">Customizing a Theme</a> </li>
+                    
+                    <li><a href="../../themes/creation/">Creating a Theme</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-columns'></i>
+                
+                <span>模板</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="../../templates/overview/">概述 Overview</a> </li>
+                    
+                    <li><a href="../../templates/go-templates/">Go 模板啟蒙讀本</a> </li>
+                    
+                    <li><a href="../../templates/ace/">Ace templates</a> </li>
+                    
+                    <li><a href="../../templates/amber/">Amber templates</a> </li>
+                    
+                    <li><a href="../../templates/functions/">Functions</a> </li>
+                    
+                    <li><a href="../../templates/variables/">Variables</a> </li>
+                    
+                    <li><a href="../../templates/content/">特有內容 Single Content</a> </li>
+                    
+                    <li><a href="../../templates/list/">List of Content</a> </li>
+                    
+                    <li><a href="../../templates/homepage/">首頁 Homepage</a> </li>
+                    
+                    <li><a href="../../templates/terms/">Taxonomy Terms</a> </li>
+                    
+                    <li><a href="../../templates/views/">Content Views</a> </li>
+                    
+                    <li><a href="../../templates/blocks/">Block Templates</a> </li>
+                    
+                    <li><a href="../../templates/partials/">Partial Templates</a> </li>
+                    
+                    <li><a href="../../templates/rss/">RSS</a> </li>
+                    
+                    <li><a href="../../templates/sitemap/">Sitemap</a> </li>
+                    
+                    <li><a href="../../templates/404/">Custom 404 page</a> </li>
+                    
+                    <li><a href="../../templates/debugging/">Debugging</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-tags'></i>
+                
+                <span>分類</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="../../taxonomies/overview/">Overview</a> </li>
+                    
+                    <li><a href="../../taxonomies/usage/">Usage</a> </li>
+                    
+                    <li><a href="../../taxonomies/displaying/">Displaying</a> </li>
+                    
+                    <li><a href="../../taxonomies/templates/">Templates</a> </li>
+                    
+                    <li><a href="../../taxonomies/ordering/">Ordering</a> </li>
+                    
+                    <li><a href="../../taxonomies/methods/">Structure &amp; Methods</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-gift'></i>
+                
+                <span>額外</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="../../extras/aliases/">Aliases</a> </li>
+                    
+                    <li><a href="../../extras/analytics/">Analytics</a> </li>
+                    
+                    <li><a href="../../extras/builders/">Builders</a> </li>
+                    
+                    <li><a href="../../extras/comments/">Comments</a> </li>
+                    
+                    <li><a href="../../extras/crossreferences/">Cross-References</a> </li>
+                    
+                    <li><a href="../../extras/robots-txt/">Custom robots.txt</a> </li>
+                    
+                    <li><a href="../../extras/datafiles/">Data Files</a> </li>
+                    
+                    <li><a href="../../extras/datadrivencontent/">Data-driven Content</a> </li>
+                    
+                    <li><a href="../../extras/gitinfo/">GitInfo</a> </li>
+                    
+                    <li><a href="../../extras/livereload/">LiveReload</a> </li>
+                    
+                    <li><a href="../../extras/menus/">Menus</a> </li>
+                    
+                    <li><a href="../../extras/pagination/">Pagination</a> </li>
+                    
+                    <li><a href="../../extras/scratch/">Scratch</a> </li>
+                    
+                    <li><a href="../../extras/shortcodes/">Shortcodes</a> </li>
+                    
+                    <li><a href="../../extras/highlighting/">Syntax Highlighting</a> </li>
+                    
+                    <li><a href="../../extras/toc/">Table of Contents</a> </li>
+                    
+                    <li><a href="../../extras/localfiles/">Traversing Local Files</a> </li>
+                    
+                    <li><a href="../../extras/permalinks/">固定鏈接</a> </li>
+                    
+                    <li><a href="../../extras/urls/">網址 URLs</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-group'></i>
+                
+                <span>社區</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="../../community/mailing-list/">Mailing List</a> </li>
+                    
+                    <li><a href="../../community/contributing/">Contributing to Hugo</a> </li>
+                    
+                    <li><a href="http://discuss.gohugo.io">Discussion Forum</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-book'></i>
+                
+                <span>教程</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="../../tutorials/automated-deployments/">Automated deployments</a> </li>
+                    
+                    <li><a href="../../tutorials/creating-a-new-theme/">Creating a New Theme</a> </li>
+                    
+                    <li><a href="../../tutorials/hosting-on-bitbucket/">Hosting on Bitbucket</a> </li>
+                    
+                    <li><a href="../../tutorials/github-pages-blog/">Hosting on GitHub</a> </li>
+                    
+                    <li><a href="../../tutorials/hosting-on-gitlab/">Hosting on GitLab</a> </li>
+                    
+                    <li><a href="../../tutorials/how-to-contribute-to-hugo/">How to contribute</a> </li>
+                    
+                    <li><a href="../../tutorials/installing-on-mac/">Installing on Mac</a> </li>
+                    
+                    <li><a href="../../tutorials/installing-on-windows/">Installing on Windows</a> </li>
+                    
+                    <li><a href="../../tutorials/mathjax/">MathJax Support</a> </li>
+                    
+                    <li><a href="../../tutorials/migrate-from-jekyll/">Migrating from Jekyll</a> </li>
+                    
+                    <li><a href="../../tutorials/create-a-multilingual-site/">Multilingual Site</a> </li>
+                    
+                    <li><a href="../../tutorials/deployment-with-rsync/">Deployment with rsync</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+
+            <li class="sub-menu">
+            <a href="javascript:;" class="">
+                <i class='fa fa-wrench'></i>
+                
+                <span>故障排除</span>
+                <span class="menu-arrow fa fa-angle-right"></span>
+            </a>
+                <ul class="sub">
+                    
+                    <li><a href="../../troubleshooting/strange-eof-error/">Strange EOF error</a> </li>
+                    
+                    <li><a href="../../troubleshooting/categories-with-accented-characters/">Accented Categories</a> </li>
+                    
+                    <li><a href="../../troubleshooting/overview/">Troubleshooting Overview</a> </li>
+                    
+                </ul>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="../../tools/">
+                    <i class='fa fa-cogs'></i>
+                    
+                    <span>工具</span>
+                </a>
+              
+              </li>
+          
+              
+                <li>
+                <a class="" href="../../commands/">
+                    <i class='fa fa-space-shuttle'></i>
+                    
+                    <span>雨果命令參考</span>
+                </a>
+              
+              </li>
+          
+            <li> <a href="https://github.com/spf13/hugo/issues" target="blank"><i class='fa fa-life-ring'></i> <span>Issues & Help</span></a> </li>
+            
+              <li><a href="https://github.com/spf13/hugo/edit/master/docs/content/meta/release-notes.md" target="blank"><i class='fa fa-edit'></i> Refine this Page</a> </li>
+            
+        </ul>
+        
+    </div>
+</aside>
+
+
+
+      
+      <section id="main-content">
+          <section class="wrapper">
+
+              
+                  
+                      
+                      
+                          
+                          
+                          
+                      
+                      
+                  
+              
+
+              <div class="row">
+                  <div class="col-md-1">
+                      
+                      
+                      
+                  </div>
+                <div class="col-md-10">
+                    <section class="panel">
+                          
+                              
+                          
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2 cse">
+                                <input type="search" id="search-input" placeholder="Search...">
+                            </div>
+                        </div>
+
+
+
+
+<h1 id="0-19-february-27th-2017"><strong>0.19</strong> February 27th 2017</h1>
+
+<p>We&rsquo;re happy to announce the first release of Hugo in 2017.</p>
+
+<p>This release represents <strong>over 180 contributions by over 50 contributors</strong> to the main Hugo code base. Since last release Hugo has <strong>gained 1450 stars, 35 new contributors and 15 additional themes.</strong></p>
+
+<p>Hugo now has:</p>
+
+<ul>
+<li>15200+ stars</li>
+<li>470+ contributors</li>
+<li>151+ themes</li>
+</ul>
+
+<p>Furthermore, Hugo has its own Twitter account (<a href="https://twitter.com/gohugoio">@gohugoio</a>) where we share bite-sized news and themes from the Hugo community.</p>
+
+<p>
+
+<a href="//github.com/bep">@bep</a>
+
+
+ leads the Hugo development and once again contributed a significant amount of additions. Also a big shoutout to  
+
+<a href="//github.com/chaseadamsio">@chaseadamsio</a>
+
+
+ for the Emacs Org-mode support, 
+
+<a href="//github.com/digitalcraftsman">@digitalcraftsman</a>
+
+
+ for his relentless work on keeping the documentation and the themes site in pristine condition, 
+
+<a href="//github.com/fj">@fj</a>
+
+
+for his work on revising the <code>params</code> handling in Hugo, and 
+
+<a href="//github.com/moorereason">@moorereason</a>
+
+
+ and 
+
+<a href="//github.com/bogem">@bogem</a>
+
+
+ for their ongoing contributions.</p>
+
+<h2 id="highlights">Highlights</h2>
+
+<p>Hugo <code>0.19</code> brings native Emacs Org-mode content support (
+
+<a href="//github.com/spf13/hugo/issues/1483">#1483</a>
+
+
+), big thanks to 
+
+<a href="//github.com/chaseadamsio">@chaseadamsio</a>
+
+
+.</p>
+
+<p>Also, a considerably amount of work have been put into cleaning up the Hugo source code, in an issue titled <a href="https://github.com/spf13/hugo/issues/2701">Refactor the globals out of site build</a>. This is not immediately visible to the Hugo end user, but will speed up future development.</p>
+
+<p>Hugo <code>0.18</code> was bringing full-parallel page rendering, so workarounds depending on rendering order did not work anymore, and pages with duplicate target paths (common examples would be <code>/index.md</code> or <code>/about/index.md</code>) would now conflict with the home page or the section listing.</p>
+
+<p>With Hugo <code>0.19</code>, you can control this behaviour by turning off page types you do not want (
+
+<a href="//github.com/spf13/hugo/issues/2534">#2534</a>
+
+
+). In its most extreme case, if you put the below setting in your <code>config.toml</code>, you will get <strong>nothing!</strong>:</p>
+
+<pre><code>disableKinds = [&quot;page&quot;, &quot;home&quot;, &quot;section&quot;, &quot;taxonomy&quot;, &quot;taxonomyTerm&quot;, &quot;RSS&quot;, &quot;sitemap&quot;, &quot;robotsTXT&quot;, &quot;404&quot;]
+</code></pre>
+
+<h2 id="other-new-features">Other New Features</h2>
+
+<ul>
+<li>Add ability to sort pages by frontmatter parameters, enabling easy custom &ldquo;top 10&rdquo; page lists. 
+
+<a href="//github.com/spf13/hugo/issues/3022">#3022</a>
+
+
+</li>
+<li>Add <code>truncate</code> template function 
+
+<a href="//github.com/spf13/hugo/issues/2882">#2882</a>
+
+
+</li>
+<li>Add <code>now</code> function, which replaces the now deprecated <code>.Now</code> 
+
+<a href="//github.com/spf13/hugo/issues/2882">#2882</a>
+
+
+</li>
+<li>Make RSS item limit configurable 
+
+<a href="//github.com/spf13/hugo/issues/3035">#3035</a>
+
+
+</li>
+</ul>
+
+<h2 id="enhancements">Enhancements</h2>
+
+<ul>
+<li>Enhance <code>.Param</code> to permit arbitrarily nested parameter references 
+
+<a href="//github.com/spf13/hugo/issues/2598">#2598</a>
+
+
+</li>
+<li>Use <code>Page.Params</code> more consistently when adding metadata 
+
+<a href="//github.com/spf13/hugo/issues/3033">#3033</a>
+
+
+</li>
+<li>The <code>sectionPagesMenu</code> feature (&ldquo;Section menu for the lazy blogger&rdquo;) is now integrated with the section content pages. 
+
+<a href="//github.com/spf13/hugo/issues/2974">#2974</a>
+
+
+</li>
+<li>Hugo <code>0.19</code> is compiled with Go 1.8!</li>
+<li>Make template funcs like <code>findRE</code> and friends more liberal in what argument types they accept 
+
+<a href="//github.com/spf13/hugo/issues/3018">#3018</a>
+
+
+ 
+
+<a href="//github.com/spf13/hugo/issues/2822">#2822</a>
+
+
+</li>
+<li>Improve generation of OpenGraph date tags 
+
+<a href="//github.com/spf13/hugo/issues/2979">#2979</a>
+
+
+</li>
+</ul>
+
+<h2 id="notes">Notes</h2>
+
+<ul>
+<li><code>sourceRelativeLinks</code> is now deprecated and will be removed in Hugo <code>0.21</code> if  no one is stepping up to the plate and fixes and maintains this feature. 
+
+<a href="//github.com/spf13/hugo/issues/3028">#3028</a>
+
+
+</li>
+</ul>
+
+<h2 id="fixes">Fixes</h2>
+
+<ul>
+<li>Fix <code>.Site.LastChange</code> on sites where the default sort order is not chronological. 
+
+<a href="//github.com/spf13/hugo/issues/2909">#2909</a>
+
+
+</li>
+<li>Fix regression of <code>.Truncated</code> evaluation in manual summaries. 
+
+<a href="//github.com/spf13/hugo/issues/2989">#2989</a>
+
+
+</li>
+<li>Fix <code>preserveTaxonomyNames</code> regression 
+
+<a href="//github.com/spf13/hugo/issues/3070">#3070</a>
+
+
+</li>
+<li>Fix issue with taxonomies when only some have content page 
+
+<a href="//github.com/spf13/hugo/issues/2992">#2992</a>
+
+
+</li>
+<li>Fix instagram shortcode panic on invalid ID 
+
+<a href="//github.com/spf13/hugo/issues/3048">#3048</a>
+
+
+</li>
+<li>Fix subtle data race in <code>getJSON</code> 
+
+<a href="//github.com/spf13/hugo/issues/3045">#3045</a>
+
+
+</li>
+<li>Fix deadlock in cached partials 
+
+<a href="//github.com/spf13/hugo/issues/2935">#2935</a>
+
+
+</li>
+<li>Avoid double-encoding of paginator URLs 
+
+<a href="//github.com/spf13/hugo/issues/2177">#2177</a>
+
+
+</li>
+<li>Allow tilde in URLs 
+
+<a href="//github.com/spf13/hugo/issues/2177">#2177</a>
+
+
+</li>
+<li>Fix <code>.Site.Pages</code> handling on live reloads 
+
+<a href="//github.com/spf13/hugo/issues/2869">#2869</a>
+
+
+</li>
+<li><code>UniqueID</code> now correctly uses the fill file path from the content root to calculate the hash, and is finally &hellip; unique!</li>
+<li>Discard current language based on <code>.Lang()</code>, go get translations correct for paginated pages. 
+
+<a href="//github.com/spf13/hugo/issues/2972">#2972</a>
+
+
+</li>
+<li>Fix infinite loop in template AST handling for recursive templates  
+
+<a href="//github.com/spf13/hugo/issues/2927">#2927</a>
+
+
+</li>
+<li>Fix issue with watching when config loading fails 
+
+<a href="//github.com/spf13/hugo/issues/2603">#2603</a>
+
+
+</li>
+<li>Correctly flush the imageConfig on live-reload 
+
+<a href="//github.com/spf13/hugo/issues/3016">#3016</a>
+
+
+</li>
+<li>Fix parsing of TOML arrays in frontmatter 
+
+<a href="//github.com/spf13/hugo/issues/2752">#2752</a>
+
+
+</li>
+</ul>
+
+<h2 id="docs">Docs</h2>
+
+<ul>
+<li>Add tutorial &ldquo;How to use Google Firebase to host a Hugo site&rdquo; 
+
+<a href="//github.com/spf13/hugo/issues/3007">#3007</a>
+
+
+</li>
+<li>Improve documentation for menu rendering 
+
+<a href="//github.com/spf13/hugo/issues/3056">#3056</a>
+
+
+</li>
+<li>Revise GitHub Pages deployment tutorial 
+
+<a href="//github.com/spf13/hugo/issues/2930">#2930</a>
+
+
+</li>
+</ul>
+
+<h1 id="0-18-1-december-30th-2016"><strong>0.18.1</strong> December 30th 2016</h1>
+
+<p>Hugo 0.18.1 is a bug fix release fixing some issues introduced in Hugo 0.18:</p>
+
+<ul>
+<li>Fix 32-bit binaries 
+
+<a href="//github.com/spf13/hugo/issues/2847">#2847</a>
+
+
+</li>
+<li>Fix issues with <code>preserveTaxonomyNames</code> 
+
+<a href="//github.com/spf13/hugo/issues/2809">#2809</a>
+
+
+</li>
+<li>Fix <code>.URL</code> for taxonomy pages when <code>uglyURLs=true</code> 
+
+<a href="//github.com/spf13/hugo/issues/2819">#2819</a>
+
+
+</li>
+<li>Fix <code>IsTranslated</code> and <code>Translations</code> for node pages 
+
+<a href="//github.com/spf13/hugo/issues/2812">#2812</a>
+
+
+</li>
+<li>Make template error messages more verbose 
+
+<a href="//github.com/spf13/hugo/issues/2820">#2820</a>
+
+
+</li>
+</ul>
+
+<h1 id="0-18-0-december-19th-2016"><strong>0.18.0</strong> December 19th 2016</h1>
+
+<p>Today, we&rsquo;re excited to release the much-anticipated Hugo 0.18!</p>
+
+<p>We&rsquo;re heading towards the end of the year 2016, and we can look back on three releases and a steady growing community around the project.
+This release includes <strong>over 220 contributions by nearly 50 contributors</strong> to the main codebase.
+Since the last release, Hugo has <strong>gained 1750 stars and 27 additional themes</strong>.</p>
+
+<p>Hugo now has:</p>
+
+<ul>
+<li>13750+ stars</li>
+<li>408+ contributors</li>
+<li>137+ themes</li>
+</ul>
+
+<p>
+
+<a href="//github.com/bep">@bep</a>
+
+
+ once again took the lead of Hugo and contributed a significant amount of additions.
+Also a big shoutout to 
+
+<a href="//github.com/digitalcraftsman">@digitalcraftsman</a>
+
+
+ for his relentless work on keeping the documentation and the themes site in pristine condition,
+and also a big thanks to 
+
+<a href="//github.com/moorereason">@moorereason</a>
+
+
+ and 
+
+<a href="//github.com/bogem">@bogem</a>
+
+
+ for their contributions.</p>
+
+<p>We wish you all a Merry Christmas and a Happy New Year.<br>
+<em>The Hugo team</em></p>
+
+<h2 id="highlights-1">Highlights</h2>
+
+<p>The primary new feature in Hugo 0.18 is that every piece of content is now a <code>Page</code> (
+
+<a href="//github.com/spf13/hugo/issues/2297">#2297</a>
+
+
+).
+This means that every page, including the home page, can have a content file with frontmatter.
+Not only is this a much simpler model to understand, it is also faster and paved the way for several important new features:</p>
+
+<ul>
+<li>Enable proper titles for Nodes 
+
+<a href="//github.com/spf13/hugo/issues/1051">#1051</a>
+
+
+</li>
+<li>Sitemap.xml should include nodes, as well as pages 
+
+<a href="//github.com/spf13/hugo/issues/1303">#1303</a>
+
+
+</li>
+<li>Document homepage content workaround 
+
+<a href="//github.com/spf13/hugo/issues/2240">#2240</a>
+
+
+</li>
+<li>Allow home page to be easily authored in markdown 
+
+<a href="//github.com/spf13/hugo/issues/720">#720</a>
+
+
+</li>
+<li>Minimalist website with homepage as content 
+
+<a href="//github.com/spf13/hugo/issues/330">#330</a>
+
+
+</li>
+</ul>
+
+<p>Hugo again continues its trend of each release being faster than the last. It&rsquo;s quite a challenge to consistently add significant new functionality and simultaneously dramatically improve performance. Running <a href="https://github.com/bep/hugo-benchmark">this benchmark</a> with <a href="https://github.com/bep/hugo-benchmark/tree/master/sites">these sites</a> (renders to memory) shows about   60% reduction in time spent and 30% reduction in memory usage compared to Hugo 0.17.</p>
+
+<h2 id="other-new-features-1">Other New Features</h2>
+
+<ul>
+<li>Every <code>Page</code> now has a <code>Kind</code> property. Since everything is a <code>Page</code> now, the <code>Kind</code> is used to differentiate different kinds of pages.
+Possible values are <code>page</code>, <code>home</code>, <code>section</code>, <code>taxonomy</code>, and <code>taxonomyTerm</code>.
+(Internally, we also define <code>RSS</code>, <code>sitemap</code>, <code>robotsTXT</code>, and <code>404</code>, but those have no practical use for end users at the moment since they are not included in any collections.)</li>
+<li>Add a <code>GitInfo</code> object to <code>Page</code> if <code>enableGitInfo</code> is set. It then also sets <code>Lastmod</code> for the given <code>Page</code> to the author date provided by Git. 
+
+<a href="//github.com/spf13/hugo/issues/2291">#2291</a>
+
+
+</li>
+<li>Implement support for alias templates  
+
+<a href="//github.com/spf13/hugo/issues/2533">#2533</a>
+
+
+</li>
+<li>New template functions:
+
+<ul>
+<li>Add <code>imageConfig</code> function 
+
+<a href="//github.com/spf13/hugo/issues/2677">#2677</a>
+
+
+</li>
+<li>Add <code>sha256</code> function 
+
+<a href="//github.com/spf13/hugo/issues/2762">#2762</a>
+
+
+</li>
+<li>Add <code>partialCached</code> template function 
+
+<a href="//github.com/spf13/hugo/issues/1368">#1368</a>
+
+
+</li>
+</ul></li>
+<li>Add shortcode to display Instagram images 
+
+<a href="//github.com/spf13/hugo/issues/2690">#2690</a>
+
+
+</li>
+<li>Add <code>noChmod</code> option to disable perm sync 
+
+<a href="//github.com/spf13/hugo/issues/2749">#2749</a>
+
+
+</li>
+<li>Add <code>quiet</code> build mode 
+
+<a href="//github.com/spf13/hugo/issues/1218">#1218</a>
+
+
+</li>
+</ul>
+
+<h2 id="notices">Notices</h2>
+
+<ul>
+<li><code>.Site.Pages</code> will now contain <em>several kinds of pages</em>, including regular pages, sections, taxonomies, and the home page.
+If you want a specific kind of page, you can filter it with <code>where</code> and <code>Kind</code>.
+<code>.Site.RegularPages</code> is a shortcut to the page collection you have been used to getting.</li>
+<li><code>RSSlink</code> is now deprecated.  Use <code>RSSLink</code> instead.
+Note that in Hugo 0.17 both of them existed, so there is a fifty-fifty chance you will not have to do anything
+(if you use a theme, the chance is close to 0), and <code>RSSlink</code> will still work for two Hugo versions.</li>
+</ul>
+
+<h2 id="fixes-1">Fixes</h2>
+
+<ul>
+<li>Revise the <code>base</code> template lookup logic so it now better matches the behavior of regular templates, making it easier to override the master templates from the theme 
+
+<a href="//github.com/spf13/hugo/issues/2783">#2783</a>
+
+
+</li>
+<li>Add workaround for <code>block</code> template crash.
+Block templates are very useful, but there is a bug in Go 1.6 and 1.7 which makes the template rendering crash if you use the block template in more complex scenarios.
+This is fixed in the upcoming Go 1.8, but Hugo adds a temporary workaround in Hugo 0.18. 
+
+<a href="//github.com/spf13/hugo/issues/2549">#2549</a>
+
+
+</li>
+<li>All the <code>Params</code> configurations are now case insensitive 
+
+<a href="//github.com/spf13/hugo/issues/1129">#1129</a>
+
+
+ 
+
+<a href="//github.com/spf13/hugo/issues/2590">#2590</a>
+
+
+ 
+
+<a href="//github.com/spf13/hugo/issues/2615">#2615</a>
+
+
+</li>
+<li>Make RawContent raw again 
+
+<a href="//github.com/spf13/hugo/issues/2601">#2601</a>
+
+
+</li>
+<li>Fix archetype title and date handling 
+
+<a href="//github.com/spf13/hugo/issues/2750">#2750</a>
+
+
+</li>
+<li>Fix TOML archetype parsing in <code>hugo new</code> 
+
+<a href="//github.com/spf13/hugo/issues/2745">#2745</a>
+
+
+</li>
+<li>Fix page sorting when weight is zero 
+
+<a href="//github.com/spf13/hugo/issues/2673">#2673</a>
+
+
+</li>
+<li>Fix page names that contain dot 
+
+<a href="//github.com/spf13/hugo/issues/2555">#2555</a>
+
+
+</li>
+<li>Fix RSS Title regression 
+
+<a href="//github.com/spf13/hugo/issues/2645">#2645</a>
+
+
+</li>
+<li>Handle ToC before handling shortcodes 
+
+<a href="//github.com/spf13/hugo/issues/2433">#2433</a>
+
+
+</li>
+<li>Only watch relevant themes dir 
+
+<a href="//github.com/spf13/hugo/issues/2602">#2602</a>
+
+
+</li>
+<li>Hugo new content creates TOML slices with closing bracket on new line 
+
+<a href="//github.com/spf13/hugo/issues/2800">#2800</a>
+
+
+</li>
+</ul>
+
+<h2 id="improvements">Improvements</h2>
+
+<ul>
+<li>Add page information to error logging in rendering 
+
+<a href="//github.com/spf13/hugo/issues/2570">#2570</a>
+
+
+</li>
+<li>Deprecate <code>RSSlink</code> in favor of <code>RSSLink</code></li>
+<li>Make benchmark command more useful 
+
+<a href="//github.com/spf13/hugo/issues/2432">#2432</a>
+
+
+</li>
+<li>Consolidate the <code>Param</code> methods 
+
+<a href="//github.com/spf13/hugo/issues/2590">#2590</a>
+
+
+</li>
+<li>Allow to set cache dir in config file</li>
+<li>Performance improvements:
+
+<ul>
+<li>Avoid repeated Viper loads of <code>sectionPagesMenu</code> 
+
+<a href="//github.com/spf13/hugo/issues/2728">#2728</a>
+
+
+</li>
+<li>Avoid reading from Viper for path and URL funcs 
+
+<a href="//github.com/spf13/hugo/issues/2495">#2495</a>
+
+
+</li>
+<li>Add <code>partialCached</code> template function. This can be a significant performance boost if you have complex partials that does not need to be rerendered for every page. 
+
+<a href="//github.com/spf13/hugo/issues/1368">#1368</a>
+
+
+</li>
+</ul></li>
+</ul>
+
+<h2 id="documentation-updates">Documentation Updates</h2>
+
+<ul>
+<li>Update roadmap 
+
+<a href="//github.com/spf13/hugo/issues/2666">#2666</a>
+
+
+</li>
+<li>Update multilingual example 
+
+<a href="//github.com/spf13/hugo/issues/2417">#2417</a>
+
+
+</li>
+<li>Add a &ldquo;Deployment with rsync&rdquo; tutorial page 
+
+<a href="//github.com/spf13/hugo/issues/2658">#2658</a>
+
+
+</li>
+<li>Refactor <code>/docs</code> to use the <code>block</code> keyword 
+
+<a href="//github.com/spf13/hugo/issues/2226">#2226</a>
+
+
+</li>
+</ul>
+
+<h2 id="0-17-0-october-7th-2016"><strong>0.17.0</strong> October 7th 2016</h2>
+
+<p>Hugo is going global with our 0.17 release.  We put a lot of thought into how we could extend Hugo
+to support multilingual websites with the most simple and elegant experience. Hugo&rsquo;s multilingual
+capabilities rival the best web and documentation software, but Hugo&rsquo;s experience is unmatched.
+If you have a single language website, the simple Hugo experience you already love is unchanged.
+Adding additional languages to your website is simple and straightforward. Hugo has been completely
+internally rewritten to be multilingual aware with translation and internationalization features
+embedded throughout Hugo.</p>
+
+<p>Hugo continues its trend of each release being faster than the last. It&rsquo;s quite a challenge to consistently add
+significant new functionality and simultaneously dramatically improve performance. 
+
+<a href="//github.com/bep">@bep</a>
+
+
+ has made it
+his personal mission to apply the Go mantra of &ldquo;Enable more. Do less&rdquo; to Hugo. Hugo&rsquo;s consistent improvement
+is a testament to his brilliance and his dedication to his craft. Hugo additionally benefits from the
+performance improvements from the Go team in the Go 1.7 release.</p>
+
+<p>This release represents <strong>over 300 contributions by over 70 contributors</strong> to
+the main Hugo code base. Since last release Hugo has <strong>gained 2000 stars, 50 new
+contributors and 20 additional themes.</strong></p>
+
+<p>Hugo now has:</p>
+
+<ul>
+<li>12,000 stars on GitHub</li>
+<li>370+ contributors</li>
+<li>110+ themes</li>
+</ul>
+
+<p>
+
+<a href="//github.com/bep">@bep</a>
+
+
+ continues to lead the project with the lionshare of contributions
+and reviews. A special thanks to 
+
+<a href="//github.com/bep">@bep</a>
+
+
+ and 
+
+<a href="//github.com/abourget">@abourget</a>
+
+
+ for their
+considerable work on multilingual support.</p>
+
+<p>A big welcome to newcomers 
+
+<a href="//github.com/MarkDBlackwell">@MarkDBlackwell</a>
+
+
+, 
+
+<a href="//github.com/bogem">@bogem</a>
+
+
+ and
+
+
+<a href="//github.com/g3wanghc">@g3wanghc</a>
+
+
+ for their critical contributions.</p>
+
+<h3 id="highlights-2">Highlights</h3>
+
+<p><strong>Multilingual Support:</strong>
+Hugo now supports multiple languages side-by-side. A single site can now have multiple languages rendered with
+full support for translation and i18n.</p>
+
+<p><strong>Performance:</strong>
+Hugo is faster than ever! Hugo 0.17 is not only our fastest release, it&rsquo;s also the most efficient.
+Hugo 0.17 is <strong>nearly twice as fast as Hugo 0.16</strong> and uses about 10% less memory.
+This means that the same site will build in nearly half the time it took with Hugo 0.16.
+For the first time Hugo sites are averaging well under 1ms per rendered content.</p>
+
+<p><strong>Docs overhaul:</strong>
+This release really focused on improving the documentation. <a href="http://gohugo.io">Gohugo.io</a> is
+more accurate and complete than ever.</p>
+
+<p><strong>Support for macOS Sierra</strong></p>
+
+<h3 id="new-features">New Features</h3>
+
+<ul>
+<li>Multilingual support 
+
+<a href="//github.com/spf13/hugo/issues/2303">#2303</a>
+
+
+</li>
+<li>Allow content expiration 
+
+<a href="//github.com/spf13/hugo/issues/2137">#2137</a>
+
+
+</li>
+<li>New templates functions:
+
+<ul>
+<li><code>querify</code> function to generate query strings inside templates 
+
+<a href="//github.com/spf13/hugo/issues/2257">#2257</a>
+
+
+</li>
+<li><code>htmlEscape</code> and <code>htmlUnescape</code> template functions 
+
+<a href="//github.com/spf13/hugo/issues/2287">#2287</a>
+
+
+</li>
+<li><code>time</code> converts a timestamp string into a time.Time structure 
+
+<a href="//github.com/spf13/hugo/issues/2329">#2329</a>
+
+
+</li>
+</ul></li>
+</ul>
+
+<h3 id="enhancements-1">Enhancements</h3>
+
+<ul>
+<li>Render the shortcodes as late as possible 
+
+<a href="//github.com/spf13/hugo/commit/ed0985404db4630d1b9d3ad0b7e41fb186ae0112">ed0985</a>
+
+
+</li>
+<li>Remove unneeded casts in page.getParam 
+
+<a href="//github.com/spf13/hugo/issues/2186">#2186</a>
+
+
+</li>
+<li>Automatic page date fallback 
+
+<a href="//github.com/spf13/hugo/issues/2239">#2239</a>
+
+
+</li>
+<li>Enable safeHTMLAttr 
+
+<a href="//github.com/spf13/hugo/issues/2234">#2234</a>
+
+
+</li>
+<li>Add TODO list support for markdown 
+
+<a href="//github.com/spf13/hugo/issues/2296">#2296</a>
+
+
+</li>
+<li>Make absURL and relURL accept any type 
+
+<a href="//github.com/spf13/hugo/issues/2352">#2352</a>
+
+
+</li>
+<li>Suppress &lsquo;missing static&rsquo; error 
+
+<a href="//github.com/spf13/hugo/issues/2344">#2344</a>
+
+
+</li>
+<li>Make summary, wordcount etc. more efficient 
+
+<a href="//github.com/spf13/hugo/issues/2378">#2378</a>
+
+
+</li>
+<li>Better error reporting in <code>hugo convert</code> 
+
+<a href="//github.com/spf13/hugo/issues/2440">#2440</a>
+
+
+</li>
+<li>Reproducible builds thanks to govendor 
+
+<a href="//github.com/spf13/hugo/issues/2461">#2461</a>
+
+
+</li>
+</ul>
+
+<h3 id="fixes-2">Fixes</h3>
+
+<ul>
+<li>Fix shortcode in markdown headers 
+
+<a href="//github.com/spf13/hugo/issues/2210">#2210</a>
+
+
+</li>
+<li>Explicitly bind livereload to hugo server port 
+
+<a href="//github.com/spf13/hugo/issues/2205">#2205</a>
+
+
+</li>
+<li>Fix Emojify for certain text patterns 
+
+<a href="//github.com/spf13/hugo/issues/2198">#2198</a>
+
+
+</li>
+<li>Normalize file name to NFC 
+
+<a href="//github.com/spf13/hugo/issues/2259">#2259</a>
+
+
+</li>
+<li>Ignore emacs temp files 
+
+<a href="//github.com/spf13/hugo/issues/2266">#2266</a>
+
+
+</li>
+<li>Handle symlink change event 
+
+<a href="//github.com/spf13/hugo/issues/2273">#2273</a>
+
+
+</li>
+<li>Fix panic when using URLize 
+
+<a href="//github.com/spf13/hugo/issues/2274">#2274</a>
+
+
+</li>
+<li><code>hugo import jekyll</code>: Fixed target path location check 
+
+<a href="//github.com/spf13/hugo/issues/2293">#2293</a>
+
+
+</li>
+<li>Return all errors from casting in templates 
+
+<a href="//github.com/spf13/hugo/issues/2356">#2356</a>
+
+
+</li>
+<li>Fix paginator counter on x86-32 
+
+<a href="//github.com/spf13/hugo/issues/2420">#2420</a>
+
+
+</li>
+<li>Fix half-broken self-closing shortcodes 
+
+<a href="//github.com/spf13/hugo/issues/2499">#2499</a>
+
+
+</li>
+</ul>
+
+<hr />
+
+<h2 id="0-16-0-june-6th-2016"><strong>0.16.0</strong> June 6th 2016</h2>
+
+<p>Hugo 0.16 is our best and biggest release ever. The Hugo community has
+outdone itself with continued performance improvements,
+<a href="http://themes.gohugo.io">beautiful themes</a> for all types of sites from project
+sites to documentation to blogs to portfolios, and increased stability.</p>
+
+<p>This release represents <strong>over 550 contributions by over 110 contributors</strong> to
+the main Hugo code base. Since last release Hugo has <strong>gained 3500 stars, 90
+contributors and 23 additional themes.</strong></p>
+
+<p>This release celebrates 3 years since  
+
+<a href="//github.com/spf13">@spf13</a>
+
+
+ wrote the first lines
+of Hugo. During those 3 years Hugo has accomplished some major milestones
+including&hellip;</p>
+
+<ul>
+<li>10,000+ stars on GitHub</li>
+<li>320+ contributors</li>
+<li>90+ themes</li>
+<li>1000s of happy websites</li>
+<li>Many subprojects like 
+
+<a href="//github.com/spf13/cobra">@spf13/cobra</a>
+
+
+, 
+
+<a href="//github.com/spf13/viper">@spf13/viper</a>
+
+
+ and
+
+
+<a href="//github.com/spf13/afero">@spf13/afero</a>
+
+
+ which have experienced broad usage across the Go
+ecosystem.</li>
+</ul>
+
+<p>
+
+<a href="//github.com/bep">@bep</a>
+
+
+ led the development of Hugo for the 3rd consecutive release
+with nearly half of the contributions to 0.16 in addition to his considerable
+contributions as lead maintainer. 
+
+<a href="//github.com/anthonyfok">@anthonyfok</a>
+
+
+, 
+
+<a href="//github.com/DigitalCraftsman">@DigitalCraftsman</a>
+
+
+, 
+
+<a href="//github.com/MooreReason">@MooreReason</a>
+
+
+ all made significant
+contributions. A special thanks to 
+
+<a href="//github.com/abourget%20">@abourget </a>
+
+
+ for his considerable
+work on multilingual support. Due to its broad impact we wanted to spend more
+time testing it and it will be included in Hugo&rsquo;s next release.</p>
+
+<h3 id="highlights-3">Highlights</h3>
+
+<p><strong>Partial Builds:</strong> Prior to this release Hugo would always reread and rebuild
+the entire site. This release introduces support for reactive site building
+while watching (<code>hugo server</code>). Hugo will watch the filesystem for changes and
+only re-read the changed files. Depending on the files change Hugo will
+intelligently re-render only the needed portion of the site. Performance gains
+depend on the operation performed and size of the site. In our testing build
+times decreased anywhere from 10% to 99%.</p>
+
+<p><strong>Template Improvements:</strong> Template improvements continue to be a mainstay of each Hugo release. Hugo 0.16 adds support for the new <code>block</code> keyword introduced in Go 1.6 &ndash; think base templates with default sections &ndash; as well as many new template functions.</p>
+
+<p><strong>Polish:</strong> As Hugo matures releases will inevitably contain fewer huge new features. This release represents hundreds of small improvements across ever facet of Hugo which will make for a much better experience for all of our users. Worth mentioning here is the curious bug where live reloading didn&rsquo;t work in some editors on OS X, including the popular TextMate 2. This is now fixed. Oh, and now any error will exit with an error code, a big thing for automated deployments.</p>
+
+<h3 id="new-features-1">New Features</h3>
+
+<ul>
+<li>Support reading configuration variables from the OS environment 
+
+<a href="//github.com/spf13/hugo/issues/2090">#2090</a>
+
+
+</li>
+<li>Add emoji support 
+
+<a href="//github.com/spf13/hugo/issues/1892">#1892</a>
+
+
+</li>
+<li>Add <code>themesDir</code> option to configuration 
+
+<a href="//github.com/spf13/hugo/issues/1556">#1556</a>
+
+
+</li>
+<li>Add support for Go 1.6 <code>block</code> keyword in templates 
+
+<a href="//github.com/spf13/hugo/issues/1832">#1832</a>
+
+
+</li>
+<li>Partial static sync 
+
+<a href="//github.com/spf13/hugo/issues/1644">#1644</a>
+
+
+</li>
+<li>Source file based relative linking (a la Github) 
+
+<a href="//github.com/spf13/hugo/commit/0f6b334b6715253b030c4e783b88e911b6e53e56">0f6b33</a>
+
+
+</li>
+<li>Add <code>ByLastmod</code> sort function to pages. 
+
+<a href="//github.com/spf13/hugo/commit/eb627ca16de6fb5e8646279edd295a8bf0f72bf1">eb627c</a>
+
+
+</li>
+<li>New templates functions:
+
+<ul>
+<li><code>readFile</code> 
+
+<a href="//github.com/spf13/hugo/issues/1551">#1551</a>
+
+
+</li>
+<li><code>countwords</code> and <code>countrunes</code> 
+
+<a href="//github.com/spf13/hugo/issues/1440">#1440</a>
+
+
+</li>
+<li><code>default</code> 
+
+<a href="//github.com/spf13/hugo/issues/1943">#1943</a>
+
+
+</li>
+<li><code>hasPrefix</code> 
+
+<a href="//github.com/spf13/hugo/issues/1243">#1243</a>
+
+
+</li>
+<li><code>humanize</code> 
+
+<a href="//github.com/spf13/hugo/issues/1818">#1818</a>
+
+
+</li>
+<li><code>jsonify</code> 
+
+<a href="//github.com/spf13/hugo/commit/435e996c4fd48e9009ffa9f83a19fb55f0777dbd">435e99</a>
+
+
+</li>
+<li><code>md5</code> and <code>sha1</code> 
+
+<a href="//github.com/spf13/hugo/issues/1932">#1932</a>
+
+
+</li>
+<li><code>replaceRE</code> 
+
+<a href="//github.com/spf13/hugo/issues/1845">#1845</a>
+
+
+</li>
+<li><code>findRE</code> 
+
+<a href="//github.com/spf13/hugo/issues/2048">#2048</a>
+
+
+</li>
+<li><code>shuffle</code> 
+
+<a href="//github.com/spf13/hugo/issues/1942">#1942</a>
+
+
+</li>
+<li><code>slice</code> 
+
+<a href="//github.com/spf13/hugo/issues/1902">#1902</a>
+
+
+</li>
+<li><code>plainify</code> 
+
+<a href="//github.com/spf13/hugo/issues/1915">#1915</a>
+
+
+</li>
+</ul></li>
+</ul>
+
+<h3 id="enhancements-2">Enhancements</h3>
+
+<ul>
+<li>Hugo now exits with error code on any error. This is a big thing for
+automated deployments. 
+
+<a href="//github.com/spf13/hugo/issues/740">#740</a>
+
+
+</li>
+<li>Print error when <code>/index.html</code> is zero-length 
+
+<a href="//github.com/spf13/hugo/issues/947">#947</a>
+
+
+</li>
+<li>Enable dirname and filename bash autocompletion for more flags 
+
+<a href="//github.com/spf13/hugo/commit/666ddd237791b56fd048992dca9a27d1af50a10e">666ddd</a>
+
+
+</li>
+<li>Improve error handling in commands 
+
+<a href="//github.com/spf13/hugo/issues/1502">#1502</a>
+
+
+</li>
+<li>Add sanity checks for <code>hugo import jekyll</code> 
+
+<a href="//github.com/spf13/hugo/issues/1625">#1625</a>
+
+
+</li>
+<li>Add description to <code>Page.Params</code> 
+
+<a href="//github.com/spf13/hugo/issues/1484">#1484</a>
+
+
+</li>
+<li>Add async version of Google Analytics internal template 
+
+<a href="//github.com/spf13/hugo/issues/1711">#1711</a>
+
+
+</li>
+<li>Add autostart option to YouTube shortcode 
+
+<a href="//github.com/spf13/hugo/issues/1784">#1784</a>
+
+
+</li>
+<li>Set Date and Lastmod for main home page 
+
+<a href="//github.com/spf13/hugo/issues/1903">#1903</a>
+
+
+</li>
+<li>Allow URL with extension in frontmatter 
+
+<a href="//github.com/spf13/hugo/issues/1923">#1923</a>
+
+
+</li>
+<li>Add list support in Scratch 
+
+<a href="//github.com/spf13/hugo/commit/eaba04e82bdfc5d4c29e970f11b4aab9cc0efeaa">eaba04</a>
+
+
+</li>
+<li>Add file option to gist shortcode 
+
+<a href="//github.com/spf13/hugo/issues/1955">#1955</a>
+
+
+</li>
+<li>Add config layout and content directory CLI options 
+
+<a href="//github.com/spf13/hugo/issues/1698">#1698</a>
+
+
+</li>
+<li>Add boolean value comparison to <code>where</code> template function 
+
+<a href="//github.com/spf13/hugo/commit/f3c74c9db484c8961e70cb3458f9e41e7832fa12">f3c74c</a>
+
+
+</li>
+<li>Do not write to to cache when <code>ignoreCache</code> is set  
+
+<a href="//github.com/spf13/hugo/issues/2067">#2067</a>
+
+
+</li>
+<li>Add option to disable rendering of 404 page  
+
+<a href="//github.com/spf13/hugo/issues/2037">#2037</a>
+
+
+</li>
+<li>Mercurial is no longer needed to build Hugo 
+
+<a href="//github.com/spf13/hugo/issues/2062">#2062</a>
+
+
+</li>
+<li>Do not create <code>robots.txt</code> by default 
+
+<a href="//github.com/spf13/hugo/issues/2049">#2049</a>
+
+
+</li>
+<li>Disable syntax guessing for PygmentsCodeFences by default.  To enable syntax
+guessing again, add the following to your config file:
+<code>PygmentsCodeFencesGuessSyntax = true</code> 
+
+<a href="//github.com/spf13/hugo/issues/2034">#2034</a>
+
+
+</li>
+<li>Make <code>ByCount</code> sort consistently 
+
+<a href="//github.com/spf13/hugo/issues/1930">#1930</a>
+
+
+</li>
+<li>Add <code>Scratch</code> to shortcode 
+
+<a href="//github.com/spf13/hugo/issues/2000">#2000</a>
+
+
+</li>
+<li>Add support for symbolic links for content, layout, static, theme  
+
+<a href="//github.com/spf13/hugo/issues/1855">#1855</a>
+
+
+</li>
+<li>Add &lsquo;+&rsquo; as one of the valid characters in URLs specified in the front matter
+
+
+<a href="//github.com/spf13/hugo/issues/1290">#1290</a>
+
+
+</li>
+<li>Make alias redirect output URLs relative when <code>RelativeURLs = true</code> 
+
+<a href="//github.com/spf13/hugo/issues/2093">#2093</a>
+
+
+</li>
+<li>Hugo injects meta generator tag on homepage if missing 
+
+<a href="//github.com/spf13/hugo/issues/2182">#2182</a>
+
+
+</li>
+</ul>
+
+<h3 id="fixes-3">Fixes</h3>
+
+<ul>
+<li>Fix file change watcher for TextMate 2 and friends on OS X 
+
+<a href="//github.com/spf13/hugo/issues/1053">#1053</a>
+
+
+</li>
+<li>Make dynamic reloading of config file reliable on all platform 
+
+<a href="//github.com/spf13/hugo/issues/1684">#1684</a>
+
+
+</li>
+<li>Hugo now works on Linux/arm64 
+
+<a href="//github.com/spf13/hugo/issues/1772">#1772</a>
+
+
+</li>
+<li><code>plainIDAnchors</code> now defaults to <code>true</code>  
+
+<a href="//github.com/spf13/hugo/issues/2057">#2057</a>
+
+
+</li>
+<li>Win32 and ARM builds fixed 
+
+<a href="//github.com/spf13/hugo/issues/1716">#1716</a>
+
+
+</li>
+<li>Copy static dir files without theme&rsquo;s static dir 
+
+<a href="//github.com/spf13/hugo/issues/1656">#1656</a>
+
+
+</li>
+<li>Make <code>noTimes</code> command flag work 
+
+<a href="//github.com/spf13/hugo/issues/1657">#1657</a>
+
+
+</li>
+<li>Change most global CLI flags into local ones 
+
+<a href="//github.com/spf13/hugo/issues/1624">#1624</a>
+
+
+</li>
+<li>Remove transformation of menu URLs 
+
+<a href="//github.com/spf13/hugo/issues/1239">#1239</a>
+
+
+</li>
+<li>Do not fail on unknown Jekyll file 
+
+<a href="//github.com/spf13/hugo/issues/1705">#1705</a>
+
+
+</li>
+<li>Use absolute path when editing with editor 
+
+<a href="//github.com/spf13/hugo/issues/1589">#1589</a>
+
+
+</li>
+<li>Fix hugo server &ldquo;Watching for changes&rdquo; path display 
+
+<a href="//github.com/spf13/hugo/issues/1721">#1721</a>
+
+
+</li>
+<li>Do not strip special characters out of URLs 
+
+<a href="//github.com/spf13/hugo/issues/1292">#1292</a>
+
+
+</li>
+<li>Fix <code>RSSLink</code> when uglyURLs are enabled 
+
+<a href="//github.com/spf13/hugo/issues/175">#175</a>
+
+
+</li>
+<li>Get BaseURL from viper in server mode 
+
+<a href="//github.com/spf13/hugo/issues/1821">#1821</a>
+
+
+</li>
+<li>Fix shortcode handling in RST 
+
+<a href="//github.com/spf13/hugo/issues/1904">#1904</a>
+
+
+</li>
+<li>Use default sitemap configuration for homepage 
+
+<a href="//github.com/spf13/hugo/issues/1304">#1304</a>
+
+
+</li>
+<li>Exit if specific port is unavailable in server mode 
+
+<a href="//github.com/spf13/hugo/issues/1901">#1901</a>
+
+
+</li>
+<li>Fix regression in &ldquo;section menus for lazy blogger&rdquo; 
+
+<a href="//github.com/spf13/hugo/issues/2065">#2065</a>
+
+
+</li>
+</ul>
+
+<hr />
+
+<h2 id="0-15-0-november-25-2015"><strong>0.15.0</strong>  November 25, 2015</h2>
+
+<p>The v0.15.0 Hugo release brings a lot of polish to Hugo. Exactly 6 months after
+the 0.14 release, Hugo has seen massive growth and changes. Most notably, this
+is Hugo&rsquo;s first release under the Apache 2.0 license. With this license change
+we hope to expand the great community around Hugo and make it easier for our
+many users to contribute.  This release represents over <strong>377 contributions by
+87 contributors</strong> to the main Hugo repo and hundreds of improvements to the
+libraries Hugo uses. Hugo also launched a <a href="http://themes.gohugo.io">new theme
+showcase</a> and participated in
+<a href="https://hacktoberfest.digitalocean.com">Hacktoberfest</a>.</p>
+
+<p>Hugo now has:</p>
+
+<ul>
+<li>6700 (+2700) stars on GitHub</li>
+<li>235 (+75) contributors</li>
+<li>65 (+30) themes</li>
+</ul>
+
+<p><strong>Template Improvements:</strong> This release takes Hugo to a new level of speed and
+usability. Considerable work has been done adding features and performance to
+the template system which now has full support of Ace, Amber and Go Templates.</p>
+
+<p><strong>Hugo Import:</strong> Have a Jekyll site, but dreaming of porting it to Hugo? This
+release introduces a new <code>hugo import jekyll</code>command that makes this easier
+than ever.</p>
+
+<p><strong>Performance Improvements:</strong> Just when you thought Hugo couldn&rsquo;t get any faster,
+Hugo continues to improve in speed while adding features. Notably Hugo 0.15
+introduces the ability to render and serve directly from memory resulting in
+30%+ lower render times.</p>
+
+<p>Huge thanks to all who participated in this release. A special thanks to
+
+
+<a href="//github.com/bep">@bep</a>
+
+
+ who led the development of Hugo this release again,
+
+
+<a href="//github.com/anthonyfok">@anthonyfok</a>
+
+
+,
+
+
+<a href="//github.com/eparis">@eparis</a>
+
+
+,
+
+
+<a href="//github.com/tatsushid">@tatsushid</a>
+
+
+ and
+
+
+<a href="//github.com/DigitalCraftsman">@DigitalCraftsman</a>
+
+
+.</p>
+
+<h3 id="new-features-2">New features</h3>
+
+<ul>
+<li>new <code>hugo import jekyll</code> command. 
+
+<a href="//github.com/spf13/hugo/issues/1469">#1469</a>
+
+
+</li>
+<li>The new <code>Param</code> convenience method on <code>Page</code> and <code>Node</code> can be used to get the most specific parameter value for a given key. 
+
+<a href="//github.com/spf13/hugo/issues/1462">#1462</a>
+
+
+</li>
+<li>Several new information elements have been added to <code>Page</code> and <code>Node</code>:
+
+<ul>
+<li><code>RuneCount</code>: The number of <a href="http://blog.golang.org/strings">runes</a> in the content, excluding any whitespace. This may be a good alternative to <code>.WordCount</code>  for Japanese and other CJK languages where a word-split by spaces makes no sense.  
+
+<a href="//github.com/spf13/hugo/issues/1266">#1266</a>
+
+
+</li>
+<li><code>RawContent</code>: Raw Markdown as a string. One use case may be of embedding remarkjs.com slides.</li>
+<li><code>IsHome</code>: tells the truth about whether you&rsquo;re on the home page or not.</li>
+</ul></li>
+</ul>
+
+<h3 id="improvements-1">Improvements</h3>
+
+<ul>
+<li><code>hugo server</code> now builds ~30%+ faster by rendering to memory instead of disk. To get the old behavior, start the server with <code>--renderToDisk=true</code>.</li>
+<li>Hugo now supports dynamic reloading of the config file when watching.</li>
+<li>We now use a custom-built <code>LazyFileReader</code> for reading file contents, which means we don&rsquo;t read media files in <code>/content</code> into memory anymore &ndash; and file reading is now performed in parallel on multicore PCs. 
+
+<a href="//github.com/spf13/hugo/issues/1181">#1181</a>
+
+
+</li>
+<li>Hugo is now built with <code>Go 1.5</code> which, among many other improvements, have fixed the last known data race in Hugo. 
+
+<a href="//github.com/spf13/hugo/issues/917">#917</a>
+
+
+</li>
+<li>Paginator now also supports page groups. 
+
+<a href="//github.com/spf13/hugo/issues/1274">#1274</a>
+
+
+</li>
+<li>Markdown improvements:
+
+<ul>
+<li>Hugo now supports GitHub-flavoured markdown code fences for highlighting for <code>md</code>-files (Blackfriday rendered markdown) and <code>mmark</code> files (MMark rendered markdown). 
+
+<a href="//github.com/spf13/hugo/issues/362">#362</a>
+
+
+
+<a href="//github.com/spf13/hugo/issues/1258">#1258</a>
+
+
+</li>
+<li>Several new Blackfriday options are added:
+
+<ul>
+<li>Option to disable Blackfriday&rsquo;s <code>Smartypants</code>.</li>
+<li>Option for Blackfriday to open links in a new window/tab. 
+
+<a href="//github.com/spf13/hugo/issues/1220">#1220</a>
+
+
+</li>
+<li>Option to disable Blackfriday&rsquo;s LaTeX style dashes 
+
+<a href="//github.com/spf13/hugo/issues/1231">#1231</a>
+
+
+</li>
+<li>Definition lists extension support.</li>
+</ul></li>
+</ul></li>
+<li><code>Scratch</code> now has built-in <code>map</code> support.</li>
+<li>We now fall back to <code>link title</code> for the default page sort. 
+
+<a href="//github.com/spf13/hugo/issues/1299">#1299</a>
+
+
+</li>
+<li>Some notable new configuration options:
+
+<ul>
+<li><code>IgnoreFiles</code> can be set with a list of Regular Expressions that matches files to be ignored during build. 
+
+<a href="//github.com/spf13/hugo/issues/1189">#1189</a>
+
+
+</li>
+<li><code>PreserveTaxonomyNames</code>, when set to <code>true</code>, will preserve what you type as the taxonomy name both in the folders created and the taxonomy <code>key</code>, but it will be normalized for the URL.  
+
+<a href="//github.com/spf13/hugo/issues/1180">#1180</a>
+
+
+</li>
+</ul></li>
+<li><code>hugo gen</code> can now generate man files, bash auto complete and markdown documentation</li>
+<li>Hugo will now make suggestions when a command is mistyped</li>
+<li>Shortcodes now have a boolean <code>.IsNamedParams</code> property. 
+
+<a href="//github.com/spf13/hugo/issues/1597">#1597</a>
+
+
+</li>
+</ul>
+
+<h3 id="new-template-features">New Template Features</h3>
+
+<ul>
+<li>All template engines:
+
+<ul>
+<li>The new <code>dict</code> function that could be used to pass maps into a template. 
+
+<a href="//github.com/spf13/hugo/issues/1463">#1463</a>
+
+
+</li>
+<li>The new <code>pluralize</code> and <code>singularize</code> template funcs.</li>
+<li>The new <code>base64Decode</code> and <code>base64Encode</code> template funcs.</li>
+<li>The <code>sort</code> template func now accepts field/key chaining arguments and pointer values. 
+
+<a href="//github.com/spf13/hugo/issues/1330">#1330</a>
+
+
+</li>
+<li>Several fixes for <code>slicestr</code> and <code>substr</code>, most importantly, they now have full <code>utf-8</code>-support. 
+
+<a href="//github.com/spf13/hugo/issues/1190">#1190</a>
+
+
+
+<a href="//github.com/spf13/hugo/issues/1333">#1333</a>
+
+
+
+<a href="//github.com/spf13/hugo/issues/1347">#1347</a>
+
+
+</li>
+<li>The new <code>last</code> template function allows the user to select the last <code>N</code> items of a slice. 
+
+<a href="//github.com/spf13/hugo/issues/1148">#1148</a>
+
+
+</li>
+<li>The new <code>after</code> func allows the user to select the items after the <code>Nth</code> item. 
+
+<a href="//github.com/spf13/hugo/issues/1200">#1200</a>
+
+
+</li>
+<li>Add <code>time.Time</code> type support to the <code>where</code>, <code>ge</code>, <code>gt</code>, <code>le</code>, and <code>lt</code> template functions.</li>
+<li>It is now possible to use constructs like <code>where Values &quot;.Param.key&quot; nil</code> to filter pages that doesn&rsquo;t have a particular parameter. 
+
+<a href="//github.com/spf13/hugo/issues/1232">#1232</a>
+
+
+</li>
+<li><code>getJSON</code>/<code>getCSV</code>: Add retry on invalid content. 
+
+<a href="//github.com/spf13/hugo/issues/1166">#1166</a>
+
+
+</li>
+<li>The new <code>readDir</code> func lists local files. 
+
+<a href="//github.com/spf13/hugo/issues/1204">#1204</a>
+
+
+</li>
+<li>The new <code>safeJS</code> function allows the embedding of content into JavaScript contexts in Go templates.</li>
+<li>Get the main site RSS link from any page by accessing the <code>.Site.RSSLink</code> property. 
+
+<a href="//github.com/spf13/hugo/issues/1566">#1566</a>
+
+
+</li>
+</ul></li>
+<li>Ace templates:
+
+<ul>
+<li>Base templates now also works in themes. 
+
+<a href="//github.com/spf13/hugo/issues/1215">#1215</a>
+
+
+.</li>
+<li>And now also on Windows. 
+
+<a href="//github.com/spf13/hugo/issues/1178">#1178</a>
+
+
+</li>
+</ul></li>
+<li>Full support for Amber templates including all template functions.</li>
+<li>A built-in template for Google Analytics. 
+
+<a href="//github.com/spf13/hugo/issues/1505">#1505</a>
+
+
+</li>
+<li>Hugo is now shipped with new built-in shortcodes: 
+
+<a href="//github.com/spf13/hugo/issues/1576">#1576</a>
+
+
+
+
+<ul>
+<li><code>youtube</code> for YouTube videos</li>
+<li><code>vimeo</code> for Vimeo videos</li>
+<li><code>gist</code> for GitHub gists</li>
+<li><code>tweet</code> for Twitter Tweets</li>
+<li><code>speakerdeck</code> for Speakerdeck slides</li>
+</ul></li>
+</ul>
+
+<h3 id="bugfixes">Bugfixes</h3>
+
+<ul>
+<li>Fix data races in page sorting and page reversal. These operations are now also cached. 
+
+<a href="//github.com/spf13/hugo/issues/1293">#1293</a>
+
+
+</li>
+<li><code>page.HasMenuCurrent()</code> and <code>node.HasMenuCurrent()</code> now work correctly in multi-level nested menus.</li>
+<li>Support <code>Fish and Chips</code> style section titles. Previously, this would end up as  <code>Fish And Chips</code>. Now, the first character is made toupper, but the rest are preserved as-is. 
+
+<a href="//github.com/spf13/hugo/issues/1176">#1176</a>
+
+
+</li>
+<li>Hugo now removes superfluous p-tags around shortcodes. 
+
+<a href="//github.com/spf13/hugo/issues/1148">#1148</a>
+
+
+</li>
+</ul>
+
+<h3 id="notices-1">Notices</h3>
+
+<ul>
+<li><code>hugo server</code> will watch by default now.</li>
+<li>Some fields and methods were deprecated in <code>0.14</code>. These are now removed, so the error message isn&rsquo;t as friendly if you still use the old values. So please change:
+
+<ul>
+<li><code>getJson</code> to <code>getJSON</code>, <code>getCsv</code> to <code>getCSV</code>, <code>safeHtml</code> to
+<code>safeHTML</code>, <code>safeCss</code> to <code>safeCSS</code>, <code>safeUrl</code> to <code>safeURL</code>, <code>Url</code> to <code>URL</code>,
+<code>UrlPath</code> to <code>URLPath</code>, <code>BaseUrl</code> to <code>BaseURL</code>, <code>Recent</code> to <code>Pages</code>.</li>
+</ul></li>
+</ul>
+
+<h3 id="known-issues">Known Issues</h3>
+
+<p>Using the Hugo v0.15 32-bit Windows or ARM binary, running <code>hugo server</code> would crash or hang due to a <a href="https://golang.org/pkg/sync/atomic/#pkg-note-BUG">memory alignment issue</a> in <a href="https://github.com/spf13/afero">Afero</a>.  The bug was discovered shortly after the v0.15.0 release and has since been <a href="https://github.com/spf13/afero/pull/23">fixed</a> by 
+
+<a href="//github.com/tpng">@tpng</a>
+
+
+.  If you encounter this bug, you may either compile Hugo v0.16-DEV from source, or use the following solution/workaround:</p>
+
+<ul>
+<li><strong>64-bit Windows users: Please use <a href="https://github.com/spf13/hugo/releases/download/v0.15/hugo_0.15_windows_amd64.zip">hugo_0.15_windows_amd64.zip</a></strong> (amd64 == x86-64).  It is only the 32-bit hugo_0.15_windows_386.zip that crashes/hangs (see 
+
+<a href="//github.com/spf13/hugo/issues/1621">#1621</a>
+
+
+ and 
+
+<a href="//github.com/spf13/hugo/issues/1628">#1628</a>
+
+
+).</li>
+<li><strong>32-bit Windows and ARM users: Please run <code>hugo server --renderToDisk</code> as a workaround</strong> until Hugo v0.16 is released (see <a href="https://discuss.gohugo.io/t/hugo-server-returns-runtime-error-on-armhf/2293">“hugo server” returns runtime error on armhf</a> and 
+
+<a href="//github.com/spf13/hugo/issues/1716">#1716</a>
+
+
+).</li>
+</ul>
+
+<hr />
+
+<h2 id="0-14-0-may-25-2015"><strong>0.14.0</strong> May 25, 2015</h2>
+
+<p>The v0.14.0 Hugo release brings of the most demanded features to Hugo. The
+foundation of Hugo is stabilizing nicely and a lot of polish has been added.
+We’ve expanded support for additional content types with support for AsciiDoc,
+Restructured Text, HTML and Markdown. Some of these types depend on external
+libraries as there does not currently exist native support in Go. We’ve tried
+to make the experience as seamless as possible. Look for more improvements here
+in upcoming releases.</p>
+
+<p>A lot of work has been done to improve the user experience, with extra polish
+to the Windows experience. Hugo errors are more helpful overall and Hugo now
+can detect if it’s being run in Windows Explorer and provide additional
+instructions to run it via the command prompt.</p>
+
+<p>The Hugo community continues to grow. Hugo has over 4000 stars on github, 165
+contributors, 35 themes and 1000s of happy users. It is now the 5th most
+popular static site generator (by Stars) and has the 3rd largest contributor
+community.</p>
+
+<p>This release represents over <strong>240 contributions by 36 contributors</strong> to the main
+Hugo codebase.</p>
+
+<p>Big shout out to 
+
+<a href="//github.com/bep">@bep</a>
+
+
+ who led the development of Hugo
+this release, 
+
+<a href="//github.com/anthonyfok">@anthonyfok</a>
+
+
+,
+
+
+<a href="//github.com/eparis">@eparis</a>
+
+
+,
+
+
+<a href="//github.com/SchumacherFM">@SchumacherFM</a>
+
+
+,
+
+
+<a href="//github.com/RickCogley">@RickCogley</a>
+
+
+ &amp;
+
+
+<a href="//github.com/mdhender">@mdhender</a>
+
+
+ for their significant contributions
+and 
+
+<a href="//github.com/tatsushid">@tatsushid</a>
+
+
+ for his continuous improvements
+to the templates. Also a big thanks to all the theme creators. 11 new themes
+have been added since last release and the <a href="https://github.com/spf13/hugoThemes/blob/master/README.md#theme-list">hugoThemes repo now has previews of
+all of
+them</a>.</p>
+
+<p>Hugo also depends on a lot of other great projects. A big thanks to all of our dependencies including:
+<a href="https://github.com/spf13/cobra">cobra</a>,
+<a href="https://github.com/spf13/viper">viper</a>,
+<a href="https://github.com/russross/blackfriday">blackfriday</a>,
+<a href="https://github.com/spf13/pflag">pflag</a>,
+<a href="https://github.com/spf13/hugothemes">HugoThemes</a>,
+<a href="https://github.com/BurntSushi/toml">BurntSushi</a>,
+<a href="https://github.com/go-yaml/yaml/tree/v2">goYaml</a>, and the Go standard library.</p>
+
+<h2 id="new-features-3">New features</h2>
+
+<ul>
+<li>Support for all file types in content directory.
+
+<ul>
+<li>If dedicated file type handler isn’t found it will be copied to the destination.</li>
+</ul></li>
+<li>Add <code>AsciiDoc</code> support using external helpers.</li>
+<li>Add experimental support for <a href="https://github.com/miekg/mmark"><code>Mmark</code></a> markdown processor</li>
+<li>Bash autocomplete support via <code>genautocomplete</code> command</li>
+<li>Add section menu support for a <a href="../../extras/menus/#section-menu-for-the-lazy-blogger">Section Menu for &ldquo;the Lazy Blogger&rdquo;</a></li>
+<li>Add support for <code>Ace</code> base templates</li>
+<li>Adding <code>RelativeURLs = true</code> to site config will now make all the relative URLs relative to the content root.</li>
+<li>New template functions:
+
+<ul>
+<li><code>getenv</code></li>
+<li>The string functions <code>substr</code> and <code>slicestr</code></li>
+<li><code>seq</code>, a sequence generator very similar to its Gnu counterpart</li>
+<li><code>absURL</code> and <code>relURL</code>, both of which takes the <code>BaseURL</code> setting into account</li>
+</ul></li>
+</ul>
+
+<h2 id="improvements-2">Improvements</h2>
+
+<ul>
+<li>Highlighting with <code>Pygments</code> is now cached to disk &ndash; expect a major speed boost if you use it!</li>
+<li>More Pygments highlighting options, including <code>line numbers</code></li>
+<li>Show help information to Windows users who try to double click on <code>hugo.exe</code>.</li>
+<li>Add <code>bind</code> flag to <code>hugo server</code> to set the interface to which the server will bind</li>
+<li>Add support for <code>canonifyURLs</code> in <code>srcset</code></li>
+<li>Add shortcode support for HTML (content) files</li>
+<li>Allow the same <code>shortcode</code> to  be used with or without inline content</li>
+<li>Configurable RSS output filename</li>
+</ul>
+
+<h2 id="bugfixes-1">Bugfixes</h2>
+
+<ul>
+<li>Fix panic with paginator and zero pages in result set.</li>
+<li>Fix crossrefs on Windows.</li>
+<li>Fix <code>eq</code> and <code>ne</code> template functions when used with a raw number combined with the result of <code>add</code>, <code>sub</code> etc.</li>
+<li>Fix paginator with uglyURLs</li>
+<li>Fix 
+
+<a href="//github.com/spf13/hugo/issues/998">#998</a>
+
+
+, supporting UTF8 characters in Permalinks.</li>
+</ul>
+
+<h2 id="notices-2">Notices</h2>
+
+<ul>
+<li>To get variable and function names in line with the rest of the Go community,
+a set of variable and function names has been deprecated: These will still
+work in 0.14, but will be removed in 0.15. What to do should be obvious by
+the build log; <code>getJson</code> to <code>getJSON</code>, <code>getCsv</code> to <code>getCSV</code>, <code>safeHtml</code> to
+<code>safeHTML</code>, <code>safeCss</code> to <code>safeCSS</code>, <code>safeUrl</code> to <code>safeURL</code>, <code>Url</code> to <code>URL</code>,
+<code>UrlPath</code> to <code>URLPath</code>, <code>BaseUrl</code> to <code>BaseURL</code>, <code>Recent</code> to <code>Pages</code>,
+<code>Indexes</code> to <code>Taxonomies</code>.</li>
+</ul>
+
+<hr />
+
+<h2 id="0-13-0-feb-21-2015"><strong>0.13.0</strong> Feb 21, 2015</h2>
+
+<p>The v0.13.0 release is the largest Hugo release to date. The release introduced
+some long sought after features (pagination, sequencing, data loading, tons of
+template improvements) as well as major internal improvements. In addition to
+the code changes, the Hugo community has grown significantly and now has over
+3000 stars on github, 134 contributors, 24 themes and 1000s of happy users.</p>
+
+<p>This release represents <strong>448 contributions by 65 contributors</strong></p>
+
+<p>A special shout out to 
+
+<a href="//github.com/bep">@bep</a>
+
+
+ and
+
+
+<a href="//github.com/anthonyfok">@anthonyfok</a>
+
+
+ for their new role as Hugo
+maintainers and their tremendous contributions this release.</p>
+
+<h3 id="new-major-features">New major features</h3>
+
+<ul>
+<li>Support for <a href="../../extras/datafiles/">data files</a> in <a href="http://yaml.org/">YAML</a>,
+<a href="http://www.json.org/">JSON</a>, or <a href="https://github.com/toml-lang/toml">TOML</a>
+located in the <code>data</code> directory (
+
+<a href="//github.com/spf13/hugo/issues/885">#885</a>
+
+
+)</li>
+<li>Support for <a href="../../extras/dynamiccontent/">dynamic content</a> by loading JSON &amp; CSV
+from remote sources via GetJson and GetCsv in short codes or other layout
+files (
+
+<a href="//github.com/spf13/hugo/issues/748">#748</a>
+
+
+)</li>
+<li><a href="../../extras/pagination/">Pagination support</a> for home page, sections and
+taxonomies (
+
+<a href="//github.com/spf13/hugo/issues/750">#750</a>
+
+
+)</li>
+<li>Universal sequencing support
+
+<ul>
+<li>A new, generic Next/Prev functionality is added to all lists of pages
+(sections, taxonomies, etc.)</li>
+<li>Add in-section <a href="../../templates/variables/">Next/Prev</a> content pointers</li>
+</ul></li>
+<li><code>Scratch</code> &ndash; <a href="../../extras/scratch">a &ldquo;scratchpad&rdquo;</a> for your node- and page-scoped
+variables</li>
+<li><a href="../../extras/crossreferences/">Cross Reference</a> support to easily link documents
+together with the ref and relref shortcodes.</li>
+<li><a href="http://ace.yoss.si/">Ace</a> template engine support (
+
+<a href="//github.com/spf13/hugo/issues/541">#541</a>
+
+
+)</li>
+<li>A new <a href="../../extras/shortcodes/">shortcode</a> token of <code>{{&lt; &gt;}}</code> (raw HTML)
+alongside the existing <code>{{% %}}</code> (Markdown)</li>
+<li>A top level <code>Hugo</code> variable (on Page &amp; Node) is added with various build
+information</li>
+<li>Several new ways to order and group content:
+
+<ul>
+<li><code>ByPublishDate</code></li>
+<li><code>GroupByPublishDate(format, order)</code></li>
+<li><code>GroupByParam(key, order)</code></li>
+<li><code>GroupByParamDate(key, format, order)</code></li>
+</ul></li>
+<li>Hugo has undergone a major refactoring, with a new handler system and a
+generic file system. This sounds and is technical, but will pave the way for
+new features and make Hugo even speedier</li>
+</ul>
+
+<h3 id="notable-enhancements-to-existing-features">Notable enhancements to existing features</h3>
+
+<ul>
+<li>The <a href="../../extras/shortcodes/">shortcode</a> handling is rewritten for speed and
+better error messages.</li>
+<li>Several improvements to the <a href="../../templates/functions/">template functions</a>:
+
+<ul>
+<li><code>where</code> is now even more powerful and accepts SQL-like syntax with the
+operators <code>==</code>, <code>eq</code>; <code>!=</code>, <code>&lt;&gt;</code>, <code>ne</code>; <code>&gt;=</code>, <code>ge</code>; <code>&gt;</code>, <code>gt</code>; <code>&lt;=</code>,
+<code>le</code>; <code>&lt;</code>, <code>lt</code>; <code>in</code>, <code>not in</code></li>
+<li><code>where</code> template function now also accepts dot chaining key argument
+(e.g. <code>&quot;Params.foo.bar&quot;</code>)</li>
+</ul></li>
+<li>New template functions:
+
+<ul>
+<li><code>apply</code></li>
+<li><code>chomp</code></li>
+<li><code>delimit</code></li>
+<li><code>sort</code></li>
+<li><code>markdownify</code></li>
+<li><code>in</code> and <code>intersect</code></li>
+<li><code>trim</code></li>
+<li><code>replace</code></li>
+<li><code>dateFormat</code></li>
+</ul></li>
+<li>Several <a href="../../overview/configuration/#configure-blackfriday-rendering:a66b35d20295cb764719ac8bd35837ec">configurable improvements related to Markdown
+rendering</a>:
+
+<ul>
+<li>Configuration of footnote rendering</li>
+<li>Optional support for smart angled quotes, e.g. <code>&quot;Hugo&quot;</code> → «Hugo»</li>
+<li>Enable descriptive header IDs</li>
+</ul></li>
+<li>URLs in XML output is now correctly canonified (
+
+<a href="//github.com/spf13/hugo/issues/725">#725</a>
+
+
+
+<a href="//github.com/spf13/hugo/issues/728">#728</a>
+
+
+, and part
+of 
+
+<a href="//github.com/spf13/hugo/issues/789">#789</a>
+
+
+)</li>
+</ul>
+
+<h3 id="other-improvements">Other improvements</h3>
+
+<ul>
+<li>Internal change to use byte buffer pool significantly lowering memory usage
+and providing measurable performance improvements overall</li>
+<li>Changes to docs:
+
+<ul>
+<li>A new <a href="../../troubleshooting/overview/">Troubleshooting</a> section is added</li>
+<li>It&rsquo;s now searchable through Google Custom Search (
+
+<a href="//github.com/spf13/hugo/issues/753">#753</a>
+
+
+)</li>
+<li>Some new great tutorials:
+
+<ul>
+<li><a href="../../tutorials/automated-deployments/">Automated deployments with
+Wercker</a></li>
+<li><a href="../../tutorials/creating-a-new-theme/">Creating a new theme</a></li>
+</ul></li>
+</ul></li>
+<li><a href="../../content/archetypes/"><code>hugo new</code></a> now copies the content in addition to the front matter</li>
+<li>Improved unit test coverage</li>
+<li>Fixed a lot of Windows-related path issues</li>
+<li>Improved error messages for template and rendering errors</li>
+<li>Enabled soft LiveReload of CSS and images (
+
+<a href="//github.com/spf13/hugo/issues/490">#490</a>
+
+
+)</li>
+<li>Various fixes in RSS feed generation (
+
+<a href="//github.com/spf13/hugo/issues/789">#789</a>
+
+
+)</li>
+<li><code>HasMenuCurrent</code> and <code>IsMenuCurrent</code> is now supported on Nodes</li>
+<li>A bunch of <a href="https://github.com/spf13/hugo/commits/master">bug fixes</a></li>
+</ul>
+
+<hr />
+
+<h2 id="0-12-0-sept-1-2014"><strong>0.12.0</strong> Sept 1, 2014</h2>
+
+<p>A lot has happened since Hugo v0.11.0 was released. Most of the work has been
+focused on polishing the theme engine and adding critical functionality to the
+templates.</p>
+
+<p>This release represents over 90 code commits from 28 different contributors.</p>
+
+<ul>
+<li>10 <a href="https://github.com/spf13/hugoThemes">new themes</a> created by the community</li>
+<li>Fully themable <a href="../../templates/partials/">Partials</a></li>
+<li><a href="../../templates/404/">404 template</a> support in themes</li>
+<li><a href="../../extras/shortcodes/">Shortcode</a> support in themes</li>
+<li><a href="../../templates/views/">Views</a> support in themes</li>
+<li>Inner <a href="../../extras/shortcodes/">shortcode</a> content now treated as Markdown</li>
+<li>Support for header ids in Markdown (# Header {#myid})</li>
+<li><a href="../../templates/list/">Where</a> template function to filter lists of content, taxonomies, etc.</li>
+<li><a href="../../templates/list/">GroupBy</a> &amp; <a href="../../templates/list/">GroupByDate</a> methods to group pages</li>
+<li>Taxonomy <a href="../../taxonomies/methods/">pages list</a> now sortable, filterable, limitable &amp; groupable</li>
+<li>General cleanup to taxonomies &amp; documentation to make it more clear and consistent</li>
+<li><a href="../../showcase/">Showcase</a> returned and has been expanded</li>
+<li>Pretty links now always have trailing slashes</li>
+<li><a href="../../overview/configuration/">BaseUrl</a> can now include a subdirectory</li>
+<li>Better feedback about draft &amp; future post rendering</li>
+<li>A variety of improvements to <a href="http://gohugo.io/">the website</a></li>
+</ul>
+
+<hr />
+
+<h2 id="0-11-0-may-28-2014"><strong>0.11.0</strong> May 28, 2014</h2>
+
+<p>This release represents over 110 code commits from 29 different contributors.</p>
+
+<ul>
+<li>Considerably faster&hellip; about 3 - 4x faster on average</li>
+<li><a href="../../extras/livereload/">LiveReload</a>. Hugo will automatically reload the browser when the build is complete</li>
+<li>Theme engine w/<a href="https://github.com/spf13/hugoThemes">Theme Repository</a></li>
+<li><a href="../../extras/menus/">Menu system</a> with support for active page</li>
+<li><a href="../../extras/builders/">Builders</a> to quickly create a new site, content or theme</li>
+<li><a href="../../templates/sitemap/">XML sitemap</a> generation</li>
+<li><a href="../../extras/comments/">Integrated Disqus</a> support</li>
+<li>Streamlined <a href="../../templates/overview/">template organization</a></li>
+<li><a href="http://gohugo.io/">Brand new docs site</a></li>
+<li>Support for publishDate which allows for posts to be dated in the future</li>
+<li>More <a href="../../content/ordering/">sort</a> options</li>
+<li>Logging support</li>
+<li>Much better error handling</li>
+<li>More informative verbose output</li>
+<li>Renamed Indexes &gt; <a href="../../taxonomies/overview/">Taxonomies</a></li>
+<li>Renamed Chrome &gt; <a href="../../templates/partials/">Partials</a></li>
+</ul>
+
+<hr />
+
+<h2 id="0-10-0-march-1-2014"><strong>0.10.0</strong> March 1, 2014</h2>
+
+<p>This release represents over 110 code commits from 29 different contributors.</p>
+
+<ul>
+<li><a href="../../extras/highlighting/">Syntax highlighting</a> powered by pygments (<strong>slow</strong>)</li>
+<li>Ability to <a href="../../content/ordering/">sort content</a> many more ways</li>
+<li>Automatic <a href="../../extras/toc/">table of contents</a> generation</li>
+<li>Support for Unicode URLs, aliases and indexes</li>
+<li>Configurable per-section <a href="../../extras/permalinks/">permalink</a> pattern support</li>
+<li>Support for <a href="../../extras/shortcodes/">paired shortcodes</a></li>
+<li>Shipping with some <a href="../../extras/shortcodes/">shortcodes</a> (highlight &amp; figure)</li>
+<li>Adding <a href="../../extras/urls/">canonify</a> option to keep urls relative</li>
+<li>A bunch of <a href="../../layout/functions/">additional template functions</a></li>
+<li>Watching very large sites now works on Mac</li>
+<li>RSS generation improved. Limited to 50 items by default, can limit further in <a href="../../layout/rss/">template</a></li>
+<li>Boolean params now supported in <a href="../../content/front-matter/">frontmatter</a></li>
+<li>Launched website <a href="../../showcase/">showcase</a>. Show off your own hugo site!</li>
+<li>A bunch of <a href="https://github.com/spf13/hugo/commits/master">bug fixes</a></li>
+</ul>
+
+<hr />
+
+<h2 id="0-9-0-november-15-2013"><strong>0.9.0</strong> November 15, 2013</h2>
+
+<p>This release represents over 220 code commits from 22 different contributors.</p>
+
+<ul>
+<li>New <a href="../../overview/usage/">command based interface</a> similar to git (<code>hugo server -s ./</code>)</li>
+<li>Amber template support</li>
+<li><a href="../../extras/aliases/">Aliases</a> (redirects)</li>
+<li>Support for top level pages (in addition to homepage)</li>
+<li>Complete overhaul of the documentation site</li>
+<li>Full Windows support</li>
+<li>Better index support including <a href="../../content/ordering/">ordering by content weight</a></li>
+<li>Add params to site config, available in .Site.Params from templates</li>
+<li>Friendlier json support</li>
+<li>Support for html &amp; xml content (with frontmatter support)</li>
+<li>Support for <a href="../../content/summaries/">summary</a> content divider (<code>&lt;!&#45;&#45;more&#45;&#45;&gt;</code>)</li>
+<li>HTML in <a href="../../content/summaries/">summary</a> (when using divider)</li>
+<li>Added <a href="../../layout/variables/">&ldquo;Minutes to Read&rdquo;</a> functionality</li>
+<li>Support for a custom 404 page</li>
+<li>Cleanup of how content organization is handled</li>
+<li>Loads of unit and performance tests</li>
+<li>Integration with travis ci</li>
+<li>Static directory now watched and copied on any addition or modification</li>
+<li>Support for relative permalinks</li>
+<li>Fixed watching being triggered multiple times for the same event</li>
+<li>Watch now ignores temp files (as created by Vim)</li>
+<li>Configurable number of posts on <a href="../../layout/homepage/">homepage</a></li>
+<li><a href="../../content/front-matter/">Front matter</a> supports multiple types (int, string, date, float)</li>
+<li>Indexes can now use a default template</li>
+<li>Addition of truncated bool to content to determine if should show &lsquo;more&rsquo; link</li>
+<li>Support for <a href="../../layout/variables/">linkTitles</a></li>
+<li>Better handling of most errors with directions on how to resolve</li>
+<li>Support for more date / time formats</li>
+<li>Support for go 1.2</li>
+<li>Support for <code>first</code> in templates</li>
+</ul>
+
+<hr />
+
+<h2 id="0-8-0-august-2-2013"><strong>0.8.0</strong> August 2, 2013</h2>
+
+<p>This release represents over 65 code commits from 6 different contributors.</p>
+
+<ul>
+<li>Added support for pretty urls (filename/index.html vs filename.html)</li>
+<li>Hugo supports a destination directory</li>
+<li>Will efficiently sync content in static to destination directory</li>
+<li>Cleaned up options.. now with support for short and long options</li>
+<li>Added support for TOML</li>
+<li>Added support for YAML</li>
+<li>Added support for Previous &amp; Next</li>
+<li>Added support for indexes for the indexes</li>
+<li>Better Windows compatibility</li>
+<li>Support for series</li>
+<li>Adding verbose output</li>
+<li>Loads of bugfixes</li>
+</ul>
+
+<hr />
+
+<h2 id="0-7-0-july-4-2013"><strong>0.7.0</strong> July 4, 2013</h2>
+
+<ul>
+<li>Hugo now includes a simple server</li>
+<li>First public release</li>
+</ul>
+
+<hr />
+
+<h2 id="0-6-0-july-2-2013"><strong>0.6.0</strong> July 2, 2013</h2>
+
+<ul>
+<li>Hugo includes an example documentation site which it builds</li>
+</ul>
+
+<hr />
+
+<h2 id="0-5-0-june-25-2013"><strong>0.5.0</strong> June 25, 2013</h2>
+
+<ul>
+<li>Hugo is quite usable and able to build spf13.com</li>
+</ul>
+
+
+                    <div class="row">
+                        <div class="footer-panel">
+			  <p>Last revision: March 17, 2017 | <a href="https://github.com/spf13/hugo/commit/133594b8bfd9bbfdee5f60b09e563be4d40a1b9c">排版 引入雨果官方教程內容 (133594b)</a>
+                          <span style="float: right;">Hugo v0.19 documentation</span>
+                        </p>
+                        </div>
+                    </div>
+
+                    </div>
+                    </section>
+
+                    </div>
+
+                <div class="col-md-1">
+                    
+                    
+                    
+                </div>
+              </div>
+              
+          </section>
+      </section>
+     
+  </section>
+  
+
+    
+    <script type="text/javascript" src="../../vendor/jquery/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../vendor/flesler/js/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="../../vendor/twitter/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="../../vendor/highlightjs/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../js/scripts.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script> 
+    <script type="text/javascript"> 
+    docsearch({
+      apiKey: '167e7998590aebda7f9fedcf86bc4a55',
+      indexName: 'hugodocs',
+      inputSelector: '#search-input',
+      algoliaOptions: {
+        hitsPerPage: 5
+      }
+    }); 
+    </script>
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-7131036-4', 'spf13.com');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>
+

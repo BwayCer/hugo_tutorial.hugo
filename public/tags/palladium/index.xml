@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Palladium on Hugo: A Fast and Flexible Website Generator</title>
+    <link>https://bwaycer.github.io/tags/palladium/index.xml</link>
+    <description>Recent content in Palladium on Hugo: A Fast and Flexible Website Generator</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <atom:link href="https://bwaycer.github.io/tags/palladium/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>GOLDREPORT — Gold, Silver &amp; Numismatics News</title>
+      <link>https://bwaycer.github.io/showcase/bullion-investor/</link>
+      <pubDate>Sat, 11 Feb 2017 10:30:00 +0200</pubDate>
+      
+      <guid>https://bwaycer.github.io/showcase/bullion-investor/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1623 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://bwaycer.github.io/troubleshooting/strange-eof-error/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/overview/introduction/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tutorials/hosting-on-bitbucket/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tutorials/hosting-on-gitlab/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tutorials/how-to-contribute-to-hugo/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tutorials/creating-a-new-theme/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tutorials/create-a-multilingual-site/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tutorials/installing-on-windows/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tutorials/installing-on-mac/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tutorials/automated-deployments/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/troubleshooting/categories-with-accented-characters/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/themes/overview/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tutorials/github-pages-blog/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tutorials/mathjax/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tutorials/migrate-from-jekyll/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/community/mailing-list/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/content/organization/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/taxonomies/overview/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/overview/quickstart/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/meta/release-notes/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/templates/overview/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tutorials/deployment-with-rsync/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/content/supported-formats/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/taxonomies/usage/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/templates/go-templates/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/templates/ace/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/templates/amber/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/themes/installing/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/community/press/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/taxonomies/displaying/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/content/front-matter/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/templates/functions/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/meta/roadmap/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/overview/installing/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/templates/variables/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/themes/usage/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/community/contributing/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/content/sections/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/taxonomies/templates/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/overview/usage/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/templates/content/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/themes/customizing/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/overview/configuration/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/templates/list/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/content/types/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/content/archetypes/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/themes/creation/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/meta/license/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/overview/source-directory/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/templates/homepage/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/templates/terms/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/content/ordering/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/taxonomies/ordering/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/content/summaries/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/content/markdown-extras/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/content/multilingual/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/content/using-index-md/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/templates/views/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/content/example/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/taxonomies/methods/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/templates/blocks/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/templates/partials/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/templates/rss/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/templates/sitemap/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/templates/404/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/templates/debugging/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tools/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_benchmark/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_check/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_check_ulimit/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_config/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_convert/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_convert_tojson/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_convert_totoml/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_convert_toyaml/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_env/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_gen/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_gen_autocomplete/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_gen_doc/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_gen_man/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_import/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_import_jekyll/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_list/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_list_drafts/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_list_expired/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_list_future/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_new/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_new_site/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_new_theme/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_server/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_undraft/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/hugo_version/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/promotive/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/bullion-investor/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/invision/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/picturingjordan/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/petanikode/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/dbzman-online/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/heimatverein-niederjosbach/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/neavey.net/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/christianmendoza/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/extras/gitinfo/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/balaramadurai.net/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/clearhaus/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/dmitriid.com/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/fixatom/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/eurie/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/shapeshed/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/thecodeking/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/rahulrai/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/davidyates/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/cinegyopen/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/rdegges/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/astrochili/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/steambap/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/ctlcompiled/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/leowkahman/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/mtbhomer/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/mayan-edms/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/upbeat/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/jamescampbell/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/novelist-xyz/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/stefano.chiodino/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/klingt-net/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/2626info/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/appernetic/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/aydoscom/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/barricade/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/tutorialonfly/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/silvergeko/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/robertbasic/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/ysqi/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/mongodb-eng-journal/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/h10n.me/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/fale/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/viglug.org/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/cdnoverview/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/gntech/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/jorgennilsson/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/shelan/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/extras/analytics/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/datapipelinearchitect/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/davidrallen/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/leepenney/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/rakutentech/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/emilyhorsman.com/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/coding-journal/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/extras/robots-txt/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/camunda-blog/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/camunda-docs/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/softinio/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/goin5minutes/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/arresteddevops/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/readtext/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/losslesslife/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/bugtrackers.io/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/ninjaducks.in/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/ridingbytes/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/yulinling.net/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/richardsumilang/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/nodesk/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/chinese-grammar/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/scottcwilson/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/szymonkatra/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/chipsncookies/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/esolia-com/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/esolia-pro/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/mariosanchez/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/extras/localfiles/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/rick-cogley-info/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/extras/datadrivencontent/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/consequently/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/extras/datafiles/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/extras/scratch/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/troubleshooting/overview/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/thehome/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/extras/crossreferences/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/stou/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/launchcode5/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/fxsitecompat/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/ucsb/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/nickoneill/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/vurt.co/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/michaelwhatcott/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/devmonk/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/peteraba/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/chingli/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/danmux/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/ninya.io/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/tendermint/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/lk4d4.darth.io/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/npf/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/vamp/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/extras/builders/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/extras/comments/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/extras/livereload/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/techmadeplain/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/extras/menus/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/yslow-rules/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/cloudshark/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/kieranhealy/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/antzucaro/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/asc/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/extras/urls/</loc>
+    <lastmod>2017-03-19T12:30:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/extras/pagination/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/extras/permalinks/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/davidepetilli/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/gogb/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/bepsays/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/extras/aliases/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/extras/toc/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/hugo/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/spf13/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/extras/shortcodes/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/extras/highlighting/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/academic/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/acquirer/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/api/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/association/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/audiophile/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/blog/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/bootstrap/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/coins/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/commands/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/community/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/community/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/company/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/corporate/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/design/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/deutschland/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/digital-nomad/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/documentation/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/drawings/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/ebook-download/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/edtech/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/education/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/educational/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/electronics/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/engineering/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/esolia/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/event-management/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/extras/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/fast/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/finance/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/fintech/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/floss/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/foundation/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/free/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/gallery/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/germany/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/gold/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/gold-price/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/headphones/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/interviews/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/investment/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/japan/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/kube/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/learning/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/linux/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/meta/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/music/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/news/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/numismatics/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/overview/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/palladium/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/paperless/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/payments/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/personal/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/photography/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/platinum/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/podcast/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/portfolio/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/profesional/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/profile/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/programming/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/project/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/projects/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/reading/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/report/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/reviews/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/rickcogley/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/screencasts/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/security/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/showcase/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/silver/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/spanish/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/taxonomies/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/tech/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/technical/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/technology/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/templates/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/textfiles/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/themes/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/translation/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/travel/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/troubleshooting/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/tutorials/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tutorials/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/user-group/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/video/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/web/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/web-applications/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bwaycer.github.io/tags/website/</loc>
+    <lastmod>2017-03-17T18:20:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
